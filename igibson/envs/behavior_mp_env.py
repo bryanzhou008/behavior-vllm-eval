@@ -90,6 +90,7 @@ class BehaviorMPEnv(BehaviorEnv):
         @param use_motion_planning: Whether motion-planned primitives or magic primitives should be used
         @param activity_relevant_objects_only: Whether the actions should be parameterized by AROs or all scene objs.
         """
+        self.activity_relevant_objects_only = activity_relevant_objects_only
         super(BehaviorMPEnv, self).__init__(
             config_file=config_file,
             scene_id=scene_id,
@@ -104,7 +105,6 @@ class BehaviorMPEnv(BehaviorEnv):
         )
 
         self.use_motion_planning = use_motion_planning
-        self.activity_relevant_objects_only = activity_relevant_objects_only
         self.robots[0].initial_z_offset = 0.7
 
     def load_action_space(self):

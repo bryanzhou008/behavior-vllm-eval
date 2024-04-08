@@ -37,3 +37,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# python .\igibson\examples\behavior\behavior_demo_segmentation_batch.py .\igibson\data\virtual_reality .\igibson\data\virtual_reality\log_manifest .\igibson\data\virtual_reality_segmentation_results 
