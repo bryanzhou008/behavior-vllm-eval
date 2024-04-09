@@ -139,7 +139,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         "gym>=0.12",
-        "numpy>=1.16.0",
+        "numpy==1.21.0",
         "scipy>=1.2.1",
         "pybullet-svl>=3.1.6",
         "transforms3d>=0.3.1",
