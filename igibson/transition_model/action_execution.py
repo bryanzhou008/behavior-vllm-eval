@@ -142,61 +142,57 @@ def close(robot,obj,scene=None,hand=None):
     else:
         print("PRIMITIVE close failed, cannot be closed")
 
+
+
 def burn(robot,obj,scene=None,hand=None):
-    pass
+    if hasattr(obj, "states") and object_states.Burnt in obj.states:
+        obj.states[object_states.Burnt].set_value(True, )
 
 def cook(robot,obj,scene=None,hand=None):
-    pass
+    if hasattr(obj, "states") and object_states.Cooked in obj.states:
+        obj.states[object_states.Cooked].set_value(True, fully=True)
 
 def clean(robot,obj,scene,hand):
-    obj_in_left= get_obj_in_hand(scene,robot,"left_hand")
-    obj_in_right= get_obj_in_hand(scene,robot,"right_hand")
-
+    if hasattr(obj, "states") and object_states.Dusty in obj.states:
+        obj.states[object_states.Dusty].set_value(False, fully=True)
 
 def freeze(robot,obj,scene=None,hand=None):
-    navigate_if_needed(robot,obj)
     if hasattr(obj, "states") and object_states.Frozen in obj.states:
         obj.states[object_states.Frozen].set_value(True, fully=True)
     else:
         print("PRIMITIVE freeze failed, cannot be frozen")
 
 def unfreeze(robot,obj,scene=None,hand=None):
-    navigate_if_needed(robot,obj)
     if hasattr(obj, "states") and object_states.Frozen in obj.states:
         obj.states[object_states.Frozen].set_value(False, fully=True)
     else:
         print("PRIMITIVE unfreeze failed, cannot be unfrozen")
 
 def slice(robot,obj,scene=None,hand=None):
-    navigate_if_needed(robot,obj)
     if hasattr(obj, "states") and object_states.Sliced in obj.states:
         obj.states[object_states.Sliced].set_value(True, fully=True)
     else:
         print("PRIMITIVE slice failed, cannot be sliced")
 
 def soak(robot,obj,scene=None,hand=None):
-    navigate_if_needed(robot,obj)
     if hasattr(obj, "states") and object_states.Soaked in obj.states:
         obj.states[object_states.Soaked].set_value(True, fully=True)
     else:
         print("PRIMITIVE soak failed, cannot be soaked")
 
 def dry(robot,obj,scene=None,hand=None):
-    navigate_if_needed(robot,obj)
     if hasattr(obj, "states") and object_states.Soaked in obj.states:
         obj.states[object_states.Soaked].set_value(False, fully=True)
     else:
         print("PRIMITIVE dry failed, cannot be dried")
 
 def stain(robot,obj,scene=None,hand=None):
-    navigate_if_needed(robot,obj)
     if hasattr(obj, "states") and object_states.Stained in obj.states:
         obj.states[object_states.Stained].set_value(True, fully=True)
     else:
         print("PRIMITIVE stain failed, cannot be stained")
 
 def toggle(robot,obj,scene=None,hand=None):
-    navigate_if_needed(robot,obj)
     if hasattr(obj, "states") and object_states.ToggledOn in obj.states:
         obj.states[object_states.ToggledOn].set_value(True, fully=True)
     else:

@@ -1,4 +1,3 @@
-from igibson.transition_model.actions import ActionPrimitives
 import argparse
 import time
 import gym.spaces
@@ -13,7 +12,9 @@ from igibson.object_states.utils import sample_kinematics
 from igibson.objects.articulated_object import URDFObject
 from igibson.robots.behavior_robot import BRBody, BREye, BRHand
 
-
+from igibson.transition_model.actions import ActionPrimitives
+from igibson.transition_model.action_execution import navigate_to, grasp, place_ontop, place_inside, open, close, burn, cook, \
+clean, freeze, unfreeze, slice, soak, dry, stain, toggle
 class BehaviorEvalEnv(BehaviorEnv):
     """
     iGibson Environment (OpenAI Gym interface)
@@ -97,129 +98,30 @@ class BehaviorEvalEnv(BehaviorEnv):
         obj = self.addressable_objects[obj_list_id]
         if not (isinstance(obj, BRBody) or isinstance(obj, BRHand) or isinstance(obj, BREye)):
             if action_primitive == ActionPrimitives.NAVIGATE_TO:
-                if self.navigate_to_obj(obj):
-                    print("PRIMITIVE: navigate to {} success".format(obj.name))
-                else:
-                    print("PRIMITIVE: navigate to {} fail".format(obj.name))
+                navigate_to(self.robots[0], obj)
 
             elif action_primitive == ActionPrimitives.RIGHT_GRASP or action_primitive == ActionPrimitives.LEFT_GRASP:
                 hand = "right_hand" if action_primitive == ActionPrimitives.RIGHT_GRASP else "left_hand"
-                obj_in_hand_id = self.robots[0].parts[hand].object_in_hand
-                obj_in_hand = self.scene.objects_by_id[obj_in_hand_id] if obj_in_hand_id is not None else None
-                if obj_in_hand is None:
-                    if isinstance(obj, URDFObject) and hasattr(obj, "states") and object_states.AABB in obj.states:
-                        lo, hi = obj.states[object_states.AABB].get_value()
-                        volume = get_aabb_volume(lo, hi)
-                        if volume < 0.2 * 0.2 * 0.2 and not obj.main_body_is_fixed:  # we can only grasp small objects
-                            self.navigate_if_needed(obj)
-                            self.grasp_obj(obj, hand)
-                            obj_in_hand_id = self.robots[0].parts[hand].object_in_hand
-                            obj_in_hand = (
-                                self.scene.objects_by_id[obj_in_hand_id] if obj_in_hand_id is not None else None
-                            )
-                            print("PRIMITIVE: grasp {} success, obj in hand {}".format(obj.name, obj_in_hand))
-                        else:
-                            print("PRIMITIVE: grasp {} fail, too big or fixed".format(obj.name))
+                grasp(self.robots[0], obj, self.scene, hand)
             elif (
                 action_primitive == ActionPrimitives.LEFT_PLACE_ONTOP
                 or action_primitive == ActionPrimitives.RIGHT_PLACE_ONTOP
             ):
                 hand = "right_hand" if action_primitive == ActionPrimitives.RIGHT_PLACE_ONTOP else "left_hand"
-                obj_in_hand_id = self.robots[0].parts[hand].object_in_hand
-                obj_in_hand = self.scene.objects_by_id[obj_in_hand_id] if obj_in_hand_id is not None else None
-                if obj_in_hand is not None and obj_in_hand != obj:
-                    print("PRIMITIVE:attempt to place {} ontop {}".format(obj_in_hand.name, obj.name))
-
-                    if isinstance(obj, URDFObject):
-                        self.navigate_if_needed(obj)
-
-                        state = p.saveState()
-                        result = sample_kinematics(
-                            "onTop",
-                            obj_in_hand,
-                            obj,
-                            True,
-                            use_ray_casting_method=True,
-                            max_trials=20,
-                        )
-
-                        if result:
-                            pos = obj_in_hand.get_position()
-                            orn = obj_in_hand.get_orientation()
-                            self.place_obj(state, pos, orn, hand)
-                            print("PRIMITIVE: place {} ontop {} success".format(obj_in_hand.name, obj.name))
-                        else:
-                            p.removeState(state)
-                            print("PRIMITIVE: place {} ontop {} fail, sampling fail".format(obj_in_hand.name, obj.name))
-                    else:
-                        state = p.saveState()
-                        result = sample_kinematics(
-                            "onFloor", obj_in_hand, obj, True, use_ray_casting_method=True, max_trials=20
-                        )
-                        if result:
-                            print("PRIMITIVE: place {} ontop {} success".format(obj_in_hand.name, obj.name))
-                            pos = obj_in_hand.get_position()
-                            orn = obj_in_hand.get_orientation()
-                            self.place_obj(state, pos, orn, hand)
-                        else:
-                            print("PRIMITIVE: place {} ontop {} fail, sampling fail".format(obj_in_hand.name, obj.name))
-                            p.removeState(state)
+                place_ontop(self.robots[0], obj, self.scene, hand)
 
             elif (
                 action_primitive == ActionPrimitives.LEFT_PLACE_INSIDE
                 or action_primitive == ActionPrimitives.RIGHT_PLACE_INSIDE
             ):
                 hand = "right_hand" if action_primitive == ActionPrimitives.RIGHT_PLACE_INSIDE else "left_hand"
-                obj_in_hand_id = self.robots[0].parts[hand].object_in_hand
-                obj_in_hand = self.scene.objects_by_id[obj_in_hand_id] if obj_in_hand_id is not None else None
-                if obj_in_hand is not None and obj_in_hand != obj and isinstance(obj, URDFObject):
-                    print("PRIMITIVE:attempt to place {} inside {}".format(obj_in_hand.name, obj.name))
-                    if (
-                        hasattr(obj, "states")
-                        and object_states.Open in obj.states
-                        and obj.states[object_states.Open].get_value()
-                    ) or (hasattr(obj, "states") and not object_states.Open in obj.states):
-                        self.navigate_if_needed(obj)
-
-                        state = p.saveState()
-                        result = sample_kinematics(
-                            "inside",
-                            obj_in_hand,
-                            obj,
-                            True,
-                            use_ray_casting_method=True,
-                            max_trials=20,
-                        )
-
-                        if result:
-                            pos = obj_in_hand.get_position()
-                            orn = obj_in_hand.get_orientation()
-                            self.place_obj(state, pos, orn, hand)
-                            print("PRIMITIVE: place {} inside {} success".format(obj_in_hand.name, obj.name))
-                        else:
-                            print(
-                                "PRIMITIVE: place {} inside {} fail, sampling fail".format(obj_in_hand.name, obj.name)
-                            )
-                            p.removeState(state)
-                    else:
-                        print(
-                            "PRIMITIVE: place {} inside {} fail, need open not open".format(obj_in_hand.name, obj.name)
-                        )
+                place_inside(self.robots[0], obj, self.scene, hand)
+                        
             elif action_primitive == ActionPrimitives.OPEN:
-                self.navigate_if_needed(obj)
-
-                if hasattr(obj, "states") and object_states.Open in obj.states:
-                    obj.states[object_states.Open].set_value(True, fully=True)
-                else:
-                    print("PRIMITIVE open failed, cannot be opened")
+                open(self.robots[0], obj)
 
             elif action_primitive == ActionPrimitives.CLOSE:
-                self.navigate_if_needed(obj)
-
-                if hasattr(obj, "states") and object_states.Open in obj.states:
-                    obj.states[object_states.Open].set_value(False)
-                else:
-                    print("PRIMITIVE close failed, cannot be opened")
+                close(self.robots[0], obj)
 
         state, reward, done, info = super(BehaviorEvalEnv, self).step(np.zeros(17))
         print("PRIMITIVE satisfied predicates:", info["satisfied_predicates"])
