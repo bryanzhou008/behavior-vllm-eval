@@ -96,8 +96,8 @@ def clean(scene,robot,obj):
     
     inventory =robot_invenvtory(scene,robot)
     has_cleaning_tool=False
-    for obj in inventory:
-        if hasattr(obj, "states") and object_states.CleaningTool in obj.states:
+    for inventory_obj in inventory:
+        if hasattr(inventory_obj, "states") and object_states.CleaningTool in inventory_obj.states:
             has_cleaning_tool=True
             break
     
@@ -120,8 +120,8 @@ def slice(scene,robot,obj):
     inventory =robot_invenvtory(scene,robot)
     
     has_slicer=False
-    for obj in inventory:
-        if hasattr(obj, "states") and object_states.Slicer in obj.states:
+    for inventory_obj in inventory:
+        if hasattr(inventory_obj, "states") and object_states.Slicer in inventory_obj.states:
             has_slicer=True
             break
     if not has_slicer:
