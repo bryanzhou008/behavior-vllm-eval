@@ -15,7 +15,7 @@ from igibson.objects.object_base import BaseObject
 from igibson.robots.behavior_robot import BRBody, BREye, BRHand
 from igibson.utils.ig_logging import IGLogReader
 from igibson.transition_model.actions_primitives import ActionPrimitives
-import igibson.transition_model.action_execution as ae
+from igibson.transition_model.action_execution import ActionExecution
 import yaml
 import igibson
 import os
@@ -59,7 +59,6 @@ class BehaviorEvalEnv(BehaviorEnv):
         automatic_reset=False,
         seed=0,
         action_filter="mobile_manipulation",
-        activity_relevant_objects_only=True,
     ):
         """
         @param config_file: config_file path
@@ -72,7 +71,6 @@ class BehaviorEvalEnv(BehaviorEnv):
         @param automatic_reset: whether to automatic reset after an episode finishes
         @param seed: RNG seed for sampling
         @param action_filter: see BehaviorEnv
-        @param activity_relevant_objects_only: Whether the actions should be parameterized by AROs or all scene objs.
         """
         if demo_path is None and config_file is None:
             raise ValueError("You must provide demo_path or config_file.")
@@ -81,7 +79,6 @@ class BehaviorEvalEnv(BehaviorEnv):
             self.defalt_init(demo_path)
             config_file=self.config
 
-        self.activity_relevant_objects_only = activity_relevant_objects_only
         super(BehaviorEvalEnv, self).__init__(
             config_file=config_file,
             mode=mode,
@@ -95,48 +92,41 @@ class BehaviorEvalEnv(BehaviorEnv):
         )
 
         self.robots[0].initial_z_offset = 0.7
+        self.action_execution = ActionExecution(self.scene, self.robots[0])
         self.control_function={
-            ActionPrimitives.NAVIGATE_TO: ae.navigate_to,
-            ActionPrimitives.LEFT_GRASP: ae.left_grasp,
-            ActionPrimitives.RIGHT_GRASP: ae.right_grasp,
-            ActionPrimitives.LEFT_PLACE_ONTOP: ae.left_place_ontop,
-            ActionPrimitives.RIGHT_PLACE_ONTOP: ae.right_place_ontop,
-            ActionPrimitives.LEFT_PLACE_INSIDE: ae.left_place_inside,
-            ActionPrimitives.RIGHT_PLACE_INSIDE: ae.right_place_inside,
-            ActionPrimitives.OPEN: ae.open,
-            ActionPrimitives.CLOSE: ae.close,
-            ActionPrimitives.BURN: ae.burn,
-            ActionPrimitives.COOK: ae.cook,
-            ActionPrimitives.CLEAN: ae.clean,
-            ActionPrimitives.FREEZE: ae.freeze,
-            ActionPrimitives.UNFREEZE: ae.unfreeze,
-            ActionPrimitives.SLICE: ae.slice,
-            ActionPrimitives.SOAK: ae.soak,
-            ActionPrimitives.DRY: ae.dry,
-            ActionPrimitives.STAIN: ae.stain,
-            ActionPrimitives.TOGGLE_ON: ae.toggle_on,
-            ActionPrimitives.TOGGLE_OFF: ae.toggle_off,
-            ActionPrimitives.RIGHT_RELEASE: ae.right_release,
-            ActionPrimitives.LEFT_RELEASE: ae.left_release,
-            
+            ActionPrimitives.NAVIGATE_TO.value: self.action_execution.navigate_to,
+            ActionPrimitives.LEFT_GRASP.value: self.action_execution.left_grasp,
+            ActionPrimitives.RIGHT_GRASP.value: self.action_execution.right_grasp,
+            ActionPrimitives.LEFT_PLACE_ONTOP.value: self.action_execution.left_place_ontop,
+            ActionPrimitives.RIGHT_PLACE_ONTOP.value: self.action_execution.left_place_ontop,
+            ActionPrimitives.LEFT_PLACE_INSIDE.value: self.action_execution.left_place_inside,
+            ActionPrimitives.RIGHT_PLACE_INSIDE.value: self.action_execution.right_place_inside,
+            ActionPrimitives.RIGHT_RELEASE.value: self.action_execution.right_release,
+            ActionPrimitives.LEFT_RELEASE.value: self.action_execution.left_release,
+            ActionPrimitives.PLACE_ON_TOP.value: self.action_execution.right_place_ontop,
+            ActionPrimitives.PLACE_INSIDE.value: self.action_execution.right_place_inside,
+            ActionPrimitives.OPEN.value: self.action_execution.open,
+            ActionPrimitives.CLOSE.value: self.action_execution.close,
+            ActionPrimitives.BURN.value: self.action_execution.burn,
+            ActionPrimitives.COOK.value: self.action_execution.cook,
+            ActionPrimitives.CLEAN.value: self.action_execution.clean,
+            ActionPrimitives.SLICE.value: self.action_execution.slice,
+            ActionPrimitives.SOAK.value: self.action_execution.soak,
+            ActionPrimitives.FREEZE.value: self.action_execution.freeze,
+            ActionPrimitives.UNFREEZE.value: self.action_execution.unfreeze,    
         }
-        self.action_name_to_id = {action.name: action.value for action in ActionPrimitives}
-        self.action_id_to_name = {action.value: action.name for action in ActionPrimitives}
+        
 
     def load_action_space(self):
-        if self.activity_relevant_objects_only:
-            self.addressable_objects = [
-                item
-                for item in self.task.object_scope.values()
-                if isinstance(item, URDFObject) or isinstance(item, RoomFloor) or isinstance(item, ObjectMultiplexer)
-            ]
-        else:
-            self.addressable_objects = list(
-                set(self.task.simulator.scene.objects_by_name.values()) | set(self.task.object_scope.values())
-            )
+        
+        self.addressable_objects = list(
+            set(self.task.simulator.scene.objects_by_name.values()) | set(self.task.object_scope.values())
+        )
 
-        # Filter out the robots.
+        #Filter out the robots.
         self.addressable_objects = [obj for obj in self.addressable_objects if not isinstance(obj, type(self.robots[0]))]
+
+        #deal with multiplexed objects
         for obj in self.addressable_objects:
            if isinstance(obj, ObjectMultiplexer):
                for sub_obj in obj._multiplexed_objects:
@@ -146,6 +136,8 @@ class BehaviorEvalEnv(BehaviorEnv):
                         for sub_sub_obj in sub_obj.objects:
                             if isinstance(sub_sub_obj, URDFObject):
                                 self.addressable_objects.append(sub_sub_obj)
+
+
         self.obj_name_to_id = {obj.name: idx for idx,obj in enumerate(self.addressable_objects)}
         self.obj_name_to_obj = {obj.name: obj for obj in self.addressable_objects}
         self.num_objects = len(self.addressable_objects)
@@ -166,18 +158,17 @@ class BehaviorEvalEnv(BehaviorEnv):
         return ids
 
     def step(self, action):
-        obj_list_id = action[1]
-        action_primitive = action[0]
-        if isinstance(obj_list_id, str):
-            obj_list_id=self.obj_name_to_id[obj_list_id]
-        if isinstance(action_primitive, str):
-            action_primitive=self.action_name_to_id[action_primitive]
+        action_idx, obj_idx = action
+        if isinstance(action_idx, str):
+            action_idx=ActionPrimitives[action_idx].value
+        if isinstance(obj_idx, str):
+            obj_idx=self.obj_name_to_id[obj_idx]
 
-        obj = self.addressable_objects[obj_list_id]
+        obj = self.addressable_objects[obj_idx]
         if not (isinstance(obj, BRBody) or isinstance(obj, BRHand) or isinstance(obj, BREye)):
-            self.control_function[action_primitive](self.scene, self.robots[0], obj)
+            self.control_function[action_idx](obj)
         else:
-            print(f"Invalid action: {self.action_id_to_name[action_primitive]} on {obj.name}")
+            print(f"Invalid action: {ActionPrimitives[action_idx].name} on {obj.name}")
         state, reward, done, info = super(BehaviorEvalEnv, self).step(np.zeros(17))
         print("PRIMITIVE satisfied predicates:", info["satisfied_predicates"])
         return state, reward, done, info
@@ -191,43 +182,6 @@ class BehaviorEvalEnv(BehaviorEnv):
         return obs
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "--config",
-        "-c",
-        default="igibson/examples/configs/behavior.yaml",
-        help="which config file to use [default: use yaml files in examples/configs]",
-    )
-    parser.add_argument(
-        "--mode",
-        "-m",
-        choices=["headless", "gui", "iggui", "pbgui"],
-        default="gui",
-        help="which mode for simulation (default: iggui)",
-    )
-    args = parser.parse_args()
-
-    env = BehaviorEvalEnv(
-        config_file=args.config,
-        mode=args.mode,
-        action_timestep=1.0 / 300.0,
-        physics_timestep=1.0 / 300.0,
-    )
-    step_time_list = []
-    for episode in range(100):
-        print("Episode: {}".format(episode))
-        start = time.time()
-        env.reset()
-
-        for i in range(1000):  # 10 seconds
-            action = env.action_space.sample()
-            state, reward, done, info = env.step(action)
-            print(reward, info)
-            if done:
-                break
-        print("Episode finished after {} timesteps, took {} seconds.".format(env.current_step, time.time() - start))
-    env.close()
 
     
 

@@ -54,7 +54,7 @@ def grasp_obj(robot, obj, hand):
         )
 
 
-def get_obj_in_hand(scene,robot, hand):
+def get_obj_in_hand(scene,robot,hand):
     obj_in_hand_id = robot.parts[hand].object_in_hand
     obj_in_hand = scene.objects_by_id[obj_in_hand_id] if obj_in_hand_id is not None else None
     return obj_in_hand
@@ -67,9 +67,7 @@ def robot_invenvtory(scene,robot):
             rst.append(obj_in_hand)
     return rst 
 
-def place_obj(scene,robot, hand,original_state, target_pos, target_orn):
-    obj_in_hand = get_obj_in_hand(scene,robot, hand)
-
+def place_obj(scene,robot, obj_in_hand,hand,original_state, target_pos, target_orn):
     restoreState(original_state)
     p.removeState(original_state)
     
@@ -140,7 +138,7 @@ def navigate_if_needed(robot, obj):
         if navigate_to_obj(robot,obj):
             return
         
-def grasp(scene,robot,obj,hand):
+def grasp_primitive(scene,robot,obj,hand):
     obj_in_hand = get_obj_in_hand(scene,robot,hand)
     if obj_in_hand is None:
         if (isinstance(obj, URDFObject) or isinstance(obj,ObjectMultiplexer)) and hasattr(obj, "states") and object_states.AABB in obj.states:
@@ -163,22 +161,138 @@ def grasp(scene,robot,obj,hand):
     
     return False
 
-def place_inside(scene,robot,obj,hand):
-    obj_in_hand = get_obj_in_hand(scene,robot,hand)
-    if obj_in_hand is not None and obj_in_hand != obj and isinstance(obj, URDFObject):
-        print("PRIMITIVE:attempt to place {} inside {}".format(obj_in_hand.name, obj.name))
+# def place_inside(scene,robot,obj,hand):
+#     obj_in_hand = get_obj_in_hand(scene,robot,hand)
+#     if obj_in_hand is not None and obj_in_hand != obj and isinstance(obj, URDFObject):
+#         print("PRIMITIVE:attempt to place {} inside {}".format(obj_in_hand.name, obj.name))
+#         if (
+#             hasattr(obj, "states")
+#             and object_states.Open in obj.states
+#             and obj.states[object_states.Open].get_value()
+#         ) or (hasattr(obj, "states") and not object_states.Open in obj.states):
+#             navigate_if_needed(robot,obj)
+
+#             state = p.saveState()
+#             result = sample_kinematics(
+#                 "inside",
+#                 obj_in_hand,
+#                 obj,
+#                 True,
+#                 use_ray_casting_method=True,
+#                 max_trials=20,
+#             )
+
+#             if result:
+#                 pos = obj_in_hand.get_position()
+#                 orn = obj_in_hand.get_orientation()
+#                 place_obj(scene,robot,hand,state, pos, orn)
+#                 print("PRIMITIVE: place {} inside {} success".format(obj_in_hand.name, obj.name))
+#                 return True
+#             else:
+#                 print(
+#                     "PRIMITIVE: place {} inside {} fail, sampling fail".format(obj_in_hand.name, obj.name)
+#                 )
+#                 p.removeState(state)
+#         else:
+#             print("PRIMITIVE: place {} inside {} fail, need open not open".format(obj_in_hand.name, obj.name))
+#     else:
+#         print("PRIMITIVE: place {} inside {} fail, hand empty or holding same object".format(obj_in_hand.name, obj.name))
+#     return False
+
+# def place_ontop(scene,robot,obj,hand):
+#     obj_in_hand = get_obj_in_hand(scene,robot,hand)
+#     if obj_in_hand is not None and obj_in_hand != obj:
+#         print("PRIMITIVE:attempt to place {} ontop {}".format(obj_in_hand.name, obj.name))
+
+#         if isinstance(obj, URDFObject):
+#             navigate_if_needed(robot,obj)
+
+#             state = p.saveState()
+#             result = sample_kinematics(
+#                 "onTop",
+#                 obj_in_hand,
+#                 obj,
+#                 True,
+#                 use_ray_casting_method=True,
+#                 max_trials=20,
+#             )
+
+#             if result:
+#                 pos = obj_in_hand.get_position()
+#                 orn = obj_in_hand.get_orientation()
+#                 place_obj(scene,robot,hand,state, pos, orn)
+#                 print("PRIMITIVE: place {} ontop {} success".format(obj_in_hand.name, obj.name))
+#                 return True
+#             else:
+#                 p.removeState(state)
+#                 print("PRIMITIVE: place {} ontop {} fail, sampling fail".format(obj_in_hand.name, obj.name))
+#         else:
+#             state = p.saveState()
+#             result = sample_kinematics(
+#                 "onFloor", obj_in_hand, obj, True, use_ray_casting_method=True, max_trials=20
+#             )
+#             if result:
+#                 print("PRIMITIVE: place {} ontop {} success".format(obj_in_hand.name, obj.name))
+#                 pos = obj_in_hand.get_position()
+#                 orn = obj_in_hand.get_orientation()
+#                 place_obj(scene,robot, hand,state, pos, orn)
+#                 return True
+#             else:
+#                 print("PRIMITIVE: place {} ontop {} fail, sampling fail".format(obj_in_hand.name, obj.name))
+#                 p.removeState(state)
+#     else:
+#         print("PRIMITIVE: place {} ontop {} fail, hand empty or holding same object".format(obj_in_hand.name, obj.name))
+#     return False
+
+# def release(scene,robot,obj,hand):
+#     obj_in_hand = get_obj_in_hand(scene,robot,hand)
+#     if obj_in_hand is None:
+#         print("PRIMITIVE: release fail, hand empty")
+#         return False
+    
+#     if obj_in_hand!=obj:
+#         print("PRIMITIVE: release {} fail, hand holding wrong object {}".format(obj_in_hand.name, obj.name))
+#         return False
+
+#     placable_objects = []
+#     reachable_placable_objects = []
+#     for name in ['cabinet','table','floor']:
+#         for k in scene.objects_by_category.keys():
+#             if name in k:
+#                 for obj in scene.objects_by_category[k]:
+#                     if hasattr(obj, "states") and object_states.InReachOfRobot in obj.states:
+#                         if obj.states[object_states.InReachOfRobot].get_value():
+#                             reachable_placable_objects.append(obj)
+#                     else:
+#                         placable_objects.append(obj)    
+    
+#     for obj in reachable_placable_objects:
+#         if place_ontop(scene,robot,obj,hand):
+#             print("PRIMITIVE: release {} success on {}".format(obj_in_hand.name, obj.name))
+#             return True
+#     for obj in placable_objects:
+#         if place_ontop(scene,robot,obj,hand):
+#             print("PRIMITIVE: release {} success on {}".format(obj_in_hand.name, obj.name))
+#             return True
+    
+#     print("PRIMITIVE: release {} fail, no place to release".format(obj_in_hand.name))
+#     return False
+
+def place_inside_primitive(scene,robot,hand,obj_in_hand,obj_to_place):
+    if obj_in_hand != obj_to_place and isinstance(obj_to_place, URDFObject):
+        print("PRIMITIVE:attempt to place {} inside {}".format(obj_in_hand.name, obj_to_place.name))
         if (
-            hasattr(obj, "states")
-            and object_states.Open in obj.states
-            and obj.states[object_states.Open].get_value()
-        ) or (hasattr(obj, "states") and not object_states.Open in obj.states):
-            navigate_if_needed(robot,obj)
+            hasattr(obj_to_place, "states")
+            and object_states.Open in obj_to_place.states
+            and obj_to_place.states[object_states.Open].get_value()
+        ) or (hasattr(obj_to_place, "states") and not object_states.Open in obj_to_place.states):
+            navigate_if_needed(robot,obj_to_place)
 
             state = p.saveState()
             result = sample_kinematics(
                 "inside",
                 obj_in_hand,
-                obj,
+                obj_to_place,
                 True,
                 use_ray_casting_method=True,
                 max_trials=20,
@@ -187,33 +301,32 @@ def place_inside(scene,robot,obj,hand):
             if result:
                 pos = obj_in_hand.get_position()
                 orn = obj_in_hand.get_orientation()
-                place_obj(scene,robot,hand,state, pos, orn)
-                print("PRIMITIVE: place {} inside {} success".format(obj_in_hand.name, obj.name))
+                place_obj(scene,robot,obj_in_hand,hand,state, pos, orn)
+                print("PRIMITIVE: place {} inside {} success".format(obj_in_hand.name, obj_to_place.name))
                 return True
             else:
                 print(
-                    "PRIMITIVE: place {} inside {} fail, sampling fail".format(obj_in_hand.name, obj.name)
+                    "PRIMITIVE: place {} inside {} fail, sampling fail".format(obj_in_hand.name, obj_to_place.name)
                 )
                 p.removeState(state)
         else:
-            print("PRIMITIVE: place {} inside {} fail, need open not open".format(obj_in_hand.name, obj.name))
+            print("PRIMITIVE: place {} inside {} fail, need open not open".format(obj_in_hand.name, obj_to_place.name))
     else:
-        print("PRIMITIVE: place {} inside {} fail, hand empty or holding same object".format(obj_in_hand.name, obj.name))
+        print("PRIMITIVE: place {} inside {} fail, holding same object".format(obj_in_hand.name, obj_to_place.name))
     return False
 
-def place_ontop(scene,robot,obj,hand):
-    obj_in_hand = get_obj_in_hand(scene,robot,hand)
-    if obj_in_hand is not None and obj_in_hand != obj:
-        print("PRIMITIVE:attempt to place {} ontop {}".format(obj_in_hand.name, obj.name))
+def place_ontop_primitive(scene,robot,hand,obj_in_hand,obj_to_place):
+    if obj_in_hand is not None and obj_in_hand != obj_to_place:
+        print("PRIMITIVE:attempt to place {} ontop {}".format(obj_in_hand.name, obj_to_place.name))
 
-        if isinstance(obj, URDFObject):
-            navigate_if_needed(robot,obj)
+        if isinstance(obj_to_place, URDFObject):
+            navigate_if_needed(robot,obj_to_place)
 
             state = p.saveState()
             result = sample_kinematics(
                 "onTop",
                 obj_in_hand,
-                obj,
+                obj_to_place,
                 True,
                 use_ray_casting_method=True,
                 max_trials=20,
@@ -222,40 +335,31 @@ def place_ontop(scene,robot,obj,hand):
             if result:
                 pos = obj_in_hand.get_position()
                 orn = obj_in_hand.get_orientation()
-                place_obj(scene,robot,hand,state, pos, orn)
-                print("PRIMITIVE: place {} ontop {} success".format(obj_in_hand.name, obj.name))
+                place_obj(scene,robot,obj_in_hand,hand,state, pos, orn)
+                print("PRIMITIVE: place {} ontop {} success".format(obj_in_hand.name, obj_to_place.name))
                 return True
             else:
                 p.removeState(state)
-                print("PRIMITIVE: place {} ontop {} fail, sampling fail".format(obj_in_hand.name, obj.name))
+                print("PRIMITIVE: place {} ontop {} fail, sampling fail".format(obj_in_hand.name, obj_to_place.name))
         else:
             state = p.saveState()
             result = sample_kinematics(
-                "onFloor", obj_in_hand, obj, True, use_ray_casting_method=True, max_trials=20
+                "onFloor", obj_in_hand, obj_to_place, True, use_ray_casting_method=True, max_trials=20
             )
             if result:
-                print("PRIMITIVE: place {} ontop {} success".format(obj_in_hand.name, obj.name))
+                print("PRIMITIVE: place {} ontop {} success".format(obj_in_hand.name, obj_to_place.name))
                 pos = obj_in_hand.get_position()
                 orn = obj_in_hand.get_orientation()
-                place_obj(scene,robot, hand,state, pos, orn)
+                place_obj(scene,robot,obj_in_hand,hand,state, pos, orn)
                 return True
             else:
-                print("PRIMITIVE: place {} ontop {} fail, sampling fail".format(obj_in_hand.name, obj.name))
+                print("PRIMITIVE: place {} ontop {} fail, sampling fail".format(obj_in_hand.name, obj_to_place.name))
                 p.removeState(state)
     else:
-        print("PRIMITIVE: place {} ontop {} fail, hand empty or holding same object".format(obj_in_hand.name, obj.name))
+        print("PRIMITIVE: place {} ontop {} fail, hand empty or holding same object".format(obj_in_hand.name, obj_to_place.name))
     return False
 
-def release(scene,robot,obj,hand):
-    obj_in_hand = get_obj_in_hand(scene,robot,hand)
-    if obj_in_hand is None:
-        print("PRIMITIVE: release fail, hand empty")
-        return False
-    
-    if obj_in_hand!=obj:
-        print("PRIMITIVE: release {} fail, hand holding wrong object {}".format(obj_in_hand.name, obj.name))
-        return False
-
+def release_primitive(scene,robot,hand,obj_in_hand):
     placable_objects = []
     reachable_placable_objects = []
     for name in ['cabinet','table','floor']:
@@ -269,11 +373,11 @@ def release(scene,robot,obj,hand):
                         placable_objects.append(obj)    
     
     for obj in reachable_placable_objects:
-        if place_ontop(scene,robot,obj,hand):
+        if place_ontop_primitive(scene,robot,hand,obj_in_hand,obj):
             print("PRIMITIVE: release {} success on {}".format(obj_in_hand.name, obj.name))
             return True
     for obj in placable_objects:
-        if place_ontop(scene,robot,obj,hand):
+        if place_ontop_primitive(scene,robot,hand,obj_in_hand,obj):
             print("PRIMITIVE: release {} success on {}".format(obj_in_hand.name, obj.name))
             return True
     
