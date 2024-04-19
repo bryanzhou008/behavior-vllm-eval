@@ -949,7 +949,7 @@ class URDFObject(StatefulObject):
                 self.unscaled_link_bounding_boxes[converted_name] = bb_data
 
     def get_base_aligned_bounding_box(
-        self, body_id=None, link_id=None, visual=False, xy_aligned=False, link_base=False, fallback_to_aabb=False
+        self, body_id=None, link_id=None, visual=False, xy_aligned=False, link_base=False, fallback_to_aabb=True
     ):
         """Get a bounding box for this object that's in an object-centric frame specified by the parameters.
 
