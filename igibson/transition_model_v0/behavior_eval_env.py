@@ -14,8 +14,8 @@ from igibson.objects.multi_object_wrappers import ObjectMultiplexer,ObjectGroupe
 from igibson.objects.object_base import BaseObject
 from igibson.robots.behavior_robot import BRBody, BREye, BRHand
 from igibson.utils.ig_logging import IGLogReader
-from igibson.transition_model.actions_primitives import ActionPrimitives
-from igibson.transition_model.action_execution import ActionExecution
+from .actions_primitives import ActionPrimitives
+from .action_execution import ActionExecution
 import yaml
 import igibson
 import os

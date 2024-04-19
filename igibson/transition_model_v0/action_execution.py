@@ -1,4 +1,4 @@
-from igibson.transition_model.action_utils import grasp_primitive, place_inside_primitive,place_ontop_primitive,release_primitive,\
+from .action_utils import grasp_primitive, place_inside_primitive,place_ontop_primitive,release_primitive,\
 navigate_to_obj,navigate_if_needed,robot_invenvtory,get_obj_in_hand
 from igibson.objects.articulated_object import URDFObject
 from igibson import object_states
