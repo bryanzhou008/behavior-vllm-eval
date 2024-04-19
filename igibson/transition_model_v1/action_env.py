@@ -1,7 +1,7 @@
 import gym
 
 from igibson.action_primitives.starter_semantic_action_primitives import ActionPrimitiveError
-from igibson.eval_gibson.action_primitive_wrapper import SemanticActionPrimitivesWrapper
+from .action_primitive_wrapper import SemanticActionPrimitivesWrapper
 from igibson.robots import BaseRobot
 from igibson.scenes.igibson_indoor_scene import InteractiveIndoorScene
 import igibson.object_states as object_states
