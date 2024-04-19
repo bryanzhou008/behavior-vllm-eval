@@ -19,17 +19,17 @@ ToggledOn, --> Toggle
 WaterSource, 
 InFOVOfRobot, 
 InHandOfRobot, 
-InReachOfRobot, 
-InSameRoomAsRobot, 
-InRoom, 
+InReachOfRobot,  
 Inside, 
 NextTo, 
 OnFloor, 
 OnTop, 
 Touching, 
-Under 
+Under, 
 
 """
+
+
 class ActionPrimitives(IntEnum):
     NAVIGATE_TO = 0
     LEFT_GRASP = 1
@@ -38,15 +38,29 @@ class ActionPrimitives(IntEnum):
     RIGHT_PLACE_ONTOP = 4
     LEFT_PLACE_INSIDE = 5
     RIGHT_PLACE_INSIDE = 6
-    OPEN = 7
-    CLOSE = 8
-    BURN=9
-    COOK=10
-    CLEAN=11
-    FREEZE=12
-    UNFREEZE=13
-    SLICE=14
-    SOAK=15
-    DRY=16
-    STAIN=17
-    TOGGLE=18
+    RIGHT_RELEASE = 10
+    LEFT_RELEASE = 11
+    PLACE_ON_TOP = 12
+    PLACE_INSIDE = 13
+    OPEN = 14
+    CLOSE = 15
+    BURN = 16
+    COOK = 17
+    CLEAN = 18
+    FREEZE = 19
+    UNFREEZE = 20
+    SLICE = 21
+    SOAK = 22
+    DRY = 23
+    STAIN = 24
+    TOGGLE_ON = 25
+    TOGGLE_OFF = 26
+    UNCLEAN = 27
+    UNSOAK = 28
+   
+
+    
+
+
+
+
