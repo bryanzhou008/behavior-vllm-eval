@@ -5,13 +5,15 @@ import igibson.object_states as object_states
 class InsideNode:
     def __init__(self, obj: URDFObject):
         self.obj = obj
-        self.inside = {}
+        self.children = {}
+        self.parent = None
 
     def remove_node(self, node):
-        self.inside.pop(node.obj)
+        self.children.pop(node.obj)
 
     def add_node(self, node):
-        self.inside[node.obj] = node
+        self.children[node.obj] = node
+        node.parent = self
 
     def __hash__(self) -> int:
         return hash(self.obj)
@@ -22,7 +24,7 @@ class InsideTree:
         # convert a list of objects to a tree structure based on the inside relationship
 
         self.root = InsideNode(None)
-
+        self.obj_to_node={}
         tmp_dict={}
 
         for obj1 in obj_list:
@@ -42,7 +44,9 @@ class InsideTree:
             for k,v in tmp_dict.items():
                 if len(v)!=0:
                     continue
-                cur_level.append(InsideNode(k))
+                node=InsideNode(k)
+                self.obj_to_node[k]=node
+                cur_level.append(node)
             for v in tmp_dict.values():
                 for node in cur_level:
                     if node.obj in v:
@@ -64,6 +68,7 @@ class InsideTree:
                 for node_2 in cur_level:
                     if node_1.obj.states[object_states.Inside].get_value(node_2.obj):
                         node_2.add_node(node_1)
+                        node_1.parent=node_2
                         picked_up=True
                         break
                 if not picked_up:
@@ -74,28 +79,13 @@ class InsideTree:
 
         for node in leaf_nodes:
             self.root.add_node(node)
+            node.parent=self.root
 
-    def get_node(self,obj:URDFObject):
-        def get_node_helper(node:InsideNode):
-            if node.obj==obj:
-                return node
-            for child in node.inside.values():
-                res=get_node_helper(child)
-                if res is not None:
-                    return res
-            return None
-        return get_node_helper(self.root)
+    def get_node(self,obj:URDFObject)->InsideNode:
+        return self.obj_to_node[obj]
     
-    def get_node_parent(self,obj:URDFObject):
-        def get_node_parent_helper(node:InsideNode):
-            for child in node.inside.values():
-                if child.obj==obj:
-                    return node
-                res=get_node_parent_helper(child)
-                if res is not None:
-                    return res
-            return None
-        return get_node_parent_helper(self.root)
+    def get_node_parent(self,obj:URDFObject)->InsideNode:
+        return self.obj_to_node[obj].parent
     
     def place_inside(self,obj1:URDFObject,obj2:URDFObject):
         node1=self.get_node(obj1)
@@ -103,11 +93,13 @@ class InsideTree:
         node2=self.get_node(obj2)
         node_1_parent.remove_node(node1)
         node2.add_node(node1)
+        node1.parent=node2
 
     def grasp(self,obj:URDFObject):
         node=self.get_node(obj)
-        node_parent=self.get_node_parent(obj)
-        node_parent.remove_node(node)
+        parent=node.parent
+        parent.remove_node(node)
+        node.parent=self.root
         self.root.add_node(node)
 
     def __str__(self) -> str:
@@ -120,7 +112,7 @@ class InsideTree:
                 res+="root\n"
             else:
                 res+=str(node.obj.name)+'\n'
-            for child in node.inside.values():
+            for child in node.children.values():
                 res+=print_tree(child,level+1)
             return res
         return print_tree(self.root,0)
