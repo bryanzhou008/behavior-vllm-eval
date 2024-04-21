@@ -63,6 +63,7 @@ class InsideTree:
         
         leaf_nodes=[node for node in hierarchy[0]]
 
+        # build the tree, add links for each level
         for cur_level in hierarchy[1:]:
             new_leaf_nodes=[]
             for node_1 in leaf_nodes:

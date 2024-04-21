@@ -13,11 +13,11 @@ from .inside_tree import InsideTree
 
 class ActionEnv:
     def __init__(
-        self,simulator,scene,robot,addressable_objects
+        self,simulator:Simulator,scene: InteractiveIndoorScene,robot: BehaviorRobot,addressable_objects:list
     ):
-        self.simulator:Simulator = simulator
-        self.scene: InteractiveIndoorScene = scene
-        self.robot: BehaviorRobot = robot
+        self.simulator = simulator
+        self.scene = scene
+        self.robot = robot
         self.robot.bounding_box = [0.5,0.5,1.5]
         self.addressable_objects = addressable_objects
         self.robot_inventory = {'right_hand':None,'left_hand':None}
