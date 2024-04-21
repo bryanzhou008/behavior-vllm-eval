@@ -75,8 +75,8 @@ class EvalEnv:
         self.env = iGibsonEnv(config_file=self.config,**kwargs)
         self.robot=self.robots[0]
         self.simulator=self.env.simulator
-        self.action_env=ActionEnv(self.simulator,self.scene,self.robot)
         self.get_relevant_objects()
+        self.action_env=ActionEnv(self.simulator,self.scene,self.robot,self.addressable_objects)
         self.control_function={
             EvalActions.NAVIGATE_TO.value: self.action_env.navigate,
             EvalActions.LEFT_GRASP.value: self.action_env.left_grasp,
@@ -137,7 +137,7 @@ class EvalEnv:
         if isinstance(object_idx,str):
             object_idx=self.obj_name_to_idx[object_idx]
         self.control_function[action_idx](self.addressable_objects[object_idx])
-
+        self.simulator.step()
         obs, reward, done, info = self.env.step(None)
         return obs, reward, done, info
 

@@ -18,6 +18,7 @@ class ActionEnv:
         self.simulator:Simulator = simulator
         self.scene: InteractiveIndoorScene = scene
         self.robot: BehaviorRobot = robot
+        self.robot.bounding_box = [0.5,0.5,1.5]
         self.addressable_objects = addressable_objects
         self.robot_inventory = {'right_hand':None,'left_hand':None}
         self.inside_tree=InsideTree(self.addressable_objects) # to teleport inside relationship
@@ -27,7 +28,7 @@ class ActionEnv:
         ## pre conditions   
         ## currently do auto navigation, no need for pre conditions
         ## post effects
-        if obj.state[object_states.InReachOfRobot].get_value(self.robot):
+        if obj.states[object_states.InReachOfRobot].get_value():
             return True
         
         self.set_robot_pos_for_obj(obj)
@@ -36,8 +37,8 @@ class ActionEnv:
                 self.set_in_hand(invent_obj,hand)
                 self.teleport_inside(invent_obj)
 
-        if obj.state[object_states.InReachOfRobot].get_value(self.robot):
-            print(f"navigated to {obj.name}, InReachOfRobot: {obj.state[object_states.InReachOfRobot].get_value(self.robot)}")
+        if obj.states[object_states.InReachOfRobot].get_value():
+            print(f"navigated to {obj.name}, InReachOfRobot: {obj.states[object_states.InReachOfRobot].get_value()}")
             return True
         
     def grasp(self,obj:URDFObject,hand:str):
@@ -57,18 +58,23 @@ class ActionEnv:
         self.set_in_hand(obj,hand)
         self.robot_inventory[hand]=obj
         self.teleport_inside(obj)
+        print(f"Grasp {obj.name} with {hand} successful")
         return True
     
-    def release(self,hand:str):
+    def release(self,hand:str,obj=None):
         ## pre conditions
         if self.robot_inventory[hand] is None:
             print(f"{hand} is empty")
+            return False
+        if obj is not None and self.robot_inventory[hand]!=obj:
+            print(f"{obj.name} is not in {hand}")
             return False
         ## post effects
         obj=self.robot_inventory[hand]
         self.robot_inventory[hand]=None
         self.release_obj(obj)
         self.teleport_inside(obj)
+        print(f"Release {obj.name} from {hand} successful")
         return True
     
     def place_inside(self,tar_obj:URDFObject,hand:str):
@@ -245,7 +251,7 @@ class ActionEnv:
             self.inside_tree.place_inside(obj_inside,tar_obj)
             self.set_inside(obj_inside,tar_obj)
             self.teleport_inside(obj_inside)
-
+        print(f"Pour inside {obj_in_hand.name} {tar_obj.name} successful")
         return True
     
     def pour_onto(self,tar_obj:URDFObject,hand:str):
@@ -278,7 +284,7 @@ class ActionEnv:
             self.inside_tree.grasp(obj_inside)
             self.set_ontop(obj_inside,tar_obj)
             self.teleport_inside(obj_inside)
-
+        print(f"Pour onto {obj_in_hand.name} {tar_obj.name} successful")
         return True
     
     ##################### high level actions #####################
@@ -306,6 +312,7 @@ class ActionEnv:
         ## post effects
         self.navigate_to_if_needed(obj)
         obj.states[object_states.Open].set_value((open_close=='open'))
+        print(f"{open_close.capitalize()} {obj.name} success")
         return True
     
     def toggle_on_off(self,obj:URDFObject,on_off:str):
@@ -332,6 +339,7 @@ class ActionEnv:
         ## post effects
         self.navigate_to_if_needed(obj)
         obj.states[object_states.ToggledOn].set_value((on_off=='on'))
+        print(f"Toggle{on_off} {obj.name} success")
         return True
 
     def slice(self,obj):
@@ -394,7 +402,7 @@ class ActionEnv:
         ## post effects
         self.navigate_to_if_needed(obj)
         obj.states[object_states.Dusty].set_value(False)
-        print(f"Clean {obj.name} success")
+        print(f"Clean-dust {obj.name} success")
         return True
     
     def clean_stain(self,obj):
@@ -431,14 +439,14 @@ class ActionEnv:
         ## post effects
         self.navigate_to_if_needed(obj)
         obj.states[object_states.Stained].set_value(False)
-        print(f"Clean {obj.name} success")
+        print(f"Clean-stain {obj.name} success")
         return True
     
         
 
     ##################### helper functions #####################
     def navigate_to_if_needed(self,obj:URDFObject):
-        if not obj.state[object_states.InReachOfRobot].get_value(self.robot):
+        if not obj.states[object_states.InReachOfRobot].get_value():
             self.navigate_to(obj)
 
     def teleport_inside(self,obj1:URDFObject):
@@ -461,7 +469,6 @@ class ActionEnv:
             node=node.parent
 
     ##################### Position Setting Geometry #####################
-
     def set_inside(self,obj1:URDFObject,obj2:URDFObject):
         obj1.set_position(obj2.get_position())
         # obj1.state[object_states.Inside].set_value(obj2,True)
@@ -521,7 +528,39 @@ class ActionEnv:
         target_pos[2] +=0.2*weight
         obj.set_position(target_pos)
     ##################### for behavior task eval #####################
-
+    def navigate(self,obj:URDFObject):
+        return self.navigate_to(obj)
+    
+    def left_grasp(self,obj:URDFObject):
+        return self.grasp(obj,'left_hand')
+    
+    def right_grasp(self,obj:URDFObject):
+        return self.grasp(obj,'right_hand')
+    
+    def left_release(self,obj:URDFObject):
+        return self.release('left_hand',obj)
+    
+    def right_release(self,obj:URDFObject):
+        return self.release('right_hand',obj)
+    
+    def left_place_ontop(self,obj:URDFObject):
+        return self.place_ontop(obj,'left_hand')
+    
+    def right_place_ontop(self,obj:URDFObject):
+        return self.place_ontop(obj,'right_hand')
+    
+    def left_place_inside(self,obj:URDFObject):
+        return self.place_inside(obj,'left_hand')
+    
+    def right_place_inside(self,obj:URDFObject):
+        return self.place_inside(obj,'right_hand')
+    
+    def open(self,obj:URDFObject):
+        return self.open_or_close(obj,'open')
+    
+    def close(self,obj:URDFObject):
+        return self.open_or_close(obj,'close')
+    
     
     
 

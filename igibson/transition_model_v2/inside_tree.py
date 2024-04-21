@@ -2,6 +2,8 @@ from igibson.objects.articulated_object import URDFObject
 from collections import defaultdict
 import igibson.object_states as object_states
 
+# To teleport the relationship of inside
+
 class InsideNode:
     def __init__(self, obj: URDFObject):
         self.obj = obj
