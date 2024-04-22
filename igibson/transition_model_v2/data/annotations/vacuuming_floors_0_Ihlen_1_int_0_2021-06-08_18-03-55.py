@@ -1,6 +1,0 @@
-actions=[
-
-{'action': 'RIGHT_GRASP', 'object': 'vacuum_0'},
-{'action': 'CLEAN', 'object': 'room_floor_bedroom_0'},
-
-]

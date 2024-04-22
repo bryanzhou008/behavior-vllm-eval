@@ -629,16 +629,16 @@ class ActionEnv:
     def right_place_nextto(self,obj:URDFObject):
         return self.place_next_to(obj,'right_hand')
     
-    def left_pour_inside(self,obj:URDFObject):
+    def left_transfer_contents_inside(self,obj:URDFObject):
         return self.pour_inside(obj,'left_hand')
     
-    def right_pour_inside(self,obj:URDFObject):
+    def right_transfer_contents_inside(self,obj:URDFObject):
         return self.pour_inside(obj,'right_hand')
     
-    def left_pour_onto(self,obj:URDFObject):
+    def left_transfer_contents_ontop(self,obj:URDFObject):
         return self.pour_onto(obj,'left_hand')
     
-    def right_pour_onto(self,obj:URDFObject):
+    def right_transfer_contents_ontop(self,obj:URDFObject):
         return self.pour_onto(obj,'right_hand')
     
     def soak(self,obj:URDFObject):

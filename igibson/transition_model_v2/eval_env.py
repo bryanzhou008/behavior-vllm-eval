@@ -44,10 +44,10 @@ class EvalActions(IntEnum):
     # UNCLEAN =auto()
     LEFT_PLACE_NEXTTO=auto()
     RIGHT_PLACE_NEXTTO=auto()
-    LEFT_POUR_INSIDE=auto()
-    RIGHT_POUR_INSIDE=auto()
-    LEFT_POUR_ONTOP=auto()
-    RIGHT_POUR_ONTOP=auto()
+    LEFT_TANSFER_CONTENTS_INSIDE=auto()
+    RIGHT_TANSFER_CONTENTS_INSIDE=auto()
+    LEFT_TANSFER_CONTENTS_ONTOP=auto()
+    RIGHT_TANSFER_CONTENTS_ONTOP=auto()
 
 class EvalEnv:
 
@@ -104,6 +104,10 @@ class EvalEnv:
             EvalActions.DRY.value: self.action_env.dry,
             EvalActions.FREEZE.value: self.action_env.freeze,
             EvalActions.UNFREEZE.value: self.action_env.unfreeze,
+            EvalActions.LEFT_TANSFER_CONTENTS_INSIDE.value: self.action_env.left_transfer_contents_inside,
+            EvalActions.RIGHT_TANSFER_CONTENTS_INSIDE.value: self.action_env.right_transfer_contents_inside,
+            EvalActions.LEFT_TANSFER_CONTENTS_ONTOP.value: self.action_env.left_transfer_contents_ontop,
+            EvalActions.RIGHT_TANSFER_CONTENTS_ONTOP.value: self.action_env.right_transfer_contents_ontop,
 
         }
 

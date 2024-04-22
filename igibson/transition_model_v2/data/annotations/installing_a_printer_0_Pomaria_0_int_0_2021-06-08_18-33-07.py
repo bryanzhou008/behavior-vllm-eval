@@ -1,8 +1,0 @@
-actions=[
-    
-{'action': 'RIGHT_GRASP', 'object': 'printer_0'},
-{'action': 'RIGHT_PLACE_ONTOP', 'object': 'breakfast_table_3'},
-{'action': 'TOGGLE_ON', 'object': 'printer_0'},
-{'action': 'TOGGLE_OFF', 'object': 'printer_0'},
-
-]
