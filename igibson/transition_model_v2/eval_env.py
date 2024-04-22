@@ -11,36 +11,43 @@ from igibson.objects.articulated_object import URDFObject
 from igibson.robots import BaseRobot
 import gym
 from igibson.object_states.on_floor import RoomFloor
-
+from enum import Enum, unique,auto
 TASK_RELEVANT_OBJECTS_ONLY = True
 
+
+@unique
 class EvalActions(IntEnum):
-    NAVIGATE_TO = 0
-    LEFT_GRASP = 1
-    RIGHT_GRASP = 2
-    LEFT_PLACE_ONTOP = 3
-    RIGHT_PLACE_ONTOP = 4
-    LEFT_PLACE_INSIDE = 5
-    RIGHT_PLACE_INSIDE = 6
-    RIGHT_RELEASE = 10
-    LEFT_RELEASE = 11
-    PLACE_ON_TOP = 12
-    PLACE_INSIDE = 13
-    OPEN = 14
-    CLOSE = 15
-    BURN = 16
-    COOK = 17
-    CLEAN = 18
-    FREEZE = 19
-    UNFREEZE = 20
-    SLICE = 21
-    SOAK = 22
-    DRY = 23
-    STAIN = 24
-    TOGGLE_ON = 25
-    TOGGLE_OFF = 26
-    UNCLEAN = 27
-    UNSOAK = 28
+    NAVIGATE_TO=auto()
+    LEFT_GRASP =auto()
+    RIGHT_GRASP =auto()
+    LEFT_PLACE_ONTOP =auto()
+    RIGHT_PLACE_ONTOP =auto()
+    LEFT_PLACE_INSIDE =auto()
+    RIGHT_PLACE_INSIDE =auto()
+    RIGHT_RELEASE =auto()
+    LEFT_RELEASE =auto()
+    PLACE_ON_TOP =auto()
+    PLACE_INSIDE =auto()
+    OPEN =auto()
+    CLOSE =auto()
+    BURN =auto()
+    COOK =auto()
+    CLEAN =auto()
+    FREEZE =auto()
+    UNFREEZE =auto()
+    SLICE =auto()
+    SOAK =auto()
+    DRY =auto()
+    # STAIN =auto()
+    TOGGLE_ON =auto()
+    TOGGLE_OFF =auto()
+    # UNCLEAN =auto()
+    LEFT_PLACE_NEXTTO=auto()
+    RIGHT_PLACE_NEXTTO=auto()
+    LEFT_POUR_INSIDE=auto()
+    RIGHT_POUR_INSIDE=auto()
+    LEFT_POUR_ONTOP=auto()
+    RIGHT_POUR_ONTOP=auto()
 
 class EvalEnv:
 
@@ -83,6 +90,8 @@ class EvalEnv:
             EvalActions.RIGHT_GRASP.value: self.action_env.right_grasp,
             EvalActions.LEFT_PLACE_ONTOP.value: self.action_env.left_place_ontop,
             EvalActions.RIGHT_PLACE_ONTOP.value: self.action_env.right_place_ontop,
+            EvalActions.LEFT_PLACE_NEXTTO.value: self.action_env.left_place_nextto,
+            EvalActions.RIGHT_PLACE_NEXTTO.value: self.action_env.right_place_nextto,
             EvalActions.LEFT_PLACE_INSIDE.value: self.action_env.left_place_inside,
             EvalActions.RIGHT_PLACE_INSIDE.value: self.action_env.right_place_inside,
             EvalActions.RIGHT_RELEASE.value: self.action_env.right_release,
@@ -91,6 +100,11 @@ class EvalEnv:
             EvalActions.CLOSE.value: self.action_env.close,
             EvalActions.CLEAN.value: self.action_env.clean_dust,
             EvalActions.SLICE.value: self.action_env.slice,
+            EvalActions.SOAK.value: self.action_env.soak,
+            EvalActions.DRY.value: self.action_env.dry,
+            EvalActions.FREEZE.value: self.action_env.freeze,
+            EvalActions.UNFREEZE.value: self.action_env.unfreeze,
+
         }
 
     def get_relevant_objects(self):
@@ -136,10 +150,10 @@ class EvalEnv:
             action_idx=EvalActions[action_idx].value
         if isinstance(object_idx,str):
             object_idx=self.obj_name_to_idx[object_idx]
-        self.control_function[action_idx](self.addressable_objects[object_idx])
+        flag=self.control_function[action_idx](self.addressable_objects[object_idx])
         self.simulator.step()
         obs, reward, done, info = self.env.step(None)
-        return obs, reward, done, info
+        return obs, reward, done, info,flag
 
     @property
     def scene(self):

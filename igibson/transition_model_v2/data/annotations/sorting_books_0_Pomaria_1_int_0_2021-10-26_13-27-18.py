@@ -1,0 +1,13 @@
+actions=[
+    
+{'action': 'RIGHT_GRASP', 'object': 'notebook_80'},
+{'action': 'RIGHT_PLACE_ONTOP_RELEASE', 'object': 'shelf_15'},
+{'action': 'RIGHT_GRASP', 'object': 'hardback_81'},
+{'action': 'LEFT_GRASP', 'object': 'hardback_79'},
+{'action': 'LEFT_PLACE_ONTOP_RELEASE', 'object': 'shelf_15'},
+{'action': 'RIGHT_PLACE_ONTOP_RELEASE', 'object': 'shelf_15'},
+{'action': 'RIGHT_GRASP', 'object': 'hardback_78'},
+{'action': 'RIGHT_PLACE_ONTOP_RELEASE', 'object': 'shelf_15'},
+
+
+]

@@ -1,0 +1,26 @@
+actions=[
+
+{'action': 'RIGHT_GRASP', 'object': 'apple_0_multiplexer'},
+{'action': 'LEFT_GRASP', 'object': 'banana_0_multiplexer'},
+{'action': 'RIGHT_PLACE_INSIDE', 'object': 'carton_0'},
+{'action': 'LEFT_PLACE_INSIDE', 'object': 'carton_1'},
+{'action': 'RIGHT_GRASP', 'object': 'cookie_0'},
+{'action': 'LEFT_GRASP', 'object': 'cookie_1'},
+{'action': 'RIGHT_PLACE_INSIDE', 'object': 'carton_0'},
+{'action': 'LEFT_PLACE_INSIDE', 'object': 'carton_1'},
+{'action': 'RIGHT_GRASP', 'object': 'top_cabinet_0'},
+{'action': 'OPEN', 'object': 'top_cabinet_0'},
+{'action': 'RIGHT_RELEASE', 'object': 'top_cabinet_0'},
+{'action': 'RIGHT_GRASP', 'object': 'chip_0'},
+{'action': 'LEFT_GRASP', 'object': 'chip_1'},
+{'action': 'RIGHT_PLACE_INSIDE', 'object': 'carton_0'},
+{'action': 'LEFT_PLACE_INSIDE', 'object': 'carton_1'},
+{'action': 'RIGHT_GRASP', 'object': 'fridge_0'},
+{'action': 'OPEN', 'object': 'fridge_0'},
+{'action': 'RIGHT_RELEASE', 'object': 'fridge_0'},
+{'action': 'RIGHT_GRASP', 'object': 'salad_0'},
+{'action': 'LEFT_GRASP', 'object': 'sandwich_0'},
+{'action': 'RIGHT_PLACE_INSIDE', 'object': 'carton_0'},
+{'action': 'LEFT_PLACE_INSIDE', 'object': 'carton_1'},
+
+]

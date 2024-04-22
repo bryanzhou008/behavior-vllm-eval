@@ -1,0 +1,15 @@
+actions=[
+
+{'action': 'RIGHT_GRASP', 'object': 'car_50'},
+{'action': 'OPEN', 'object': 'car_50'},
+{'action': 'RIGHT_RELEASE', 'object': 'car_50'},
+{'action': 'RIGHT_GRASP', 'object': 'briefcase_51'},
+{'action': 'LEFT_GRASP', 'object': 'pencil_box_52'},
+{'action': 'RIGHT_PLACE_INSIDE', 'object': 'car_50'},
+{'action': 'LEFT_PLACE_INSIDE', 'object': 'ar_50'},
+{'action': 'RIGHT_GRASP', 'object': 'duffel_bag_54'},
+{'action': 'LEFT_GRASP', 'object': 'headset_53'},
+{'action': 'RIGHT_PLACE_INSIDE', 'object': 'car_50'},
+{'action': 'LEFT_PLACE_INSIDE', 'object': 'ar_50'},
+
+]

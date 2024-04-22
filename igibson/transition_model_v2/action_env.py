@@ -442,6 +442,68 @@ class ActionEnv:
         print(f"Clean-stain {obj.name} success")
         return True
     
+    def soak_dry(self,obj,soak_or_dry:str):
+        ## pre conditions
+        try:
+            self.check_interactability(obj)
+        except ValueError as e:
+            print(e)
+            return False
+        
+        if not (hasattr(obj, "states") and object_states.Soaked in obj.states):
+            print("Soak failed, object cannot be soaked")
+            return False
+        
+        if obj.states[object_states.Soaked].get_value()==(soak_or_dry=='soak'):
+            print(f"{soak_or_dry.capitalize()} failed, object is already {soak_or_dry}ed")
+            return False
+        
+        # has_soaker=False
+        # for inventory_obj in self.inventory.values():
+        #     if hasattr(inventory_obj, "states") and object_states.Soaker in inventory_obj.states:
+        #         has_soaker=True
+        #         break
+        # if not has_soaker:
+        #     print("Soak failed, no soaker in inventory")
+        #     return False
+        
+        ## post effects
+        self.navigate_to_if_needed(obj)
+        obj.states[object_states.Soaked].set_value((soak_or_dry=='soak'))
+        print(f"{soak_or_dry.capitalize()} {obj.name} success")
+        return True
+    
+    def freeze_unfreeze(self,obj,freeze_or_unfreeze:str):
+        assert freeze_or_unfreeze in ['freeze','unfreeze']
+        ## pre conditions
+        try:
+            self.check_interactability(obj)
+        except ValueError as e:
+            print(e)
+            return False
+        
+        if not (hasattr(obj, "states") and object_states.Frozen in obj.states):
+            print("Freeze failed, object cannot be frozen")
+            return False
+        
+        if obj.states[object_states.Frozen].get_value()==(freeze_or_unfreeze=='freeze'):
+            print(f"{freeze_or_unfreeze.capitalize()} failed, object is already {freeze_or_unfreeze}ed")
+            return False
+        
+        # has_freezer=False
+        # for inventory_obj in self.inventory.values():
+        #     if hasattr(inventory_obj, "states") and object_states.Freezer in inventory_obj.states:
+        #         has_freezer=True
+        #         break
+        # if not has_freezer:
+        #     print("Freeze failed, no freezer in inventory")
+        #     return False
+        
+        ## post effects
+        self.navigate_to_if_needed(obj)
+        obj.states[object_states.Frozen].set_value((freeze_or_unfreeze=='freeze'))
+        print(f"{freeze_or_unfreeze.capitalize()} {obj.name} success")
+        return True
         
 
     ##################### helper functions #####################
@@ -560,6 +622,36 @@ class ActionEnv:
     
     def close(self,obj:URDFObject):
         return self.open_or_close(obj,'close')
+    
+    def left_place_nextto(self,obj:URDFObject):
+        return self.place_next_to(obj,'left_hand')
+    
+    def right_place_nextto(self,obj:URDFObject):
+        return self.place_next_to(obj,'right_hand')
+    
+    def left_pour_inside(self,obj:URDFObject):
+        return self.pour_inside(obj,'left_hand')
+    
+    def right_pour_inside(self,obj:URDFObject):
+        return self.pour_inside(obj,'right_hand')
+    
+    def left_pour_onto(self,obj:URDFObject):
+        return self.pour_onto(obj,'left_hand')
+    
+    def right_pour_onto(self,obj:URDFObject):
+        return self.pour_onto(obj,'right_hand')
+    
+    def soak(self,obj:URDFObject):
+        return self.soak_dry(obj,'soak')
+    
+    def dry(self,obj:URDFObject):
+        return self.soak_dry(obj,'dry')
+    
+    def freeze(self,obj:URDFObject):
+        return self.freeze_unfreeze(obj,'freeze')
+    
+    def unfreeze(self,obj:URDFObject):
+        return self.freeze_unfreeze(obj,'unfreeze')
     
     
     

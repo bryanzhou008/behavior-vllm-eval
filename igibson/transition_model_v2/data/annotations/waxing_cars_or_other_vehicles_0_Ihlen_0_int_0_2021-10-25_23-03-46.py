@@ -1,0 +1,6 @@
+actions=[
+
+{'action': 'RIGHT_GRASP', 'object': 'rag_52'},
+{'action': 'CLEAN', 'object': 'car_50'},
+
+]
