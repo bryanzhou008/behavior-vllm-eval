@@ -26,8 +26,6 @@ class EvalActions(IntEnum):
     RIGHT_PLACE_INSIDE =auto()
     RIGHT_RELEASE =auto()
     LEFT_RELEASE =auto()
-    PLACE_ON_TOP =auto()
-    PLACE_INSIDE =auto()
     OPEN =auto()
     CLOSE =auto()
     BURN =auto()

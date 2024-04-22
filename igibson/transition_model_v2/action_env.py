@@ -391,7 +391,7 @@ class ActionEnv:
             return False
         
         has_cleaner=False
-        for inventory_obj in self.inventory.values():
+        for inventory_obj in self.robot_inventory.values():
             if hasattr(inventory_obj, "states") and object_states.CleaningTool in inventory_obj.states:
                 has_cleaner=True
                 break
@@ -423,7 +423,7 @@ class ActionEnv:
         
         has_cleaner=False
         cleaner_soaked=False
-        for inventory_obj in self.inventory.values():
+        for inventory_obj in self.robot_inventory.values():
             if hasattr(inventory_obj, "states") and object_states.CleaningTool in inventory_obj.states:
                 has_cleaner=True
                 if hasattr(inventory_obj, "states") and object_states.Soaked in inventory_obj.states and inventory_obj.states[object_states.Soaked].get_value():
