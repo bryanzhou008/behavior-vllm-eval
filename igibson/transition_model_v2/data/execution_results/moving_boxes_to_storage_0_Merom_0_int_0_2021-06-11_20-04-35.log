@@ -1,0 +1,40 @@
+Addressable Objects:
+shelf_7
+carton_71
+carton_70
+room_floor_storage_room_0
+room_floor_living_room_0
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'carton.n.02_1', 'floor.n.01_1']
+['onfloor', 'carton.n.02_2', 'floor.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_2']
+-----------------------------------------------
+Goal Conditions: 
+['onfloor', 'carton.n.02_1', 'floor.n.01_2']
+['ontop', 'carton.n.02_2', 'carton.n.02_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'carton_71')
+Grasp carton_71 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('CLOSE', 'carton_71')
+Close carton_71 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_storage_room_0')
+Execution Error: 'NoneType' object is not subscriptable
+************************************************
+Action:  ('RIGHT_GRASP', 'carton_70')
+right_hand is already holding carton_71
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('CLOSE', 'carton_70')
+Close carton_70 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'carton_71')
+carton_71 is already in right_hand
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0]})
+************************************************
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

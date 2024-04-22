@@ -1,0 +1,41 @@
+Addressable Objects:
+room_floor_bedroom_1
+package_0
+package_1
+bed_10
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'package.n.02_1', 'floor.n.01_1']
+['onfloor', 'package.n.02_2', 'floor.n.01_1']
+['not', 'open', 'package.n.02_1']
+['not', 'open', 'package.n.02_2']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'package.n.02', '-', 'package.n.02', 'open', 'package.n.02']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'package_0')
+Grasp package_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('OPEN', 'package_0')
+Open package_0 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_RELEASE', 'package_0')
+Release package_0 from right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_GRASP', 'package_1')
+Grasp package_1 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('OPEN', 'package_1')
+Open package_1 success
+Post Effects:  True (True, {'satisfied': [0], 'unsatisfied': []})
+************************************************
+Action:  ('RIGHT_RELEASE', 'package_1')
+Release package_1 from right_hand successful
+Post Effects:  True (True, {'satisfied': [0], 'unsatisfied': []})
+************************************************
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

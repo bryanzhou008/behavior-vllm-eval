@@ -1,0 +1,76 @@
+Addressable Objects:
+newspaper_148
+envelope_146
+envelope_144
+envelope_143
+room_floor_living_room_0
+newspaper_147
+newspaper_150
+newspaper_149
+sofa_39
+envelope_145
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'envelope.n.01_1', 'floor.n.01_1']
+['onfloor', 'envelope.n.01_2', 'floor.n.01_1']
+['onfloor', 'envelope.n.01_3', 'floor.n.01_1']
+['onfloor', 'envelope.n.01_4', 'floor.n.01_1']
+['onfloor', 'newspaper.n.03_1', 'floor.n.01_1']
+['onfloor', 'newspaper.n.03_2', 'floor.n.01_1']
+['onfloor', 'newspaper.n.03_3', 'floor.n.01_1']
+['onfloor', 'newspaper.n.03_4', 'floor.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'envelope.n.01', '-', 'envelope.n.01', 'or', 'touching', 'envelope.n.01', 'envelope.n.01_1', 'touching', 'envelope.n.01', 'envelope.n.01_2', 'touching', 'envelope.n.01', 'envelope.n.01_3', 'touching', 'envelope.n.01', 'envelope.n.01_4']
+['forall', 'newspaper.n.03', '-', 'newspaper.n.03', 'or', 'touching', 'newspaper.n.03', 'newspaper.n.03_1', 'touching', 'newspaper.n.03', 'newspaper.n.03_2', 'touching', 'newspaper.n.03', 'newspaper.n.03_3', 'touching', 'newspaper.n.03', 'newspaper.n.03_4']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'envelope_143')
+Grasp envelope_143 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_NEXTTO', 'envelope_146')
+Place under envelope_143 envelope_146 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_GRASP', 'envelope_144')
+Grasp envelope_144 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_PLACE_NEXTTO', 'envelope_146')
+Place under envelope_144 envelope_146 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'envelope_145')
+Grasp envelope_145 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_NEXTTO', 'envelope_146')
+Place under envelope_145 envelope_146 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'newspaper_147')
+Grasp newspaper_147 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
+************************************************
+Action:  ('RIGHT_PLACE_NEXTTO', 'newspaper_148')
+Place under newspaper_147 newspaper_148 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
+************************************************
+Action:  ('LEFT_GRASP', 'newspaper_149')
+Grasp newspaper_149 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
+************************************************
+Action:  ('LEFT_PLACE_NEXTTO', 'newspaper_148')
+Place under newspaper_149 newspaper_148 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'newspaper_150')
+Grasp newspaper_150 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
+************************************************
+Action:  ('RIGHT_PLACE_NEXTTO', 'newspaper_148')
+Place under newspaper_150 newspaper_148 successful
+Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
+************************************************
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

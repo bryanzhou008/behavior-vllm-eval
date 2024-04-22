@@ -1,0 +1,73 @@
+Addressable Objects:
+pop_117
+bed_33
+bucket_118
+pop_116
+pop_115
+room_floor_bedroom_0
+pop_113
+pop_112
+pop_114
+-----------------------------------------------
+Initial Conditions: 
+['ontop', 'pop.n.02_1', 'bed.n.01_1']
+['ontop', 'pop.n.02_2', 'bed.n.01_1']
+['ontop', 'pop.n.02_3', 'bed.n.01_1']
+['onfloor', 'pop.n.02_4', 'floor.n.01_1']
+['onfloor', 'pop.n.02_5', 'floor.n.01_1']
+['onfloor', 'pop.n.02_6', 'floor.n.01_1']
+['ontop', 'bucket.n.01_1', 'bed.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'pop.n.02', '-', 'pop.n.02', 'inside', 'pop.n.02', 'bucket.n.01_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'pop_113')
+Grasp pop_113 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_GRASP', 'pop_117')
+Grasp pop_117 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'bucket_118')
+Place inside pop_117 bucket_118 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'bucket_118')
+Place inside pop_113 bucket_118 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_GRASP', 'pop_115')
+Grasp pop_115 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_GRASP', 'pop_114')
+Grasp pop_114 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'bucket_118')
+Place inside pop_114 bucket_118 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'bucket_118')
+Place inside pop_115 bucket_118 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_GRASP', 'pop_112')
+Grasp pop_112 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_GRASP', 'pop_116')
+Grasp pop_116 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'bucket_118')
+Place inside pop_116 bucket_118 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'bucket_118')
+Place inside pop_112 bucket_118 successful
+Post Effects:  True (True, {'satisfied': [0], 'unsatisfied': []})
+************************************************
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

@@ -1,0 +1,83 @@
+Addressable Objects:
+apple_103_multiplexer
+bed_43
+sunglass_105
+room_floor_bedroom_0
+headset_104
+apple_103_part_1
+bracelet_102
+backpack_100
+notebook_101
+apple_103
+apple_103_part_0
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'backpack.n.01_1', 'floor.n.01_1']
+['ontop', 'sunglass.n.01_1', 'bed.n.01_1']
+['ontop', 'bracelet.n.02_1', 'bed.n.01_1']
+['onfloor', 'notebook.n.01_1', 'floor.n.01_1']
+['ontop', 'apple.n.01_1', 'bed.n.01_1']
+['ontop', 'earphone.n.01_1', 'bed.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['nextto', 'backpack.n.01_1', 'bed.n.01_1']
+['inside', 'sunglass.n.01_1', 'backpack.n.01_1']
+['inside', 'notebook.n.01_1', 'backpack.n.01_1']
+['inside', 'bracelet.n.02_1', 'backpack.n.01_1']
+['inside', 'apple.n.01_1', 'backpack.n.01_1']
+['inside', 'earphone.n.01_1', 'backpack.n.01_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'backpack_100')
+Grasp backpack_100 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('LEFT_GRASP', 'notebook_101')
+Grasp notebook_101 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'backpack_100')
+No openable joint metadata found for object backpack_100
+backpack_100 is closed
+Post Effects:  False (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4, 5]})
+************************************************
+Action:  ('LEFT_GRASP', 'sunglass_105')
+left_hand is already holding notebook_101
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'backpack_100')
+No openable joint metadata found for object backpack_100
+backpack_100 is closed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('LEFT_GRASP', 'apple_103_multiplexer')
+left_hand is already holding notebook_101
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'backpack_100')
+No openable joint metadata found for object backpack_100
+backpack_100 is closed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('LEFT_GRASP', 'headset_104')
+left_hand is already holding notebook_101
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'backpack_100')
+No openable joint metadata found for object backpack_100
+backpack_100 is closed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('LEFT_GRASP', 'bracelet_102')
+left_hand is already holding notebook_101
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'backpack_100')
+No openable joint metadata found for object backpack_100
+backpack_100 is closed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bedroom_0')
+Execution Error: 'NoneType' object is not subscriptable
+************************************************
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

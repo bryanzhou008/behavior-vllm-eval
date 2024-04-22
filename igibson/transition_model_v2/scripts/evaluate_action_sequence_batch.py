@@ -24,19 +24,27 @@ def main(demo_dir,action_dir,rst_dir,headless=True):
     #     proc.join()
 
     statistics=[]
+    summary={"total_run":0}
     for args in args_list:
         info={
-            "name":args[0].split("/")[-1],
+            "name":args[1].split("/")[-1],
             }
         try:
             rst=evaluate_action_seqeunce(*args)
             info.update(rst)
+            for k,v in rst.items():
+                if k in summary:
+                    summary[k]+=int(v)
+                else:
+                    summary[k]=int(v)
+            summary["total_run"]+=1
         except Exception as e:
             print("Error in ",args[0])
             print(e)
             info.update({"error":str(e)})
 
         statistics.append(info)
+    statistics.append(summary)
 
     # caculate the statistics
     # read the last line of the log file

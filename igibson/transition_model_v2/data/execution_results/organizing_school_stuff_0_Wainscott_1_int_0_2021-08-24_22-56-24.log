@@ -1,0 +1,83 @@
+Addressable Objects:
+pen_104
+breakfast_table_21
+highlighter_102
+calculator_105
+hardback_106
+backpack_108
+bed_58
+folder_107
+pencil_103
+room_floor_bedroom_0
+-----------------------------------------------
+Initial Conditions: 
+['ontop', 'highlighter.n.02_1', 'bed.n.01_1']
+['ontop', 'pencil.n.01_1', 'bed.n.01_1']
+['onfloor', 'pen.n.01_1', 'floor.n.01_1']
+['onfloor', 'calculator.n.02_1', 'floor.n.01_1']
+['ontop', 'book.n.02_1', 'bed.n.01_1']
+['ontop', 'folder.n.02_1', 'bed.n.01_1']
+['onfloor', 'backpack.n.01_1', 'floor.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['and', 'nextto', 'folder.n.02_1', 'book.n.02_1', 'nextto', 'folder.n.02_1', 'backpack.n.01_1', 'nextto', 'book.n.02_1', 'backpack.n.01_1']
+['inside', 'highlighter.n.02_1', 'backpack.n.01_1']
+['inside', 'pencil.n.01_1', 'backpack.n.01_1']
+['inside', 'pen.n.01_1', 'backpack.n.01_1']
+['inside', 'calculator.n.02_1', 'backpack.n.01_1']
+['ontop', 'backpack.n.01_1', 'bed.n.01_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'backpack_108')
+Grasp backpack_108 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'bed_58')
+Place ontop backpack_108 bed_58 unsuccessful
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('RIGHT_GRASP', 'pencil_103')
+Grasp pencil_103 with right_hand successful
+Post Effects:  True (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'backpack_108')
+No openable joint metadata found for object backpack_108
+backpack_108 is closed
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_GRASP', 'pen_104')
+right_hand is already holding pencil_103
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'backpack_108')
+No openable joint metadata found for object backpack_108
+backpack_108 is closed
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_GRASP', 'calculator_105')
+right_hand is already holding pencil_103
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'backpack_108')
+No openable joint metadata found for object backpack_108
+backpack_108 is closed
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_GRASP', 'folder_107')
+right_hand is already holding pencil_103
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'bed_58')
+Place ontop pencil_103 bed_58 unsuccessful
+Post Effects:  False (False, {'satisfied': [2, 5], 'unsatisfied': [0, 1, 3, 4]})
+************************************************
+Action:  ('RIGHT_GRASP', 'highlighter_102')
+Grasp highlighter_102 with right_hand successful
+Post Effects:  True (False, {'satisfied': [2, 5], 'unsatisfied': [0, 1, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'backpack_108')
+No openable joint metadata found for object backpack_108
+backpack_108 is closed
+Post Effects:  False (False, {'satisfied': [2, 5], 'unsatisfied': [0, 1, 3, 4]})
+************************************************
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

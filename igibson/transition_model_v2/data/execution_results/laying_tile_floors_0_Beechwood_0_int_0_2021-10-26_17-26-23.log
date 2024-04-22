@@ -1,0 +1,47 @@
+Addressable Objects:
+tile_3
+tile_2
+room_floor_corridor_0
+tile_0
+tile_1
+room_floor_bathroom_0
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'tile.n.01_1', 'floor.n.01_1']
+['onfloor', 'tile.n.01_2', 'floor.n.01_1']
+['onfloor', 'tile.n.01_3', 'floor.n.01_1']
+['onfloor', 'tile.n.01_4', 'floor.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'tile.n.01', '-', 'tile.n.01', 'onfloor', 'tile.n.01', 'floor.n.01_2']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'tile_3')
+Grasp tile_3 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_GRASP', 'tile_2')
+Grasp tile_2 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'room_floor_bathroom_0')
+Execution Error: 'NoneType' object is not subscriptable
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bathroom_0')
+Execution Error: 'NoneType' object is not subscriptable
+************************************************
+Action:  ('RIGHT_GRASP', 'tile_1')
+right_hand is already holding tile_3
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_GRASP', 'tile_0')
+left_hand is already holding tile_2
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'room_floor_bathroom_0')
+Execution Error: 'NoneType' object is not subscriptable
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bathroom_0')
+Execution Error: 'NoneType' object is not subscriptable
+************************************************
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

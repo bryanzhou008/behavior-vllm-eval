@@ -108,7 +108,8 @@ class EvalEnv:
             EvalActions.RIGHT_TANSFER_CONTENTS_INSIDE.value: self.action_env.right_transfer_contents_inside,
             EvalActions.LEFT_TANSFER_CONTENTS_ONTOP.value: self.action_env.left_transfer_contents_ontop,
             EvalActions.RIGHT_TANSFER_CONTENTS_ONTOP.value: self.action_env.right_transfer_contents_ontop,
-
+            EvalActions.TOGGLE_ON.value: self.action_env.toggle_on,
+            EvalActions.TOGGLE_OFF.value: self.action_env.toggle_off,
         }
 
     def get_relevant_objects(self):

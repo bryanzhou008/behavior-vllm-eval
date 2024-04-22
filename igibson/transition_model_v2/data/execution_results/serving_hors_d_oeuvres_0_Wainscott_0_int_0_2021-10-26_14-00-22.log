@@ -1,0 +1,214 @@
+Addressable Objects:
+parsley_148
+bottom_cabinet_no_top_80
+pretzel_153
+pretzel_152
+salad_144
+cheese_157
+fridge_97
+pretzel_155
+parsley_150
+room_floor_dining_room_0
+parsley_149
+cheese_159
+parsley_151
+salad_143
+pretzel_154
+breakfast_table_1
+salad_146
+cheese_156
+cheese_158
+tray_147
+salad_145
+-----------------------------------------------
+Initial Conditions: 
+['inside', 'salad.n.01_1', 'electric_refrigerator.n.01_1']
+['inside', 'salad.n.01_2', 'electric_refrigerator.n.01_1']
+['inside', 'salad.n.01_3', 'electric_refrigerator.n.01_1']
+['inside', 'salad.n.01_4', 'electric_refrigerator.n.01_1']
+['inside', 'parsley.n.02_1', 'electric_refrigerator.n.01_1']
+['inside', 'parsley.n.02_2', 'electric_refrigerator.n.01_1']
+['inside', 'parsley.n.02_3', 'electric_refrigerator.n.01_1']
+['inside', 'parsley.n.02_4', 'electric_refrigerator.n.01_1']
+['onfloor', 'tray.n.01_1', 'floor.n.01_1']
+['ontop', 'cracker.n.01_1', 'table.n.02_1']
+['ontop', 'cracker.n.01_2', 'table.n.02_1']
+['ontop', 'cracker.n.01_3', 'table.n.02_1']
+['ontop', 'cracker.n.01_4', 'table.n.02_1']
+['inside', 'cheese.n.01_1', 'electric_refrigerator.n.01_1']
+['inside', 'cheese.n.01_2', 'electric_refrigerator.n.01_1']
+['inside', 'cheese.n.01_3', 'electric_refrigerator.n.01_1']
+['inside', 'cheese.n.01_4', 'electric_refrigerator.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['ontop', 'tray.n.01_1', 'table.n.02_1']
+['forall', 'cracker.n.01', '-', 'cracker.n.01', 'ontop', 'cracker.n.01', 'table.n.02_1']
+['forpairs', 'salad.n.01', '-', 'salad.n.01', 'cracker.n.01', '-', 'cracker.n.01', 'nextto', 'salad.n.01', 'cracker.n.01']
+['forpairs', 'cheese.n.01', '-', 'cheese.n.01', 'parsley.n.02', '-', 'parsley.n.02', 'ontop', 'parsley.n.02', 'cheese.n.01']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'fridge_97')
+Grasp fridge_97 with right_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('OPEN', 'fridge_97')
+Open fridge_97 success
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('RIGHT_RELEASE', 'fridge_97')
+Release fridge_97 from right_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('LEFT_GRASP', 'salad_143')
+Grasp salad_143 with left_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('RIGHT_GRASP', 'salad_144')
+Grasp salad_144 with right_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('UNFREEZE', 'salad_143')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('UNFREEZE', 'salad_144')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'breakfast_table_1')
+Place ontop salad_143 breakfast_table_1 unsuccessful
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_1')
+Place ontop salad_144 breakfast_table_1 unsuccessful
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('LEFT_GRASP', 'salad_145')
+Grasp salad_145 with left_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('RIGHT_GRASP', 'salad_146')
+Grasp salad_146 with right_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('UNFREEZE', 'salad_145')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('UNFREEZE', 'salad_146')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'breakfast_table_1')
+Place ontop salad_145 breakfast_table_1 unsuccessful
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_1')
+Place ontop salad_146 breakfast_table_1 unsuccessful
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('LEFT_GRASP', 'tray_147')
+Grasp tray_147 with left_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'breakfast_table_1')
+Place ontop tray_147 breakfast_table_1 unsuccessful
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('LEFT_GRASP', 'cheese_156')
+Grasp cheese_156 with left_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('RIGHT_GRASP', 'cheese_157')
+Grasp cheese_157 with right_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('UNFREEZE', 'cheese_156')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('UNFREEZE', 'cheese_157')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'breakfast_table_1')
+Place ontop cheese_156 breakfast_table_1 unsuccessful
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_1')
+Place ontop cheese_157 breakfast_table_1 unsuccessful
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('LEFT_GRASP', 'cheese_158')
+Grasp cheese_158 with left_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('RIGHT_GRASP', 'cheese_159')
+Grasp cheese_159 with right_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('UNFREEZE', 'cheese_158')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('UNFREEZE', 'cheese_159')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'breakfast_table_1')
+Place ontop cheese_158 breakfast_table_1 unsuccessful
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_1')
+Place ontop cheese_159 breakfast_table_1 unsuccessful
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('LEFT_GRASP', 'parsley_148')
+Grasp parsley_148 with left_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('RIGHT_GRASP', 'parsley_149')
+Grasp parsley_149 with right_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('UNFREEZE', 'parsley_148')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('UNFREEZE', 'parsley_149')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'cheese_156')
+Place ontop parsley_148 cheese_156 unsuccessful
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'cheese_157')
+Place ontop parsley_149 cheese_157 unsuccessful
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('LEFT_GRASP', 'parsley_150')
+Grasp parsley_150 with left_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('RIGHT_GRASP', 'parsley_151')
+Grasp parsley_151 with right_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('UNFREEZE', 'parsley_150')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('UNFREEZE', 'parsley_151')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'cheese_158')
+Place ontop parsley_150 cheese_158 unsuccessful
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'cheese_159')
+Place ontop parsley_151 cheese_159 unsuccessful
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+************************************************
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

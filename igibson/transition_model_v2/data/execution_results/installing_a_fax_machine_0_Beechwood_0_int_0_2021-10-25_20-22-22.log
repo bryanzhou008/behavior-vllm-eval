@@ -1,0 +1,28 @@
+Addressable Objects:
+room_floor_home_office_0
+breakfast_table_37
+facsimile_0
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'facsimile.n.02_1', 'floor.n.01_1']
+['not', 'toggled_on', 'facsimile.n.02_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['ontop', 'facsimile.n.02_1', 'table.n.02_1']
+['toggled_on', 'facsimile.n.02_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'facsimile_0')
+Grasp facsimile_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('TOGGLE_ON', 'facsimile_0')
+Execution Error: 22
+************************************************
+Action:  ('TOGGLE_OFF', 'facsimile_0')
+Execution Error: 23
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'table_0')
+Execution Error: 'table_0'
+************************************************
+{'all_action_execution_true': True, 'unknown_execution_error': True, 'all_condition_satisfied': False}

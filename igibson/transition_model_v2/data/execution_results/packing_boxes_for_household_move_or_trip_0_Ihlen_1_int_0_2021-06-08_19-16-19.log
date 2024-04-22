@@ -1,0 +1,123 @@
+Addressable Objects:
+t-shirt_0
+notebook_0
+carton_0
+plate_1
+carton_1
+plate_2
+room_floor_living_room_0
+t-shirt_1
+plate_3
+dishtowel_0
+sweater_0
+coffee_table_26
+plate_0
+hardback_0
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'carton.n.02_1', 'floor.n.01_1']
+['onfloor', 'carton.n.02_2', 'floor.n.01_1']
+['ontop', 'book.n.02_2', 'table.n.02_1']
+['ontop', 'book.n.02_1', 'table.n.02_1']
+['onfloor', 'sweater.n.01_1', 'floor.n.01_1']
+['onfloor', 'shirt.n.01_1', 'floor.n.01_1']
+['onfloor', 'shirt.n.01_2', 'floor.n.01_1']
+['ontop', 'plate.n.04_1', 'table.n.02_1']
+['onfloor', 'plate.n.04_2', 'floor.n.01_1']
+['onfloor', 'plate.n.04_3', 'floor.n.01_1']
+['onfloor', 'plate.n.04_4', 'floor.n.01_1']
+['onfloor', 'dishtowel.n.01_1', 'floor.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'carton.n.02', 'inside', 'dishtowel.n.01_1', 'carton.n.02']
+['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02', 'forall', 'shirt.n.01', '-', 'shirt.n.01', 'inside', 'shirt.n.01', 'carton.n.02', 'inside', 'sweater.n.01_1', 'carton.n.02']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 't-shirt_0')
+Grasp t-shirt_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
+Place inside t-shirt_0 carton_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_GRASP', 't-shirt_1')
+Grasp t-shirt_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'carton_0')
+Place inside t-shirt_1 carton_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'notebook_0')
+Grasp notebook_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_GRASP', 'hardback_0')
+Grasp hardback_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'carton_0')
+Place inside hardback_0 carton_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
+Place inside notebook_0 carton_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'sweater_0')
+Grasp sweater_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_GRASP', 'sweater_1')
+Execution Error: 'sweater_1'
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'carton_0')
+left_hand is empty
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
+Place inside sweater_0 carton_0 successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_GRASP', 'plate_3')
+Grasp plate_3 with right_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_GRASP', 'plate_0')
+Grasp plate_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'carton_1')
+Place inside plate_0 carton_1 successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_1')
+Place inside plate_3 carton_1 successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_GRASP', 'plate_1')
+Grasp plate_1 with right_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_GRASP', 'dishtowel_0')
+Grasp dishtowel_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'carton_1')
+Place inside dishtowel_0 carton_1 successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_1')
+Place inside plate_1 carton_1 successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_GRASP', 'plate_2')
+Grasp plate_2 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_1')
+Place inside plate_2 carton_1 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

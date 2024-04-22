@@ -1,0 +1,76 @@
+Addressable Objects:
+sock_1
+sock_0
+notebook_0
+coffee_table_33
+breakfast_table_1
+room_floor_living_room_0
+bottom_cabinet_79
+room_floor_dining_room_0
+gym_shoe_0
+necklace_0
+sofa_39
+-----------------------------------------------
+Initial Conditions: 
+['under', 'gym_shoe.n.01_1', 'table.n.02_1']
+['onfloor', 'gym_shoe.n.01_1', 'floor.n.01_2']
+['inside', 'necklace.n.01_1', 'cabinet.n.01_1']
+['under', 'notebook.n.01_1', 'table.n.02_2']
+['ontop', 'sock.n.01_1', 'sofa.n.01_1']
+['onfloor', 'sock.n.01_2', 'floor.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['ontop', 'gym_shoe.n.01_1', 'table.n.02_2']
+['ontop', 'necklace.n.01_1', 'table.n.02_2']
+['ontop', 'notebook.n.01_1', 'table.n.02_2']
+['forall', 'sock.n.01', '-', 'sock.n.01', 'ontop', 'sock.n.01', 'table.n.02_2']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'bottom_cabinet_79')
+Grasp bottom_cabinet_79 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('OPEN', 'bottom_cabinet_79')
+Open bottom_cabinet_79 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('RIGHT_RELEASE', 'bottom_cabinet_79')
+Release bottom_cabinet_79 from right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('RIGHT_GRASP', 'necklace_144')
+Execution Error: 'necklace_144'
+************************************************
+Action:  ('LEFT_GRASP', 'sock_146')
+Execution Error: 'sock_146'
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'breakfast_table_1')
+left_hand is empty
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_1')
+right_hand is empty
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('RIGHT_GRASP', 'sock_147')
+Execution Error: 'sock_147'
+************************************************
+Action:  ('LEFT_GRASP', 'gym_shoe_143')
+Execution Error: 'gym_shoe_143'
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'breakfast_table_1')
+left_hand is empty
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_1')
+right_hand is empty
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('RIGHT_GRASP', 'notebook_145')
+Execution Error: 'notebook_145'
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_1')
+right_hand is empty
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

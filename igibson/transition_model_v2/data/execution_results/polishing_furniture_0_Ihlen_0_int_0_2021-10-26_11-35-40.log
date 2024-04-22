@@ -1,0 +1,31 @@
+Addressable Objects:
+rag_0
+shelf_11
+room_floor_living_room_0
+coffee_table_10
+-----------------------------------------------
+Initial Conditions: 
+['dusty', 'shelf.n.01_1']
+['dusty', 'table.n.02_1']
+['ontop', 'rag.n.01_1', 'table.n.02_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['not', 'dusty', 'table.n.02_1']
+['not', 'dusty', 'shelf.n.01_1']
+['under', 'rag.n.01_1', 'table.n.02_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'rag_0')
+Grasp rag_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('CLEAN', 'coffee_table_10')
+Execution Error: 'ActionEnv' object has no attribute 'inventory'
+************************************************
+Action:  ('CLEAN', 'shelf_11')
+Execution Error: 'ActionEnv' object has no attribute 'inventory'
+************************************************
+Action:  ('RELEASE', 'rag_0')
+Execution Error: 'RELEASE'
+************************************************
+{'all_action_execution_true': True, 'unknown_execution_error': True, 'all_condition_satisfied': False}

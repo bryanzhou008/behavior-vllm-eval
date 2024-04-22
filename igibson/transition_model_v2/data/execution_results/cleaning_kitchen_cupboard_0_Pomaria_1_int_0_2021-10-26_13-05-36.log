@@ -1,0 +1,110 @@
+Addressable Objects:
+room_floor_kitchen_0
+sink_37
+countertop_31
+bowl_1
+cup_0
+paper_towel_0
+cup_1
+top_cabinet_24
+top_cabinet_25
+bowl_0
+soap_0
+-----------------------------------------------
+Initial Conditions: 
+['dusty', 'cabinet.n.01_1']
+['dusty', 'cabinet.n.01_2']
+['ontop', 'piece_of_cloth.n.01_1', 'countertop.n.01_1']
+['ontop', 'cleansing_agent.n.01_1', 'countertop.n.01_1']
+['inside', 'bowl.n.01_2', 'cabinet.n.01_2']
+['inside', 'cup.n.01_1', 'cabinet.n.01_2']
+['inside', 'cup.n.01_2', 'cabinet.n.01_1']
+['ontop', 'bowl.n.01_1', 'countertop.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']
+['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup.n.01_1', 'cabinet.n.01']
+['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl.n.01_1', 'cabinet.n.01']
+------------Action Execution Begins-------------
+Action:  ('TOGGLE_ON', 'sink_37')
+Execution Error: 22
+************************************************
+Action:  ('TOGGLE_OFF', 'sink_37')
+Execution Error: 23
+************************************************
+Action:  ('RIGHT_GRASP', 'piece_of_cloth_0')
+Execution Error: 'piece_of_cloth_0'
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'sink_37')
+right_hand is empty
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('SOAK', 'piece_of_cloth_0')
+Execution Error: 'piece_of_cloth_0'
+************************************************
+Action:  ('RIGHT_GRASP', 'piece_of_cloth_0')
+Execution Error: 'piece_of_cloth_0'
+************************************************
+Action:  ('LEFT_GRASP', 'top_cabinet_24')
+Grasp top_cabinet_24 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('OPEN', 'top_cabinet_24')
+Open top_cabinet_24 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('CLEAN', 'top_cabinet_24')
+Execution Error: 'ActionEnv' object has no attribute 'inventory'
+************************************************
+Action:  ('LEFT_RELEASE', 'top_cabinet_24')
+Release top_cabinet_24 from left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('LEFT_GRASP', 'top_cabinet_25')
+Grasp top_cabinet_25 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('OPEN', 'top_cabinet_25')
+Open top_cabinet_25 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('CLEAN', 'top_cabinet_25')
+Execution Error: 'ActionEnv' object has no attribute 'inventory'
+************************************************
+Action:  ('LEFT_RELEASE', 'top_cabinet_25')
+Release top_cabinet_25 from left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('RIGHT_RELEASE', 'piece_of_cloth_0')
+Execution Error: 'piece_of_cloth_0'
+************************************************
+Action:  ('RIGHT_GRASP', 'bowl_1')
+Grasp bowl_1 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'top_cabinet_25')
+top_cabinet_25 is closed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('RIGHT_GRASP', 'bowl_0')
+right_hand is already holding bowl_1
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'top_cabinet_25')
+top_cabinet_25 is closed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('RIGHT_GRASP', 'cup_1')
+cup_1 is inside closed top_cabinet_25
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('CLOSE', 'top_cabinet_25')
+top_cabinet_25 is already closeed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'top_cabinet_24')
+Place inside bowl_1 top_cabinet_24 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+************************************************
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

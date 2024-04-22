@@ -653,6 +653,12 @@ class ActionEnv:
     def unfreeze(self,obj:URDFObject):
         return self.freeze_unfreeze(obj,'unfreeze')
     
+    def toggle_on(self,obj:URDFObject):
+        return self.toggle_on_off(obj,'on')
+    
+    def toggle_off(self,obj:URDFObject):
+        return self.toggle_on_off(obj,'off')
+    
     
     
 

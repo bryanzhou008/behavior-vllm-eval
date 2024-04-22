@@ -1,0 +1,51 @@
+Addressable Objects:
+plate_112
+room_floor_kitchen_0
+trash_can_119
+hamburger_118
+plate_114
+plate_113
+countertop_79
+hamburger_116
+hamburger_117
+plate_115
+-----------------------------------------------
+Initial Conditions: 
+['ontop', 'plate.n.04_1', 'countertop.n.01_1']
+['ontop', 'hamburger.n.01_1', 'plate.n.04_1']
+['ontop', 'plate.n.04_2', 'countertop.n.01_1']
+['ontop', 'hamburger.n.01_3', 'plate.n.04_2']
+['ontop', 'plate.n.04_3', 'countertop.n.01_1']
+['ontop', 'hamburger.n.01_2', 'plate.n.04_3']
+['ontop', 'plate.n.04_4', 'countertop.n.01_1']
+['onfloor', 'ashcan.n.01_1', 'floor.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'hamburger.n.01', '-', 'hamburger.n.01', 'inside', 'hamburger.n.01', 'ashcan.n.01_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'hamburger_116')
+Grasp hamburger_116 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_GRASP', 'hamburger_117')
+Grasp hamburger_117 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'trash_can_119')
+Place inside hamburger_117 trash_can_119 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'trash_can_119')
+Place inside hamburger_116 trash_can_119 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_GRASP', 'hamburger_118')
+Grasp hamburger_118 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'trash_can_119')
+Place inside hamburger_118 trash_can_119 successful
+Post Effects:  True (True, {'satisfied': [0], 'unsatisfied': []})
+************************************************
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

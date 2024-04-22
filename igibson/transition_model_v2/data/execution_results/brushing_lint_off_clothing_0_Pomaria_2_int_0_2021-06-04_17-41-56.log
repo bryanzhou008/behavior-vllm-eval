@@ -1,0 +1,66 @@
+Addressable Objects:
+sweater_36
+sweater_38
+scrub_brush_40
+sweater_37
+bed_11
+sweater_39
+room_floor_bedroom_0
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'sweater.n.01_1', 'floor.n.01_1']
+['onfloor', 'sweater.n.01_2', 'floor.n.01_1']
+['ontop', 'sweater.n.01_3', 'bed.n.01_1']
+['ontop', 'sweater.n.01_4', 'bed.n.01_1']
+['dusty', 'sweater.n.01_1']
+['dusty', 'sweater.n.01_2']
+['dusty', 'sweater.n.01_3']
+['dusty', 'sweater.n.01_4']
+['onfloor', 'scrub_brush.n.01_1', 'floor.n.01_1']
+['not', 'dusty', 'scrub_brush.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']
+['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed.n.01_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'scrub_brush_50')
+Execution Error: 'scrub_brush_50'
+************************************************
+Action:  ('CLEAN', 'sweater_46')
+Execution Error: 'sweater_46'
+************************************************
+Action:  ('LEFT_GRASP', 'sweater_46')
+Execution Error: 'sweater_46'
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'bed_10')
+Execution Error: 'bed_10'
+************************************************
+Action:  ('LEFT_GRASP', 'sweater_47')
+Execution Error: 'sweater_47'
+************************************************
+Action:  ('CLEAN', 'sweater_47')
+Execution Error: 'sweater_47'
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'bed_10')
+Execution Error: 'bed_10'
+************************************************
+Action:  ('LEFT_GRASP', 'sweater_48')
+Execution Error: 'sweater_48'
+************************************************
+Action:  ('CLEAN', 'sweater_48')
+Execution Error: 'sweater_48'
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'bed_10')
+Execution Error: 'bed_10'
+************************************************
+Action:  ('LEFT_GRASP', 'sweater_49')
+Execution Error: 'sweater_49'
+************************************************
+Action:  ('CLEAN', 'sweater_49')
+Execution Error: 'sweater_49'
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'bed_10')
+Execution Error: 'bed_10'
+************************************************
+{'all_action_execution_true': True, 'unknown_execution_error': True, 'all_condition_satisfied': False}

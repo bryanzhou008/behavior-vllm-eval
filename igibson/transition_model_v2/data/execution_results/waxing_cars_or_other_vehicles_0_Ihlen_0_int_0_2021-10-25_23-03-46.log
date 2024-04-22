@@ -1,0 +1,25 @@
+Addressable Objects:
+car_50
+rag_52
+room_floor_garage_0
+shelf_16
+cruet_51
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'vehicle.n.01_1', 'floor.n.01_1']
+['dusty', 'vehicle.n.01_1']
+['ontop', 'vessel.n.03_1', 'shelf.n.01_1']
+['inside', 'rag.n.01_1', 'shelf.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['not', 'dusty', 'vehicle.n.01_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'rag_52')
+Grasp rag_52 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('CLEAN', 'car_50')
+Execution Error: 'ActionEnv' object has no attribute 'inventory'
+************************************************
+{'all_action_execution_true': True, 'unknown_execution_error': True, 'all_condition_satisfied': False}

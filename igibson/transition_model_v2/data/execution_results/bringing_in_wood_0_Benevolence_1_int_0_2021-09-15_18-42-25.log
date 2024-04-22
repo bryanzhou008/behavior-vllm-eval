@@ -1,0 +1,38 @@
+Addressable Objects:
+plywood_0
+room_floor_kitchen_0
+plywood_1
+room_floor_living_room_0
+plywood_2
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'plywood.n.01_1', 'floor.n.01_1']
+['onfloor', 'plywood.n.01_2', 'floor.n.01_1']
+['onfloor', 'plywood.n.01_3', 'floor.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'floor.n.01_2']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'plywood_2')
+Grasp plywood_2 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_GRASP', 'plywood_0')
+Grasp plywood_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'room_floor_kitchen_0')
+Execution Error: 'NoneType' object is not subscriptable
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_kitchen_0')
+Execution Error: 'NoneType' object is not subscriptable
+************************************************
+Action:  ('RIGHT_GRASP', 'plywood_1')
+right_hand is already holding plywood_2
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_kitchen_0')
+Execution Error: 'NoneType' object is not subscriptable
+************************************************
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

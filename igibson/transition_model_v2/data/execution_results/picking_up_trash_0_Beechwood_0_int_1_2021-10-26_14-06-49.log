@@ -1,0 +1,64 @@
+Addressable Objects:
+trash_can_116
+room_floor_living_room_0
+room_floor_kitchen_0
+sticky_note_117
+sticky_note_119
+sticky_note_118
+pop_120
+pop_121
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'ashcan.n.01_1', 'floor.n.01_2']
+['onfloor', 'pad.n.01_1', 'floor.n.01_2']
+['onfloor', 'pad.n.01_2', 'floor.n.01_2']
+['onfloor', 'pad.n.01_3', 'floor.n.01_1']
+['onfloor', 'pop.n.02_1', 'floor.n.01_1']
+['onfloor', 'pop.n.02_2', 'floor.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_2']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'pad.n.01', '-', 'pad.n.01', 'inside', 'pad.n.01', 'ashcan.n.01_1']
+['forall', 'pop.n.02', '-', 'pop.n.02', 'inside', 'pop.n.02', 'ashcan.n.01_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'sticky_note_118')
+Grasp sticky_note_118 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_GRASP', 'sticky_note_117')
+Grasp sticky_note_117 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'trash_can_116')
+Place inside sticky_note_117 trash_can_116 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'trash_can_116')
+Place inside sticky_note_118 trash_can_116 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'pop_121')
+Grasp pop_121 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_GRASP', 'sticky_note_119')
+Grasp sticky_note_119 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'trash_can_116')
+Place inside sticky_note_119 trash_can_116 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'trash_can_116')
+Place inside pop_121 trash_can_116 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'pop_120')
+Grasp pop_120 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'trash_can_116')
+Place inside pop_120 trash_can_116 successful
+Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
+************************************************
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

@@ -1,0 +1,91 @@
+Addressable Objects:
+top_cabinet_62
+countertop_81
+fridge_61
+hamburger_1
+door_91
+apple_0
+room_floor_kitchen_0
+carton_0
+hamburger_0
+apple_0_part_0
+apple_0_part_1
+apple_0_multiplexer
+juice_0
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'carton.n.02_1', 'floor.n.01_1']
+['inside', 'sandwich.n.01_1', 'electric_refrigerator.n.01_1']
+['ontop', 'apple.n.01_1', 'countertop.n.01_1']
+['inside', 'snack_food.n.01_1', 'cabinet.n.01_1']
+['ontop', 'juice.n.01_1', 'countertop.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['inside', 'sandwich.n.01_1', 'carton.n.02_1']
+['inside', 'apple.n.01_1', 'carton.n.02_1']
+['inside', 'snack_food.n.01_1', 'carton.n.02_1']
+['inside', 'juice.n.01_1', 'carton.n.02_1']
+['or', 'onfloor', 'carton.n.02_1', 'floor.n.01_1', 'ontop', 'carton.n.02_1', 'countertop.n.01_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'apple_0_multiplexer')
+Grasp apple_0_multiplexer with right_hand successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
+Place inside apple_0_multiplexer carton_0 successful
+Post Effects:  True (False, {'satisfied': [1, 4], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('RIGHT_GRASP', 'fridge_61')
+Grasp fridge_61 with right_hand successful
+Post Effects:  True (False, {'satisfied': [1, 4], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('OPEN', 'fridge_61')
+Open fridge_61 success
+Post Effects:  True (False, {'satisfied': [1, 4], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('RIGHT_RELEASE', 'fridge_61')
+Release fridge_61 from right_hand successful
+Post Effects:  True (False, {'satisfied': [1, 4], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('LEFT_GRASP', 'hamburger_0')
+Grasp hamburger_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [1, 4], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('UNFREEZE', 'hamburger_0')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [1, 4], 'unsatisfied': [0, 2, 3]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'carton_0')
+Place inside hamburger_0 carton_0 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 4], 'unsatisfied': [2, 3]})
+************************************************
+Action:  ('RIGHT_GRASP', 'top_cabinet_62')
+Grasp top_cabinet_62 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 4], 'unsatisfied': [2, 3]})
+************************************************
+Action:  ('OPEN', 'top_cabinet_62')
+Open top_cabinet_62 success
+Post Effects:  True (False, {'satisfied': [0, 1, 4], 'unsatisfied': [2, 3]})
+************************************************
+Action:  ('RIGHT_RELEASE', 'top_cabinet_62')
+Release top_cabinet_62 from right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 4], 'unsatisfied': [2, 3]})
+************************************************
+Action:  ('RIGHT_GRASP', 'juice_0')
+Grasp juice_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 4], 'unsatisfied': [2, 3]})
+************************************************
+Action:  ('LEFT_GRASP', 'hamburger_1')
+Grasp hamburger_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 4], 'unsatisfied': [2, 3]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'carton_0')
+Place inside hamburger_1 carton_0 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 4], 'unsatisfied': [3]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
+Place inside juice_0 carton_0 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': []})
+************************************************
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

@@ -1,0 +1,119 @@
+Addressable Objects:
+strawberry_0_part_0
+carving_knife_0
+strawberry_0_part_1
+peach_0_part_0
+fridge_97
+peach_0
+bottom_cabinet_no_top_80
+room_floor_kitchen_0
+strawberry_0_multiplexer
+jar_0
+peach_0_multiplexer
+peach_0_part_1
+strawberry_0
+jar_1
+countertop_84
+-----------------------------------------------
+Initial Conditions: 
+['inside', 'strawberry.n.01_1', 'electric_refrigerator.n.01_1']
+['inside', 'peach.n.03_1', 'electric_refrigerator.n.01_1']
+['not', 'sliced', 'strawberry.n.01_1']
+['not', 'sliced', 'peach.n.03_1']
+['ontop', 'jar.n.01_1', 'countertop.n.01_1']
+['ontop', 'jar.n.01_2', 'countertop.n.01_1']
+['ontop', 'carving_knife.n.01_1', 'countertop.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['exists', 'jar.n.01', '-', 'jar.n.01', 'and', 'inside', 'strawberry.n.01_1', 'jar.n.01', 'not', 'inside', 'peach.n.03_1', 'jar.n.01']
+['exists', 'jar.n.01', '-', 'jar.n.01', 'and', 'inside', 'peach.n.03_1', 'jar.n.01', 'not', 'inside', 'strawberry.n.01_1', 'jar.n.01']
+['forall', 'jar.n.01', '-', 'jar.n.01', 'not', 'open', 'jar.n.01']
+['sliced', 'strawberry.n.01_1']
+['sliced', 'peach.n.03_1']
+------------Action Execution Begins-------------
+Action:  ('OPEN', 'fridge_97')
+Open fridge_97 success
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4]})
+************************************************
+Action:  ('RIGHT_GRASP', 'strawberry_0')
+Grasp strawberry_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4]})
+************************************************
+Action:  ('LEFT_GRASP', 'peach_0')
+Grasp peach_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4]})
+************************************************
+Action:  ('LEFT_RELEASE', 'peach_0')
+Release peach_0 from left_hand successful
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4]})
+************************************************
+Action:  ('RIGHT_RELEASE', 'strawberry_0')
+Release strawberry_0 from right_hand successful
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4]})
+************************************************
+Action:  ('LEFT_GRASP', 'carving_knife_0')
+Grasp carving_knife_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4]})
+************************************************
+Action:  ('SLICE', 'strawberry_0')
+Slice strawberry_0 success
+Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4]})
+************************************************
+Action:  ('SLICE', 'peach_0')
+Slice peach_0 success
+Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_RELEASE', 'carving_knife_0')
+Release carving_knife_0 from left_hand successful
+Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('OPEN', 'jar_1')
+Open jar_1 success
+Post Effects:  True (False, {'satisfied': [3, 4], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('RIGHT_GRASP', 'strawberry_0_part_0')
+Grasp strawberry_0_part_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [3, 4], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'jar_1')
+Place inside strawberry_0_part_0 jar_1 successful
+Post Effects:  True (False, {'satisfied': [3, 4], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('RIGHT_GRASP', 'strawberry_0_part_1')
+Grasp strawberry_0_part_1 with right_hand successful
+Post Effects:  True (False, {'satisfied': [3, 4], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'jar_1')
+Place inside strawberry_0_part_1 jar_1 successful
+Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2]})
+************************************************
+Action:  ('CLOSE', 'jar_1')
+Close jar_1 success
+Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1]})
+************************************************
+Action:  ('OPEN', 'jar_0')
+Open jar_0 success
+Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2]})
+************************************************
+Action:  ('RIGHT_GRASP', 'peach_0_part_0')
+Grasp peach_0_part_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'jar_0')
+Place inside peach_0_part_0 jar_0 successful
+Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2]})
+************************************************
+Action:  ('RIGHT_GRASP', 'peach_0_part_1')
+Grasp peach_0_part_1 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'jar_0')
+Place inside peach_0_part_1 jar_0 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 3, 4], 'unsatisfied': [2]})
+************************************************
+Action:  ('CLOSE', 'jar_0')
+Close jar_0 success
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': []})
+************************************************
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

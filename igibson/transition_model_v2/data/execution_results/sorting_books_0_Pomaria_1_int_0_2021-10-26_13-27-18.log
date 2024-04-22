@@ -1,0 +1,53 @@
+Addressable Objects:
+hardback_79
+hardback_78
+room_floor_living_room_0
+shelf_15
+coffee_table_3
+hardback_81
+notebook_80
+-----------------------------------------------
+Initial Conditions: 
+['ontop', 'hardback.n.01_1', 'table.n.02_1']
+['onfloor', 'hardback.n.01_2', 'floor.n.01_1']
+['onfloor', 'book.n.02_1', 'floor.n.01_1']
+['ontop', 'book.n.02_2', 'table.n.02_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'hardback.n.01', '-', 'hardback.n.01', 'ontop', 'hardback.n.01', 'shelf.n.01_1']
+['forall', 'book.n.02', '-', 'book.n.02', 'ontop', 'book.n.02', 'shelf.n.01_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'notebook_80')
+Grasp notebook_80 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'shelf_15')
+Place ontop notebook_80 shelf_15 unsuccessful
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'hardback_81')
+Grasp hardback_81 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_GRASP', 'hardback_79')
+Grasp hardback_79 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'shelf_15')
+Place ontop hardback_79 shelf_15 unsuccessful
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'shelf_15')
+Place ontop hardback_81 shelf_15 unsuccessful
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'hardback_78')
+Grasp hardback_78 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'shelf_15')
+Place ontop hardback_78 shelf_15 unsuccessful
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

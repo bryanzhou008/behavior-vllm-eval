@@ -1,0 +1,135 @@
+Addressable Objects:
+bow_0
+notebook_1
+ball_0
+basket_0
+bottom_cabinet_no_top_15
+egg_0
+countertop_18
+bracelet_0
+bow_1
+lollipop_0
+notebook_0
+room_floor_kitchen_0
+fridge_27
+bottom_cabinet_no_top_16
+egg_1
+basket_1
+lollipop_1
+-----------------------------------------------
+Initial Conditions: 
+['ontop', 'basket.n.01_1', 'countertop.n.01_1']
+['ontop', 'basket.n.01_2', 'countertop.n.01_1']
+['ontop', 'ball.n.01_1', 'countertop.n.01_1']
+['ontop', 'jewelry.n.01_1', 'countertop.n.01_1']
+['inside', 'book.n.02_1', 'cabinet.n.01_1']
+['inside', 'book.n.02_2', 'cabinet.n.01_1']
+['inside', 'bow.n.08_1', 'cabinet.n.01_2']
+['inside', 'bow.n.08_2', 'cabinet.n.01_2']
+['inside', 'egg.n.02_1', 'electric_refrigerator.n.01_1']
+['cooked', 'egg.n.02_1']
+['inside', 'egg.n.02_2', 'electric_refrigerator.n.01_1']
+['cooked', 'egg.n.02_2']
+['ontop', 'candy.n.01_1', 'electric_refrigerator.n.01_1']
+['ontop', 'candy.n.01_2', 'electric_refrigerator.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'basket.n.01', '-', 'basket.n.01', 'ontop', 'basket.n.01', 'countertop.n.01_1']
+['forpairs', 'basket.n.01', '-', 'basket.n.01', 'egg.n.02', '-', 'egg.n.02', 'inside', 'egg.n.02', 'basket.n.01']
+['forpairs', 'basket.n.01', '-', 'basket.n.01', 'candy.n.01', '-', 'candy.n.01', 'inside', 'candy.n.01', 'basket.n.01']
+['exists', 'basket.n.01', '-', 'basket.n.01', 'and', 'inside', 'jewelry.n.01_1', 'basket.n.01', 'inside', 'ball.n.01_1', 'basket.n.01']
+['forpairs', 'bow.n.08', '-', 'bow.n.08', 'basket.n.01', '-', 'basket.n.01', 'or', 'ontop', 'bow.n.08', 'basket.n.01', 'inside', 'bow.n.08', 'basket.n.01']
+['forpairs', 'book.n.02', '-', 'book.n.02', 'basket.n.01', '-', 'basket.n.01', 'nextto', 'book.n.02', 'basket.n.01']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'ball_61')
+Execution Error: 'ball_61'
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'basket_59')
+Execution Error: 'basket_59'
+************************************************
+Action:  ('RIGHT_GRASP', 'bracelet_62')
+Execution Error: 'bracelet_62'
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'basket_59')
+Execution Error: 'basket_59'
+************************************************
+Action:  ('RIGHT_GRASP', 'bottom_cabinet_no_top_15')
+Grasp bottom_cabinet_no_top_15 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
+************************************************
+Action:  ('OPEN', 'bottom_cabinet_no_top_15')
+Open bottom_cabinet_no_top_15 success
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
+************************************************
+Action:  ('RIGHT_RELEASE', 'bottom_cabinet_no_top_15')
+Release bottom_cabinet_no_top_15 from right_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
+************************************************
+Action:  ('RIGHT_GRASP', 'bow_65')
+Execution Error: 'bow_65'
+************************************************
+Action:  ('LEFT_GRASP', 'bow_66')
+Execution Error: 'bow_66'
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'basket_59')
+Execution Error: 'basket_59'
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'basket_60')
+Execution Error: 'basket_60'
+************************************************
+Action:  ('RIGHT_GRASP', 'bottom_cabinet_no_top_16')
+Grasp bottom_cabinet_no_top_16 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
+************************************************
+Action:  ('OPEN', 'bottom_cabinet_no_top_16')
+Open bottom_cabinet_no_top_16 success
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
+************************************************
+Action:  ('RIGHT_RELEASE', 'bottom_cabinet_no_top_16')
+Release bottom_cabinet_no_top_16 from right_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
+************************************************
+Action:  ('RIGHT_GRASP', 'lollipop_70')
+Execution Error: 'lollipop_70'
+************************************************
+Action:  ('LEFT_GRASP', 'candy_cane_69')
+Execution Error: 'candy_cane_69'
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'basket_59')
+Execution Error: 'basket_59'
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'basket_60')
+Execution Error: 'basket_60'
+************************************************
+Action:  ('RIGHT_GRASP', 'fridge_27')
+Grasp fridge_27 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
+************************************************
+Action:  ('OPEN', 'fridge_27')
+Open fridge_27 success
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
+************************************************
+Action:  ('RIGHT_RELEASE', 'fridge_27')
+Release fridge_27 from right_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
+************************************************
+Action:  ('RIGHT_GRASP', 'egg_68')
+Execution Error: 'egg_68'
+************************************************
+Action:  ('LEFT_GRASP', 'egg_67')
+Execution Error: 'egg_67'
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'basket_59')
+Execution Error: 'basket_59'
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'basket_60')
+Execution Error: 'basket_60'
+************************************************
+Action:  ('UNFREEZE', 'egg_68')
+Execution Error: 'egg_68'
+************************************************
+Action:  ('UNFREEZE', 'egg_67')
+Execution Error: 'egg_67'
+************************************************
+{'all_action_execution_true': True, 'unknown_execution_error': True, 'all_condition_satisfied': False}

@@ -1,0 +1,88 @@
+Addressable Objects:
+window_119
+dishtowel_0
+window_133
+dishtowel_1
+toothpaste_0
+room_floor_kitchen_0
+coffee_table_33
+rag_0
+rag_1
+bottom_cabinet_no_top_80
+sink_82
+room_floor_living_room_0
+-----------------------------------------------
+Initial Conditions: 
+['inside', 'towel.n.01_1', 'cabinet.n.01_1']
+['inside', 'towel.n.01_2', 'cabinet.n.01_1']
+['inside', 'rag.n.01_1', 'cabinet.n.01_1']
+['inside', 'rag.n.01_2', 'cabinet.n.01_1']
+['not', 'soaked', 'rag.n.01_1']
+['not', 'soaked', 'rag.n.01_2']
+['inside', 'cleansing_agent.n.01_1', 'cabinet.n.01_1']
+['dusty', 'window.n.01_1']
+['dusty', 'window.n.01_2']
+['not', 'dusty', 'sink.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['and', 'soaked', 'rag.n.01_1', 'soaked', 'rag.n.01_2']
+['and', 'not', 'dusty', 'window.n.01_1', 'not', 'dusty', 'window.n.01_2']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'bottom_cabinet_no_top_80')
+Grasp bottom_cabinet_no_top_80 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('OPEN', 'bottom_cabinet_no_top_80')
+Open bottom_cabinet_no_top_80 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_RELEASE', 'bottom_cabinet_no_top_80')
+Release bottom_cabinet_no_top_80 from right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'rag_0')
+Grasp rag_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_GRASP', 'rag_1')
+Grasp rag_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'sink_82')
+Place inside rag_0 sink_82 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'sink_82')
+Place inside rag_1 sink_82 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('TOGGLE_ON', 'sink_82')
+Execution Error: 22
+************************************************
+Action:  ('TOGGLE_OFF', 'sink_82')
+Execution Error: 23
+************************************************
+Action:  ('SOAK', 'rag_0')
+Soak rag_0 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_GRASP', 'rag_1')
+Grasp rag_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'rag_0')
+Grasp rag_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_GRASP', 'rag_1')
+left_hand is already holding rag_1
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('CLEAN', 'window_133')
+Execution Error: 'ActionEnv' object has no attribute 'inventory'
+************************************************
+Action:  ('CLEAN', 'window_119')
+Execution Error: 'ActionEnv' object has no attribute 'inventory'
+************************************************
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

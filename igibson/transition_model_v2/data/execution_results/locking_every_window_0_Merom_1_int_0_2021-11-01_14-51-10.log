@@ -1,0 +1,47 @@
+Addressable Objects:
+window_82
+window_79
+sofa_25
+window_81
+bed_7
+window_76
+room_floor_living_room_0
+-----------------------------------------------
+Initial Conditions: 
+['open', 'window.n.01_1']
+['open', 'window.n.01_2']
+['open', 'window.n.01_3']
+['open', 'window.n.01_4']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['not', 'open', 'window.n.01_1']
+['not', 'open', 'window.n.01_2']
+['not', 'open', 'window.n.01_3']
+['not', 'open', 'window.n.01_4']
+------------Action Execution Begins-------------
+Action:  ('TOGGLE_ON', 'window_133')
+Execution Error: 'window_133'
+************************************************
+Action:  ('TOGGLE_OFF', 'window_133')
+Execution Error: 'window_133'
+************************************************
+Action:  ('TOGGLE_ON', 'window_129')
+Execution Error: 'window_129'
+************************************************
+Action:  ('TOGGLE_OFF', 'window_129')
+Execution Error: 'window_129'
+************************************************
+Action:  ('TOGGLE_ON', 'window_119')
+Execution Error: 'window_119'
+************************************************
+Action:  ('TOGGLE_OFF', 'window_119')
+Execution Error: 'window_119'
+************************************************
+Action:  ('TOGGLE_ON', 'window_115')
+Execution Error: 'window_115'
+************************************************
+Action:  ('TOGGLE_OFF', 'window_115')
+Execution Error: 'window_115'
+************************************************
+{'all_action_execution_true': True, 'unknown_execution_error': True, 'all_condition_satisfied': False}

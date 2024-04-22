@@ -1,0 +1,105 @@
+Addressable Objects:
+pasta_2
+pasta_0
+spaghetti_sauce_1
+spaghetti_sauce_0
+pasta_3
+countertop_79
+fridge_61
+room_floor_kitchen_0
+pasta_1
+spaghetti_sauce_2
+mayonnaise_0
+-----------------------------------------------
+Initial Conditions: 
+['ontop', 'pasta.n.02_1', 'countertop.n.01_1']
+['ontop', 'pasta.n.02_2', 'countertop.n.01_1']
+['ontop', 'pasta.n.02_3', 'countertop.n.01_1']
+['ontop', 'pasta.n.02_4', 'countertop.n.01_1']
+['ontop', 'sauce.n.01_1', 'countertop.n.01_1']
+['ontop', 'sauce.n.01_2', 'countertop.n.01_1']
+['ontop', 'sauce.n.01_3', 'countertop.n.01_1']
+['ontop', 'sauce.n.01_4', 'countertop.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'pasta.n.02', '-', 'pasta.n.02', 'inside', 'pasta.n.02', 'electric_refrigerator.n.01_1']
+['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'electric_refrigerator.n.01_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'fridge_61')
+Grasp fridge_61 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('OPEN', 'fridge_61')
+Open fridge_61 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_RELEASE', 'fridge_61')
+Release fridge_61 from right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'spaghetti_sauce_2')
+Grasp spaghetti_sauce_2 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'fridge_61')
+Place inside spaghetti_sauce_2 fridge_61 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_GRASP', 'spaghetti_sauce_1')
+Grasp spaghetti_sauce_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'fridge_61')
+Place inside spaghetti_sauce_1 fridge_61 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'spaghetti_sauce_0')
+Grasp spaghetti_sauce_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'fridge_61')
+Place inside spaghetti_sauce_0 fridge_61 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'pasta_0')
+Grasp pasta_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'fridge_61')
+Place inside pasta_0 fridge_61 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_GRASP', 'pasta_1')
+Grasp pasta_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'fridge_61')
+Place inside pasta_1 fridge_61 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'pasta_2')
+Grasp pasta_2 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'fridge_61')
+Place inside pasta_2 fridge_61 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_GRASP', 'pasta_3')
+Grasp pasta_3 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'fridge_61')
+Place inside pasta_3 fridge_61 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
+************************************************
+Action:  ('LEFT_GRASP', 'mayonnaise_0')
+Grasp mayonnaise_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'fridge_61')
+Place inside mayonnaise_0 fridge_61 successful
+Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
+************************************************
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}
