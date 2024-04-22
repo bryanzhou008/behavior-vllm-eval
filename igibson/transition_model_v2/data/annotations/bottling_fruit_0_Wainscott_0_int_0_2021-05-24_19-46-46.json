@@ -1,31 +1,24 @@
 [
-    {
-        "action": "RIGHT_GRASP",
-        "object": "fridge_97"
-    },
+    
     {
         "action": "OPEN",
         "object": "fridge_97"
     },
     {
-        "action": "RIGHT_RELEASE",
-        "object": "fridge_97"
-    },
-    {
         "action": "RIGHT_GRASP",
-        "object": "strawberry_0_multiplexer"
+        "object": "strawberry_0"
     },
     {
         "action": "LEFT_GRASP",
-        "object": "peach_0_multiplexer"
+        "object": "peach_0"
     },
     {
-        "action": "LEFT_PLACE_ONTOP",
-        "object": "countertop_84"
+        "action": "LEFT_RELEASE",
+        "object": "peach_0"
     },
     {
-        "action": "RIGHT_PLACE_ONTOP",
-        "object": "countertop_84"
+        "action": "RIGHT_RELEASE",
+        "object": "strawberry_0"
     },
     {
         "action": "LEFT_GRASP",
@@ -33,35 +26,15 @@
     },
     {
         "action": "SLICE",
-        "object": "strawberry_0_multiplexer"
+        "object": "strawberry_0"
     },
     {
         "action": "SLICE",
-        "object": "peach_0_multiplexer"
+        "object": "peach_0"
     },
     {
         "action": "LEFT_RELEASE",
         "object": "carving_knife_0"
-    },
-    {
-        "action": "LEFT_GRASP",
-        "object": "jar_1"
-    },
-    {
-        "action": "RIGHT_GRASP",
-        "object": "jar_0"
-    },
-    {
-        "action": "LEFT_PLACE_ONTOP",
-        "object": "countertop_84"
-    },
-    {
-        "action": "RIGHT_PLACE_ONTOP",
-        "object": "countertop_84"
-    },
-    {
-        "action": "LEFT_GRASP",
-        "object": "jar_1"
     },
     {
         "action": "OPEN",
@@ -88,14 +61,6 @@
         "object": "jar_1"
     },
     {
-        "action": "LEFT_RELEASE",
-        "object": "jar_1"
-    },
-    {
-        "action": "LEFT_GRASP",
-        "object": "jar_0"
-    },
-    {
         "action": "OPEN",
         "object": "jar_0"
     },
@@ -105,7 +70,7 @@
     },
     {
         "action": "RIGHT_PLACE_INSIDE",
-        "object": "jar_1"
+        "object": "jar_0"
     },
     {
         "action": "RIGHT_GRASP",
@@ -113,14 +78,10 @@
     },
     {
         "action": "RIGHT_PLACE_INSIDE",
-        "object": "jar_1"
-    },
-    {
-        "action": "CLOSE",
         "object": "jar_0"
     },
     {
-        "action": "LEFT",
+        "action": "CLOSE",
         "object": "jar_0"
     }
 ]
