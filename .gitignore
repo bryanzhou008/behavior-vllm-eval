@@ -8,7 +8,6 @@
 src/
 pw
 *.o
-*.ipynb
 *.ipynb_checkpoints/
 *.out
 npz/
