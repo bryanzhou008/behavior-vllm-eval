@@ -4,10 +4,6 @@
         "object": "hand_towel_52"
     },
     {
-        "action": "LEFT_GRASP",
-        "object": "bottom_cabinet_2"
-    },
-    {
         "action": "OPEN",
         "object": "bottom_cabinet_2"
     },
@@ -70,10 +66,6 @@
     {
         "action": "RIGHT_GRASP",
         "object": "hand_towel_52"
-    },
-    {
-        "action": "LEFT_GRASP",
-        "object": "bottom_cabinet_0"
     },
     {
         "action": "OPEN",

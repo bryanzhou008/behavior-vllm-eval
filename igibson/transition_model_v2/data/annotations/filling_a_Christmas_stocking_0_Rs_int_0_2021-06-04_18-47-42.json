@@ -64,15 +64,7 @@
         "object": "room_floor_living_room_0"
     },
     {
-        "action": "RIGHT_GRASP",
-        "object": "bottom_cabinet_41"
-    },
-    {
         "action": "OPEN",
-        "object": "bottom_cabinet_41"
-    },
-    {
-        "action": "RIGHT_RELEASE",
         "object": "bottom_cabinet_41"
     },
     {

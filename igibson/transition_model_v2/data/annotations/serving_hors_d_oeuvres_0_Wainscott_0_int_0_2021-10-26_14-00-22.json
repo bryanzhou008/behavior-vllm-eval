@@ -1,14 +1,6 @@
 [
     {
-        "action": "RIGHT_GRASP",
-        "object": "fridge_97"
-    },
-    {
         "action": "OPEN",
-        "object": "fridge_97"
-    },
-    {
-        "action": "RIGHT_RELEASE",
         "object": "fridge_97"
     },
     {

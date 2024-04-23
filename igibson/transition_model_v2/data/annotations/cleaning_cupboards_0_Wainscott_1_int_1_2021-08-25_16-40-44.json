@@ -1,14 +1,6 @@
 [
     {
-        "action": "RIGHT_GRASP",
-        "object": "bottom_cabinet_25"
-    },
-    {
         "action": "OPEN",
-        "object": "bottom_cabinet_25"
-    },
-    {
-        "action": "RIGHT_RELEASE",
         "object": "bottom_cabinet_25"
     },
     {
@@ -28,15 +20,7 @@
         "object": "bottom_cabinet_25"
     },
     {
-        "action": "LEFT_GRASP",
-        "object": "bottom_cabinet_25"
-    },
-    {
         "action": "OPEN",
-        "object": "bottom_cabinet_25"
-    },
-    {
-        "action": "LEFT_RELEASE",
         "object": "bottom_cabinet_25"
     },
     {
@@ -56,15 +40,7 @@
         "object": "bottom_cabinet_25"
     },
     {
-        "action": "LEFT_GRASP",
-        "object": "bottom_cabinet_57"
-    },
-    {
         "action": "OPEN",
-        "object": "bottom_cabinet_57"
-    },
-    {
-        "action": "LEFT_RELEASE",
         "object": "bottom_cabinet_57"
     },
     {

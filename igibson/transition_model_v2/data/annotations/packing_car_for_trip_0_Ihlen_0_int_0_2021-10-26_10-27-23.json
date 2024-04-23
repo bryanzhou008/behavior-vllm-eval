@@ -1,14 +1,6 @@
 [
     {
-        "action": "RIGHT_GRASP",
-        "object": "car_50"
-    },
-    {
         "action": "OPEN",
-        "object": "car_50"
-    },
-    {
-        "action": "RIGHT_RELEASE",
         "object": "car_50"
     },
     {

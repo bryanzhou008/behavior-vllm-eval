@@ -16,15 +16,7 @@
         "object": "countertop_31"
     },
     {
-        "action": "RIGHT_GRASP",
-        "object": "fridge_20"
-    },
-    {
         "action": "OPEN",
-        "object": "fridge_20"
-    },
-    {
-        "action": "RIGHT_RELEASE",
         "object": "fridge_20"
     },
     {

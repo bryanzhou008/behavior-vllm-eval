@@ -1,14 +1,6 @@
 [
     {
-        "action": "RIGHT_GRASP",
-        "object": "top_cabinet_62"
-    },
-    {
         "action": "OPEN",
-        "object": "top_cabinet_62"
-    },
-    {
-        "action": "RIGHT_RELEASE",
         "object": "top_cabinet_62"
     },
     {

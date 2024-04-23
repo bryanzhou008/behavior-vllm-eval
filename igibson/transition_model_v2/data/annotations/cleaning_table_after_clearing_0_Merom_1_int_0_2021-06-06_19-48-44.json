@@ -1,19 +1,11 @@
 [
     {
-        "action": "RIGHT_GRASP",
-        "object": "bottom_cabinet_49"
-    },
-    {
         "action": "OPEN",
         "object": "bottom_cabinet_49"
     },
     {
         "action": "LEFT_GRASP",
         "object": "dishtowel_0"
-    },
-    {
-        "action": "RIGHT_RELEASE",
-        "object": "bottom_cabinet_49"
     },
     {
         "action": "TOGGLE_ON",

@@ -8,15 +8,7 @@
         "object": "breakfast_table_3"
     },
     {
-        "action": "RIGHT_GRASP",
-        "object": "bottom_cabinet_no_top_21"
-    },
-    {
         "action": "OPEN",
-        "object": "bottom_cabinet_no_top_21"
-    },
-    {
-        "action": "RIGHT_RELEASE",
         "object": "bottom_cabinet_no_top_21"
     },
     {

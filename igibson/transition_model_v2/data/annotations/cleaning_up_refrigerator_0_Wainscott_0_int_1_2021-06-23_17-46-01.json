@@ -44,15 +44,7 @@
         "object": "rag_144"
     },
     {
-        "action": "LEFT_GRASP",
-        "object": "fridge_97"
-    },
-    {
         "action": "OPEN",
-        "object": "fridge_97"
-    },
-    {
-        "action": "LEFT_RELEASE",
         "object": "fridge_97"
     },
     {

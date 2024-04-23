@@ -8,15 +8,7 @@
         "object": "breakfast_table_44"
     },
     {
-        "action": "RIGHT_GRASP",
-        "object": "fridge_97"
-    },
-    {
         "action": "OPEN",
-        "object": "fridge_97"
-    },
-    {
-        "action": "RIGHT_RELEASE",
         "object": "fridge_97"
     },
     {
@@ -108,15 +100,7 @@
         "object": "fridge_97"
     },
     {
-        "action": "RIGHT_GRASP",
-        "object": "bottom_cabinet_no_top_80"
-    },
-    {
         "action": "OPEN",
-        "object": "bottom_cabinet_no_top_80"
-    },
-    {
-        "action": "RIGHT_RELEASE",
         "object": "bottom_cabinet_no_top_80"
     },
     {

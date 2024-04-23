@@ -64,10 +64,6 @@
         "object": "jar_64"
     },
     {
-        "action": "RIGHT_GRASP",
-        "object": "fridge_40"
-    },
-    {
         "action": "OPEN",
         "object": "fridge_40"
     },
@@ -88,7 +84,7 @@
         "object": "fridge_40"
     },
     {
-        "action": "RIGHT_RELEASE",
+        "action": "CLOSE",
         "object": "fridge_40"
     }
 ]
