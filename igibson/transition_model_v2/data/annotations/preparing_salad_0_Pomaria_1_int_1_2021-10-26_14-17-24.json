@@ -48,15 +48,7 @@
         "object": "tomato_82_multiplexer"
     },
     {
-        "action": "RIGHT_GRASP",
-        "object": "top_cabinet_27"
-    },
-    {
         "action": "OPEN",
-        "object": "top_cabinet_27"
-    },
-    {
-        "action": "RIGHT_RELEASE",
         "object": "top_cabinet_27"
     },
     {

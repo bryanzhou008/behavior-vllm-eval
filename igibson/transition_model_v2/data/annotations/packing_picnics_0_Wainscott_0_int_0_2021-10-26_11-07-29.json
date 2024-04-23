@@ -262,5 +262,9 @@
     {
         "action": "UNFREEZE",
         "object": "strawberry_1_multiplexer"
+    },
+    {
+        "action": "CLOSE",
+        "object": "fridge_97"
     }
 ]

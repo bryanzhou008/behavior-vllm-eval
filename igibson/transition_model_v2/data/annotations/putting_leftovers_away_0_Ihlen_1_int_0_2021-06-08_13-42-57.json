@@ -66,5 +66,9 @@
     {
         "action": "LEFT_PLACE_INSIDE",
         "object": "fridge_61"
+    },
+    {
+        "action": "CLOSE",
+        "object": "fridge_61"
     }
 ]

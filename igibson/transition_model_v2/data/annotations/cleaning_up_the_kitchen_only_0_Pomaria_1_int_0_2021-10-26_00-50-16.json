@@ -60,15 +60,7 @@
         "object": "top_cabinet_24"
     },
     {
-        "action": "LEFT_GRASP",
-        "object": "fridge_20"
-    },
-    {
         "action": "OPEN",
-        "object": "fridge_20"
-    },
-    {
-        "action": "LEFT_RELEASE",
         "object": "fridge_20"
     },
     {
@@ -106,5 +98,9 @@
     {
         "action": "CLOSE",
         "object": "top_cabinet_24"
+    },
+    {
+        "action": "CLOSE",
+        "object": "fridge_20"
     }
 ]

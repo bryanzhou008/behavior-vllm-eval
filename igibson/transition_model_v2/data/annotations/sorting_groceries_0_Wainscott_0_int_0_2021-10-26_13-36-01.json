@@ -138,5 +138,9 @@
     {
         "action": "CLOSE",
         "object": "bottom_cabinet_no_top_80"
+    },
+    {
+        "action": "CLOSE",
+        "object": "fridge_97"
     }
 ]

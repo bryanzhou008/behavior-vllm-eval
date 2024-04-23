@@ -82,9 +82,5 @@
     {
         "action": "CLOSE",
         "object": "fridge_40"
-    },
-    {
-        "action": "CLOSE",
-        "object": "fridge_40"
     }
 ]

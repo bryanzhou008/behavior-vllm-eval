@@ -46,5 +46,9 @@
     {
         "action": "SLICE",
         "object": "lemon_0_multiplexer"
+    },
+    {
+        "action": "CLOSE",
+        "object": "fridge_97"
     }
 ]

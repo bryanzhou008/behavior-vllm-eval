@@ -74,5 +74,9 @@
     {
         "action": "UNFREEZE",
         "object": "olive_0"
+    },
+    {
+        "action": "CLOSE",
+        "object": "fridge_20"
     }
 ]

@@ -1,14 +1,6 @@
 [
     {
-        "action": "RIGHT_GRASP",
-        "object": "dishwasher_20"
-    },
-    {
         "action": "OPEN",
-        "object": "dishwasher_20"
-    },
-    {
-        "action": "RIGHT_RELEASE",
         "object": "dishwasher_20"
     },
     {

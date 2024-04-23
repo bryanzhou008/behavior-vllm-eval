@@ -56,15 +56,7 @@
         "object": "basket_60"
     },
     {
-        "action": "RIGHT_GRASP",
-        "object": "fridge_27"
-    },
-    {
         "action": "OPEN",
-        "object": "fridge_27"
-    },
-    {
-        "action": "RIGHT_RELEASE",
         "object": "fridge_27"
     },
     {
@@ -90,5 +82,9 @@
     {
         "action": "UNFREEZE",
         "object": "egg_67"
+    },
+    {
+        "action": "CLOSE",
+        "object": "fridge_27"
     }
 ]

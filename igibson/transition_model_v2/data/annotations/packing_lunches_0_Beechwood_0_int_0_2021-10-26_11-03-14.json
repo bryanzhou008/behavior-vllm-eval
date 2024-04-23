@@ -32,15 +32,7 @@
         "object": "carton_1"
     },
     {
-        "action": "RIGHT_GRASP",
-        "object": "top_cabinet_0"
-    },
-    {
         "action": "OPEN",
-        "object": "top_cabinet_0"
-    },
-    {
-        "action": "RIGHT_RELEASE",
         "object": "top_cabinet_0"
     },
     {
@@ -60,15 +52,7 @@
         "object": "carton_1"
     },
     {
-        "action": "RIGHT_GRASP",
-        "object": "fridge_0"
-    },
-    {
         "action": "OPEN",
-        "object": "fridge_0"
-    },
-    {
-        "action": "RIGHT_RELEASE",
         "object": "fridge_0"
     },
     {
@@ -86,5 +70,9 @@
     {
         "action": "LEFT_PLACE_INSIDE",
         "object": "carton_1"
+    },
+    {
+        "action": "CLOSE",
+        "object": "fridge_0"
     }
 ]

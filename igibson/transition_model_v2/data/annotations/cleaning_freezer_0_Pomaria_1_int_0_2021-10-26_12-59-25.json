@@ -55,4 +55,8 @@
         "action": "CLEAN",
         "object": "fridge_20"
     }
+    {
+        "action": "CLOSE",
+        "object": "fridge_20"
+    }
 ]

@@ -40,15 +40,7 @@
         "object": "rag_0"
     },
     {
-        "action": "LEFT_GRASP",
-        "object": "stove_88"
-    },
-    {
         "action": "OPEN",
-        "object": "stove_88"
-    },
-    {
-        "action": "LEFT_RELEASE",
         "object": "stove_88"
     },
     {
