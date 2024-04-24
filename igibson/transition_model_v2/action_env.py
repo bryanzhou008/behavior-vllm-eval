@@ -552,7 +552,8 @@ class ActionEnv:
         for i in [0,1]:
             for weight in [-1,1]:
                 target_pos = obj2.get_position()
-                target_pos[i] += weight*(0.5 * obj1.bounding_box[i] + 0.5 * obj2.bounding_box[i])
+                target_pos[i] += weight*(0.5 * obj1.bounding_box[i] + 
+                                         0.5 * obj2.bounding_box[i])
                 obj1.set_position(target_pos)
                 if obj1.states[object_states.NextTo].get_value(obj2):
                     return
@@ -575,7 +576,8 @@ class ActionEnv:
         for i in [0,1]:
             for weight in [-1,1]:
                 target_pos = self.robot.get_position()
-                target_pos[i] += weight*(0.5 * obj.bounding_box[i] + 0.5 * self.robot.bounding_box[i])
+                target_pos[i] += weight*(0.5 * obj.bounding_box[i] + 
+                                         0.5 * self.robot.bounding_box[i])
                 target_pos[2]-=0.5 * self.robot.bounding_box[2]
                 target_pos[2] = max(target_pos[2],0.5 * obj.bounding_box[2])
                 obj.set_position(target_pos)
