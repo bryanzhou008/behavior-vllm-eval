@@ -9,7 +9,7 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "piece_of_cloth_0"
+        "object": "paper_towel_0"
     },
     {
         "action": "RIGHT_PLACE_INSIDE",
@@ -17,11 +17,11 @@
     },
     {
         "action": "SOAK",
-        "object": "piece_of_cloth_0"
+        "object": "paper_towel_0"
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "piece_of_cloth_0"
+        "object": "paper_towel_0"
     },
     {
         "action": "OPEN",
@@ -41,7 +41,7 @@
     },
     {
         "action": "RIGHT_RELEASE",
-        "object": "piece_of_cloth_0"
+        "object": "paper_towel_0"
     },
     {
         "action": "RIGHT_GRASP",

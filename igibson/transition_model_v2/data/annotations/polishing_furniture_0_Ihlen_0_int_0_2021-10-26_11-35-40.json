@@ -12,7 +12,7 @@
         "object": "shelf_11"
     },
     {
-        "action": "RELEASE",
+        "action": "RIGHT_RELEASE",
         "object": "rag_0"
     }
 ]

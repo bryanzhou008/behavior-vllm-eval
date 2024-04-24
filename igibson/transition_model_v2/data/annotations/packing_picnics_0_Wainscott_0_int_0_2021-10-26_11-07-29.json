@@ -9,10 +9,10 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "apple_0_multiplexer"
+        "object": "cantaloup_0"
     },
     {
-        "action": "RIGHT_PLACE_INSIDE",
+        "action": "RIGHT_PLACE_NEXTTO",
         "object": "carton_0"
     },
     {

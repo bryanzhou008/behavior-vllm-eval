@@ -121,19 +121,11 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "chicken_0"
-    },
-    {
-        "action": "LEFT_GRASP",
-        "object": "chicken_1"
+        "object": "prosciutto_0"
     },
     {
         "action": "RIGHT_PLACE_INSIDE",
-        "object": "bottom_cabinet_no_top_80"
-    },
-    {
-        "action": "LEFT_PLACE_INSIDE",
-        "object": "bottom_cabinet_no_top_80"
+        "object": "fridge_97"
     },
     {
         "action": "CLOSE",

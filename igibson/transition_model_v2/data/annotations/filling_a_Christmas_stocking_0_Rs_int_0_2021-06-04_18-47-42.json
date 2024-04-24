@@ -109,7 +109,7 @@
     },
     {
         "action": "LEFT_GRASP",
-        "object": "candy_cane_1"
+        "object": "lollipop_0"
     },
     {
         "action": "LEFT_PLACE_INSIDE",
@@ -133,7 +133,7 @@
     },
     {
         "action": "LEFT_GRASP",
-        "object": "candy_cane_2"
+        "object": "lollipop_1"
     },
     {
         "action": "LEFT_PLACE_INSIDE",
@@ -145,7 +145,7 @@
     },
     {
         "action": "LEFT_GRASP",
-        "object": "lollipop_3"
+        "object": "candy_cane_0"
     },
     {
         "action": "RIGHT_PLACE_INSIDE",
@@ -157,7 +157,7 @@
     },
     {
         "action": "LEFT_GRASP",
-        "object": "candy_cane_3"
+        "object": "lollipop_2"
     },
     {
         "action": "LEFT_PLACE_INSIDE",

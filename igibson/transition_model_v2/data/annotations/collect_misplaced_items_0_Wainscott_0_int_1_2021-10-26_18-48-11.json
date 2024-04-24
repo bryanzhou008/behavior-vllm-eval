@@ -5,11 +5,11 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "necklace_144"
+        "object": "necklace_0"
     },
     {
         "action": "LEFT_GRASP",
-        "object": "sock_146"
+        "object": "sock_0"
     },
     {
         "action": "LEFT_PLACE_ONTOP",
@@ -21,11 +21,11 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "sock_147"
+        "object": "sock_1"
     },
     {
         "action": "LEFT_GRASP",
-        "object": "gym_shoe_143"
+        "object": "gym_shoe_0"
     },
     {
         "action": "LEFT_PLACE_ONTOP",
@@ -37,7 +37,7 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "notebook_145"
+        "object": "notebook_0"
     },
     {
         "action": "RIGHT_PLACE_ONTOP",

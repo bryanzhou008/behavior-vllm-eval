@@ -41,11 +41,11 @@
     },
     {
         "action": "OPEN",
-        "object": "bottom_cabinet_57"
+        "object": "bottom_cabinet_28"
     },
     {
         "action": "CLEAN",
-        "object": "bottom_cabinet_57"
+        "object": "bottom_cabinet_28"
     },
     {
         "action": "RIGHT_PLACE_ONTOP",
@@ -57,7 +57,7 @@
     },
     {
         "action": "LEFT_GRASP",
-        "object": "notebook_103"
+        "object": "notebook_102"
     },
     {
         "action": "RIGHT_PLACE_ONTOP",

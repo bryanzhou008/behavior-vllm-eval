@@ -1,34 +1,34 @@
 [
     {
         "action": "TOGGLE_ON",
-        "object": "window_133"
+        "object": "window_82"
     },
     {
         "action": "TOGGLE_OFF",
-        "object": "window_133"
+        "object": "window_82"
     },
     {
         "action": "TOGGLE_ON",
-        "object": "window_129"
+        "object": "window_81"
     },
     {
         "action": "TOGGLE_OFF",
-        "object": "window_129"
+        "object": "window_81"
     },
     {
         "action": "TOGGLE_ON",
-        "object": "window_119"
+        "object": "window_79"
     },
     {
         "action": "TOGGLE_OFF",
-        "object": "window_119"
+        "object": "window_79"
     },
     {
         "action": "TOGGLE_ON",
-        "object": "window_115"
+        "object": "window_76"
     },
     {
         "action": "TOGGLE_OFF",
-        "object": "window_115"
+        "object": "window_76"
     }
 ]

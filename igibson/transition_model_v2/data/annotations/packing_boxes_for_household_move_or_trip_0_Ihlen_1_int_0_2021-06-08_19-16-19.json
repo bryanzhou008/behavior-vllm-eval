@@ -36,14 +36,6 @@
         "object": "sweater_0"
     },
     {
-        "action": "LEFT_GRASP",
-        "object": "sweater_1"
-    },
-    {
-        "action": "LEFT_PLACE_INSIDE",
-        "object": "carton_0"
-    },
-    {
         "action": "RIGHT_PLACE_INSIDE",
         "object": "carton_0"
     },

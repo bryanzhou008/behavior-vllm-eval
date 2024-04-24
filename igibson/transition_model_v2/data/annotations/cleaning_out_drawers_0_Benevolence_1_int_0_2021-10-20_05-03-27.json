@@ -9,7 +9,7 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "bowl_59"
+        "object": "bowl_0"
     },
     {
         "action": "RIGHT_PLACE_ONTOP",
@@ -17,7 +17,7 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "spoon_62"
+        "object": "bowl_1"
     },
     {
         "action": "RIGHT_PLACE_ONTOP",
@@ -25,7 +25,7 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "rag_63"
+        "object": "bath_towel_0"
     },
     {
         "action": "RIGHT_PLACE_ONTOP",
@@ -33,7 +33,7 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "bowl_60"
+        "object": "bowl_1"
     },
     {
         "action": "RIGHT_PLACE_ONTOP",
@@ -41,7 +41,7 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "spoon_61"
+        "object": "bowl_0"
     },
     {
         "action": "RIGHT_PLACE_ONTOP",

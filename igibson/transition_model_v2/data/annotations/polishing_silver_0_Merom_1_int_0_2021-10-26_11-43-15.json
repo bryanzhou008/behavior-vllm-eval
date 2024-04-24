@@ -22,9 +22,5 @@
     {
         "action": "CLEAN",
         "object": "spoon_100"
-    },
-    {
-        "action": "CLEAN",
-        "object": "sandal_143"
     }
 ]

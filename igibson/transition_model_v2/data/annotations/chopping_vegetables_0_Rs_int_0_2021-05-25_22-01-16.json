@@ -9,7 +9,7 @@
     },
     {
         "action": "LEFT_PLACE_ONTOP",
-        "object": "countertop_01"
+        "object": "countertop_26"
     },
     {
         "action": "RIGHT_GRASP",
@@ -73,11 +73,11 @@
     },
     {
         "action": "LEFT_PLACE_ONTOP",
-        "object": "countertop_01"
+        "object": "countertop_26"
     },
     {
         "action": "RIGHT_PLACE_ONTOP",
-        "object": "countertop_01"
+        "object": "countertop_26"
     },
     {
         "action": "RIGHT_GRASP",
@@ -117,15 +117,15 @@
     },
     {
         "action": "RIGHT_PLACE_ONTOP",
-        "object": "countertop_01"
+        "object": "countertop_26"
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "vidalia_onion_67_multiplexer_part_0"
+        "object": "vidalia_onion_67_part_0"
     },
     {
         "action": "LEFT_GRASP",
-        "object": "vidalia_onion_67_multiplexer_part_1"
+        "object": "vidalia_onion_67_part_1"
     },
     {
         "action": "RIGHT_PLACE_INSIDE",
@@ -137,11 +137,11 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "vidalia_onion_68_multiplexer_part_0"
+        "object": "vidalia_onion_68_part_0"
     },
     {
         "action": "LEFT_GRASP",
-        "object": "vidalia_onion_68_multiplexer_part_1"
+        "object": "vidalia_onion_68_part_1"
     },
     {
         "action": "RIGHT_PLACE_INSIDE",

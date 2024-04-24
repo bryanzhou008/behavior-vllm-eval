@@ -1,19 +1,19 @@
 [
     {
         "action": "RIGHT_GRASP",
-        "object": "ball_61"
+        "object": "ball_0"
     },
     {
         "action": "RIGHT_PLACE_INSIDE",
-        "object": "basket_59"
+        "object": "basket_0"
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "bracelet_62"
+        "object": "bracelet_0"
     },
     {
         "action": "RIGHT_PLACE_INSIDE",
-        "object": "basket_59"
+        "object": "basket_0"
     },
     {
         "action": "OPEN",
@@ -21,19 +21,19 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "bow_65"
+        "object": "bow_0"
     },
     {
         "action": "LEFT_GRASP",
-        "object": "bow_66"
+        "object": "bow_1"
     },
     {
         "action": "LEFT_PLACE_INSIDE",
-        "object": "basket_59"
+        "object": "basket_0"
     },
     {
         "action": "RIGHT_PLACE_INSIDE",
-        "object": "basket_60"
+        "object": "basket_1"
     },
     {
         "action": "OPEN",
@@ -41,19 +41,19 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "lollipop_70"
+        "object": "basket_0"
     },
     {
         "action": "LEFT_GRASP",
-        "object": "candy_cane_69"
+        "object": "lollipop_1"
     },
     {
         "action": "LEFT_PLACE_INSIDE",
-        "object": "basket_59"
+        "object": "basket_0"
     },
     {
         "action": "RIGHT_PLACE_INSIDE",
-        "object": "basket_60"
+        "object": "basket_1"
     },
     {
         "action": "OPEN",
@@ -61,27 +61,27 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "egg_68"
+        "object": "egg_1"
     },
     {
         "action": "LEFT_GRASP",
-        "object": "egg_67"
+        "object": "egg_0"
     },
     {
         "action": "LEFT_PLACE_INSIDE",
-        "object": "basket_59"
+        "object": "basket_0"
     },
     {
         "action": "RIGHT_PLACE_INSIDE",
-        "object": "basket_60"
+        "object": "basket_1"
     },
     {
         "action": "UNFREEZE",
-        "object": "egg_68"
+        "object": "egg_1"
     },
     {
         "action": "UNFREEZE",
-        "object": "egg_67"
+        "object": "egg_0"
     },
     {
         "action": "CLOSE",

@@ -17,7 +17,7 @@
     },
     {
         "action": "LEFT_PLACE_INSIDE",
-        "object": "ar_50"
+        "object": "car_50"
     },
     {
         "action": "RIGHT_GRASP",
@@ -33,6 +33,6 @@
     },
     {
         "action": "LEFT_PLACE_INSIDE",
-        "object": "ar_50"
+        "object": "car_50"
     }
 ]

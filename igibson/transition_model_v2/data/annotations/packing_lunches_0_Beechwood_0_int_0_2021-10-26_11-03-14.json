@@ -5,7 +5,7 @@
     },
     {
         "action": "LEFT_GRASP",
-        "object": "banana_0_multiplexer"
+        "object": "banana_0"
     },
     {
         "action": "RIGHT_PLACE_INSIDE",
@@ -33,7 +33,7 @@
     },
     {
         "action": "OPEN",
-        "object": "top_cabinet_0"
+        "object": "bottom_cabinet_no_top_54"
     },
     {
         "action": "RIGHT_GRASP",
@@ -53,7 +53,7 @@
     },
     {
         "action": "OPEN",
-        "object": "fridge_0"
+        "object": "fridge_57"
     },
     {
         "action": "RIGHT_GRASP",
@@ -61,7 +61,7 @@
     },
     {
         "action": "LEFT_GRASP",
-        "object": "sandwich_0"
+        "object": "hamburger_0"
     },
     {
         "action": "RIGHT_PLACE_INSIDE",
@@ -73,6 +73,6 @@
     },
     {
         "action": "CLOSE",
-        "object": "fridge_0"
+        "object": "fridge_57"
     }
 ]

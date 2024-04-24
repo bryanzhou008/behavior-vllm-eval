@@ -1,7 +1,7 @@
 [
     {
         "action": "RIGHT_GRASP",
-        "object": "floor_lamp_36"
+        "object": "floor_lamp_1"
     },
     {
         "action": "RIGHT_PLACE_ONTOP",
@@ -9,7 +9,7 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "table_lamp_37"
+        "object": "table_lamp_0"
     },
     {
         "action": "RIGHT_PLACE_NEXTTO",
