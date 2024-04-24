@@ -1,15 +1,15 @@
 Addressable Objects:
-apple_103_multiplexer
-bed_43
 sunglass_105
-room_floor_bedroom_0
+backpack_100
+apple_103_part_0
+apple_103_multiplexer
+apple_103
+notebook_101
 headset_104
+bed_43
 apple_103_part_1
 bracelet_102
-backpack_100
-notebook_101
-apple_103
-apple_103_part_0
+room_floor_bedroom_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'backpack.n.01_1', 'floor.n.01_1']

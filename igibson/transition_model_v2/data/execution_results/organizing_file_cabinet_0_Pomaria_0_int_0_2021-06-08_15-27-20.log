@@ -1,15 +1,15 @@
 Addressable Objects:
-folder_1
-document_0
-swivel_chair_5
-room_floor_home_office_0
 highlighter_0
-bottom_cabinet_no_top_21
 folder_0
-breakfast_table_3
 document_2
-document_1
+breakfast_table_3
+folder_1
+swivel_chair_5
+bottom_cabinet_no_top_21
+document_0
+room_floor_home_office_0
 document_3
+document_1
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'marker.n.03_1', 'chair.n.01_1']
@@ -34,16 +34,8 @@ Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_3')
 Place ontop highlighter_0 breakfast_table_3 unsuccessful
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'bottom_cabinet_no_top_21')
-Grasp bottom_cabinet_no_top_21 with right_hand successful
-Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
-************************************************
 Action:  ('OPEN', 'bottom_cabinet_no_top_21')
 Open bottom_cabinet_no_top_21 success
-Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
-************************************************
-Action:  ('RIGHT_RELEASE', 'bottom_cabinet_no_top_21')
-Release bottom_cabinet_no_top_21 from right_hand successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'folder_1')

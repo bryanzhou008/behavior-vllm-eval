@@ -1,16 +1,16 @@
 Addressable Objects:
-room_floor_living_room_0
-breakfast_table_1
-candle_5
-carton_1
 carton_0
-candle_3
 room_floor_dining_room_0
-candle_2
-candle_0
-candle_4
 candle_1
+carton_1
+candle_4
+candle_5
+candle_3
+candle_2
 coffee_table_33
+breakfast_table_1
+room_floor_living_room_0
+candle_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'carton.n.02_1', 'floor.n.01_1']

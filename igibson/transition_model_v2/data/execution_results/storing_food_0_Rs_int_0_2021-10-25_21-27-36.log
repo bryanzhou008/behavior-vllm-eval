@@ -1,15 +1,15 @@
 Addressable Objects:
+oatmeal_0
+sugar_jar_1
+bottom_cabinet_41
+chip_1
+room_floor_kitchen_0
+oatmeal_1
+chip_0
+countertop_26
+sugar_jar_0
 olive_oil_0
 olive_oil_1
-sugar_jar_1
-oatmeal_0
-bottom_cabinet_41
-room_floor_kitchen_0
-chip_1
-sugar_jar_0
-oatmeal_1
-countertop_26
-chip_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'oatmeal.n.01_1', 'countertop.n.01_1']
@@ -32,16 +32,8 @@ Goal Conditions:
 ['inside', 'sugar.n.01_1', 'cabinet.n.01_1']
 ['inside', 'sugar.n.01_2', 'cabinet.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'bottom_cabinet_41')
-Grasp bottom_cabinet_41 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7]})
-************************************************
 Action:  ('OPEN', 'bottom_cabinet_41')
-bottom_cabinet_41 is already opened
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7]})
-************************************************
-Action:  ('RIGHT_RELEASE', 'bottom_cabinet_41')
-Release bottom_cabinet_41 from right_hand successful
+Open bottom_cabinet_41 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'chip_0')
@@ -108,4 +100,4 @@ Action:  ('LEFT_PLACE_INSIDE', 'bottom_cabinet_41')
 Place inside olive_oil_1 bottom_cabinet_41 successful
 Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4, 5, 6, 7], 'unsatisfied': []})
 ************************************************
-{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

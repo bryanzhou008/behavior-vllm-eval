@@ -1,17 +1,17 @@
 Addressable Objects:
-room_floor_living_room_0
-toy_7
 toy_1
-toy_4
-toy_0
 room_floor_dining_room_0
 carton_1
 toy_3
-toy_5
+toy_4
+toy_7
 toy_2
 toy_6
+toy_0
 carton_0
+toy_5
 breakfast_table_2
+room_floor_living_room_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'plaything.n.01_1', 'floor.n.01_1']

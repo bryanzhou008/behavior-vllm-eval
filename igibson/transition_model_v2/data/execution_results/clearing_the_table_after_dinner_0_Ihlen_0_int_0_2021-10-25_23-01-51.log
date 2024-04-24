@@ -1,19 +1,19 @@
 Addressable Objects:
-bowl_2
-pop_0
-bucket_1
-straight_chair_4
-bucket_0
 room_floor_dining_room_0
-cup_1
-straight_chair_3
-bowl_3
-bowl_0
-pop_1
 catsup_0
 cup_0
-bowl_1
+cup_1
+bowl_3
+pop_1
 breakfast_table_2
+bowl_0
+bucket_1
+bowl_1
+straight_chair_4
+straight_chair_3
+bowl_2
+pop_0
+bucket_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'cup.n.01_1', 'table.n.02_1']
@@ -62,12 +62,13 @@ Action:  ('RIGHT_GRASP', 'bowl_2')
 Grasp bowl_2 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  ('LEFT_GRASP', 'bowl_23')
-Execution Error: 'bowl_23'
+Action:  ('LEFT_GRASP', 'bowl_3')
+Grasp bowl_3 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
 Action:  ('LEFT_PLACE_INSIDE', 'bucket_0')
-left_hand is empty
-Post Effects:  False (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
+Place inside bowl_3 bucket_0 successful
+Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
 Action:  ('RIGHT_PLACE_INSIDE', 'bucket_0')
 Place inside bowl_2 bucket_0 successful
@@ -87,6 +88,6 @@ Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
 Action:  ('RIGHT_PLACE_INSIDE', 'bucket_1')
 Place inside bowl_1 bucket_1 successful
-Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
+Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

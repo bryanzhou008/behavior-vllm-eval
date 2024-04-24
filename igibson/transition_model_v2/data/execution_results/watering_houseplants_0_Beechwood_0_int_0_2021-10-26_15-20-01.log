@@ -1,12 +1,12 @@
 Addressable Objects:
-room_floor_dining_room_0
-pot_plant_0
-pot_plant_1
 sink_64
-countertop_56
-pot_plant_2
 room_floor_kitchen_0
+pot_plant_0
 breakfast_table_16
+countertop_56
+room_floor_dining_room_0
+pot_plant_2
+pot_plant_1
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'pot_plant.n.01_1', 'floor.n.01_1']
@@ -25,10 +25,12 @@ Grasp pot_plant_2 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
 Action:  ('TOGGLE_ON', 'sink_64')
-Execution Error: 22
+Toggleon sink_64 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
 Action:  ('TOGGLE_OFF', 'sink_64')
-Execution Error: 23
+Toggleoff sink_64 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
 Action:  ('RIGHT_PLACE_INSIDE', 'sink_64')
 Place inside pot_plant_2 sink_64 successful
@@ -74,4 +76,4 @@ Action:  ('RIGHT_RELEASE', 'pot_plant_0')
 right_hand is empty
 Post Effects:  False (True, {'satisfied': [0], 'unsatisfied': []})
 ************************************************
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': True}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

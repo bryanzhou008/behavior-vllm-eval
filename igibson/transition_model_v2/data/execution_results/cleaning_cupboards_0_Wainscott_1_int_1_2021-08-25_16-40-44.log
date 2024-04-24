@@ -1,21 +1,21 @@
 Addressable Objects:
-room_floor_bedroom_0
 bucket_113
-bottom_cabinet_24
-hardback_103
-detergent_111
-pen_105
-highlighter_107
-rag_110
-bed_58
-bottom_cabinet_28
-bottom_cabinet_25
-highlighter_106
-trash_can_112
 scrub_brush_109
-screwdriver_108
-hardback_104
+pen_105
+bed_58
 notebook_102
+highlighter_106
+hardback_103
+bottom_cabinet_24
+bottom_cabinet_25
+screwdriver_108
+rag_110
+detergent_111
+room_floor_bedroom_0
+trash_can_112
+highlighter_107
+hardback_104
+bottom_cabinet_28
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'book.n.02_1', 'cabinet.n.01_1']
@@ -41,16 +41,8 @@ Goal Conditions:
 ['forall', 'marker.n.03', '-', 'marker.n.03', 'inside', 'marker.n.03', 'bucket.n.01_1']
 ['inside', 'pen.n.01_1', 'bucket.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'bottom_cabinet_25')
-Grasp bottom_cabinet_25 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
-************************************************
 Action:  ('OPEN', 'bottom_cabinet_25')
 Open bottom_cabinet_25 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
-************************************************
-Action:  ('RIGHT_RELEASE', 'bottom_cabinet_25')
-Release bottom_cabinet_25 from right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('LEFT_GRASP', 'pen_105')
@@ -69,20 +61,13 @@ Action:  ('CLOSE', 'bottom_cabinet_25')
 Close bottom_cabinet_25 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('LEFT_GRASP', 'bottom_cabinet_25')
-Grasp bottom_cabinet_25 with left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
-************************************************
 Action:  ('OPEN', 'bottom_cabinet_25')
 Open bottom_cabinet_25 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('LEFT_RELEASE', 'bottom_cabinet_25')
-Release bottom_cabinet_25 from left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
-************************************************
 Action:  ('CLEAN', 'bottom_cabinet_25')
-Execution Error: 'ActionEnv' object has no attribute 'inventory'
+Clean failed, no cleaner in inventory
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('LEFT_GRASP', 'notebook_102')
 notebook_102 is inside closed bottom_cabinet_28
@@ -96,17 +81,13 @@ Action:  ('CLOSE', 'bottom_cabinet_25')
 Close bottom_cabinet_25 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('LEFT_GRASP', 'bottom_cabinet_57')
-Execution Error: 'bottom_cabinet_57'
+Action:  ('OPEN', 'bottom_cabinet_28')
+Open bottom_cabinet_28 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('OPEN', 'bottom_cabinet_57')
-Execution Error: 'bottom_cabinet_57'
-************************************************
-Action:  ('LEFT_RELEASE', 'bottom_cabinet_57')
-Execution Error: 'bottom_cabinet_57'
-************************************************
-Action:  ('CLEAN', 'bottom_cabinet_57')
-Execution Error: 'bottom_cabinet_57'
+Action:  ('CLEAN', 'bottom_cabinet_28')
+Clean failed, no cleaner in inventory
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'bed_58')
 right_hand is empty
@@ -116,8 +97,9 @@ Action:  ('RIGHT_GRASP', 'hardback_104')
 hardback_104 is inside closed bottom_cabinet_25
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('LEFT_GRASP', 'notebook_103')
-Execution Error: 'notebook_103'
+Action:  ('LEFT_GRASP', 'notebook_102')
+Grasp notebook_102 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'bed_58')
 right_hand is empty
@@ -135,4 +117,4 @@ Action:  ('RIGHT_PLACE_INSIDE', 'trash_can_112')
 right_hand is empty
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

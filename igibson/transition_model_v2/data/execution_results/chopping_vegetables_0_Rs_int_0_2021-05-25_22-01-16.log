@@ -1,44 +1,44 @@
 Addressable Objects:
-chestnut_65_part_0
-tomato_62
-mushroom_63_part_0
-vidalia_onion_67_part_0
-tomato_61_part_0
-sink_42
+chestnut_65
+chestnut_66
 fridge_40
-vidalia_onion_68_part_0
-mushroom_64_part_1
-room_floor_kitchen_0
-tomato_62_multiplexer
-chestnut_65_part_1
-chestnut_66_part_1
-mushroom_63
-chestnut_66_multiplexer
-tomato_62_part_1
-vidalia_onion_68_part_1
-vidalia_onion_67
-mushroom_63_multiplexer
-tomato_61
-vidalia_onion_67_part_1
-mushroom_64
-mushroom_63_part_1
-casserole_70
-top_cabinet_50
-tomato_62_part_0
-mushroom_64_multiplexer
-mushroom_64_part_0
 chestnut_66_part_0
-tomato_61_multiplexer
-casserole_71
+vidalia_onion_67_part_0
 vidalia_onion_67_multiplexer
+tomato_62_multiplexer
+vidalia_onion_68
+tomato_62_part_1
+chestnut_66_part_1
+tomato_62
+tomato_61
+room_floor_kitchen_0
+tomato_61_part_0
+vidalia_onion_68_part_1
+mushroom_64
+vidalia_onion_67_part_1
+chestnut_65_part_0
+mushroom_63_multiplexer
+chestnut_66_multiplexer
+countertop_26
+vidalia_onion_67
 vidalia_onion_68_multiplexer
-tomato_61_part_1
+top_cabinet_50
 carving_knife_69
 chestnut_65_multiplexer
-vidalia_onion_68
-chestnut_66
-countertop_26
-chestnut_65
+mushroom_63_part_1
+mushroom_64_part_1
+casserole_70
+chestnut_65_part_1
+mushroom_63
+mushroom_64_part_0
+tomato_62_part_0
+casserole_71
+vidalia_onion_68_part_0
+mushroom_64_multiplexer
+tomato_61_multiplexer
+sink_42
+mushroom_63_part_0
+tomato_61_part_1
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'tomato.n.01_1', 'countertop.n.01_1']
@@ -60,10 +60,6 @@ Goal Conditions:
 ['forall', 'chestnut.n.03', '-', 'chestnut.n.03', 'and', 'exists', 'dish.n.01', '-', 'dish.n.01', 'inside', 'chestnut.n.03', 'dish.n.01', 'sliced', 'chestnut.n.03']
 ['forall', 'vidalia_onion.n.01', '-', 'vidalia_onion.n.01', 'and', 'exists', 'dish.n.01', '-', 'dish.n.01', 'inside', 'vidalia_onion.n.01', 'dish.n.01', 'sliced', 'vidalia_onion.n.01']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'top_cabinet_50')
-Grasp top_cabinet_50 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
-************************************************
 Action:  ('OPEN', 'top_cabinet_50')
 Open top_cabinet_50 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
@@ -72,12 +68,9 @@ Action:  ('LEFT_GRASP', 'casserole_71')
 Grasp casserole_71 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_RELEASE', 'top_cabinet_50')
-Release top_cabinet_50 from right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
-************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'countertop_01')
-Execution Error: 'countertop_01'
+Action:  ('LEFT_PLACE_ONTOP', 'countertop_26')
+Place ontop casserole_71 countertop_26 unsuccessful
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'chestnut_66_multiplexer')
 Grasp chestnut_66_multiplexer with right_hand successful
@@ -127,31 +120,25 @@ Action:  ('RIGHT_PLACE_INSIDE', 'casserole_71')
 Place inside tomato_61_multiplexer casserole_71 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'fridge_40')
-Grasp fridge_40 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
-************************************************
 Action:  ('OPEN', 'fridge_40')
-Both hands full, release one object first to open the object
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
-************************************************
-Action:  ('RIGHT_RELEASE', 'fridge_40')
-Release fridge_40 from right_hand successful
+Open fridge_40 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'vidalia_onion_67_multiplexer')
-vidalia_onion_67_multiplexer is inside closed fridge_40
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Grasp vidalia_onion_67_multiplexer with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('LEFT_GRASP', 'vidalia_onion_68_multiplexer')
-vidalia_onion_68_multiplexer is inside closed fridge_40
+Grasp vidalia_onion_68_multiplexer with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'countertop_26')
+Place ontop vidalia_onion_68_multiplexer countertop_26 unsuccessful
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'countertop_01')
-Execution Error: 'countertop_01'
-************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'countertop_01')
-Execution Error: 'countertop_01'
+Action:  ('RIGHT_PLACE_ONTOP', 'countertop_26')
+Place ontop vidalia_onion_67_multiplexer countertop_26 unsuccessful
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'carving_knife_69')
 Grasp carving_knife_69 with right_hand successful
@@ -182,42 +169,51 @@ Slice tomato_61_multiplexer success
 Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
 Action:  ('SLICE', 'vidalia_onion_67_multiplexer')
-vidalia_onion_67_multiplexer is inside closed fridge_40
-Post Effects:  False (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
+Slice vidalia_onion_67_multiplexer success
+Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
 Action:  ('SLICE', 'vidalia_onion_68_multiplexer')
-vidalia_onion_68_multiplexer is inside closed fridge_40
+Slice vidalia_onion_68_multiplexer success
+Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'countertop_26')
+Place ontop carving_knife_69 countertop_26 unsuccessful
 Post Effects:  False (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'countertop_01')
-Execution Error: 'countertop_01'
+Action:  ('RIGHT_GRASP', 'vidalia_onion_67_part_0')
+Grasp vidalia_onion_67_part_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'vidalia_onion_67_multiplexer_part_0')
-Execution Error: 'vidalia_onion_67_multiplexer_part_0'
-************************************************
-Action:  ('LEFT_GRASP', 'vidalia_onion_67_multiplexer_part_1')
-Execution Error: 'vidalia_onion_67_multiplexer_part_1'
+Action:  ('LEFT_GRASP', 'vidalia_onion_67_part_1')
+Grasp vidalia_onion_67_part_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
 Action:  ('RIGHT_PLACE_INSIDE', 'casserole_71')
-Place inside carving_knife_69 casserole_71 successful
+Place inside vidalia_onion_67_part_0 casserole_71 successful
 Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
 Action:  ('LEFT_PLACE_INSIDE', 'casserole_71')
-casserole_71 is already in left_hand
-Post Effects:  False (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
+Place inside vidalia_onion_67_part_1 casserole_71 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'vidalia_onion_68_multiplexer_part_0')
-Execution Error: 'vidalia_onion_68_multiplexer_part_0'
+Action:  ('RIGHT_GRASP', 'vidalia_onion_68_part_0')
+Grasp vidalia_onion_68_part_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'vidalia_onion_68_multiplexer_part_1')
-Execution Error: 'vidalia_onion_68_multiplexer_part_1'
+Action:  ('LEFT_GRASP', 'vidalia_onion_68_part_1')
+Grasp vidalia_onion_68_part_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
 Action:  ('RIGHT_PLACE_INSIDE', 'casserole_71')
-right_hand is empty
-Post Effects:  False (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
+Place inside vidalia_onion_68_part_0 casserole_71 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
 Action:  ('LEFT_PLACE_INSIDE', 'casserole_71')
-casserole_71 is already in left_hand
-Post Effects:  False (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
+Place inside vidalia_onion_68_part_1 casserole_71 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3], 'unsatisfied': []})
 ************************************************
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+Action:  ('CLOSE', 'fridge_40')
+Close fridge_40 success
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3], 'unsatisfied': []})
+************************************************
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

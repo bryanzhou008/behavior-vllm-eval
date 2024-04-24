@@ -1,16 +1,16 @@
 Addressable Objects:
-top_cabinet_62
-room_floor_kitchen_0
-plate_7
-plate_6
-plate_2
-plate_5
 countertop_79
+plate_5
+top_cabinet_62
 plate_4
 plate_1
-countertop_81
-plate_3
+room_floor_kitchen_0
 plate_0
+plate_6
+countertop_81
+plate_7
+plate_2
+plate_3
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'plate.n.04_1', 'countertop.n.01_1']
@@ -26,16 +26,8 @@ Initial Conditions:
 Goal Conditions: 
 ['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'cabinet.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'top_cabinet_62')
-Grasp top_cabinet_62 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
-************************************************
 Action:  ('OPEN', 'top_cabinet_62')
 Open top_cabinet_62 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
-************************************************
-Action:  ('RIGHT_RELEASE', 'top_cabinet_62')
-Release top_cabinet_62 from right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'plate_5')

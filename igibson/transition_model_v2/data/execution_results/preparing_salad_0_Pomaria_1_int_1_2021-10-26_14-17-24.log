@@ -1,32 +1,32 @@
 Addressable Objects:
-lettuce_78
-sink_37
-room_floor_kitchen_0
-apple_81_multiplexer
-lettuce_79
-countertop_31
 apple_80_multiplexer
-carving_knife_86
-apple_80_part_1
-tomato_83
-apple_81
-plate_88
-tomato_82
-tomato_82_multiplexer
-tomato_83_part_0
-apple_81_part_1
-tomato_82_part_1
-tomato_82_part_0
-apple_80
-tomato_83_multiplexer
-radish_85
-apple_81_part_0
-fridge_20
-plate_87
+lettuce_79
+apple_81_multiplexer
 radish_84
-apple_80_part_0
+apple_81_part_0
+apple_81_part_1
 top_cabinet_27
+plate_88
+sink_37
+tomato_82_multiplexer
+tomato_82
+apple_81
 tomato_83_part_1
+tomato_82_part_0
+apple_80_part_1
+lettuce_78
+room_floor_kitchen_0
+carving_knife_86
+tomato_83_part_0
+tomato_82_part_1
+tomato_83
+plate_87
+fridge_20
+radish_85
+apple_80_part_0
+countertop_31
+tomato_83_multiplexer
+apple_80
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'lettuce.n.03_1', 'countertop.n.01_1']
@@ -66,16 +66,8 @@ Action:  ('RIGHT_PLACE_ONTOP', 'countertop_31')
 right_hand is empty
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'fridge_20')
-Grasp fridge_20 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
-************************************************
 Action:  ('OPEN', 'fridge_20')
 Open fridge_20 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
-************************************************
-Action:  ('RIGHT_RELEASE', 'fridge_20')
-Release fridge_20 from right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'tomato_83_multiplexer')
@@ -106,16 +98,8 @@ Action:  ('UNFREEZE', 'tomato_82_multiplexer')
 Unfreeze failed, object is already unfreezeed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'top_cabinet_27')
-Grasp top_cabinet_27 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
-************************************************
 Action:  ('OPEN', 'top_cabinet_27')
 Open top_cabinet_27 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
-************************************************
-Action:  ('RIGHT_RELEASE', 'top_cabinet_27')
-Release top_cabinet_27 from right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'carving_knife_86')
@@ -136,27 +120,27 @@ Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'plate_87')
 Place ontop radish_85 plate_87 unsuccessful
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  False (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_GRASP', 'lettuce_78')
 Grasp lettuce_78 with left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'plate_88')
 Place ontop lettuce_78 plate_88 unsuccessful
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  False (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_GRASP', 'lettuce_79')
 Grasp lettuce_79 with left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'plate_87')
 Place ontop lettuce_79 plate_87 unsuccessful
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  False (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_GRASP', 'apple_80_multiplexer')
 Grasp apple_80_multiplexer with left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'plate_88')
 Place ontop apple_80_multiplexer plate_88 unsuccessful
@@ -164,42 +148,42 @@ Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('SLICE', 'apple_80_multiplexer')
 Slice apple_80_multiplexer success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_GRASP', 'apple_81_multiplexer')
 Grasp apple_81_multiplexer with left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'plate_87')
 Place ontop apple_81_multiplexer plate_87 unsuccessful
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  False (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('SLICE', 'apple_81_multiplexer')
 Slice apple_81_multiplexer success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_GRASP', 'tomato_83_multiplexer')
 Grasp tomato_83_multiplexer with left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'plate_88')
 Place ontop tomato_83_multiplexer plate_88 unsuccessful
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  False (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('SLICE', 'tomato_83_multiplexer')
 Slice tomato_83_multiplexer success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_GRASP', 'tomato_82_multiplexer')
 Grasp tomato_82_multiplexer with left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'plate_87')
 Place ontop tomato_82_multiplexer plate_87 unsuccessful
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  False (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('SLICE', 'tomato_82_multiplexer')
 Slice tomato_82_multiplexer success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
 {'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

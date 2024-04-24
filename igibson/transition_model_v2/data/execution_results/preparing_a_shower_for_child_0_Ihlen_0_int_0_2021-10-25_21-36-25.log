@@ -1,10 +1,10 @@
 Addressable Objects:
 dishtowel_0
-soap_0
-sink_38
-shower_35
-shampoo_0
 room_floor_bathroom_0
+shampoo_0
+sink_38
+soap_0
+shower_35
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'shampoo.n.01_1', 'floor.n.01_1']
@@ -26,10 +26,12 @@ Place inside soap_0 sink_38 unsuccessful
 Post Effects:  False (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************
 Action:  ('TOGGLE_ON', 'sink_38')
-Execution Error: 22
+Toggleon sink_38 success
+Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************
 Action:  ('TOGGLE_OFF', 'sink_38')
-Execution Error: 23
+Toggleoff sink_38 success
+Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************
 Action:  ('RIGHT_GRASP', 'dishtowel_0')
 Grasp dishtowel_0 with right_hand successful

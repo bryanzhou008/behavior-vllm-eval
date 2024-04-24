@@ -1,23 +1,23 @@
 Addressable Objects:
-stocking_0
-bottom_cabinet_41
-stocking_2
 room_floor_living_room_0
-bottom_cabinet_46
-ice_cube_0
-lollipop_0
-stocking_1
-lollipop_1
 pen_2
-candy_cane_0
-pen_1
-ice_cube_3
-ice_cube_2
 lollipop_2
+stocking_2
 ice_cube_1
-pen_3
-pen_0
 stocking_3
+bottom_cabinet_46
+pen_0
+bottom_cabinet_41
+ice_cube_3
+lollipop_0
+stocking_0
+stocking_1
+ice_cube_0
+ice_cube_2
+lollipop_1
+candy_cane_0
+pen_3
+pen_1
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'cube.n.05_1', 'floor.n.01_1']
@@ -103,16 +103,8 @@ Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 Action:  ('LEFT_PLACE_ONTOP', 'room_floor_living_room_0')
 Execution Error: 'NoneType' object is not subscriptable
 ************************************************
-Action:  ('RIGHT_GRASP', 'bottom_cabinet_41')
-Grasp bottom_cabinet_41 with right_hand successful
-Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
-************************************************
 Action:  ('OPEN', 'bottom_cabinet_41')
-bottom_cabinet_41 is already opened
-Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
-************************************************
-Action:  ('RIGHT_RELEASE', 'bottom_cabinet_41')
-Release bottom_cabinet_41 from right_hand successful
+Open bottom_cabinet_41 success
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'pen_0')
@@ -155,12 +147,13 @@ Action:  ('LEFT_PLACE_INSIDE', 'stocking_1')
 Place inside lollipop_1 stocking_1 successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'candy_cane_1')
-Execution Error: 'candy_cane_1'
+Action:  ('LEFT_GRASP', 'lollipop_0')
+Grasp lollipop_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_INSIDE', 'stocking_1')
-left_hand is empty
-Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
+Place inside lollipop_0 stocking_1 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'pen_2')
 Grasp pen_2 with right_hand successful
@@ -178,33 +171,36 @@ Action:  ('LEFT_PLACE_INSIDE', 'stocking_2')
 Place inside lollipop_2 stocking_2 successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'candy_cane_2')
-Execution Error: 'candy_cane_2'
+Action:  ('LEFT_GRASP', 'lollipop_1')
+Grasp lollipop_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_INSIDE', 'stocking_2')
-left_hand is empty
-Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
+Place inside lollipop_1 stocking_2 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'pen_3')
 Grasp pen_3 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'lollipop_3')
-Execution Error: 'lollipop_3'
+Action:  ('LEFT_GRASP', 'candy_cane_0')
+Grasp candy_cane_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('RIGHT_PLACE_INSIDE', 'stocking_3')
 Place inside pen_3 stocking_3 successful
 Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
 Action:  ('LEFT_PLACE_INSIDE', 'stocking_3')
-left_hand is empty
-Post Effects:  False (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
+Place inside candy_cane_0 stocking_3 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************
-Action:  ('LEFT_GRASP', 'candy_cane_3')
-Execution Error: 'candy_cane_3'
+Action:  ('LEFT_GRASP', 'lollipop_2')
+Grasp lollipop_2 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
 Action:  ('LEFT_PLACE_INSIDE', 'stocking_3')
-left_hand is empty
-Post Effects:  False (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
+Place inside lollipop_2 stocking_3 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': True}

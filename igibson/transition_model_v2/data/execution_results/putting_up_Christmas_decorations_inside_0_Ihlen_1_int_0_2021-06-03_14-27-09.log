@@ -1,18 +1,18 @@
 Addressable Objects:
-bow_116
-wrapped_gift_119
-breakfast_table_19
-wrapped_gift_121
-candle_118
-room_floor_living_room_0
-wrapped_gift_120
-sofa_25
-candle_117
-carton_122
-bow_115
 wreath_113
+wrapped_gift_119
+candle_118
+bow_116
+wrapped_gift_120
+candle_117
 bow_114
 christmas_tree_decorated_112
+room_floor_living_room_0
+carton_122
+breakfast_table_19
+sofa_25
+wrapped_gift_121
+bow_115
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'christmas_tree.n.05_1', 'floor.n.01_1']

@@ -17,6 +17,6 @@ Grasp vacuum_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
 Action:  ('CLEAN', 'room_floor_bedroom_0')
-Execution Error: 'ActionEnv' object has no attribute 'inventory'
+Execution Error: 'NoneType' object is not subscriptable
 ************************************************
 {'all_action_execution_true': True, 'unknown_execution_error': True, 'all_condition_satisfied': False}

@@ -53,9 +53,14 @@ def evaluate_action_seqeunce(demo_path,action_path,rst_path,headless=True):
         t_f.write(f.getvalue())
 
     return rst
-    
+
+import os
+def main(demo_name,action_dir="./igibson/transition_model_v3/data/annotations",demo_dir="./igibson/data/virtual_reality",rst_path="test.log"):
+    demo_path=os.path.join(demo_dir,demo_name+".hdf5")
+    action_path=os.path.join(action_dir,demo_name)
+    evaluate_action_seqeunce(demo_path,action_path,rst_path+".json")
 if __name__ == "__main__":
-    fire.Fire(evaluate_action_seqeunce)
+    fire.Fire(main)
 """
 python D:\GitHub\behavior-vllm-eval\igibson\transition_model_v2\scripts\evaluate_action_sequence.py "D:\GitHub\behavior-vllm-eval\igibson\data\virtual_reality\bottling_fruit_0_Wainscott_0_int_0_2021-05-24_19-46-46.hdf5" "D:\GitHub\behavior-vllm-eval\igibson\transition_model_v2\data\annotations\bottling_fruit_0_Wainscott_0_int_0_2021-05-24_19-46-46.json" "test.log"
 """

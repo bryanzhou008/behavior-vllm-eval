@@ -1,20 +1,20 @@
 Addressable Objects:
-strawberry_62_part_0
-countertop_26
-strawberry_61
-strawberry_61_part_1
-strawberry_61_part_0
-jar_64
 carving_knife_66
-strawberry_62
-strawberry_61_multiplexer
-fridge_40
-saucepan_65
-bottom_cabinet_41
-strawberry_62_multiplexer
-strawberry_62_part_1
 room_floor_kitchen_0
+strawberry_61_multiplexer
+strawberry_62_part_0
+strawberry_62_part_1
+bottom_cabinet_41
+strawberry_61_part_0
+strawberry_61_part_1
+strawberry_61
+jar_64
+strawberry_62
+strawberry_62_multiplexer
+fridge_40
+countertop_26
 beef_63
+saucepan_65
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'strawberry.n.01_1', 'countertop.n.01_1']
@@ -63,16 +63,16 @@ Slice strawberry_61_multiplexer success
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
 ************************************************
 Action:  ('COOK', 'strawberry_62_part_0')
-Execution Error: 15
+Execution Error: 13
 ************************************************
 Action:  ('COOK', 'strawberry_62_part_1')
-Execution Error: 15
+Execution Error: 13
 ************************************************
 Action:  ('COOK', 'strawberry_61_part_0')
-Execution Error: 15
+Execution Error: 13
 ************************************************
 Action:  ('COOK', 'strawberry_61_part_1')
-Execution Error: 15
+Execution Error: 13
 ************************************************
 Action:  ('LEFT_GRASP', 'jar_64')
 Grasp jar_64 with left_hand successful
@@ -93,10 +93,6 @@ Action:  ('CLOSE', 'jar_64')
 Both hands full, release one object first to close the object
 Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'fridge_40')
-right_hand is already holding carving_knife_66
-Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
-************************************************
 Action:  ('OPEN', 'fridge_40')
 Both hands full, release one object first to open the object
 Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
@@ -115,10 +111,6 @@ Post Effects:  True (False, {'satisfied': [0, 5], 'unsatisfied': [1, 2, 3, 4]})
 ************************************************
 Action:  ('CLOSE', 'fridge_40')
 fridge_40 is already closeed
-Post Effects:  False (False, {'satisfied': [0, 5], 'unsatisfied': [1, 2, 3, 4]})
-************************************************
-Action:  ('RIGHT_RELEASE', 'fridge_40')
-fridge_40 is not in right_hand
 Post Effects:  False (False, {'satisfied': [0, 5], 'unsatisfied': [1, 2, 3, 4]})
 ************************************************
 {'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

@@ -1,16 +1,16 @@
 Addressable Objects:
-rag_0
-bucket_0
-countertop_56
-paper_towel_0
-sink_64
+pea_0
 fridge_57
+scraper_0
+rag_0
+paper_towel_0
 dustpan_0
 room_floor_kitchen_0
-pea_0
 pear_0
-scraper_0
+countertop_56
+bucket_0
 pomelo_0
+sink_64
 -----------------------------------------------
 Initial Conditions: 
 ['not', 'stained', 'sink.n.01_1']
@@ -44,10 +44,12 @@ Place inside rag_0 sink_64 successful
 Post Effects:  True (False, {'satisfied': [3, 4], 'unsatisfied': [0, 1, 2, 5, 6]})
 ************************************************
 Action:  ('TOGGLE_ON', 'sink_64')
-Execution Error: 22
+Toggleon sink_64 success
+Post Effects:  True (False, {'satisfied': [3, 4], 'unsatisfied': [0, 1, 2, 5, 6]})
 ************************************************
 Action:  ('TOGGLE_OFF', 'sink_64')
-Execution Error: 23
+Toggleoff sink_64 success
+Post Effects:  True (False, {'satisfied': [3, 4], 'unsatisfied': [0, 1, 2, 5, 6]})
 ************************************************
 Action:  ('SOAK', 'rag_0')
 Soak rag_0 success
@@ -121,4 +123,4 @@ Action:  ('RIGHT_PLACE_ONTOP', 'fridge_57')
 Place ontop scraper_0 fridge_57 unsuccessful
 Post Effects:  False (False, {'satisfied': [2, 3, 4, 5, 6], 'unsatisfied': [0, 1]})
 ************************************************
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

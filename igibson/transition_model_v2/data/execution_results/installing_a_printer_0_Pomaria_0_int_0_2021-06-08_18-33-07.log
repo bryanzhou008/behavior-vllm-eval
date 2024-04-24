@@ -1,7 +1,7 @@
 Addressable Objects:
+room_floor_home_office_0
 breakfast_table_3
 printer_0
-room_floor_home_office_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'printer.n.03_1', 'floor.n.01_1']
@@ -21,9 +21,11 @@ Place ontop printer_0 breakfast_table_3 unsuccessful
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('TOGGLE_ON', 'printer_0')
-Execution Error: 22
+Toggleon printer_0 success
+Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
 ************************************************
 Action:  ('TOGGLE_OFF', 'printer_0')
-Execution Error: 23
+Toggleoff printer_0 success
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
 ************************************************
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

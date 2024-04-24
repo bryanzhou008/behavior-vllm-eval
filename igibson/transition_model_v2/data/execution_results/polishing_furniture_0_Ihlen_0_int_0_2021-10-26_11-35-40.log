@@ -1,8 +1,8 @@
 Addressable Objects:
-rag_0
 shelf_11
-room_floor_living_room_0
+rag_0
 coffee_table_10
+room_floor_living_room_0
 -----------------------------------------------
 Initial Conditions: 
 ['dusty', 'shelf.n.01_1']
@@ -20,12 +20,15 @@ Grasp rag_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('CLEAN', 'coffee_table_10')
-Execution Error: 'ActionEnv' object has no attribute 'inventory'
+Clean-dust coffee_table_10 success
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('CLEAN', 'shelf_11')
-Execution Error: 'ActionEnv' object has no attribute 'inventory'
+Clean-dust shelf_11 success
+Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
-Action:  ('RELEASE', 'rag_0')
-Execution Error: 'RELEASE'
+Action:  ('RIGHT_RELEASE', 'rag_0')
+Release rag_0 from right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
-{'all_action_execution_true': True, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}

@@ -1,15 +1,15 @@
 Addressable Objects:
-hardback_1
 notebook_3
-shelf_19
-hardback_2
-notebook_1
-room_floor_living_room_0
-breakfast_table_9
 notebook_2
-hardback_3
+notebook_1
+breakfast_table_9
+shelf_19
 hardback_0
+hardback_3
+room_floor_living_room_0
 notebook_0
+hardback_2
+hardback_1
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'book.n.02_1', 'table.n.02_1']

@@ -1,13 +1,13 @@
 Addressable Objects:
-sink_73
-mousetrap_101
 toilet_64
-mousetrap_100
 mousetrap_102
+sink_73
 mousetrap_103
+mousetrap_101
 room_floor_bathroom_0
-bed_43
 room_floor_corridor_0
+mousetrap_100
+bed_43
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'mousetrap.n.01_1', 'bed.n.01_1']

@@ -1,16 +1,16 @@
 Addressable Objects:
-toothbrush_118
-room_floor_bedroom_0
-door_99
-mouse_119
-bed_33
-backpack_112
 bracelet_116
-necklace_117
-lipstick_115
+backpack_112
 lipstick_114
-hanger_113
+toothbrush_118
 room_floor_corridor_0
+mouse_119
+door_99
+room_floor_bedroom_0
+hanger_113
+lipstick_115
+bed_33
+necklace_117
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'backpack.n.01_1', 'floor.n.01_1']

@@ -1,7 +1,7 @@
 Addressable Objects:
 breakfast_table_3
-scanner_0
 room_floor_home_office_0
+scanner_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'scanner.n.02_1', 'table.n.02_1']
@@ -17,10 +17,12 @@ Grasp scanner_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('TOGGLE_ON', 'scanner_0')
-Execution Error: 22
+Toggleon scanner_0 success
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
 ************************************************
 Action:  ('TOGGLE_OFF', 'scanner_0')
-Execution Error: 23
+Toggleoff scanner_0 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_home_office_0')
 Execution Error: 'NoneType' object is not subscriptable

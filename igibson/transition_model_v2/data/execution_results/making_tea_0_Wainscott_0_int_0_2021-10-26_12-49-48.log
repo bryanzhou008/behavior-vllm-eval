@@ -1,14 +1,14 @@
 Addressable Objects:
-lemon_0_multiplexer
-lemon_0
-carving_knife_0
-stove_88
 lemon_0_part_0
-tea_bag_0
-fridge_97
+lemon_0
+lemon_0_multiplexer
 room_floor_kitchen_0
-bottom_cabinet_no_top_80
+tea_bag_0
+carving_knife_0
+fridge_97
 lemon_0_part_1
+bottom_cabinet_no_top_80
+stove_88
 teapot_0
 -----------------------------------------------
 Initial Conditions: 
@@ -25,17 +25,9 @@ Goal Conditions:
 ['soaked', 'tea_bag.n.01_1']
 ['toggled_on', 'stove.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'bottom_cabinet_no_top_80')
-Grasp bottom_cabinet_no_top_80 with right_hand successful
-Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4]})
-************************************************
 Action:  ('OPEN', 'bottom_cabinet_no_top_80')
-bottom_cabinet_no_top_80 is already opened
-Post Effects:  False (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4]})
-************************************************
-Action:  ('RIGHT_RELEASE', 'bottom_cabinet_no_top_80')
-Release bottom_cabinet_no_top_80 from right_hand successful
-Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4]})
+Open bottom_cabinet_no_top_80 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'teapot_0')
 Grasp teapot_0 with right_hand successful
@@ -54,38 +46,35 @@ Soak tea_bag_0 success
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'stove_88')
-Place ontop teapot_0 stove_88 unsuccessful
-Post Effects:  False (False, {'satisfied': [1, 2, 3], 'unsatisfied': [0, 4]})
+Place ontop teapot_0 stove_88 successful
+Post Effects:  True (False, {'satisfied': [1, 2, 3], 'unsatisfied': [0, 4]})
 ************************************************
 Action:  ('TOGGLE_ON', 'stove_88')
-Execution Error: 22
-************************************************
-Action:  ('RIGHT_GRASP', 'fridge_97')
-Grasp fridge_97 with right_hand successful
-Post Effects:  True (False, {'satisfied': [1, 2, 3], 'unsatisfied': [0, 4]})
+Toggleon stove_88 success
+Post Effects:  True (False, {'satisfied': [1, 2, 3, 4], 'unsatisfied': [0]})
 ************************************************
 Action:  ('OPEN', 'fridge_97')
 Open fridge_97 success
-Post Effects:  True (False, {'satisfied': [1, 2, 3], 'unsatisfied': [0, 4]})
-************************************************
-Action:  ('RIGHT_RELEASE', 'fridge_97')
-Release fridge_97 from right_hand successful
-Post Effects:  True (False, {'satisfied': [1, 2, 3], 'unsatisfied': [0, 4]})
+Post Effects:  True (False, {'satisfied': [1, 2, 3, 4], 'unsatisfied': [0]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'lemon_0_multiplexer')
 Grasp lemon_0_multiplexer with right_hand successful
-Post Effects:  True (False, {'satisfied': [1, 2, 3], 'unsatisfied': [0, 4]})
+Post Effects:  True (False, {'satisfied': [1, 2, 3, 4], 'unsatisfied': [0]})
 ************************************************
 Action:  ('UNFREEZE', 'carving_knife_0')
 Freeze failed, object cannot be frozen
-Post Effects:  False (False, {'satisfied': [1, 2, 3], 'unsatisfied': [0, 4]})
+Post Effects:  False (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('LEFT_GRASP', 'carving_knife_0')
 Grasp carving_knife_0 with left_hand successful
-Post Effects:  True (False, {'satisfied': [1, 2, 3], 'unsatisfied': [0, 4]})
+Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('SLICE', 'lemon_0_multiplexer')
 Slice lemon_0_multiplexer success
-Post Effects:  True (False, {'satisfied': [0, 1, 2, 3], 'unsatisfied': [4]})
+Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1]})
 ************************************************
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+Action:  ('CLOSE', 'fridge_97')
+Both hands full, release one object first to close the object
+Post Effects:  False (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1]})
+************************************************
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

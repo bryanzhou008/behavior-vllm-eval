@@ -1,11 +1,11 @@
 Addressable Objects:
-car_0
-sink_38
-soap_0
-room_floor_garage_0
-rag_0
 shelf_16
+car_0
+soap_0
+sink_38
+rag_0
 bucket_0
+room_floor_garage_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'car.n.01_1', 'floor.n.01_1']
@@ -34,10 +34,11 @@ Place inside soap_0 bucket_0 successful
 Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2]})
 ************************************************
 Action:  ('CLEAN', 'car_0')
-Execution Error: 'ActionEnv' object has no attribute 'inventory'
+Clean-dust car_0 success
+Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
 Action:  ('RIGHT_PLACE_INSIDE', 'bucket_0')
 Place inside rag_0 bucket_0 successful
-Post Effects:  True (False, {'satisfied': [1, 2], 'unsatisfied': [0]})
+Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************
-{'all_action_execution_true': True, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

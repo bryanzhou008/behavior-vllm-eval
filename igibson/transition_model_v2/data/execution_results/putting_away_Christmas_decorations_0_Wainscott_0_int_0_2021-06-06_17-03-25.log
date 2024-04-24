@@ -1,13 +1,13 @@
 Addressable Objects:
-bow_2
-ribbon_0
-wreath_0
-bow_0
 ribbon_2
 bottom_cabinet_79
-bow_1
-ribbon_1
+bow_0
 room_floor_living_room_0
+ribbon_0
+ribbon_1
+wreath_0
+bow_1
+bow_2
 wreath_1
 -----------------------------------------------
 Initial Conditions: 
@@ -26,16 +26,8 @@ Goal Conditions:
 ['forall', 'bow.n.08', '-', 'bow.n.08', 'nextto', 'bow.n.08', 'cabinet.n.01_1']
 ['forall', 'ribbon.n.01', '-', 'ribbon.n.01', 'inside', 'ribbon.n.01', 'cabinet.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'bottom_cabinet_79')
-Grasp bottom_cabinet_79 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
-************************************************
 Action:  ('OPEN', 'bottom_cabinet_79')
 Open bottom_cabinet_79 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
-************************************************
-Action:  ('RIGHT_RELEASE', 'bottom_cabinet_79')
-Release bottom_cabinet_79 from right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'ribbon_0')

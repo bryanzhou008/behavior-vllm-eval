@@ -1,9 +1,9 @@
 Addressable Objects:
 alarm_1
+breakfast_table_20
 room_floor_living_room_0
 coffee_table_27
 alarm_0
-breakfast_table_20
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'alarm.n.02_1', 'table.n.02_2']
@@ -17,16 +17,20 @@ Goal Conditions:
 ['forall', 'alarm.n.02', '-', 'alarm.n.02', 'toggled_on', 'alarm.n.02']
 ------------Action Execution Begins-------------
 Action:  ('TOGGLE_ON', 'alarm_0')
-Execution Error: 22
+Toggleon alarm_0 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('TOGGLE_OFF', 'alarm_0')
-Execution Error: 23
+Toggleoff alarm_0 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('TOGGLE_ON', 'alarm_1')
-Execution Error: 22
+Toggleon alarm_1 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('TOGGLE_OFF', 'alarm_1')
-Execution Error: 23
+Toggleoff alarm_1 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'alarm_0')
 Grasp alarm_0 with right_hand successful
@@ -44,4 +48,4 @@ Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_20')
 Place ontop alarm_1 breakfast_table_20 unsuccessful
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

@@ -1,10 +1,10 @@
 Addressable Objects:
-bottom_cabinet_no_top_80
+sink_82
 paper_towel_0
 highchair_0
-room_floor_dining_room_0
-sink_82
 room_floor_kitchen_0
+bottom_cabinet_no_top_80
+room_floor_dining_room_0
 -----------------------------------------------
 Initial Conditions: 
 ['dusty', 'highchair.n.01_1']
@@ -15,14 +15,16 @@ Initial Conditions:
 Goal Conditions: 
 ['not', 'dusty', 'highchair.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'hand_towel_0')
-Execution Error: 'hand_towel_0'
+Action:  ('RIGHT_GRASP', 'paper_towel_0')
+paper_towel_0 is inside closed bottom_cabinet_no_top_80
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
 Action:  ('LEFT_GRASP', 'highchair_0')
 Grasp highchair_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
 Action:  ('CLEAN', 'highchair_0')
-Execution Error: 'ActionEnv' object has no attribute 'inventory'
+Clean failed, no cleaner in inventory
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-{'all_action_execution_true': True, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

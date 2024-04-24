@@ -1,15 +1,15 @@
 Addressable Objects:
-bottom_cabinet_15
-shelf_16
-ball_0
+saucepan_0
 plate_0
 room_floor_garage_0
+shelf_16
+ball_0
+bottom_cabinet_15
 carton_1
-plate_1
-saucepan_0
-ball_1
-carton_0
 plate_2
+carton_0
+ball_1
+plate_1
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'carton.n.02_1', 'floor.n.01_1']

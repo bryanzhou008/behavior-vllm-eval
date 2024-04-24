@@ -1,12 +1,12 @@
 Addressable Objects:
-floor_lamp_1
-bed_11
-room_floor_bedroom_0
-table_lamp_0
 door_29
+bed_11
 window_27
 chaise_longue_1
 chaise_longue_0
+table_lamp_0
+floor_lamp_1
+room_floor_bedroom_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'lamp.n.02_1', 'floor.n.01_1']
@@ -21,19 +21,20 @@ Goal Conditions:
 ['touching', 'seat.n.03_1', 'bed.n.01_1']
 ['nextto', 'seat.n.03_2', 'window.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'floor_lamp_36')
-Execution Error: 'floor_lamp_36'
+Action:  ('RIGHT_GRASP', 'floor_lamp_1')
+Grasp floor_lamp_1 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bedroom_0')
-right_hand is empty
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Execution Error: 'NoneType' object is not subscriptable
 ************************************************
-Action:  ('RIGHT_GRASP', 'table_lamp_37')
-Execution Error: 'table_lamp_37'
+Action:  ('RIGHT_GRASP', 'table_lamp_0')
+right_hand is already holding floor_lamp_1
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('RIGHT_PLACE_NEXTTO', 'window_27')
-right_hand is empty
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Place under floor_lamp_1 window_27 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'straight_chair_39')
 Execution Error: 'straight_chair_39'

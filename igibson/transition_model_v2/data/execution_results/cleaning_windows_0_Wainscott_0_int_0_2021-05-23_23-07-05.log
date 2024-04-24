@@ -1,16 +1,16 @@
 Addressable Objects:
-window_119
-dishtowel_0
-window_133
-dishtowel_1
-toothpaste_0
-room_floor_kitchen_0
-coffee_table_33
 rag_0
-rag_1
+dishtowel_1
+room_floor_kitchen_0
 bottom_cabinet_no_top_80
+dishtowel_0
 sink_82
+toothpaste_0
+window_133
 room_floor_living_room_0
+coffee_table_33
+rag_1
+window_119
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'towel.n.01_1', 'cabinet.n.01_1']
@@ -29,16 +29,8 @@ Goal Conditions:
 ['and', 'soaked', 'rag.n.01_1', 'soaked', 'rag.n.01_2']
 ['and', 'not', 'dusty', 'window.n.01_1', 'not', 'dusty', 'window.n.01_2']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'bottom_cabinet_no_top_80')
-Grasp bottom_cabinet_no_top_80 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
-************************************************
 Action:  ('OPEN', 'bottom_cabinet_no_top_80')
 Open bottom_cabinet_no_top_80 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
-************************************************
-Action:  ('RIGHT_RELEASE', 'bottom_cabinet_no_top_80')
-Release bottom_cabinet_no_top_80 from right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'rag_0')
@@ -58,10 +50,12 @@ Place inside rag_1 sink_82 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('TOGGLE_ON', 'sink_82')
-Execution Error: 22
+Toggleon sink_82 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('TOGGLE_OFF', 'sink_82')
-Execution Error: 23
+Toggleoff sink_82 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('SOAK', 'rag_0')
 Soak rag_0 success
@@ -80,9 +74,11 @@ left_hand is already holding rag_1
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('CLEAN', 'window_133')
-Execution Error: 'ActionEnv' object has no attribute 'inventory'
+Clean-dust window_133 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('CLEAN', 'window_119')
-Execution Error: 'ActionEnv' object has no attribute 'inventory'
+Clean-dust window_119 success
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
 ************************************************
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

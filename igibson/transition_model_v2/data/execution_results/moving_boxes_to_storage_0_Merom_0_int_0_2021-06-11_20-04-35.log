@@ -1,9 +1,9 @@
 Addressable Objects:
-shelf_7
 carton_71
 carton_70
-room_floor_storage_room_0
+shelf_7
 room_floor_living_room_0
+room_floor_storage_room_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'carton.n.02_1', 'floor.n.01_1']

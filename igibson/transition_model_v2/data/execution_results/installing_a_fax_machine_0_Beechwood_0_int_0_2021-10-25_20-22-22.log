@@ -1,7 +1,7 @@
 Addressable Objects:
-room_floor_home_office_0
-breakfast_table_37
 facsimile_0
+breakfast_table_37
+room_floor_home_office_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'facsimile.n.02_1', 'floor.n.01_1']
@@ -17,12 +17,15 @@ Grasp facsimile_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('TOGGLE_ON', 'facsimile_0')
-Execution Error: 22
+Toggleon facsimile_0 success
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
 ************************************************
 Action:  ('TOGGLE_OFF', 'facsimile_0')
-Execution Error: 23
+Toggleoff facsimile_0 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'table_0')
-Execution Error: 'table_0'
+Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_37')
+Place ontop facsimile_0 breakfast_table_37 unsuccessful
+Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1]})
 ************************************************
-{'all_action_execution_true': True, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

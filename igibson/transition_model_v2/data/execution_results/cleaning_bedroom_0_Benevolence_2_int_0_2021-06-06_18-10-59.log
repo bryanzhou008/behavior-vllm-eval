@@ -1,16 +1,16 @@
 Addressable Objects:
-bottom_cabinet_2
 cologne_49
-necklace_48
+bottom_cabinet_0
+jeans_47
+bed_10
 hand_towel_52
 vacuum_51
-bottom_cabinet_0
+bottom_cabinet_2
+necklace_48
+room_floor_bedroom_1
 painting_50
 jeans_46
-bed_10
 sheet_53
-jeans_47
-room_floor_bedroom_1
 -----------------------------------------------
 Initial Conditions: 
 ['dusty', 'cabinet.n.01_1']
@@ -38,16 +38,13 @@ Action:  ('RIGHT_GRASP', 'hand_towel_52')
 Grasp hand_towel_52 with right_hand successful
 Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
 ************************************************
-Action:  ('LEFT_GRASP', 'bottom_cabinet_2')
-Grasp bottom_cabinet_2 with left_hand successful
+Action:  ('OPEN', 'bottom_cabinet_2')
+Open bottom_cabinet_2 success
 Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
 ************************************************
-Action:  ('OPEN', 'bottom_cabinet_2')
-Both hands full, release one object first to open the object
-Post Effects:  False (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
-************************************************
 Action:  ('CLEAN', 'bottom_cabinet_2')
-Execution Error: 'ActionEnv' object has no attribute 'inventory'
+Clean-dust bottom_cabinet_2 success
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bedroom_1')
 Execution Error: 'NoneType' object is not subscriptable
@@ -57,66 +54,63 @@ right_hand is already holding hand_towel_52
 Post Effects:  False (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
 ************************************************
 Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_2')
-bottom_cabinet_2 is closed
-Post Effects:  False (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+Place inside hand_towel_52 bottom_cabinet_2 successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'necklace_48')
-right_hand is already holding hand_towel_52
-Post Effects:  False (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+Grasp necklace_48 with right_hand successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
 ************************************************
 Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_2')
-bottom_cabinet_2 is closed
-Post Effects:  False (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+Place inside necklace_48 bottom_cabinet_2 successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'jeans_46')
-right_hand is already holding hand_towel_52
-Post Effects:  False (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+Grasp jeans_46 with right_hand successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
 ************************************************
 Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_2')
-bottom_cabinet_2 is closed
-Post Effects:  False (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+Place inside jeans_46 bottom_cabinet_2 successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'jeans_47')
-right_hand is already holding hand_towel_52
-Post Effects:  False (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+Grasp jeans_47 with right_hand successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
 ************************************************
 Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_2')
-bottom_cabinet_2 is closed
-Post Effects:  False (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+Place inside jeans_47 bottom_cabinet_2 successful
+Post Effects:  True (False, {'satisfied': [0, 4], 'unsatisfied': [1, 2, 3, 5]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'sheet_53')
-right_hand is already holding hand_towel_52
-Post Effects:  False (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+Grasp sheet_53 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 4], 'unsatisfied': [1, 2, 3, 5]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'bed_10')
-Place ontop hand_towel_52 bed_10 unsuccessful
-Post Effects:  False (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+Place ontop sheet_53 bed_10 unsuccessful
+Post Effects:  False (False, {'satisfied': [0, 4], 'unsatisfied': [1, 2, 3, 5]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'painting_50')
 Grasp painting_50 with right_hand successful
-Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+Post Effects:  True (False, {'satisfied': [0, 4], 'unsatisfied': [1, 2, 3, 5]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'sheet_53')
 Place ontop painting_50 sheet_53 unsuccessful
-Post Effects:  False (False, {'satisfied': [4, 5], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  False (False, {'satisfied': [0, 4], 'unsatisfied': [1, 2, 3, 5]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'hand_towel_52')
 Grasp hand_towel_52 with right_hand successful
-Post Effects:  True (False, {'satisfied': [4, 5], 'unsatisfied': [0, 1, 2, 3]})
-************************************************
-Action:  ('LEFT_GRASP', 'bottom_cabinet_0')
-left_hand is already holding bottom_cabinet_2
-Post Effects:  False (False, {'satisfied': [4, 5], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [0, 4], 'unsatisfied': [1, 2, 3, 5]})
 ************************************************
 Action:  ('OPEN', 'bottom_cabinet_0')
-Both hands full, release one object first to open the object
-Post Effects:  False (False, {'satisfied': [4, 5], 'unsatisfied': [0, 1, 2, 3]})
+Open bottom_cabinet_0 success
+Post Effects:  True (False, {'satisfied': [0, 4], 'unsatisfied': [1, 2, 3, 5]})
 ************************************************
 Action:  ('CLEAN', 'bottom_cabinet_0')
-Execution Error: 'ActionEnv' object has no attribute 'inventory'
+Clean-dust bottom_cabinet_0 success
+Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2, 5]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'bottom_cabinet_0')
 Place ontop hand_towel_52 bottom_cabinet_0 unsuccessful
-Post Effects:  False (False, {'satisfied': [4, 5], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  False (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2, 5]})
 ************************************************
 {'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

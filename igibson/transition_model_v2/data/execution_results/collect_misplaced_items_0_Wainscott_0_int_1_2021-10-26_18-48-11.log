@@ -1,15 +1,15 @@
 Addressable Objects:
-sock_1
-sock_0
-notebook_0
-coffee_table_33
-breakfast_table_1
-room_floor_living_room_0
-bottom_cabinet_79
 room_floor_dining_room_0
-gym_shoe_0
+notebook_0
 necklace_0
+room_floor_living_room_0
+gym_shoe_0
+breakfast_table_1
 sofa_39
+sock_0
+coffee_table_33
+bottom_cabinet_79
+sock_1
 -----------------------------------------------
 Initial Conditions: 
 ['under', 'gym_shoe.n.01_1', 'table.n.02_1']
@@ -26,51 +26,48 @@ Goal Conditions:
 ['ontop', 'notebook.n.01_1', 'table.n.02_2']
 ['forall', 'sock.n.01', '-', 'sock.n.01', 'ontop', 'sock.n.01', 'table.n.02_2']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'bottom_cabinet_79')
-Grasp bottom_cabinet_79 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
-************************************************
 Action:  ('OPEN', 'bottom_cabinet_79')
 Open bottom_cabinet_79 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_RELEASE', 'bottom_cabinet_79')
-Release bottom_cabinet_79 from right_hand successful
+Action:  ('RIGHT_GRASP', 'necklace_0')
+Grasp necklace_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'necklace_144')
-Execution Error: 'necklace_144'
-************************************************
-Action:  ('LEFT_GRASP', 'sock_146')
-Execution Error: 'sock_146'
+Action:  ('LEFT_GRASP', 'sock_0')
+Grasp sock_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'breakfast_table_1')
-left_hand is empty
+Place ontop sock_0 breakfast_table_1 unsuccessful
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_1')
-right_hand is empty
+Place ontop necklace_0 breakfast_table_1 unsuccessful
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'sock_147')
-Execution Error: 'sock_147'
+Action:  ('RIGHT_GRASP', 'sock_1')
+Grasp sock_1 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'gym_shoe_143')
-Execution Error: 'gym_shoe_143'
+Action:  ('LEFT_GRASP', 'gym_shoe_0')
+Grasp gym_shoe_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'breakfast_table_1')
-left_hand is empty
+Place ontop gym_shoe_0 breakfast_table_1 unsuccessful
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_1')
-right_hand is empty
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Place ontop sock_1 breakfast_table_1 unsuccessful
+Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'notebook_145')
-Execution Error: 'notebook_145'
+Action:  ('RIGHT_GRASP', 'notebook_0')
+Grasp notebook_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_1')
-right_hand is empty
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Place ontop notebook_0 breakfast_table_1 unsuccessful
+Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3]})
 ************************************************
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}
