@@ -1,7 +1,7 @@
 [
     {
         "action": "LEFT_GRASP",
-        "object": "orange_2_multiplexer"
+        "object": "orange_2"
     },
     {
         "action": "LEFT_PLACE_ONTOP",
@@ -77,11 +77,11 @@
     },
     {
         "action": "LEFT_GRASP",
-        "object": "apple_0_multiplexer"
+        "object": "apple_0"
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "apple_1_multiplexer"
+        "object": "apple_1"
     },
     {
         "action": "LEFT_PLACE_INSIDE",

@@ -1,11 +1,11 @@
 [
     {
         "action": "RIGHT_GRASP",
-        "object": "strawberry_62_multiplexer"
+        "object": "strawberry_62"
     },
     {
         "action": "LEFT_GRASP",
-        "object": "strawberry_61_multiplexer"
+        "object": "strawberry_61"
     },
     {
         "action": "RIGHT_PLACE_INSIDE",
@@ -21,11 +21,11 @@
     },
     {
         "action": "SLICE",
-        "object": "strawberry_62_multiplexer"
+        "object": "strawberry_62"
     },
     {
         "action": "SLICE",
-        "object": "strawberry_61_multiplexer"
+        "object": "strawberry_61"
     },
     {
         "action": "COOK",

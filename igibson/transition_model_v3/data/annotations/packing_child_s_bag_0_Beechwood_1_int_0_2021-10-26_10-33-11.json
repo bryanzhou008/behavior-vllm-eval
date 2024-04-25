@@ -21,7 +21,7 @@
     },
     {
         "action": "LEFT_GRASP",
-        "object": "apple_103_multiplexer"
+        "object": "apple_103"
     },
     {
         "action": "LEFT_PLACE_INSIDE",

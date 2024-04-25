@@ -33,7 +33,7 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "lemon_0_multiplexer"
+        "object": "lemon_0"
     },
     {
         "action": "UNFREEZE",
@@ -45,7 +45,7 @@
     },
     {
         "action": "SLICE",
-        "object": "lemon_0_multiplexer"
+        "object": "lemon_0"
     },
     {
         "action": "CLOSE",

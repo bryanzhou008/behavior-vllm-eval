@@ -121,7 +121,7 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "strawberry_0_multiplexer"
+        "object": "strawberry_0"
     },
     {
         "action": "RIGHT_PLACE_INSIDE",
@@ -129,7 +129,7 @@
     },
     {
         "action": "LEFT_GRASP",
-        "object": "strawberry_3_multiplexer"
+        "object": "strawberry_3"
     },
     {
         "action": "LEFT_PLACE_INSIDE",
@@ -137,15 +137,15 @@
     },
     {
         "action": "UNFREEZE",
-        "object": "strawberry_0_multiplexer"
+        "object": "strawberry_0"
     },
     {
         "action": "UNFREEZE",
-        "object": "strawberry_3_multiplexer"
+        "object": "strawberry_3"
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "peach_0_multiplexer"
+        "object": "peach_0"
     },
     {
         "action": "RIGHT_PLACE_INSIDE",
@@ -153,7 +153,7 @@
     },
     {
         "action": "LEFT_GRASP",
-        "object": "strawberry_2_multiplexer"
+        "object": "strawberry_2"
     },
     {
         "action": "LEFT_PLACE_INSIDE",
@@ -161,11 +161,11 @@
     },
     {
         "action": "UNFREEZE",
-        "object": "peach_0_multiplexer"
+        "object": "peach_0"
     },
     {
         "action": "UNFREEZE",
-        "object": "strawberry_2_multiplexer"
+        "object": "strawberry_2"
     },
     {
         "action": "RIGHT_GRASP",
@@ -177,7 +177,7 @@
     },
     {
         "action": "LEFT_GRASP",
-        "object": "peach_1_multiplexer"
+        "object": "peach_1"
     },
     {
         "action": "LEFT_PLACE_INSIDE",
@@ -189,7 +189,7 @@
     },
     {
         "action": "UNFREEZE",
-        "object": "peach_1_multiplexer"
+        "object": "peach_1"
     },
     {
         "action": "RIGHT_GRASP",
@@ -249,7 +249,7 @@
     },
     {
         "action": "LEFT_GRASP",
-        "object": "strawberry_1_multiplexer"
+        "object": "strawberry_1"
     },
     {
         "action": "LEFT_PLACE_INSIDE",
@@ -261,7 +261,7 @@
     },
     {
         "action": "UNFREEZE",
-        "object": "strawberry_1_multiplexer"
+        "object": "strawberry_1"
     },
     {
         "action": "CLOSE",

@@ -21,11 +21,11 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "tomato_83_multiplexer"
+        "object": "tomato_83"
     },
     {
         "action": "LEFT_GRASP",
-        "object": "tomato_82_multiplexer"
+        "object": "tomato_82"
     },
     {
         "action": "CLOSE",
@@ -41,11 +41,11 @@
     },
     {
         "action": "UNFREEZE",
-        "object": "tomato_83_multiplexer"
+        "object": "tomato_83"
     },
     {
         "action": "UNFREEZE",
-        "object": "tomato_82_multiplexer"
+        "object": "tomato_82"
     },
     {
         "action": "OPEN",
@@ -89,7 +89,7 @@
     },
     {
         "action": "LEFT_GRASP",
-        "object": "apple_80_multiplexer"
+        "object": "apple_80"
     },
     {
         "action": "LEFT_PLACE_ONTOP",
@@ -97,11 +97,11 @@
     },
     {
         "action": "SLICE",
-        "object": "apple_80_multiplexer"
+        "object": "apple_80"
     },
     {
         "action": "LEFT_GRASP",
-        "object": "apple_81_multiplexer"
+        "object": "apple_81"
     },
     {
         "action": "LEFT_PLACE_ONTOP",
@@ -109,11 +109,11 @@
     },
     {
         "action": "SLICE",
-        "object": "apple_81_multiplexer"
+        "object": "apple_81"
     },
     {
         "action": "LEFT_GRASP",
-        "object": "tomato_83_multiplexer"
+        "object": "tomato_83"
     },
     {
         "action": "LEFT_PLACE_ONTOP",
@@ -121,11 +121,11 @@
     },
     {
         "action": "SLICE",
-        "object": "tomato_83_multiplexer"
+        "object": "tomato_83"
     },
     {
         "action": "LEFT_GRASP",
-        "object": "tomato_82_multiplexer"
+        "object": "tomato_82"
     },
     {
         "action": "LEFT_PLACE_ONTOP",
@@ -133,6 +133,6 @@
     },
     {
         "action": "SLICE",
-        "object": "tomato_82_multiplexer"
+        "object": "tomato_82"
     }
 ]
