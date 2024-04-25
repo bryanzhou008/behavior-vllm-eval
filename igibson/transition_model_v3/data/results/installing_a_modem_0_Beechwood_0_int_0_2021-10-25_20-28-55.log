@@ -1,0 +1,33 @@
+Addressable Objects:
+modem_0
+breakfast_table_37
+room_floor_home_office_0
+-----------------------------------------------
+Initial Conditions: 
+['not', 'toggled_on', 'modem.n.01_1']
+['ontop', 'modem.n.01_1', 'table.n.02_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['toggled_on', 'modem.n.01_1']
+['under', 'modem.n.01_1', 'table.n.02_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'modem_0')
+Grasp modem_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('TOGGLE_ON', 'modem_0')
+Toggleon modem_0 success
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
+************************************************
+Action:  ('TOGGLE_OFF', 'modem_0')
+Toggleoff modem_0 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_home_office_0')
+Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B8E547D30>
+************************************************
+------------Action Execution Ends-------------
+Final teleport
+Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+{'all_action_execution_true': True, 'unknown_execution_error': True, 'all_condition_satisfied': False}

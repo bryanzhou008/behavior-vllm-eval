@@ -1,0 +1,128 @@
+Addressable Objects:
+apple_0
+hamburger_0
+carton_0
+cookie_0
+pop_0
+apple_0_part_1
+room_floor_kitchen_0
+bottom_cabinet_no_top_54
+chip_1
+cookie_1
+room_floor_living_room_0
+carton_1
+fridge_57
+juice_0
+chip_0
+apple_0_multiplexer
+banana_0
+breakfast_table_7
+countertop_56
+salad_0
+apple_0_part_0
+-----------------------------------------------
+Initial Conditions: 
+['inside', 'salad.n.01_1', 'electric_refrigerator.n.01_1']
+['inside', 'sandwich.n.01_1', 'electric_refrigerator.n.01_1']
+['inside', 'chip.n.04_1', 'cabinet.n.01_1']
+['inside', 'chip.n.04_2', 'cabinet.n.01_1']
+['ontop', 'juice.n.01_1', 'table.n.02_1']
+['ontop', 'pop.n.02_1', 'table.n.02_1']
+['ontop', 'apple.n.01_1', 'countertop.n.01_1']
+['ontop', 'banana.n.02_1', 'countertop.n.01_1']
+['onfloor', 'carton.n.02_1', 'floor.n.01_2']
+['onfloor', 'carton.n.02_2', 'floor.n.01_2']
+['ontop', 'cookie.n.01_1', 'countertop.n.01_1']
+['ontop', 'cookie.n.01_2', 'countertop.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['forpairs', 'chip.n.04', '-', 'chip.n.04', 'carton.n.02', '-', 'carton.n.02', 'inside', 'chip.n.04', 'carton.n.02']
+['forpairs', 'cookie.n.01', '-', 'cookie.n.01', 'carton.n.02', '-', 'carton.n.02', 'inside', 'cookie.n.01', 'carton.n.02']
+['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'inside', 'salad.n.01_1', 'carton.n.02', 'inside', 'juice.n.01_1', 'carton.n.02', 'not', 'inside', 'sandwich.n.01_1', 'carton.n.02']
+['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'inside', 'sandwich.n.01_1', 'carton.n.02', 'inside', 'pop.n.02_1', 'carton.n.02', 'not', 'inside', 'salad.n.01_1', 'carton.n.02']
+['or', 'inside', 'apple.n.01_1', 'carton.n.02_1', 'inside', 'banana.n.02_1', 'carton.n.02_1']
+['or', 'inside', 'apple.n.01_1', 'carton.n.02_2', 'inside', 'banana.n.02_1', 'carton.n.02_2']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'apple_0_multiplexer')
+Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021BE7A37F40>
+************************************************
+Action:  ('LEFT_GRASP', 'banana_0')
+Grasp banana_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
+right_hand is empty
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'carton_1')
+Place inside banana_0 carton_1 successful
+Post Effects:  True (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_GRASP', 'cookie_0')
+Grasp cookie_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_GRASP', 'cookie_1')
+Grasp cookie_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
+Place inside cookie_0 carton_0 successful
+Post Effects:  True (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'carton_1')
+Place inside cookie_1 carton_1 successful
+Post Effects:  True (False, {'satisfied': [1, 5], 'unsatisfied': [0, 2, 3, 4]})
+************************************************
+Action:  ('OPEN', 'bottom_cabinet_no_top_54')
+True
+Open bottom_cabinet_no_top_54 success
+Post Effects:  True (False, {'satisfied': [1, 5], 'unsatisfied': [0, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_GRASP', 'chip_0')
+Grasp chip_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [1, 5], 'unsatisfied': [0, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_GRASP', 'chip_1')
+Grasp chip_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [1, 5], 'unsatisfied': [0, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
+Place inside chip_0 carton_0 successful
+Post Effects:  True (False, {'satisfied': [1, 5], 'unsatisfied': [0, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'carton_1')
+Place inside chip_1 carton_1 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 5], 'unsatisfied': [2, 3, 4]})
+************************************************
+Action:  ('OPEN', 'fridge_57')
+True
+Open fridge_57 success
+Post Effects:  True (False, {'satisfied': [0, 1, 5], 'unsatisfied': [2, 3, 4]})
+************************************************
+Action:  ('RIGHT_GRASP', 'salad_0')
+Grasp salad_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 5], 'unsatisfied': [2, 3, 4]})
+************************************************
+Action:  ('LEFT_GRASP', 'hamburger_0')
+Grasp hamburger_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 5], 'unsatisfied': [2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
+Place inside salad_0 carton_0 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 5], 'unsatisfied': [2, 3, 4]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'carton_1')
+Place inside hamburger_0 carton_1 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 5], 'unsatisfied': [2, 3, 4]})
+************************************************
+Action:  ('CLOSE', 'fridge_57')
+True
+Close fridge_57 success
+Post Effects:  True (False, {'satisfied': [0, 1, 5], 'unsatisfied': [2, 3, 4]})
+************************************************
+------------Action Execution Ends-------------
+Final teleport
+Post Effects:  (False, {'satisfied': [0, 1, 5], 'unsatisfied': [2, 3, 4]})
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

@@ -1,0 +1,121 @@
+Addressable Objects:
+jeans_46
+cologne_49
+painting_50
+jeans_47
+room_floor_bedroom_1
+bottom_cabinet_0
+bottom_cabinet_2
+hand_towel_52
+bed_10
+sheet_53
+necklace_48
+vacuum_51
+-----------------------------------------------
+Initial Conditions: 
+['dusty', 'cabinet.n.01_1']
+['dusty', 'cabinet.n.01_2']
+['ontop', 'apparel.n.01_1', 'bed.n.01_1']
+['ontop', 'apparel.n.01_2', 'bed.n.01_1']
+['onfloor', 'jewelry.n.01_1', 'floor.n.01_1']
+['onfloor', 'perfume.n.02_1', 'floor.n.01_1']
+['ontop', 'painting.n.01_1', 'bed.n.01_1']
+['not', 'dusty', 'vacuum.n.04_1']
+['onfloor', 'vacuum.n.04_1', 'floor.n.01_1']
+['onfloor', 'hand_towel.n.01_1', 'floor.n.01_1']
+['onfloor', 'sheet.n.03_1', 'floor.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'apparel.n.01', '-', 'apparel.n.01', 'exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'inside', 'apparel.n.01', 'cabinet.n.01']
+['and', 'inside', 'jewelry.n.01_1', 'cabinet.n.01_1', 'inside', 'perfume.n.02_1', 'cabinet.n.01_1']
+['ontop', 'sheet.n.03_1', 'bed.n.01_1']
+['forall', 'cabinet.n.01', '-', 'cabinet.n.01', 'not', 'dusty', 'cabinet.n.01']
+['nextto', 'vacuum.n.04_1', 'bed.n.01_1']
+['ontop', 'painting.n.01_1', 'sheet.n.03_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'hand_towel_52')
+Grasp hand_towel_52 with right_hand successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+************************************************
+Action:  ('OPEN', 'bottom_cabinet_2')
+True
+Open bottom_cabinet_2 success
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+************************************************
+Action:  ('CLEAN', 'bottom_cabinet_2')
+Clean-dust bottom_cabinet_2 success
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bedroom_1')
+Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B90AF1340>
+************************************************
+Action:  ('RIGHT_GRASP', 'cologne_49')
+right_hand is already holding hand_towel_52
+Post Effects:  False (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_2')
+Place inside hand_towel_52 bottom_cabinet_2 successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+************************************************
+Action:  ('RIGHT_GRASP', 'necklace_48')
+Grasp necklace_48 with right_hand successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_2')
+Place inside necklace_48 bottom_cabinet_2 successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+************************************************
+Action:  ('RIGHT_GRASP', 'jeans_46')
+Grasp jeans_46 with right_hand successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_2')
+Place inside jeans_46 bottom_cabinet_2 successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+************************************************
+Action:  ('RIGHT_GRASP', 'jeans_47')
+Grasp jeans_47 with right_hand successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_2')
+Place inside jeans_47 bottom_cabinet_2 successful
+Post Effects:  True (False, {'satisfied': [0, 4], 'unsatisfied': [1, 2, 3, 5]})
+************************************************
+Action:  ('RIGHT_GRASP', 'sheet_53')
+Grasp sheet_53 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 4], 'unsatisfied': [1, 2, 3, 5]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'bed_10')
+Place ontop sheet_53 bed_10 successful
+Post Effects:  True (False, {'satisfied': [0, 2, 4], 'unsatisfied': [1, 3, 5]})
+************************************************
+Action:  ('RIGHT_GRASP', 'painting_50')
+Grasp painting_50 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 2, 4], 'unsatisfied': [1, 3, 5]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'sheet_53')
+Place ontop painting_50 sheet_53 successful
+Post Effects:  True (False, {'satisfied': [0, 2, 4, 5], 'unsatisfied': [1, 3]})
+************************************************
+Action:  ('RIGHT_GRASP', 'hand_towel_52')
+Grasp hand_towel_52 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 2, 4, 5], 'unsatisfied': [1, 3]})
+************************************************
+Action:  ('OPEN', 'bottom_cabinet_0')
+True
+Open bottom_cabinet_0 success
+Post Effects:  True (False, {'satisfied': [0, 4, 5], 'unsatisfied': [1, 2, 3]})
+************************************************
+Action:  ('CLEAN', 'bottom_cabinet_0')
+Clean-dust bottom_cabinet_0 success
+Post Effects:  True (False, {'satisfied': [0, 3, 4, 5], 'unsatisfied': [1, 2]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'bottom_cabinet_0')
+Place ontop hand_towel_52 bottom_cabinet_0 successful
+Post Effects:  True (False, {'satisfied': [0, 3, 4, 5], 'unsatisfied': [1, 2]})
+************************************************
+------------Action Execution Ends-------------
+Final teleport
+Post Effects:  (False, {'satisfied': [0, 3, 4, 5], 'unsatisfied': [1, 2]})
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

@@ -1,0 +1,116 @@
+Addressable Objects:
+room_floor_corridor_0
+necklace_117
+lipstick_115
+backpack_112
+hanger_113
+bed_33
+mouse_119
+bracelet_116
+door_99
+toothbrush_118
+lipstick_114
+room_floor_bedroom_0
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'backpack.n.01_1', 'floor.n.01_1']
+['ontop', 'hanger.n.02_1', 'bed.n.01_1']
+['ontop', 'makeup.n.01_1', 'bed.n.01_1']
+['ontop', 'makeup.n.01_2', 'bed.n.01_1']
+['ontop', 'toothbrush.n.01_1', 'bed.n.01_1']
+['onfloor', 'jewelry.n.01_1', 'floor.n.01_1']
+['onfloor', 'jewelry.n.01_2', 'floor.n.01_1']
+['ontop', 'mouse.n.04_1', 'bed.n.01_1']
+['open', 'door.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'jewelry.n.01', '-', 'jewelry.n.01', 'inside', 'jewelry.n.01', 'backpack.n.01_1']
+['forall', 'makeup.n.01', '-', 'makeup.n.01', 'inside', 'makeup.n.01', 'backpack.n.01_1']
+['inside', 'toothbrush.n.01_1', 'backpack.n.01_1']
+['inside', 'mouse.n.04_1', 'backpack.n.01_1']
+['onfloor', 'backpack.n.01_1', 'floor.n.01_2']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'necklace_117')
+Grasp necklace_117 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'bed_33')
+Place ontop necklace_117 bed_33 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_GRASP', 'bracelet_116')
+Grasp bracelet_116 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'bed_33')
+Place ontop bracelet_116 bed_33 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_GRASP', 'backpack_112')
+Grasp backpack_112 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bedroom_0')
+Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021BF5F62BE0>
+************************************************
+Action:  ('RIGHT_GRASP', 'mouse_119')
+right_hand is already holding backpack_112
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'backpack_112')
+No openable joint metadata found for object backpack_112
+backpack_112 is closed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_GRASP', 'bracelet_116')
+right_hand is already holding backpack_112
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'backpack_112')
+backpack_112 is closed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_GRASP', 'necklace_117')
+right_hand is already holding backpack_112
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'backpack_112')
+backpack_112 is closed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_GRASP', 'toothbrush_118')
+right_hand is already holding backpack_112
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'backpack_112')
+backpack_112 is closed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_GRASP', 'lipstick_115')
+right_hand is already holding backpack_112
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'backpack_112')
+backpack_112 is closed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_GRASP', 'lipstick_114')
+right_hand is already holding backpack_112
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'backpack_112')
+backpack_112 is closed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_GRASP', 'backpack_112')
+right_hand is already holding backpack_112
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_corridor_0')
+Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021BF5F62C40>
+************************************************
+------------Action Execution Ends-------------
+Final teleport
+Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

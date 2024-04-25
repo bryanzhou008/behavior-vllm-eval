@@ -1,0 +1,115 @@
+Addressable Objects:
+strawberry_61_part_0
+bottom_cabinet_41
+strawberry_61_multiplexer
+strawberry_62_multiplexer
+room_floor_kitchen_0
+strawberry_62
+strawberry_61_part_1
+carving_knife_66
+beef_63
+fridge_40
+strawberry_62_part_1
+strawberry_62_part_0
+countertop_26
+jar_64
+strawberry_61
+saucepan_65
+-----------------------------------------------
+Initial Conditions: 
+['ontop', 'strawberry.n.01_1', 'countertop.n.01_1']
+['ontop', 'strawberry.n.01_2', 'countertop.n.01_1']
+['ontop', 'beef.n.02_1', 'countertop.n.01_1']
+['ontop', 'jar.n.01_1', 'countertop.n.01_1']
+['open', 'jar.n.01_1']
+['ontop', 'pan.n.01_1', 'countertop.n.01_1']
+['ontop', 'carving_knife.n.01_1', 'countertop.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'strawberry.n.01', '-', 'strawberry.n.01', 'sliced', 'strawberry.n.01']
+['forall', 'strawberry.n.01', '-', 'strawberry.n.01', 'cooked', 'strawberry.n.01']
+['forall', 'strawberry.n.01', '-', 'strawberry.n.01', 'inside', 'strawberry.n.01', 'jar.n.01_1']
+['not', 'open', 'jar.n.01_1']
+['inside', 'beef.n.02_1', 'electric_refrigerator.n.01_1']
+['frozen', 'beef.n.02_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'strawberry_62_multiplexer')
+Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021C28A91C70>
+************************************************
+Action:  ('LEFT_GRASP', 'strawberry_61_multiplexer')
+Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021BE7A6C460>
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'saucepan_65')
+right_hand is empty
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'saucepan_65')
+left_hand is empty
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('RIGHT_GRASP', 'carving_knife_66')
+Grasp carving_knife_66 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('SLICE', 'strawberry_62_multiplexer')
+Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021C28A91C70>
+************************************************
+Action:  ('SLICE', 'strawberry_61_multiplexer')
+Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021BE7A6C460>
+************************************************
+Action:  ('COOK', 'strawberry_62_part_0')
+Execution Error: 13
+************************************************
+Action:  ('COOK', 'strawberry_62_part_1')
+Execution Error: 13
+************************************************
+Action:  ('COOK', 'strawberry_61_part_0')
+Execution Error: 13
+************************************************
+Action:  ('COOK', 'strawberry_61_part_1')
+Execution Error: 13
+************************************************
+Action:  ('LEFT_GRASP', 'jar_64')
+Grasp jar_64 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('OPEN', 'jar_64')
+jar_64 is already opened
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('RIGHT_GRASP', 'saucepan_65')
+right_hand is already holding carving_knife_66
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('RIGHT_TRANSFER_CONTENTS_INSIDE', 'jar_64')
+Execution Error: 'RIGHT_TRANSFER_CONTENTS_INSIDE'
+************************************************
+Action:  ('CLOSE', 'jar_64')
+Both hands full, release one object first to close the object
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('OPEN', 'fridge_40')
+Both hands full, release one object first to open the object
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('LEFT_GRASP', 'beef_63')
+left_hand is already holding jar_64
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'fridge_40')
+fridge_40 is closed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+************************************************
+Action:  ('FREEZE', 'beef_63')
+Freeze beef_63 success
+Post Effects:  True (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('CLOSE', 'fridge_40')
+fridge_40 is already closeed
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+------------Action Execution Ends-------------
+Final teleport
+Post Effects:  (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

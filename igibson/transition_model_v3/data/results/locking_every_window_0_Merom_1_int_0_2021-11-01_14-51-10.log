@@ -1,0 +1,58 @@
+Addressable Objects:
+sofa_25
+room_floor_living_room_0
+window_79
+window_81
+bed_7
+window_82
+window_76
+-----------------------------------------------
+Initial Conditions: 
+['open', 'window.n.01_1']
+['open', 'window.n.01_2']
+['open', 'window.n.01_3']
+['open', 'window.n.01_4']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['not', 'open', 'window.n.01_1']
+['not', 'open', 'window.n.01_2']
+['not', 'open', 'window.n.01_3']
+['not', 'open', 'window.n.01_4']
+------------Action Execution Begins-------------
+Action:  ('TOGGLE_ON', 'window_82')
+window_82 cannot be toggled on
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('TOGGLE_OFF', 'window_82')
+window_82 cannot be toggled off
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('TOGGLE_ON', 'window_81')
+window_81 cannot be toggled on
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('TOGGLE_OFF', 'window_81')
+window_81 cannot be toggled off
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('TOGGLE_ON', 'window_79')
+window_79 cannot be toggled on
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('TOGGLE_OFF', 'window_79')
+window_79 cannot be toggled off
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('TOGGLE_ON', 'window_76')
+window_76 cannot be toggled on
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('TOGGLE_OFF', 'window_76')
+window_76 cannot be toggled off
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+------------Action Execution Ends-------------
+Final teleport
+Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

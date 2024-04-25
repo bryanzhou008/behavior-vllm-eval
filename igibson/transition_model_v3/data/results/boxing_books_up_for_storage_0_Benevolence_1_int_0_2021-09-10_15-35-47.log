@@ -1,0 +1,92 @@
+Addressable Objects:
+notebook_63
+notebook_59
+room_floor_living_room_0
+notebook_60
+notebook_62
+hardback_64
+hardback_65
+notebook_61
+shelf_0
+carton_66
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'book.n.02_1', 'floor.n.01_1']
+['onfloor', 'book.n.02_2', 'floor.n.01_1']
+['onfloor', 'book.n.02_3', 'floor.n.01_1']
+['onfloor', 'book.n.02_4', 'floor.n.01_1']
+['onfloor', 'book.n.02_5', 'floor.n.01_1']
+['ontop', 'book.n.02_6', 'shelf.n.01_1']
+['ontop', 'book.n.02_7', 'shelf.n.01_1']
+['onfloor', 'carton.n.02_1', 'floor.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'notebook_60')
+Grasp notebook_60 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_GRASP', 'hardback_65')
+Grasp hardback_65 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_66')
+Place inside notebook_60 carton_66 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'carton_66')
+Place inside hardback_65 carton_66 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_GRASP', 'hardback_64')
+Grasp hardback_64 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_GRASP', 'notebook_59')
+Grasp notebook_59 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_66')
+Place inside hardback_64 carton_66 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'carton_66')
+Place inside notebook_59 carton_66 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_GRASP', 'notebook_62')
+Grasp notebook_62 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_GRASP', 'hardback_65')
+Grasp hardback_65 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_66')
+Place inside notebook_62 carton_66 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'carton_66')
+Place inside hardback_65 carton_66 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_GRASP', 'notebook_63')
+Grasp notebook_63 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_GRASP', 'notebook_61')
+Grasp notebook_61 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_66')
+Place inside notebook_63 carton_66 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'carton_66')
+Place inside notebook_61 carton_66 successful
+Post Effects:  True (True, {'satisfied': [0], 'unsatisfied': []})
+************************************************
+------------Action Execution Ends-------------
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

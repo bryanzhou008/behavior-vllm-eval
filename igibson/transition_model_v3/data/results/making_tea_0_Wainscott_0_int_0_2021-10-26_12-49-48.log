@@ -1,0 +1,84 @@
+Addressable Objects:
+bottom_cabinet_no_top_80
+lemon_0
+lemon_0_multiplexer
+tea_bag_0
+lemon_0_part_1
+carving_knife_0
+fridge_97
+room_floor_kitchen_0
+lemon_0_part_0
+stove_88
+teapot_0
+-----------------------------------------------
+Initial Conditions: 
+['inside', 'teapot.n.01_1', 'cabinet.n.01_1']
+['inside', 'tea_bag.n.01_1', 'cabinet.n.01_1']
+['inside', 'lemon.n.01_1', 'electric_refrigerator.n.01_1']
+['inside', 'knife.n.01_1', 'cabinet.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['sliced', 'lemon.n.01_1']
+['ontop', 'teapot.n.01_1', 'stove.n.01_1']
+['inside', 'tea_bag.n.01_1', 'teapot.n.01_1']
+['soaked', 'tea_bag.n.01_1']
+['toggled_on', 'stove.n.01_1']
+------------Action Execution Begins-------------
+Action:  ('OPEN', 'bottom_cabinet_no_top_80')
+True
+Open bottom_cabinet_no_top_80 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_GRASP', 'teapot_0')
+Grasp teapot_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_GRASP', 'tea_bag_0')
+Grasp tea_bag_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'teapot_0')
+Place inside tea_bag_0 teapot_0 successful
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4]})
+************************************************
+Action:  ('SOAK', 'tea_bag_0')
+Soak tea_bag_0 success
+Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'stove_88')
+Place ontop teapot_0 stove_88 successful
+Post Effects:  True (False, {'satisfied': [1, 2, 3], 'unsatisfied': [0, 4]})
+************************************************
+Action:  ('TOGGLE_ON', 'stove_88')
+Toggleon stove_88 success
+Post Effects:  True (False, {'satisfied': [1, 2, 3, 4], 'unsatisfied': [0]})
+************************************************
+Action:  ('OPEN', 'fridge_97')
+True
+Open fridge_97 success
+Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'lemon_0_multiplexer')
+Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021B80EC6CA0>
+************************************************
+Action:  ('UNFREEZE', 'carving_knife_0')
+Freeze failed, object cannot be frozen
+Post Effects:  False (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('LEFT_GRASP', 'carving_knife_0')
+Grasp carving_knife_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
+************************************************
+Action:  ('SLICE', 'lemon_0_multiplexer')
+Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021B80EC6CA0>
+************************************************
+Action:  ('CLOSE', 'fridge_97')
+True
+Close fridge_97 success
+Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
+************************************************
+------------Action Execution Ends-------------
+Final teleport
+Post Effects:  (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

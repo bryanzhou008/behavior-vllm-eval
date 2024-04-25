@@ -1,0 +1,53 @@
+Addressable Objects:
+sink_38
+soap_0
+dishtowel_0
+shampoo_0
+shower_35
+room_floor_bathroom_0
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'shampoo.n.01_1', 'floor.n.01_1']
+['onfloor', 'soap.n.01_1', 'floor.n.01_1']
+['onfloor', 'towel.n.01_1', 'floor.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['onfloor', 'towel.n.01_1', 'floor.n.01_1']
+['onfloor', 'shampoo.n.01_1', 'floor.n.01_1']
+['nextto', 'soap.n.01_1', 'sink.n.01_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'soap_0')
+Grasp soap_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'sink_38')
+Place inside soap_0 sink_38 unsuccessful
+Post Effects:  False (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
+************************************************
+Action:  ('TOGGLE_ON', 'sink_38')
+Toggleon sink_38 success
+Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
+************************************************
+Action:  ('TOGGLE_OFF', 'sink_38')
+Toggleoff sink_38 success
+Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
+************************************************
+Action:  ('RIGHT_GRASP', 'dishtowel_0')
+Grasp dishtowel_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bathroom_0')
+Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021BF5ED5BB0>
+************************************************
+Action:  ('RIGHT_GRASP', 'shampoo_0')
+right_hand is already holding dishtowel_0
+Post Effects:  False (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bathroom_0')
+Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021BF5ED5BB0>
+************************************************
+------------Action Execution Ends-------------
+Final teleport
+Post Effects:  (False, {'satisfied': [1, 2], 'unsatisfied': [0]})
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

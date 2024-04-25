@@ -1,0 +1,104 @@
+Addressable Objects:
+sandal_1
+paper_towel_0
+umbrella_0
+bracelet_0
+bottom_cabinet_44
+room_floor_closet_0
+shelf_31
+bottom_cabinet_1
+necklace_0
+room_floor_bedroom_0
+sandal_0
+bottom_cabinet_30
+hat_0
+-----------------------------------------------
+Initial Conditions: 
+['dusty', 'shelf.n.01_1']
+['dusty', 'cabinet.n.01_3']
+['onfloor', 'jewelry.n.01_1', 'floor.n.01_1']
+['onfloor', 'jewelry.n.01_2', 'floor.n.01_1']
+['dusty', 'floor.n.01_1']
+['onfloor', 'hat.n.01_1', 'floor.n.01_1']
+['onfloor', 'sandal.n.01_1', 'floor.n.01_1']
+['onfloor', 'sandal.n.01_2', 'floor.n.01_1']
+['onfloor', 'umbrella.n.01_1', 'floor.n.01_1']
+['inside', 'towel.n.01_1', 'cabinet.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_2']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'jewelry.n.01', '-', 'jewelry.n.01', 'inside', 'jewelry.n.01', 'cabinet.n.01_3']
+['not', 'inside', 'umbrella.n.01_1', 'cabinet.n.01_3']
+['or', 'inside', 'hat.n.01_1', 'cabinet.n.01_1', 'ontop', 'hat.n.01_1', 'shelf.n.01_1']
+['forall', 'sandal.n.01', '-', 'sandal.n.01', 'and', 'nextto', 'sandal.n.01', 'shelf.n.01_1', 'onfloor', 'sandal.n.01', 'floor.n.01_1']
+['not', 'dusty', 'cabinet.n.01_3']
+['not', 'dusty', 'shelf.n.01_1']
+['not', 'dusty', 'floor.n.01_1']
+------------Action Execution Begins-------------
+Action:  ('OPEN', 'bottom_cabinet_44')
+True
+Open bottom_cabinet_44 success
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('RIGHT_GRASP', 'paper_towel_0')
+Grasp paper_towel_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('SOAK', 'paper_towel_0')
+Soak paper_towel_0 success
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('CLEAN', 'room_floor_closet_0')
+Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B9056DAF0>
+************************************************
+Action:  ('CLEAN', 'shelf_31')
+Clean-dust shelf_31 success
+Post Effects:  True (False, {'satisfied': [1, 5], 'unsatisfied': [0, 2, 3, 4, 6]})
+************************************************
+Action:  ('CLEAN', 'bottom_cabinet_44')
+Clean failed, object is already cleaned
+Post Effects:  False (False, {'satisfied': [1, 5], 'unsatisfied': [0, 2, 3, 4, 6]})
+************************************************
+Action:  ('CLEAN', 'bottom_cabinet_30')
+Clean-dust bottom_cabinet_30 success
+Post Effects:  True (False, {'satisfied': [1, 4, 5], 'unsatisfied': [0, 2, 3, 6]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_closet_0')
+Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B9056DAF0>
+************************************************
+Action:  ('RIGHT_GRASP', 'hat_0')
+right_hand is already holding paper_towel_0
+Post Effects:  False (False, {'satisfied': [1, 4, 5], 'unsatisfied': [0, 2, 3, 6]})
+************************************************
+Action:  ('LEFT_GRASP', 'necklace_0')
+Grasp necklace_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [1, 4, 5], 'unsatisfied': [0, 2, 3, 6]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_30')
+bottom_cabinet_30 is closed
+Post Effects:  False (False, {'satisfied': [1, 4, 5], 'unsatisfied': [0, 2, 3, 6]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'bottom_cabinet_30')
+bottom_cabinet_30 is closed
+Post Effects:  False (False, {'satisfied': [1, 4, 5], 'unsatisfied': [0, 2, 3, 6]})
+************************************************
+Action:  ('RIGHT_GRASP', 'bracelet_0')
+right_hand is already holding paper_towel_0
+Post Effects:  False (False, {'satisfied': [1, 4, 5], 'unsatisfied': [0, 2, 3, 6]})
+************************************************
+Action:  ('LEFT_GRASP', 'sandal_0')
+left_hand is already holding necklace_0
+Post Effects:  False (False, {'satisfied': [1, 4, 5], 'unsatisfied': [0, 2, 3, 6]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_30')
+bottom_cabinet_30 is closed
+Post Effects:  False (False, {'satisfied': [1, 4, 5], 'unsatisfied': [0, 2, 3, 6]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'bottom_cabinet_30')
+bottom_cabinet_30 is closed
+Post Effects:  False (False, {'satisfied': [1, 4, 5], 'unsatisfied': [0, 2, 3, 6]})
+************************************************
+------------Action Execution Ends-------------
+Final teleport
+Post Effects:  (False, {'satisfied': [1, 4, 5], 'unsatisfied': [0, 2, 3, 6]})
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

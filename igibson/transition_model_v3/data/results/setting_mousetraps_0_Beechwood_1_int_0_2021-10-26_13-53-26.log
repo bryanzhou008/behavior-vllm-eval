@@ -1,0 +1,56 @@
+Addressable Objects:
+room_floor_corridor_0
+toilet_64
+room_floor_bathroom_0
+bed_43
+mousetrap_101
+mousetrap_100
+sink_73
+mousetrap_103
+mousetrap_102
+-----------------------------------------------
+Initial Conditions: 
+['ontop', 'mousetrap.n.01_1', 'bed.n.01_1']
+['ontop', 'mousetrap.n.01_2', 'bed.n.01_1']
+['ontop', 'mousetrap.n.01_3', 'bed.n.01_1']
+['ontop', 'mousetrap.n.01_4', 'bed.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_2']
+-----------------------------------------------
+Goal Conditions: 
+['onfloor', 'mousetrap.n.01_1', 'floor.n.01_1']
+['onfloor', 'mousetrap.n.01_2', 'floor.n.01_1']
+['nextto', 'mousetrap.n.01_3', 'toilet.n.02_1']
+['nextto', 'mousetrap.n.01_4', 'toilet.n.02_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'mousetrap_103')
+Grasp mousetrap_103 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('LEFT_GRASP', 'mousetrap_100')
+Grasp mousetrap_100 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'room_floor_corridor_0')
+Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021BF861C040>
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_corridor_0')
+Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021BF861C040>
+************************************************
+Action:  ('RIGHT_GRASP', 'mousetrap_101')
+right_hand is already holding mousetrap_103
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('LEFT_GRASP', 'mousetrap_102')
+left_hand is already holding mousetrap_100
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'room_floor_bathroom_0')
+Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021BF861C460>
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bathroom_0')
+Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021BF861C460>
+************************************************
+------------Action Execution Ends-------------
+Final teleport
+Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

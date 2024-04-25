@@ -52,23 +52,44 @@ class PositionGeometry:
 
     # most tricky one
     def _set_ontop_magic(self,obj1:URDFObject,obj2:URDFObject,offset=0.00):
+        # target_center = get_aabb_center(obj2)
+        # obj1_aabb=get_aabb(obj1)
+        # obj2_aabb=get_aabb(obj2)
+
+        # x_min=target_center[0]-0.5*obj2_aabb[0]+0.5*obj1_aabb[0]
+        # x_max=target_center[0]+0.5*obj2_aabb[0]-0.5*obj1_aabb[0]
+        # y_min=target_center[1]-0.5*obj2_aabb[1]+0.5*obj1_aabb[1]
+        # y_max=target_center[1]+0.5*obj2_aabb[1]-0.5*obj1_aabb[1]
+        # cur_center=target_center.copy()
+        # for x in np.linspace(x_min,x_max,x_steps):
+        #     for y in np.linspace(y_min,y_max,y_steps):
+        #         cur_center[0]=x
+        #         cur_center[1]=y
+        #         cur_center[2]= target_center[2]+0.5 * obj1_aabb[2] + 0.5 *obj2_aabb[2] +offset
+        #         target_pos = tar_pos_for_new_aabb_center(obj1,target_center)
+        #         obj1.set_position(target_pos)
+        #         state=p.saveState()
+        #         physics_timestep = p.getPhysicsEngineParameters()["fixedTimeStep"]
+        #         for _ in range(int(falling_time / physics_timestep)):
+        #             p.stepSimulation()
+        #         obj1_pos,obj1_ori=obj1.get_position_orientation()
+        #         if obj1.states[object_states.OnTop].get_value(obj2):
+        #             print("Success")
+        #             # obj2_pos,obj2_ori=obj2.get_position_orientation()
+        #         else:
+        #             print("Failed")
+        #         restoreState(state)
+        #         p.removeState(state)
+        #         obj1.set_position_orientation(obj1_pos,obj1_ori)
+        #         if obj1.states[object_states.OnTop].get_value(obj2):
+        #             return True
+        # return False
         target_center = get_aabb_center(obj2)
         obj1_aabb=get_aabb(obj1)
         obj2_aabb=get_aabb(obj2)
         target_center[2] += 0.5 * obj1_aabb[2] + 0.5 *obj2_aabb[2] +offset
         target_pos = tar_pos_for_new_aabb_center(obj1,target_center)
         obj1.set_position(target_pos)
-        state=p.saveState()
-        obj1_pos,obj1_ori=obj1.get_position_orientation()
-        obj2_pos,obj2_ori=obj2.get_position_orientation()
-        self.simulator.step()
-        if obj1.states[object_states.OnTop].get_value(obj2):
-            obj1_pos,obj1_ori=obj1.get_position_orientation()
-            obj2_pos,obj2_ori=obj2.get_position_orientation()
-        restoreState(state)
-        p.removeState(state)
-        obj1.set_position_orientation(obj1_pos,obj1_ori)
-        obj2.set_position_orientation(obj2_pos,obj2_ori)
         return obj1.states[object_states.OnTop].get_value(obj2)
 
     def _set_under_magic(self,obj1:URDFObject,obj2:URDFObject,offset=-0.01):

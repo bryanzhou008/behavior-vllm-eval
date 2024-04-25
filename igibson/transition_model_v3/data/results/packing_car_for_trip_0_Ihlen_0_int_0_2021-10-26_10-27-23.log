@@ -1,0 +1,63 @@
+Addressable Objects:
+duffel_bag_54
+briefcase_51
+pencil_box_52
+room_floor_garage_0
+headset_53
+car_50
+breakfast_table_14
+room_floor_storage_room_0
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'car.n.01_1', 'floor.n.01_1']
+['onfloor', 'briefcase.n.01_1', 'floor.n.01_2']
+['ontop', 'pencil_box.n.01_1', 'table.n.02_1']
+['ontop', 'headset.n.01_1', 'table.n.02_1']
+['onfloor', 'duffel_bag.n.01_1', 'floor.n.01_2']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['inside', 'briefcase.n.01_1', 'car.n.01_1']
+['inside', 'pencil_box.n.01_1', 'car.n.01_1']
+['inside', 'headset.n.01_1', 'car.n.01_1']
+['inside', 'duffel_bag.n.01_1', 'car.n.01_1']
+------------Action Execution Begins-------------
+Action:  ('OPEN', 'car_50')
+True
+Open car_50 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('RIGHT_GRASP', 'briefcase_51')
+Grasp briefcase_51 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('LEFT_GRASP', 'pencil_box_52')
+Grasp pencil_box_52 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'car_50')
+Place inside briefcase_51 car_50 successful
+Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2, 3]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'car_50')
+Place inside pencil_box_52 car_50 successful
+Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2, 3]})
+************************************************
+Action:  ('RIGHT_GRASP', 'duffel_bag_54')
+Grasp duffel_bag_54 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2, 3]})
+************************************************
+Action:  ('LEFT_GRASP', 'headset_53')
+Grasp headset_53 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2, 3]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'car_50')
+Place inside duffel_bag_54 car_50 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3], 'unsatisfied': []})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'car_50')
+Place inside headset_53 car_50 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3], 'unsatisfied': []})
+************************************************
+------------Action Execution Ends-------------
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

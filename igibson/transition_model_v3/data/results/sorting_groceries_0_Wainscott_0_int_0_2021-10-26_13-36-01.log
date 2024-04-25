@@ -1,0 +1,208 @@
+Addressable Objects:
+soup_0
+broccoli_0
+orange_1
+apple_0_multiplexer
+apple_1
+orange_2
+countertop_84
+flour_0
+apple_1_part_1
+orange_1_multiplexer
+apple_1_part_0
+orange_2_part_0
+breakfast_table_44
+fridge_97
+orange_0_part_1
+apple_0_part_1
+cheese_0
+orange_1_part_1
+pretzel_0
+carrot_1
+straight_chair_45
+carrot_2
+orange_0_part_0
+apple_0
+prosciutto_0
+apple_1_multiplexer
+yogurt_0
+orange_1_part_0
+apple_0_part_0
+orange_2_part_1
+orange_0_multiplexer
+milk_0
+orange_0
+carrot_0
+bottom_cabinet_no_top_80
+orange_2_multiplexer
+room_floor_kitchen_0
+-----------------------------------------------
+Initial Conditions: 
+['ontop', 'bread.n.01_1', 'countertop.n.01_1']
+['onfloor', 'flour.n.01_1', 'floor.n.01_1']
+['ontop', 'milk.n.01_1', 'chair.n.01_1']
+['ontop', 'meat.n.01_1', 'table.n.02_1']
+['ontop', 'cheese.n.01_1', 'table.n.02_1']
+['ontop', 'yogurt.n.01_1', 'table.n.02_1']
+['ontop', 'soup.n.01_1', 'table.n.02_1']
+['ontop', 'carrot.n.03_1', 'countertop.n.01_1']
+['ontop', 'carrot.n.03_2', 'countertop.n.01_1']
+['ontop', 'carrot.n.03_3', 'countertop.n.01_1']
+['ontop', 'broccoli.n.02_1', 'countertop.n.01_1']
+['ontop', 'apple.n.01_1', 'countertop.n.01_1']
+['ontop', 'apple.n.01_2', 'countertop.n.01_1']
+['ontop', 'orange.n.01_1', 'table.n.02_1']
+['ontop', 'orange.n.01_2', 'table.n.02_1']
+['ontop', 'orange.n.01_3', 'table.n.02_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['inside', 'bread.n.01_1', 'cabinet.n.01_1']
+['inside', 'flour.n.01_1', 'cabinet.n.01_1']
+['and', 'inside', 'milk.n.01_1', 'electric_refrigerator.n.01_1', 'inside', 'meat.n.01_1', 'electric_refrigerator.n.01_1', 'inside', 'cheese.n.01_1', 'electric_refrigerator.n.01_1', 'inside', 'yogurt.n.01_1', 'electric_refrigerator.n.01_1', 'inside', 'soup.n.01_1', 'electric_refrigerator.n.01_1']
+['forall', 'carrot.n.03', '-', 'carrot.n.03', 'and', 'inside', 'carrot.n.03', 'electric_refrigerator.n.01_1', 'or', 'nextto', 'carrot.n.03', 'carrot.n.03_1', 'nextto', 'carrot.n.03', 'carrot.n.03_2', 'nextto', 'carrot.n.03', 'carrot.n.03_3']
+['inside', 'broccoli.n.02_1', 'electric_refrigerator.n.01_1']
+['forall', 'apple.n.01', '-', 'apple.n.01', 'and', 'inside', 'apple.n.01', 'electric_refrigerator.n.01_1', 'or', 'nextto', 'apple.n.01', 'apple.n.01_1', 'nextto', 'apple.n.01', 'apple.n.01_2']
+['forall', 'orange.n.01', '-', 'orange.n.01', 'and', 'ontop', 'orange.n.01', 'table.n.02_1', 'or', 'nextto', 'orange.n.01', 'orange.n.01_1', 'nextto', 'orange.n.01', 'orange.n.01_2', 'nextto', 'orange.n.01', 'orange.n.01_3']
+------------Action Execution Begins-------------
+Action:  ('LEFT_GRASP', 'orange_2_multiplexer')
+Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021BF5F6CF40>
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'breakfast_table_44')
+left_hand is empty
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('OPEN', 'fridge_97')
+True
+Open fridge_97 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('LEFT_GRASP', 'prosciutto_0')
+Grasp prosciutto_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('RIGHT_GRASP', 'cheese_0')
+Grasp cheese_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'fridge_97')
+Place inside prosciutto_0 fridge_97 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'fridge_97')
+Place inside cheese_0 fridge_97 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('LEFT_GRASP', 'milk_0')
+Grasp milk_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('RIGHT_GRASP', 'yogurt_0')
+Grasp yogurt_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'fridge_97')
+Place inside milk_0 fridge_97 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'fridge_97')
+Place inside yogurt_0 fridge_97 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('LEFT_GRASP', 'carrot_0')
+Grasp carrot_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('RIGHT_GRASP', 'carrot_1')
+Grasp carrot_1 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'fridge_97')
+Place inside carrot_0 fridge_97 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'fridge_97')
+Place inside carrot_1 fridge_97 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('LEFT_GRASP', 'carrot_2')
+Grasp carrot_2 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('RIGHT_GRASP', 'soup_0')
+Grasp soup_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'fridge_97')
+Place inside carrot_2 fridge_97 successful
+Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5, 6]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'fridge_97')
+Place inside soup_0 fridge_97 successful
+Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4, 5, 6]})
+************************************************
+Action:  ('LEFT_GRASP', 'apple_0_multiplexer')
+Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021C44A53100>
+************************************************
+Action:  ('RIGHT_GRASP', 'apple_1_multiplexer')
+Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021BF5F6ED30>
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'fridge_97')
+left_hand is empty
+Post Effects:  False (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4, 5, 6]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'fridge_97')
+right_hand is empty
+Post Effects:  False (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4, 5, 6]})
+************************************************
+Action:  ('LEFT_GRASP', 'broccoli_0')
+Grasp broccoli_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4, 5, 6]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'fridge_97')
+Place inside broccoli_0 fridge_97 successful
+Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1, 5, 6]})
+************************************************
+Action:  ('OPEN', 'bottom_cabinet_no_top_80')
+True
+Open bottom_cabinet_no_top_80 success
+Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1, 5, 6]})
+************************************************
+Action:  ('RIGHT_GRASP', 'pretzel_0')
+Grasp pretzel_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1, 5, 6]})
+************************************************
+Action:  ('LEFT_GRASP', 'flour_0')
+Grasp flour_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1, 5, 6]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_no_top_80')
+Place inside pretzel_0 bottom_cabinet_no_top_80 successful
+Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1, 5, 6]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'bottom_cabinet_no_top_80')
+Place inside flour_0 bottom_cabinet_no_top_80 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': [5, 6]})
+************************************************
+Action:  ('RIGHT_GRASP', 'prosciutto_0')
+Grasp prosciutto_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 3, 4], 'unsatisfied': [2, 5, 6]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'fridge_97')
+Place inside prosciutto_0 fridge_97 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': [5, 6]})
+************************************************
+Action:  ('CLOSE', 'bottom_cabinet_no_top_80')
+True
+Close bottom_cabinet_no_top_80 success
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': [5, 6]})
+************************************************
+Action:  ('CLOSE', 'fridge_97')
+True
+Close fridge_97 success
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': [5, 6]})
+************************************************
+------------Action Execution Ends-------------
+Final teleport
+Post Effects:  (False, {'satisfied': [0, 1, 2, 4], 'unsatisfied': [3, 5, 6]})
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

@@ -1,0 +1,80 @@
+Addressable Objects:
+sink_64
+breakfast_table_16
+countertop_56
+pot_plant_1
+pot_plant_2
+room_floor_dining_room_0
+pot_plant_0
+room_floor_kitchen_0
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'pot_plant.n.01_1', 'floor.n.01_1']
+['onfloor', 'pot_plant.n.01_2', 'floor.n.01_1']
+['onfloor', 'pot_plant.n.01_3', 'floor.n.01_2']
+['not', 'soaked', 'pot_plant.n.01_1']
+['not', 'soaked', 'pot_plant.n.01_2']
+['not', 'soaked', 'pot_plant.n.01_3']
+['onfloor', 'agent.n.01_1', 'floor.n.01_2']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'pot_plant.n.01', '-', 'pot_plant.n.01', 'soaked', 'pot_plant.n.01']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'pot_plant_2')
+Grasp pot_plant_2 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('TOGGLE_ON', 'sink_64')
+Toggleon sink_64 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('TOGGLE_OFF', 'sink_64')
+Toggleoff sink_64 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'sink_64')
+Place inside pot_plant_2 sink_64 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('SOAK', 'pot_plant_2')
+Soak pot_plant_2 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_RELEASE', 'pot_plant_2')
+right_hand is empty
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_GRASP', 'pot_plant_1')
+Grasp pot_plant_1 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'sink_64')
+Place inside pot_plant_1 sink_64 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('SOAK', 'pot_plant_1')
+Soak pot_plant_1 success
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_RELEASE', 'pot_plant_1')
+right_hand is empty
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_GRASP', 'pot_plant_0')
+Grasp pot_plant_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'sink_64')
+Place inside pot_plant_0 sink_64 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  ('SOAK', 'pot_plant_0')
+Soak pot_plant_0 success
+Post Effects:  True (True, {'satisfied': [0], 'unsatisfied': []})
+************************************************
+Action:  ('RIGHT_RELEASE', 'pot_plant_0')
+right_hand is empty
+Post Effects:  False (True, {'satisfied': [0], 'unsatisfied': []})
+************************************************
+------------Action Execution Ends-------------
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

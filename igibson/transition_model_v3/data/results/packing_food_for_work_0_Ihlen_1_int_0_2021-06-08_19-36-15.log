@@ -1,0 +1,84 @@
+Addressable Objects:
+countertop_81
+fridge_61
+apple_0_part_1
+carton_0
+juice_0
+apple_0_part_0
+hamburger_0
+hamburger_1
+apple_0
+room_floor_kitchen_0
+apple_0_multiplexer
+top_cabinet_62
+door_91
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'carton.n.02_1', 'floor.n.01_1']
+['inside', 'sandwich.n.01_1', 'electric_refrigerator.n.01_1']
+['ontop', 'apple.n.01_1', 'countertop.n.01_1']
+['inside', 'snack_food.n.01_1', 'cabinet.n.01_1']
+['ontop', 'juice.n.01_1', 'countertop.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['inside', 'sandwich.n.01_1', 'carton.n.02_1']
+['inside', 'apple.n.01_1', 'carton.n.02_1']
+['inside', 'snack_food.n.01_1', 'carton.n.02_1']
+['inside', 'juice.n.01_1', 'carton.n.02_1']
+['or', 'onfloor', 'carton.n.02_1', 'floor.n.01_1', 'ontop', 'carton.n.02_1', 'countertop.n.01_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'apple_0_multiplexer')
+Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021BF60C5D90>
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
+right_hand is empty
+Post Effects:  False (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('OPEN', 'fridge_61')
+True
+Open fridge_61 success
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('LEFT_GRASP', 'hamburger_0')
+Grasp hamburger_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('UNFREEZE', 'hamburger_0')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'carton_0')
+Place inside hamburger_0 carton_0 successful
+Post Effects:  True (False, {'satisfied': [0, 4], 'unsatisfied': [1, 2, 3]})
+************************************************
+Action:  ('OPEN', 'top_cabinet_62')
+True
+Open top_cabinet_62 success
+Post Effects:  True (False, {'satisfied': [0, 4], 'unsatisfied': [1, 2, 3]})
+************************************************
+Action:  ('RIGHT_GRASP', 'juice_0')
+Grasp juice_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 4], 'unsatisfied': [1, 2, 3]})
+************************************************
+Action:  ('LEFT_GRASP', 'hamburger_1')
+Grasp hamburger_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 4], 'unsatisfied': [1, 2, 3]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'carton_0')
+Place inside hamburger_1 carton_0 successful
+Post Effects:  True (False, {'satisfied': [0, 2, 4], 'unsatisfied': [1, 3]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
+Place inside juice_0 carton_0 successful
+Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1]})
+************************************************
+Action:  ('CLOSE', 'fridge_61')
+True
+Close fridge_61 success
+Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1]})
+************************************************
+------------Action Execution Ends-------------
+Final teleport
+Post Effects:  (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1]})
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

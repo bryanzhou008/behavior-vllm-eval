@@ -1,0 +1,91 @@
+Addressable Objects:
+hardback_100
+door_85
+backpack_97
+underwear_101
+toothbrush_98
+bed_7
+room_floor_bedroom_0
+toothpaste_103
+window_79
+underwear_102
+shampoo_99
+-----------------------------------------------
+Initial Conditions: 
+['onfloor', 'backpack.n.01_1', 'floor.n.01_1']
+['ontop', 'toothbrush.n.01_1', 'bed.n.01_1']
+['ontop', 'shampoo.n.01_1', 'bed.n.01_1']
+['ontop', 'hardback.n.01_1', 'bed.n.01_1']
+['ontop', 'underwear.n.01_1', 'bed.n.01_1']
+['ontop', 'underwear.n.01_2', 'bed.n.01_1']
+['ontop', 'toothpaste.n.01_1', 'bed.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['forall', 'underwear.n.01', '-', 'underwear.n.01', 'inside', 'underwear.n.01', 'backpack.n.01_1']
+['inside', 'toothbrush.n.01_1', 'backpack.n.01_1']
+['inside', 'shampoo.n.01_1', 'backpack.n.01_1']
+['inside', 'hardback.n.01_1', 'backpack.n.01_1']
+['inside', 'toothpaste.n.01_1', 'backpack.n.01_1']
+['or', 'ontop', 'backpack.n.01_1', 'bed.n.01_1', 'onfloor', 'backpack.n.01_1', 'floor.n.01_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'backpack_97')
+Grasp backpack_97 with right_hand successful
+Post Effects:  True (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_GRASP', 'hardback_100')
+Grasp hardback_100 with left_hand successful
+Post Effects:  True (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'backpack_97')
+No openable joint metadata found for object backpack_97
+backpack_97 is closed
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_GRASP', 'shampoo_99')
+left_hand is already holding hardback_100
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'backpack_97')
+backpack_97 is closed
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_GRASP', 'underwear_101')
+left_hand is already holding hardback_100
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'backpack_97')
+backpack_97 is closed
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_GRASP', 'toothbrush_98')
+left_hand is already holding hardback_100
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'backpack_97')
+backpack_97 is closed
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_GRASP', 'underwear_102')
+left_hand is already holding hardback_100
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'backpack_97')
+backpack_97 is closed
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_GRASP', 'toothpaste_103')
+left_hand is already holding hardback_100
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('LEFT_PLACE_INSIDE', 'backpack_97')
+backpack_97 is closed
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bedroom_0')
+Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B921DC160>
+************************************************
+------------Action Execution Ends-------------
+Final teleport
+Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

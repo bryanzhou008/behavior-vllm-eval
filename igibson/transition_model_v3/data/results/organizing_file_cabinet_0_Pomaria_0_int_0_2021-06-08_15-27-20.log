@@ -1,0 +1,83 @@
+Addressable Objects:
+breakfast_table_3
+document_3
+document_1
+swivel_chair_5
+folder_0
+document_0
+folder_1
+highlighter_0
+room_floor_home_office_0
+bottom_cabinet_no_top_21
+document_2
+-----------------------------------------------
+Initial Conditions: 
+['ontop', 'marker.n.03_1', 'chair.n.01_1']
+['ontop', 'document.n.01_1', 'table.n.02_1']
+['inside', 'document.n.01_2', 'cabinet.n.01_1']
+['ontop', 'document.n.01_3', 'table.n.02_1']
+['inside', 'document.n.01_4', 'cabinet.n.01_1']
+['ontop', 'folder.n.02_1', 'table.n.02_1']
+['onfloor', 'folder.n.02_2', 'floor.n.01_1']
+['onfloor', 'agent.n.01_1', 'floor.n.01_1']
+-----------------------------------------------
+Goal Conditions: 
+['ontop', 'marker.n.03_1', 'table.n.02_1']
+['forall', 'document.n.01', '-', 'document.n.01', 'inside', 'document.n.01', 'cabinet.n.01_1']
+['forall', 'folder.n.02', '-', 'folder.n.02', 'inside', 'folder.n.02', 'cabinet.n.01_1']
+------------Action Execution Begins-------------
+Action:  ('RIGHT_GRASP', 'highlighter_0')
+Grasp highlighter_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+************************************************
+Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_3')
+Place ontop highlighter_0 breakfast_table_3 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
+************************************************
+Action:  ('OPEN', 'bottom_cabinet_no_top_21')
+True
+Open bottom_cabinet_no_top_21 success
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
+************************************************
+Action:  ('RIGHT_GRASP', 'folder_1')
+Grasp folder_1 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_no_top_21')
+Place inside folder_1 bottom_cabinet_no_top_21 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
+************************************************
+Action:  ('RIGHT_GRASP', 'folder_0')
+Grasp folder_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_no_top_21')
+Place inside folder_0 bottom_cabinet_no_top_21 successful
+Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'document_2')
+Grasp document_2 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_no_top_21')
+Place inside document_2 bottom_cabinet_no_top_21 successful
+Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
+************************************************
+Action:  ('RIGHT_GRASP', 'document_0')
+Grasp document_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_no_top_21')
+Place inside document_0 bottom_cabinet_no_top_21 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
+************************************************
+Action:  ('RIGHT_GRASP', 'document_1')
+Grasp document_1 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
+************************************************
+Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_no_top_21')
+Place inside document_1 bottom_cabinet_no_top_21 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
+************************************************
+------------Action Execution Ends-------------
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}
