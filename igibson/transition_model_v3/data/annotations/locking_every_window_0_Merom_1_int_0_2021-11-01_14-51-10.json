@@ -1,34 +1,18 @@
 [
     {
-        "action": "TOGGLE_ON",
+        "action": "CLOSE",
         "object": "window_82"
     },
     {
-        "action": "TOGGLE_OFF",
-        "object": "window_82"
-    },
-    {
-        "action": "TOGGLE_ON",
+        "action": "CLOSE",
         "object": "window_81"
     },
     {
-        "action": "TOGGLE_OFF",
-        "object": "window_81"
-    },
-    {
-        "action": "TOGGLE_ON",
+        "action": "CLOSE",
         "object": "window_79"
     },
     {
-        "action": "TOGGLE_OFF",
-        "object": "window_79"
-    },
-    {
-        "action": "TOGGLE_ON",
-        "object": "window_76"
-    },
-    {
-        "action": "TOGGLE_OFF",
+        "action": "CLOSE",
         "object": "window_76"
     }
 ]
