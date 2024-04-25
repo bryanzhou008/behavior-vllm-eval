@@ -154,10 +154,13 @@ class EvalEnv:
         if isinstance(object_idx,str):
             object_idx=self.obj_name_to_idx[object_idx]
         flag=self.control_function[action_idx](self.addressable_objects[object_idx])
-        self.simulator.step()
-        obs, reward, done, info = self.env.step(None)
-        return obs, reward, done, info,flag
+        #self.simulator.step()
+        #obs, reward, done, info = self.env.step(None)
+        return None, None, None, None,flag
 
+    def final_step(self):
+        self.action_env.teleport_all()
+        self.simulator.step()
     @property
     def scene(self):
         return self.env.scene

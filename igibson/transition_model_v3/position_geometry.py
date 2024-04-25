@@ -2,7 +2,8 @@ import numpy as np
 from pyquaternion import Quaternion
 from igibson.objects.articulated_object import URDFObject
 import igibson.object_states as object_states
-from igibson.object_states.utils import clear_cached_states, sample_kinematics
+import pybullet as p
+from igibson.utils.utils import restoreState
 
 def get_aabb_center(obj1:URDFObject):
     lo,hi=obj1.states[object_states.AABB].get_value()
@@ -21,10 +22,11 @@ def tar_pos_for_new_aabb_center(obj1:URDFObject,new_center:np.ndarray):
 
 class PositionGeometry:
 
-    def __init__(self,robot,using_kinematics=False):
+    def __init__(self,robot,simulator,using_kinematics=False):
         self.robot=robot
         self.robot.bounding_box=[0.5, 0.5, 1]
         self.using_kinematics=using_kinematics
+        self.simulator=simulator
 
     # high failure rate
     def _set_inside_kinematics(self,obj1:URDFObject,obj2:URDFObject):
@@ -48,6 +50,7 @@ class PositionGeometry:
         obj1.set_position(obj2.get_position())
         return obj1.states[object_states.Inside].get_value(obj2)
 
+    # most tricky one
     def _set_ontop_magic(self,obj1:URDFObject,obj2:URDFObject,offset=0.00):
         target_center = get_aabb_center(obj2)
         obj1_aabb=get_aabb(obj1)
@@ -55,9 +58,20 @@ class PositionGeometry:
         target_center[2] += 0.5 * obj1_aabb[2] + 0.5 *obj2_aabb[2] +offset
         target_pos = tar_pos_for_new_aabb_center(obj1,target_center)
         obj1.set_position(target_pos)
+        state=p.saveState()
+        obj1_pos,obj1_ori=obj1.get_position_orientation()
+        obj2_pos,obj2_ori=obj2.get_position_orientation()
+        self.simulator.step()
+        if obj1.states[object_states.OnTop].get_value(obj2):
+            obj1_pos,obj1_ori=obj1.get_position_orientation()
+            obj2_pos,obj2_ori=obj2.get_position_orientation()
+        restoreState(state)
+        p.removeState(state)
+        obj1.set_position_orientation(obj1_pos,obj1_ori)
+        obj2.set_position_orientation(obj2_pos,obj2_ori)
         return obj1.states[object_states.OnTop].get_value(obj2)
 
-    def _set_under_magic(self,obj1:URDFObject,obj2:URDFObject,offset=0.00):
+    def _set_under_magic(self,obj1:URDFObject,obj2:URDFObject,offset=-0.01):
         target_center = get_aabb_center(obj2)
         obj1_aabb=get_aabb(obj1)
         obj2_aabb=get_aabb(obj2)
@@ -94,9 +108,10 @@ class PositionGeometry:
 
         self.robot.set_position(robot_pos)
 
-    def _release_obj_magic(self,obj:URDFObject,offset=-0.01):
+    def _release_obj_magic(self,obj:URDFObject,offset=0.01):
         target_center=get_aabb_center(obj)
-        target_center[2] =offset
+        aabb=get_aabb(obj)
+        target_center[2] =aabb[2]*0.5+offset
         target_pos = tar_pos_for_new_aabb_center(obj,target_center)
         obj.set_position(target_pos)
 
@@ -106,6 +121,7 @@ class PositionGeometry:
         target_pos[2] += self.robot.bounding_box[2]
         target_pos[2] +=0.2*weight
         obj.set_position(target_pos)
+        
         return True
     
 

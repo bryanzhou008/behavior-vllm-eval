@@ -46,9 +46,11 @@ def evaluate_action_seqeunce(demo_path,action_path,rst_path,headless=True):
                 print("Execution Error:",e)
             print("************************************************")
 
-        print("------------Action Execution Ends, final relation teleport-------------")
-        env.action_env.teleport_all()
-        print("Post Effects: ",env.task.check_success())
+        print("------------Action Execution Ends-------------")
+        if not env.task.check_success()[0]:
+            print("Final teleport")
+            env.final_step()
+            print("Post Effects: ",env.task.check_success())
         rst["all_condition_satisfied"]=env.task.check_success()[0]
         print(rst)
         

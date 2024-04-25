@@ -14,7 +14,8 @@ from .position_geometry import PositionGeometry
 from .relation_tree import TeleportType
 class ActionEnv:
     def __init__(
-        self,simulator:Simulator,
+        self,
+        simulator:Simulator,
         scene: InteractiveIndoorScene,
         robot: BehaviorRobot,
         addressable_objects:list,
@@ -26,7 +27,7 @@ class ActionEnv:
         self.addressable_objects = addressable_objects
         self.robot_inventory = {'right_hand':None,'left_hand':None}
         self.relation_tree=IgibsonRelationTree(self.addressable_objects) # to teleport relationship
-        self.position_geometry=PositionGeometry(self.robot,using_kinematics)
+        self.position_geometry=PositionGeometry(self.robot,simulator,using_kinematics)
 
     ##################### primitive actions #####################
 
@@ -91,7 +92,7 @@ class ActionEnv:
             print(e)
             return False
         
-        if object_states.Open in tar_obj.states and not tar_obj.states[object_states.Open].get_value():
+        if object_states.Open in tar_obj.states and (not tar_obj.states[object_states.Open].get_value()):
             print(f"{tar_obj.name} is closed")
             return False
         
@@ -317,9 +318,15 @@ class ActionEnv:
 
         ## post effects
         self.navigate_to_if_needed(obj)
-        obj.states[object_states.Open].set_value((open_close=='open'))
-        print(f"{open_close.capitalize()} {obj.name} success")
-        return True
+        flag=obj.states[object_states.Open].set_value((open_close=='open'),fully=True)
+        print(f"{flag}")
+        self.simulator.step()
+        if obj.states[object_states.Open].get_value()==(open_close=='open'):
+            print(f"{open_close.capitalize()} {obj.name} success")
+            return True
+        else:
+            print(f"{open_close.capitalize()} {obj.name} failed")
+            return False
     
     def toggle_on_off(self,obj:URDFObject,on_off:str):
         assert on_off in ['on','off']
@@ -536,13 +543,12 @@ class ActionEnv:
     def check_interactability(self,obj1):
         # currently just checking if object is inside a closed object or not
         node=self.relation_tree.get_node(obj1)
-        node=node.parent
-        while node is not self.relation_tree.root:
-            obj=node.obj
-            if (object_states.Open in obj.states and 
-            not obj.states[object_states.Open].get_value() and
+        while node.parent is not self.relation_tree.root:
+            parent_obj=node.parent.obj
+            if (object_states.Open in parent_obj.states and 
+            not parent_obj.states[object_states.Open].get_value() and
             node.teleport_type==TeleportType.INSIDE):
-                raise ValueError(f"{obj1.name} is inside closed {obj.name}")
+                raise ValueError(f"{obj1.name} is inside closed {parent_obj.name}")
             node=node.parent
     ##################### for behavior task eval #####################
     def navigate(self,obj:URDFObject):
