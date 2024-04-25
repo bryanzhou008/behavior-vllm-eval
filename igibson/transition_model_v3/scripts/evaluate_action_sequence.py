@@ -1,5 +1,5 @@
-from igibson.transition_model_v2.eval_env import EvalActions
-from igibson.transition_model_v2.eval_env import EvalEnv
+from igibson.transition_model_v3.eval_env import EvalActions
+from igibson.transition_model_v3.eval_env import EvalEnv
 import platform
 import io
 from contextlib import redirect_stdout
@@ -46,6 +46,9 @@ def evaluate_action_seqeunce(demo_path,action_path,rst_path,headless=True):
                 print("Execution Error:",e)
             print("************************************************")
 
+        print("------------Action Execution Ends, final relation teleport-------------")
+        env.action_env.teleport_all()
+        print("Post Effects: ",env.task.check_success())
         rst["all_condition_satisfied"]=env.task.check_success()[0]
         print(rst)
         
@@ -57,8 +60,8 @@ def evaluate_action_seqeunce(demo_path,action_path,rst_path,headless=True):
 import os
 def main(demo_name,action_dir="./igibson/transition_model_v3/data/annotations",demo_dir="./igibson/data/virtual_reality",rst_path="test.log"):
     demo_path=os.path.join(demo_dir,demo_name+".hdf5")
-    action_path=os.path.join(action_dir,demo_name)
-    evaluate_action_seqeunce(demo_path,action_path,rst_path+".json")
+    action_path=os.path.join(action_dir,demo_name+".json")
+    evaluate_action_seqeunce(demo_path,action_path,rst_path)
 if __name__ == "__main__":
     fire.Fire(main)
 """

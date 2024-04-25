@@ -29,6 +29,7 @@ class ActionEnv:
         self.position_geometry=PositionGeometry(self.robot,using_kinematics)
 
     ##################### primitive actions #####################
+
     def navigate_to(self,obj:URDFObject):
         ## pre conditions   
         ## currently do auto navigation, no need for pre conditions
@@ -518,8 +519,8 @@ class ActionEnv:
 
     def teleport_relation(self,obj1:URDFObject):
         teleport_func={
-            TeleportType.INSIDE:self.place_inside,
-            TeleportType.ONTOP:self.place_ontop,
+            TeleportType.INSIDE:self.position_geometry.set_inside,
+            TeleportType.ONTOP:self.position_geometry.set_ontop,
         }
         obj_node=self.relation_tree.get_node(obj1)
         def recursive_teleport(node):
@@ -528,6 +529,9 @@ class ActionEnv:
                 recursive_teleport(child)
         recursive_teleport(obj_node)
 
+    def teleport_all(self):
+        for obj in self.relation_tree.root.children.keys():
+            self.teleport_relation(obj)
 
     def check_interactability(self,obj1):
         # currently just checking if object is inside a closed object or not
