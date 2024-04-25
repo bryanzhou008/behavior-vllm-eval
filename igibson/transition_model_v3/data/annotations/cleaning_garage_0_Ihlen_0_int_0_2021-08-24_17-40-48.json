@@ -32,10 +32,6 @@
         "object": "room_floor_garage_0"
     },
     {
-        "action": "LEFT_GRASP",
-        "object": "bottom_cabinet_15"
-    },
-    {
         "action": "OPEN",
         "object": "bottom_cabinet_15"
     },

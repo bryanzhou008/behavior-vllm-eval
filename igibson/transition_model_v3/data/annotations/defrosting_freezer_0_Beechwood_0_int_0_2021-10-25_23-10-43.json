@@ -24,15 +24,7 @@
         "object": "bucket_0"
     },
     {
-        "action": "LEFT_GRASP",
-        "object": "fridge_57"
-    },
-    {
         "action": "OPEN",
-        "object": "fridge_57"
-    },
-    {
-        "action": "LEFT_RELEASE",
         "object": "fridge_57"
     },
     {
