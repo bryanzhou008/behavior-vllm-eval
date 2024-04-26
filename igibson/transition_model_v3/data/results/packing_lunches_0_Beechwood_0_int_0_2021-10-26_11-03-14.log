@@ -1,24 +1,24 @@
 Addressable Objects:
-apple_0
-carton_0
-hamburger_0
-breakfast_table_7
-cookie_0
-pop_0
-apple_0_part_1
-chip_1
-bottom_cabinet_no_top_54
 room_floor_living_room_0
+bottom_cabinet_no_top_54
+breakfast_table_7
 juice_0
+apple_0_part_0
 carton_1
+apple_0_part_1
+apple_0
+salad_0
+cookie_0
+carton_0
+chip_1
 chip_0
-fridge_57
+hamburger_0
+pop_0
+countertop_56
 cookie_1
+fridge_57
 room_floor_kitchen_0
 banana_0
-countertop_56
-salad_0
-apple_0_part_0
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'salad.n.01_1', 'electric_refrigerator.n.01_1']
@@ -43,83 +43,93 @@ Goal Conditions:
 ['or', 'inside', 'apple.n.01_1', 'carton.n.02_1', 'inside', 'banana.n.02_1', 'carton.n.02_1']
 ['or', 'inside', 'apple.n.01_1', 'carton.n.02_2', 'inside', 'banana.n.02_1', 'carton.n.02_2']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'apple_0')
+Action:  RIGHT_GRASP apple_0
 Grasp apple_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_GRASP', 'banana_0')
+Action:  LEFT_GRASP banana_0
 Grasp banana_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
+Action:  RIGHT_PLACE_INSIDE carton_0
 Place inside apple_0 carton_0 successful
 Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3, 5]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'carton_1')
+Action:  LEFT_PLACE_INSIDE carton_1
 Place inside banana_0 carton_1 successful
 Post Effects:  True (False, {'satisfied': [4, 5], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'cookie_0')
+Action:  RIGHT_GRASP cookie_0
 Grasp cookie_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [4, 5], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'cookie_1')
+Action:  LEFT_GRASP cookie_1
 Grasp cookie_1 with left_hand successful
 Post Effects:  True (False, {'satisfied': [4, 5], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
+Action:  RIGHT_PLACE_INSIDE carton_0
 Place inside cookie_0 carton_0 successful
 Post Effects:  True (False, {'satisfied': [4, 5], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'carton_1')
+Action:  LEFT_PLACE_INSIDE carton_1
 Place inside cookie_1 carton_1 successful
 Post Effects:  True (False, {'satisfied': [1, 4, 5], 'unsatisfied': [0, 2, 3]})
 ************************************************
-Action:  ('OPEN', 'bottom_cabinet_no_top_54')
-Open bottom_cabinet_no_top_54 success
-Post Effects:  True (False, {'satisfied': [1, 4, 5], 'unsatisfied': [0, 2, 3]})
+Action:  OPEN bottom_cabinet_no_top_54
+Open bottom_cabinet_no_top_54 failed
+Post Effects:  False (False, {'satisfied': [1, 4, 5], 'unsatisfied': [0, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'chip_0')
+Action:  RIGHT_GRASP chip_0
 Grasp chip_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [1, 4, 5], 'unsatisfied': [0, 2, 3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'chip_1')
+Action:  LEFT_GRASP chip_1
 Grasp chip_1 with left_hand successful
 Post Effects:  True (False, {'satisfied': [1, 4, 5], 'unsatisfied': [0, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
+Action:  RIGHT_PLACE_INSIDE carton_0
 Place inside chip_0 carton_0 successful
 Post Effects:  True (False, {'satisfied': [1, 4, 5], 'unsatisfied': [0, 2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'carton_1')
+Action:  LEFT_PLACE_INSIDE carton_1
 Place inside chip_1 carton_1 successful
 Post Effects:  True (False, {'satisfied': [0, 1, 4, 5], 'unsatisfied': [2, 3]})
 ************************************************
-Action:  ('OPEN', 'fridge_57')
-Open fridge_57 success
-Post Effects:  True (False, {'satisfied': [0, 1, 4, 5], 'unsatisfied': [2, 3]})
+Action:  OPEN fridge_57
+Open fridge_57 failed
+Post Effects:  False (False, {'satisfied': [0, 1, 4, 5], 'unsatisfied': [2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'salad_0')
+Action:  RIGHT_GRASP salad_0
 Grasp salad_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 1, 4, 5], 'unsatisfied': [2, 3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'hamburger_0')
+Action:  LEFT_GRASP hamburger_0
 Grasp hamburger_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [0, 1, 4, 5], 'unsatisfied': [2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
+Action:  RIGHT_PLACE_INSIDE carton_0
 Place inside salad_0 carton_0 successful
 Post Effects:  True (False, {'satisfied': [0, 1, 4, 5], 'unsatisfied': [2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'carton_1')
+Action:  LEFT_PLACE_INSIDE carton_1
 Place inside hamburger_0 carton_1 successful
 Post Effects:  True (False, {'satisfied': [0, 1, 4, 5], 'unsatisfied': [2, 3]})
 ************************************************
-Action:  ('CLOSE', 'fridge_57')
+Action:  CLOSE fridge_57
 Close fridge_57 success
 Post Effects:  True (False, {'satisfied': [0, 1, 4, 5], 'unsatisfied': [2, 3]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
+Teleport banana_0 INSIDE carton_1 successful: True
+Teleport cookie_1 INSIDE carton_1 successful: True
+Teleport chip_1 INSIDE carton_1 successful: True
+Teleport hamburger_0 INSIDE carton_1 successful: True
+Teleport apple_0 INSIDE carton_0 successful: True
+Teleport cookie_0 INSIDE carton_0 successful: True
+Teleport chip_0 INSIDE carton_0 successful: True
+Teleport salad_0 INSIDE carton_0 successful: True
+Teleport pop_0 ONTOP breakfast_table_7 successful: True
+Teleport countertop_56 ONTOP bottom_cabinet_no_top_54 successful: True
 Post Effects:  (False, {'satisfied': [0, 1, 4, 5], 'unsatisfied': [2, 3]})
-{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

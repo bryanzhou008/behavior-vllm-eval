@@ -1,10 +1,10 @@
 Addressable Objects:
-highchair_0
-paper_towel_0
-sink_82
 room_floor_kitchen_0
-room_floor_dining_room_0
+paper_towel_0
 bottom_cabinet_no_top_80
+sink_82
+room_floor_dining_room_0
+highchair_0
 -----------------------------------------------
 Initial Conditions: 
 ['dusty', 'highchair.n.01_1']
@@ -15,19 +15,21 @@ Initial Conditions:
 Goal Conditions: 
 ['not', 'dusty', 'highchair.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'paper_towel_0')
-paper_towel_0 is inside closed bottom_cabinet_no_top_80
+Action:  OPEN bottom_cabinet_no_top_80
+Open bottom_cabinet_no_top_80 failed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('LEFT_GRASP', 'highchair_0')
+Action:  RIGHT_GRASP paper_towel_0
+Grasp paper_towel_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+************************************************
+Action:  LEFT_GRASP highchair_0
 Grasp highchair_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('CLEAN', 'highchair_0')
-Clean failed, no cleaner in inventory
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0]})
+Action:  CLEAN highchair_0
+Clean-dust highchair_0 success
+Post Effects:  True (True, {'satisfied': [0], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0]})
-{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

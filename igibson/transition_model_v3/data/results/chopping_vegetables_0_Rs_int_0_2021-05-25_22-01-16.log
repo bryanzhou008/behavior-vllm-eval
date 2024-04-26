@@ -1,36 +1,36 @@
 Addressable Objects:
-tomato_62_part_1
-chestnut_66
-tomato_62
-chestnut_65
 chestnut_66_part_0
+mushroom_64
+tomato_62
+tomato_61
+chestnut_66
+casserole_70
 room_floor_kitchen_0
-vidalia_onion_67_part_1
+chestnut_65
+vidalia_onion_68_part_1
 tomato_62_part_0
-sink_42
+vidalia_onion_68
 vidalia_onion_68_part_0
-mushroom_63
+chestnut_65_part_0
 mushroom_64_part_1
 chestnut_65_part_1
 mushroom_63_part_1
-top_cabinet_50
-vidalia_onion_68_part_1
-chestnut_66_part_1
-carving_knife_69
+vidalia_onion_67_part_1
+mushroom_64_part_0
 tomato_61_part_1
+mushroom_63_part_0
 countertop_26
 vidalia_onion_67
-mushroom_64_part_0
-mushroom_64
-casserole_71
-casserole_70
-mushroom_63_part_0
-tomato_61_part_0
-vidalia_onion_67_part_0
+tomato_62_part_1
+chestnut_66_part_1
 fridge_40
-vidalia_onion_68
-tomato_61
-chestnut_65_part_0
+mushroom_63
+tomato_61_part_0
+sink_42
+top_cabinet_50
+vidalia_onion_67_part_0
+carving_knife_69
+casserole_71
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'tomato.n.01_1', 'countertop.n.01_1']
@@ -52,159 +52,157 @@ Goal Conditions:
 ['forall', 'chestnut.n.03', '-', 'chestnut.n.03', 'and', 'exists', 'dish.n.01', '-', 'dish.n.01', 'inside', 'chestnut.n.03', 'dish.n.01', 'sliced', 'chestnut.n.03']
 ['forall', 'vidalia_onion.n.01', '-', 'vidalia_onion.n.01', 'and', 'exists', 'dish.n.01', '-', 'dish.n.01', 'inside', 'vidalia_onion.n.01', 'dish.n.01', 'sliced', 'vidalia_onion.n.01']
 ------------Action Execution Begins-------------
-Action:  ('OPEN', 'top_cabinet_50')
-Open top_cabinet_50 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Action:  OPEN top_cabinet_50
+Open top_cabinet_50 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'casserole_71')
+Action:  LEFT_GRASP casserole_71
 Grasp casserole_71 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'countertop_26')
+Action:  LEFT_PLACE_ONTOP countertop_26
 Place ontop casserole_71 countertop_26 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'chestnut_66')
+Action:  RIGHT_GRASP chestnut_66
 Grasp chestnut_66 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'casserole_71')
+Action:  RIGHT_PLACE_INSIDE casserole_71
 Place inside chestnut_66 casserole_71 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'chestnut_65')
+Action:  RIGHT_GRASP chestnut_65
 Grasp chestnut_65 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'casserole_71')
+Action:  RIGHT_PLACE_INSIDE casserole_71
 Place inside chestnut_65 casserole_71 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'mushroom_63')
+Action:  RIGHT_GRASP mushroom_63
 Grasp mushroom_63 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'casserole_71')
+Action:  RIGHT_PLACE_INSIDE casserole_71
 Place inside mushroom_63 casserole_71 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'mushroom_64')
+Action:  RIGHT_GRASP mushroom_64
 Grasp mushroom_64 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'casserole_71')
+Action:  RIGHT_PLACE_INSIDE casserole_71
 Place inside mushroom_64 casserole_71 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'tomato_62')
+Action:  RIGHT_GRASP tomato_62
 Grasp tomato_62 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'casserole_71')
+Action:  RIGHT_PLACE_INSIDE casserole_71
 Place inside tomato_62 casserole_71 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'tomato_61')
+Action:  RIGHT_GRASP tomato_61
 Grasp tomato_61 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'casserole_71')
+Action:  RIGHT_PLACE_INSIDE casserole_71
 Place inside tomato_61 casserole_71 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('OPEN', 'fridge_40')
-Open fridge_40 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Action:  OPEN fridge_40
+Open fridge_40 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'vidalia_onion_67')
+Action:  RIGHT_GRASP vidalia_onion_67
 Grasp vidalia_onion_67 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'vidalia_onion_68')
+Action:  LEFT_GRASP vidalia_onion_68
 Grasp vidalia_onion_68 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'countertop_26')
+Action:  LEFT_PLACE_ONTOP countertop_26
 Place ontop vidalia_onion_68 countertop_26 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'countertop_26')
+Action:  RIGHT_PLACE_ONTOP countertop_26
 Place ontop vidalia_onion_67 countertop_26 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'carving_knife_69')
+Action:  RIGHT_GRASP carving_knife_69
 Grasp carving_knife_69 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('SLICE', 'chestnut_66')
+Action:  SLICE chestnut_66
 Slice chestnut_66 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('SLICE', 'chestnut_65')
+Action:  SLICE chestnut_65
 Slice chestnut_65 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3]})
 ************************************************
-Action:  ('SLICE', 'mushroom_63')
+Action:  SLICE mushroom_63
 Slice mushroom_63 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3]})
 ************************************************
-Action:  ('SLICE', 'mushroom_64')
+Action:  SLICE mushroom_64
 Slice mushroom_64 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [1, 2], 'unsatisfied': [0, 3]})
 ************************************************
-Action:  ('SLICE', 'tomato_62')
+Action:  SLICE tomato_62
 Slice tomato_62 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [1, 2], 'unsatisfied': [0, 3]})
 ************************************************
-Action:  ('SLICE', 'tomato_61')
+Action:  SLICE tomato_61
 Slice tomato_61 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
-Action:  ('SLICE', 'vidalia_onion_67')
+Action:  SLICE vidalia_onion_67
 Slice vidalia_onion_67 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
-Action:  ('SLICE', 'vidalia_onion_68')
+Action:  SLICE vidalia_onion_68
 Slice vidalia_onion_68 success
-Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3], 'unsatisfied': []})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'countertop_26')
+Action:  RIGHT_PLACE_ONTOP countertop_26
 Place ontop carving_knife_69 countertop_26 successful
-Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3], 'unsatisfied': []})
 ************************************************
-Action:  ('RIGHT_GRASP', 'vidalia_onion_67_part_0')
+Action:  RIGHT_GRASP vidalia_onion_67_part_0
 Grasp vidalia_onion_67_part_0 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'vidalia_onion_67_part_1')
+Action:  LEFT_GRASP vidalia_onion_67_part_1
 Grasp vidalia_onion_67_part_1 with left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'casserole_71')
+Action:  RIGHT_PLACE_INSIDE casserole_71
 Place inside vidalia_onion_67_part_0 casserole_71 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'casserole_71')
+Action:  LEFT_PLACE_INSIDE casserole_71
 Place inside vidalia_onion_67_part_1 casserole_71 successful
-Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3], 'unsatisfied': []})
 ************************************************
-Action:  ('RIGHT_GRASP', 'vidalia_onion_68_part_0')
+Action:  RIGHT_GRASP vidalia_onion_68_part_0
 Grasp vidalia_onion_68_part_0 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'vidalia_onion_68_part_1')
+Action:  LEFT_GRASP vidalia_onion_68_part_1
 Grasp vidalia_onion_68_part_1 with left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'casserole_71')
+Action:  RIGHT_PLACE_INSIDE casserole_71
 Place inside vidalia_onion_68_part_0 casserole_71 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'casserole_71')
+Action:  LEFT_PLACE_INSIDE casserole_71
 Place inside vidalia_onion_68_part_1 casserole_71 successful
-Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
-{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

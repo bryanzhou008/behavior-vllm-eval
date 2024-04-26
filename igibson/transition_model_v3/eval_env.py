@@ -47,6 +47,9 @@ class EvalActions(IntEnum):
     LEFT_TANSFER_CONTENTS_ONTOP=auto()
     RIGHT_TANSFER_CONTENTS_ONTOP=auto()
 
+    LEFT_PLACE_NEXTTO_ONTOP=auto()
+    RIGHT_PLACE_NEXTTO_ONTOP=auto()
+
 class EvalEnv:
 
     def defalt_init(self,demo_path):
@@ -108,6 +111,8 @@ class EvalEnv:
             EvalActions.RIGHT_TANSFER_CONTENTS_ONTOP.value: self.action_env.right_transfer_contents_ontop,
             EvalActions.TOGGLE_ON.value: self.action_env.toggle_on,
             EvalActions.TOGGLE_OFF.value: self.action_env.toggle_off,
+            EvalActions.LEFT_PLACE_NEXTTO_ONTOP.value: self.action_env.left_place_nextto_ontop,
+            EvalActions.RIGHT_PLACE_NEXTTO_ONTOP.value: self.action_env.right_place_nextto_ontop,
         }
 
     def get_relevant_objects(self):
@@ -156,6 +161,16 @@ class EvalEnv:
         flag=self.control_function[action_idx](self.addressable_objects[object_idx])
         #self.simulator.step()
         #obs, reward, done, info = self.env.step(None)
+        return None, None, None, None,flag
+    
+    def apply_action(self,action,obj):
+        if isinstance(action,str):
+            action_idx=EvalActions[action].value
+        obj_list=[self.obj_name_to_obj[obj_name.strip()] for obj_name in obj.strip().split(",")] 
+        if len(obj_list)==1:
+            flag=self.control_function[action_idx](obj_list[0])
+        else:
+            flag=self.control_function[action_idx](obj_list[0],obj_list[1])
         return None, None, None, None,flag
 
     def final_step(self):

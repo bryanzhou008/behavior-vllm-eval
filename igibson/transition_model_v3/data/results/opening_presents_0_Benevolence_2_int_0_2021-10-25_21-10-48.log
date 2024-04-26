@@ -1,8 +1,8 @@
 Addressable Objects:
 package_0
-room_floor_bedroom_1
-package_1
 bed_10
+package_1
+room_floor_bedroom_1
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'package.n.02_1', 'floor.n.01_1']
@@ -14,29 +14,29 @@ Initial Conditions:
 Goal Conditions: 
 ['forall', 'package.n.02', '-', 'package.n.02', 'open', 'package.n.02']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'package_0')
+Action:  RIGHT_GRASP package_0
 Grasp package_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('OPEN', 'package_0')
-Open package_0 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
+Action:  OPEN package_0
+Open package_0 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_RELEASE', 'package_0')
+Action:  RIGHT_RELEASE package_0
 Release package_0 from right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'package_1')
+Action:  RIGHT_GRASP package_1
 Grasp package_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('OPEN', 'package_1')
-Open package_1 success
-Post Effects:  True (True, {'satisfied': [0], 'unsatisfied': []})
+Action:  OPEN package_1
+Open package_1 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_RELEASE', 'package_1')
+Action:  RIGHT_RELEASE package_1
 Release package_1 from right_hand successful
 Post Effects:  True (True, {'satisfied': [0], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

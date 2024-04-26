@@ -1,13 +1,13 @@
 Addressable Objects:
+container_date_0
+fish_1
+sink_37
+fish_0
+olive_0
+fridge_20
 fish_2
 room_floor_kitchen_0
-container_date_0
-sink_37
-fish_1
-fridge_20
-olive_0
 fish_3
-fish_0
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'date.n.08_1', 'electric_refrigerator.n.01_1']
@@ -32,87 +32,93 @@ Goal Conditions:
 ['nextto', 'fish.n.02_4', 'sink.n.01_1']
 ['nextto', 'olive.n.04_1', 'sink.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('OPEN', 'fridge_20')
-Open fridge_20 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+Action:  OPEN fridge_20
+Open fridge_20 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'fish_3')
+Action:  RIGHT_GRASP fish_3
 Grasp fish_3 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_GRASP', 'fish_2')
+Action:  LEFT_GRASP fish_2
 Grasp fish_2 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'sink_37')
+Action:  RIGHT_PLACE_ONTOP sink_37
 Place ontop fish_3 sink_37 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'sink_37')
+Action:  LEFT_PLACE_ONTOP sink_37
 Place ontop fish_2 sink_37 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('UNFREEZE', 'fish_3')
+Action:  UNFREEZE fish_3
 Unfreeze fish_3 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('UNFREEZE', 'fish_2')
+Action:  UNFREEZE fish_2
 Unfreeze fish_2 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'fish_1')
+Action:  RIGHT_GRASP fish_1
 Grasp fish_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_GRASP', 'fish_0')
+Action:  LEFT_GRASP fish_0
 Grasp fish_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'sink_37')
+Action:  RIGHT_PLACE_ONTOP sink_37
 Place ontop fish_1 sink_37 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'sink_37')
+Action:  LEFT_PLACE_ONTOP sink_37
 Place ontop fish_0 sink_37 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('UNFREEZE', 'fish_1')
+Action:  UNFREEZE fish_1
 Unfreeze fish_1 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('UNFREEZE', 'fish_0')
+Action:  UNFREEZE fish_0
 Unfreeze fish_0 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'container_date_0')
+Action:  RIGHT_GRASP container_date_0
 Grasp container_date_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_GRASP', 'olive_0')
+Action:  LEFT_GRASP olive_0
 Grasp olive_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'sink_37')
+Action:  RIGHT_PLACE_ONTOP sink_37
 Place ontop container_date_0 sink_37 successful
-Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'sink_37')
+Action:  LEFT_PLACE_ONTOP sink_37
 Place ontop olive_0 sink_37 successful
-Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('UNFREEZE', 'container_date_0')
+Action:  UNFREEZE container_date_0
 Unfreeze container_date_0 success
-Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('UNFREEZE', 'olive_0')
+Action:  UNFREEZE olive_0
 Unfreeze olive_0 success
-Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('CLOSE', 'fridge_20')
+Action:  CLOSE fridge_20
 Close fridge_20 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
-Post Effects:  (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
-{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+Teleport fish_3 ONTOP sink_37 successful: True
+Teleport fish_2 ONTOP sink_37 successful: True
+Teleport fish_1 ONTOP sink_37 successful: True
+Teleport fish_0 ONTOP sink_37 successful: True
+Teleport container_date_0 ONTOP sink_37 successful: True
+Teleport olive_0 ONTOP sink_37 successful: True
+Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

@@ -1,6 +1,6 @@
 Addressable Objects:
-door_85
 room_floor_bedroom_0
+door_85
 door_89
 bed_7
 -----------------------------------------------
@@ -13,29 +13,29 @@ Goal Conditions:
 ['not', 'open', 'door.n.01_1']
 ['not', 'open', 'door.n.01_2']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'door_89')
+Action:  RIGHT_GRASP door_89
 Grasp door_89 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('CLOSE', 'door_89')
-Close door_89 success
-Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
+Action:  CLOSE door_89
+Close door_89 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('RIGHT_RELEASE', 'door_89')
+Action:  RIGHT_RELEASE door_89
 Release door_89 from right_hand successful
 Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'door_85')
+Action:  RIGHT_GRASP door_85
 Grasp door_85 with right_hand successful
 Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
 ************************************************
-Action:  ('CLOSE', 'door_85')
-Close door_85 success
-Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
+Action:  CLOSE door_85
+Close door_85 failed
+Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_RELEASE', 'door_85')
+Action:  RIGHT_RELEASE door_85
 Release door_85 from right_hand successful
 Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

@@ -1,16 +1,16 @@
 Addressable Objects:
-rag_1
-sink_82
-rag_0
-window_119
-dishtowel_0
-bottom_cabinet_no_top_80
-toothpaste_0
-dishtowel_1
-window_133
-room_floor_kitchen_0
 room_floor_living_room_0
 coffee_table_33
+rag_0
+dishtowel_0
+sink_82
+dishtowel_1
+rag_1
+room_floor_kitchen_0
+bottom_cabinet_no_top_80
+window_133
+window_119
+toothpaste_0
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'towel.n.01_1', 'cabinet.n.01_1']
@@ -29,59 +29,57 @@ Goal Conditions:
 ['and', 'soaked', 'rag.n.01_1', 'soaked', 'rag.n.01_2']
 ['and', 'not', 'dusty', 'window.n.01_1', 'not', 'dusty', 'window.n.01_2']
 ------------Action Execution Begins-------------
-Action:  ('OPEN', 'bottom_cabinet_no_top_80')
-Open bottom_cabinet_no_top_80 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+Action:  OPEN bottom_cabinet_no_top_80
+Open bottom_cabinet_no_top_80 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'rag_0')
+Action:  RIGHT_GRASP rag_0
 Grasp rag_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('LEFT_GRASP', 'rag_1')
+Action:  LEFT_GRASP rag_1
 Grasp rag_1 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'sink_82')
+Action:  RIGHT_PLACE_INSIDE sink_82
 Place inside rag_0 sink_82 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'sink_82')
+Action:  LEFT_PLACE_INSIDE sink_82
 Place inside rag_1 sink_82 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('TOGGLE_ON', 'sink_82')
+Action:  TOGGLE_ON sink_82
 Toggleon sink_82 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('TOGGLE_OFF', 'sink_82')
+Action:  TOGGLE_OFF sink_82
 Toggleoff sink_82 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('SOAK', 'rag_0')
+Action:  SOAK rag_0
 Soak rag_0 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('LEFT_GRASP', 'rag_1')
-Grasp rag_1 with left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+Action:  SOAK rag_1
+Soak rag_1 success
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'rag_0')
+Action:  RIGHT_GRASP rag_0
 Grasp rag_0 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
 ************************************************
-Action:  ('LEFT_GRASP', 'rag_1')
-left_hand is already holding rag_1
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+Action:  LEFT_GRASP rag_1
+Grasp rag_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
 ************************************************
-Action:  ('CLEAN', 'window_133')
+Action:  CLEAN window_133
 Clean-dust window_133 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
 ************************************************
-Action:  ('CLEAN', 'window_119')
+Action:  CLEAN window_119
 Clean-dust window_119 success
-Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
+Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Post Effects:  (False, {'satisfied': [1], 'unsatisfied': [0]})
-{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

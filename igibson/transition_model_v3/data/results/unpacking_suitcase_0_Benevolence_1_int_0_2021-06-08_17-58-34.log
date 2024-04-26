@@ -1,12 +1,12 @@
 Addressable Objects:
-toothbrush_0
-room_floor_living_room_0
-notebook_0
-sofa_10
-cologne_0
 sock_1
-carton_0
+notebook_0
+toothbrush_0
+sofa_10
+room_floor_living_room_0
+cologne_0
 sock_0
+carton_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'carton.n.02_1', 'floor.n.01_1']
@@ -24,43 +24,43 @@ Goal Conditions:
 ['ontop', 'toothbrush.n.01_1', 'sofa.n.01_1']
 ['ontop', 'notebook.n.01_1', 'sofa.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'toothbrush_0')
+Action:  RIGHT_GRASP toothbrush_0
 Grasp toothbrush_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4]})
 ************************************************
-Action:  ('LEFT_GRASP', 'notebook_0')
+Action:  LEFT_GRASP notebook_0
 Grasp notebook_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'sofa_10')
+Action:  LEFT_PLACE_ONTOP sofa_10
 Place ontop notebook_0 sofa_10 successful
 Post Effects:  True (False, {'satisfied': [0, 4], 'unsatisfied': [1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'sofa_10')
+Action:  RIGHT_PLACE_ONTOP sofa_10
 Place ontop toothbrush_0 sofa_10 successful
 Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'sock_1')
+Action:  RIGHT_GRASP sock_1
 Grasp sock_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'cologne_0')
+Action:  LEFT_GRASP cologne_0
 Grasp cologne_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'sofa_10')
+Action:  LEFT_PLACE_ONTOP sofa_10
 Place ontop cologne_0 sofa_10 successful
 Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'sofa_10')
+Action:  RIGHT_PLACE_ONTOP sofa_10
 Place ontop sock_1 sofa_10 successful
 Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'sock_0')
+Action:  RIGHT_GRASP sock_0
 Grasp sock_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'sofa_10')
+Action:  RIGHT_PLACE_ONTOP sofa_10
 Place ontop sock_0 sofa_10 successful
 Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': []})
 ************************************************

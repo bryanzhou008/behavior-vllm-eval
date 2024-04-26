@@ -1,11 +1,11 @@
 Addressable Objects:
-bed_11
-scrub_brush_40
+sweater_36
 sweater_37
 sweater_39
+scrub_brush_40
 sweater_38
-sweater_36
 room_floor_bedroom_0
+bed_11
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'sweater.n.01_1', 'floor.n.01_1']
@@ -24,55 +24,55 @@ Goal Conditions:
 ['forall', 'sweater.n.01', '-', 'sweater.n.01', 'not', 'dusty', 'sweater.n.01']
 ['forall', 'sweater.n.01', '-', 'sweater.n.01', 'ontop', 'sweater.n.01', 'bed.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'scrub_brush_40')
+Action:  RIGHT_GRASP scrub_brush_40
 Grasp scrub_brush_40 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('CLEAN', 'sweater_36')
+Action:  CLEAN sweater_36
 Clean-dust sweater_36 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('LEFT_GRASP', 'sweater_36')
+Action:  LEFT_GRASP sweater_36
 Grasp sweater_36 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'bed_11')
+Action:  LEFT_PLACE_ONTOP bed_11
 Place ontop sweater_36 bed_11 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('LEFT_GRASP', 'sweater_37')
+Action:  LEFT_GRASP sweater_37
 Grasp sweater_37 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('CLEAN', 'sweater_37')
+Action:  CLEAN sweater_37
 Clean-dust sweater_37 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'bed_11')
+Action:  LEFT_PLACE_ONTOP bed_11
 Place ontop sweater_37 bed_11 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('LEFT_GRASP', 'sweater_38')
+Action:  LEFT_GRASP sweater_38
 Grasp sweater_38 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('CLEAN', 'sweater_38')
+Action:  CLEAN sweater_38
 Clean-dust sweater_38 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'bed_11')
+Action:  LEFT_PLACE_ONTOP bed_11
 Place ontop sweater_38 bed_11 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('LEFT_GRASP', 'sweater_39')
+Action:  LEFT_GRASP sweater_39
 Grasp sweater_39 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('CLEAN', 'sweater_39')
+Action:  CLEAN sweater_39
 Clean-dust sweater_39 success
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'bed_11')
+Action:  LEFT_PLACE_ONTOP bed_11
 Place ontop sweater_39 bed_11 successful
 Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
 ************************************************

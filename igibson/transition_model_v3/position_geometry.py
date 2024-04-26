@@ -6,7 +6,8 @@ from igibson.object_states.on_floor import RoomFloor
 import pybullet as p
 from igibson.utils.utils import restoreState
 from igibson.robots import BehaviorRobot
-
+from .relation_tree import TeleportType,IgibsonRelationTree
+from typing import Optional
 def get_aabb_center(obj1:URDFObject):
     lo,hi=obj1.states[object_states.AABB].get_value()
     return (np.array(lo) + np.array(hi)) / 2.
@@ -24,11 +25,12 @@ def tar_pos_for_new_aabb_center(obj1:URDFObject,new_center:np.ndarray):
 
 class PositionGeometry:
 
-    def __init__(self,robot,simulator,using_kinematics=False):
+    def __init__(self,robot,simulator,relational_tree,using_kinematics=False):
         self.robot:BehaviorRobot=robot
         self.robot.bounding_box=[0.5, 0.5, 1]
         self.using_kinematics=using_kinematics
         self.simulator=simulator
+        self.relational_tree:IgibsonRelationTree=relational_tree
 
     # high failure rate
     def _set_inside_kinematics(self,obj1:URDFObject,obj2:URDFObject):
@@ -106,6 +108,7 @@ class PositionGeometry:
     def _set_next_to_magic(self,obj1:URDFObject,obj2:URDFObject):
         obj1_aabb=get_aabb(obj1)
         obj2_aabb=get_aabb(obj2)
+
         for i in [0,1]:
             for weight in [-1,1]:
                 target_center = get_aabb_center(obj2)
@@ -114,6 +117,30 @@ class PositionGeometry:
                 target_pos = tar_pos_for_new_aabb_center(obj1,target_center)
                 obj1.set_position(target_pos)
                 if obj1.states[object_states.NextTo].get_value(obj2):
+                    return True
+        return False
+    
+    def _set_next_to_and_ontop_magic(self,obj1:URDFObject,obj2:URDFObject,obj3):
+
+        if isinstance(obj3,RoomFloor):
+            target_state=object_states.OnFloor
+            lo,hi=obj3.scene.get_aabb_by_room_instance(obj3.room_instance)
+            obj3_center,obj3_extent=(lo+hi)/2.,hi-lo
+        else:
+            target_state=object_states.OnTop
+            obj3_center,obj3_extent=get_aabb_center(obj3),get_aabb(obj3)
+        obj1_center,obj1_extent=get_aabb_center(obj1),get_aabb(obj1)
+        obj2_center,obj2_extent=get_aabb_center(obj2),get_aabb(obj2)
+
+        for i in [0,1]:
+            for weight in [-1,1]:
+                target_center = obj2_center
+                target_center[i] += weight*(0.5 * obj1_extent[i] + 
+                                            0.5 * obj2_extent[i])
+                target_center[2]=obj3_center[2]+0.5*obj3_extent[2]+0.5*obj1_extent[2]
+                target_pos = tar_pos_for_new_aabb_center(obj1,target_center)
+                obj1.set_position(target_pos)
+                if obj1.states[object_states.NextTo].get_value(obj2) and obj1.states[target_state].get_value(obj3):
                     return True
         return False
 

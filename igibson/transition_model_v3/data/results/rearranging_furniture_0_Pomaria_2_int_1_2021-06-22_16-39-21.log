@@ -1,12 +1,12 @@
 Addressable Objects:
-chaise_longue_0
-bed_11
-floor_lamp_1
+window_27
 table_lamp_0
-chaise_longue_1
+chaise_longue_0
 door_29
 room_floor_bedroom_0
-window_27
+floor_lamp_1
+bed_11
+chaise_longue_1
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'lamp.n.02_1', 'floor.n.01_1']
@@ -21,26 +21,26 @@ Goal Conditions:
 ['touching', 'seat.n.03_1', 'bed.n.01_1']
 ['nextto', 'seat.n.03_2', 'window.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'floor_lamp_1')
+Action:  RIGHT_GRASP floor_lamp_1
 Grasp floor_lamp_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bedroom_0')
+Action:  RIGHT_PLACE_ONTOP room_floor_bedroom_0
 Place ontop floor_lamp_1 room_floor_bedroom_0 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'table_lamp_0')
+Action:  RIGHT_GRASP table_lamp_0
 Grasp table_lamp_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_NEXTTO', 'window_27')
-Place under table_lamp_0 window_27 successful
+Action:  RIGHT_PLACE_NEXTTO window_27
+Place next to table_lamp_0 window_27 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'straight_chair_39')
+Action:  RIGHT_GRASP straight_chair_39
 Execution Error: 'straight_chair_39'
 ************************************************
-Action:  ('RIGHT_PLACE_NEXTTO', 'window_27')
+Action:  RIGHT_PLACE_NEXTTO window_27
 right_hand is empty
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************

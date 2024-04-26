@@ -1,11 +1,11 @@
 Addressable Objects:
 window_82
-window_81
 window_76
-window_79
-bed_7
-room_floor_living_room_0
 sofa_25
+window_79
+room_floor_living_room_0
+window_81
+bed_7
 -----------------------------------------------
 Initial Conditions: 
 ['open', 'window.n.01_1']
@@ -20,21 +20,23 @@ Goal Conditions:
 ['not', 'open', 'window.n.01_3']
 ['not', 'open', 'window.n.01_4']
 ------------Action Execution Begins-------------
-Action:  ('CLOSE', 'window_82')
-Close window_82 success
-Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3]})
+Action:  CLOSE window_82
+Close window_82 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('CLOSE', 'window_81')
-Close window_81 success
-Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1]})
+Action:  CLOSE window_81
+Close window_81 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('CLOSE', 'window_79')
-Close window_79 success
-Post Effects:  True (False, {'satisfied': [0, 2, 3], 'unsatisfied': [1]})
+Action:  CLOSE window_79
+Close window_79 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('CLOSE', 'window_76')
-Close window_76 success
-Post Effects:  True (True, {'satisfied': [0, 1, 2, 3], 'unsatisfied': []})
+Action:  CLOSE window_76
+Close window_76 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 ------------Action Execution Ends-------------
-{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}
+Final teleport
+Post Effects:  (True, {'satisfied': [0, 1, 2, 3], 'unsatisfied': []})
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

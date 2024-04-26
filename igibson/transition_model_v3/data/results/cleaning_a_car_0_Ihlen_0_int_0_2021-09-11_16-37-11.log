@@ -1,11 +1,11 @@
 Addressable Objects:
 rag_0
-shelf_16
-bucket_0
-soap_0
-car_0
 room_floor_garage_0
 sink_38
+shelf_16
+soap_0
+bucket_0
+car_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'car.n.01_1', 'floor.n.01_1']
@@ -21,23 +21,23 @@ Goal Conditions:
 ['inside', 'soap.n.01_1', 'bucket.n.01_1']
 ['inside', 'rag.n.01_1', 'bucket.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'rag_0')
+Action:  RIGHT_GRASP rag_0
 Grasp rag_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'soap_0')
+Action:  LEFT_GRASP soap_0
 Grasp soap_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'bucket_0')
+Action:  LEFT_PLACE_INSIDE bucket_0
 Place inside soap_0 bucket_0 successful
 Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2]})
 ************************************************
-Action:  ('CLEAN', 'car_0')
+Action:  CLEAN car_0
 Clean-dust car_0 success
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bucket_0')
+Action:  RIGHT_PLACE_INSIDE bucket_0
 Place inside rag_0 bucket_0 successful
 Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************

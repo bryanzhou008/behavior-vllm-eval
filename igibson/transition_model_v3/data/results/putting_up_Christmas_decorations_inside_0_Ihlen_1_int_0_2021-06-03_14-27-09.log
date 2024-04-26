@@ -1,18 +1,18 @@
 Addressable Objects:
-wrapped_gift_121
-bow_115
 candle_117
-christmas_tree_decorated_112
-candle_118
-bow_114
-sofa_25
-room_floor_living_room_0
-wrapped_gift_120
-breakfast_table_19
-wrapped_gift_119
-bow_116
-carton_122
 wreath_113
+room_floor_living_room_0
+wrapped_gift_119
+bow_114
+bow_115
+christmas_tree_decorated_112
+sofa_25
+bow_116
+wrapped_gift_120
+wrapped_gift_121
+candle_118
+carton_122
+breakfast_table_19
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'christmas_tree.n.05_1', 'floor.n.01_1']
@@ -35,79 +35,85 @@ Goal Conditions:
 ['forn', '2', 'bow.n.08', '-', 'bow.n.08', 'ontop', 'bow.n.08', 'sofa.n.01_1']
 ['ontop', 'wreath.n.01_1', 'table.n.02_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'wrapped_gift_120')
+Action:  RIGHT_GRASP wrapped_gift_120
 Grasp wrapped_gift_120 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_living_room_0')
+Action:  RIGHT_PLACE_ONTOP room_floor_living_room_0
 Place ontop wrapped_gift_120 room_floor_living_room_0 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'wrapped_gift_119')
+Action:  RIGHT_GRASP wrapped_gift_119
 Grasp wrapped_gift_119 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_living_room_0')
+Action:  RIGHT_PLACE_ONTOP room_floor_living_room_0
 Place ontop wrapped_gift_119 room_floor_living_room_0 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'wrapped_gift_121')
+Action:  RIGHT_GRASP wrapped_gift_121
 Grasp wrapped_gift_121 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_living_room_0')
+Action:  RIGHT_PLACE_ONTOP room_floor_living_room_0
 Place ontop wrapped_gift_121 room_floor_living_room_0 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'bow_114')
+Action:  RIGHT_GRASP bow_114
 Grasp bow_114 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'sofa_25')
+Action:  RIGHT_PLACE_ONTOP sofa_25
 Place ontop bow_114 sofa_25 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('LEFT_GRASP', 'bow_115')
+Action:  LEFT_GRASP bow_115
 Grasp bow_115 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'sofa_25')
+Action:  LEFT_PLACE_ONTOP sofa_25
 Place ontop bow_115 sofa_25 successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'bow_116')
+Action:  RIGHT_GRASP bow_116
 Grasp bow_116 with right_hand successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_19')
+Action:  RIGHT_PLACE_ONTOP breakfast_table_19
 Place ontop bow_116 breakfast_table_19 successful
 Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4]})
 ************************************************
-Action:  ('LEFT_GRASP', 'wreath_113')
+Action:  LEFT_GRASP wreath_113
 Grasp wreath_113 with left_hand successful
 Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'breakfast_table_19')
+Action:  LEFT_PLACE_ONTOP breakfast_table_19
 Place ontop wreath_113 breakfast_table_19 successful
 Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'candle_118')
+Action:  RIGHT_GRASP candle_118
 Grasp candle_118 with right_hand successful
 Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_19')
+Action:  RIGHT_PLACE_ONTOP breakfast_table_19
 Place ontop candle_118 breakfast_table_19 successful
 Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('LEFT_GRASP', 'candle_117')
+Action:  LEFT_GRASP candle_117
 Grasp candle_117 with left_hand successful
 Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'breakfast_table_19')
+Action:  LEFT_PLACE_ONTOP breakfast_table_19
 Place ontop candle_117 breakfast_table_19 successful
 Post Effects:  True (False, {'satisfied': [1, 2, 3, 4], 'unsatisfied': [0]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
-Post Effects:  (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3, 4]})
+Teleport bow_114 ONTOP sofa_25 successful: True
+Teleport bow_115 ONTOP sofa_25 successful: True
+Teleport bow_116 ONTOP breakfast_table_19 successful: True
+Teleport wreath_113 ONTOP breakfast_table_19 successful: True
+Teleport candle_118 ONTOP breakfast_table_19 successful: True
+Teleport candle_117 ONTOP breakfast_table_19 successful: True
+Post Effects:  (False, {'satisfied': [1, 4], 'unsatisfied': [0, 2, 3]})
 {'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}

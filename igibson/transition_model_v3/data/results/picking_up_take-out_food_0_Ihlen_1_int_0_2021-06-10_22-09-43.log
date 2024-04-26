@@ -1,9 +1,9 @@
 Addressable Objects:
 carton_0
-hamburger_0
 room_floor_living_room_0
-breakfast_table_19
 sushi_0
+hamburger_0
+breakfast_table_19
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'carton.n.02_1', 'floor.n.01_1']
@@ -16,11 +16,17 @@ Goal Conditions:
 ['inside', 'sushi.n.01_1', 'carton.n.02_1']
 ['inside', 'hamburger.n.01_1', 'carton.n.02_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'carton_0')
+Action:  RIGHT_GRASP carton_0
+Teleport sushi_0 INSIDE carton_0 successful: True
+Teleport hamburger_0 INSIDE carton_0 successful: True
 Grasp carton_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [1, 2], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_19')
+Action:  RIGHT_PLACE_ONTOP breakfast_table_19
+Teleport sushi_0 INSIDE carton_0 successful: True
+Teleport hamburger_0 INSIDE carton_0 successful: True
+Teleport sushi_0 INSIDE carton_0 successful: True
+Teleport hamburger_0 INSIDE carton_0 successful: True
 Place ontop carton_0 breakfast_table_19 successful
 Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************

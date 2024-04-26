@@ -1,6 +1,6 @@
 Addressable Objects:
-breakfast_table_37
 facsimile_0
+breakfast_table_37
 room_floor_home_office_0
 -----------------------------------------------
 Initial Conditions: 
@@ -12,23 +12,24 @@ Goal Conditions:
 ['ontop', 'facsimile.n.02_1', 'table.n.02_1']
 ['toggled_on', 'facsimile.n.02_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'facsimile_0')
+Action:  RIGHT_GRASP facsimile_0
 Grasp facsimile_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('TOGGLE_ON', 'facsimile_0')
+Action:  TOGGLE_ON facsimile_0
 Toggleon facsimile_0 success
 Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
 ************************************************
-Action:  ('TOGGLE_OFF', 'facsimile_0')
+Action:  TOGGLE_OFF facsimile_0
 Toggleoff facsimile_0 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_37')
+Action:  RIGHT_PLACE_ONTOP breakfast_table_37
 Place ontop facsimile_0 breakfast_table_37 successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
+Teleport facsimile_0 ONTOP breakfast_table_37 successful: True
 Post Effects:  (False, {'satisfied': [0], 'unsatisfied': [1]})
 {'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}

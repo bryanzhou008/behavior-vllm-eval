@@ -1,19 +1,19 @@
 Addressable Objects:
 catsup_0
-bowl_0
-pop_1
-cup_0
-bucket_1
-bowl_1
-straight_chair_3
-room_floor_dining_room_0
-bowl_2
 straight_chair_4
-pop_0
+bowl_1
+bucket_1
 cup_1
-bucket_0
+bowl_2
+pop_0
+straight_chair_3
 bowl_3
+bucket_0
+cup_0
+pop_1
 breakfast_table_2
+bowl_0
+room_floor_dining_room_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'cup.n.01_1', 'table.n.02_1']
@@ -34,59 +34,59 @@ Goal Conditions:
 ['forall', 'bowl.n.01', '-', 'bowl.n.01', 'exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'bowl.n.01', 'bucket.n.01']
 ['exists', 'bucket.n.01', '-', 'bucket.n.01', 'inside', 'catsup.n.01_1', 'bucket.n.01']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'cup_1')
+Action:  RIGHT_GRASP cup_1
 Grasp cup_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'cup_0')
+Action:  LEFT_GRASP cup_0
 Grasp cup_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'bucket_0')
+Action:  LEFT_PLACE_INSIDE bucket_0
 Place inside cup_0 bucket_0 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bucket_0')
+Action:  RIGHT_PLACE_INSIDE bucket_0
 Place inside cup_1 bucket_0 successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'catsup_0')
+Action:  RIGHT_GRASP catsup_0
 Grasp catsup_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bucket_0')
+Action:  RIGHT_PLACE_INSIDE bucket_0
 Place inside catsup_0 bucket_0 successful
 Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'bowl_2')
+Action:  RIGHT_GRASP bowl_2
 Grasp bowl_2 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  ('LEFT_GRASP', 'bowl_3')
+Action:  LEFT_GRASP bowl_3
 Grasp bowl_3 with left_hand successful
 Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'bucket_0')
+Action:  LEFT_PLACE_INSIDE bucket_0
 Place inside bowl_3 bucket_0 successful
 Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bucket_0')
+Action:  RIGHT_PLACE_INSIDE bucket_0
 Place inside bowl_2 bucket_0 successful
 Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'bowl_1')
+Action:  RIGHT_GRASP bowl_1
 Grasp bowl_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  ('LEFT_GRASP', 'bowl_0')
+Action:  LEFT_GRASP bowl_0
 Grasp bowl_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'bucket_1')
+Action:  LEFT_PLACE_INSIDE bucket_1
 Place inside bowl_0 bucket_1 successful
 Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bucket_1')
+Action:  RIGHT_PLACE_INSIDE bucket_1
 Place inside bowl_1 bucket_1 successful
 Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************

@@ -1,13 +1,13 @@
 Addressable Objects:
 bed_43
-room_floor_bathroom_0
-mousetrap_103
-mousetrap_102
 mousetrap_101
-room_floor_corridor_0
-mousetrap_100
 toilet_64
+mousetrap_103
+room_floor_bathroom_0
+mousetrap_100
+room_floor_corridor_0
 sink_73
+mousetrap_102
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'mousetrap.n.01_1', 'bed.n.01_1']
@@ -22,35 +22,35 @@ Goal Conditions:
 ['nextto', 'mousetrap.n.01_3', 'toilet.n.02_1']
 ['nextto', 'mousetrap.n.01_4', 'toilet.n.02_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'mousetrap_103')
+Action:  RIGHT_GRASP mousetrap_103
 Grasp mousetrap_103 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'mousetrap_100')
+Action:  LEFT_GRASP mousetrap_100
 Grasp mousetrap_100 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'room_floor_corridor_0')
+Action:  LEFT_PLACE_ONTOP room_floor_corridor_0
 Place ontop mousetrap_100 room_floor_corridor_0 unsuccessful
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_corridor_0')
+Action:  RIGHT_PLACE_ONTOP room_floor_corridor_0
 Place ontop mousetrap_103 room_floor_corridor_0 unsuccessful
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'mousetrap_101')
+Action:  RIGHT_GRASP mousetrap_101
 Grasp mousetrap_101 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'mousetrap_102')
+Action:  LEFT_GRASP mousetrap_102
 Grasp mousetrap_102 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'room_floor_bathroom_0')
+Action:  LEFT_PLACE_ONTOP room_floor_bathroom_0
 Place ontop mousetrap_102 room_floor_bathroom_0 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bathroom_0')
+Action:  RIGHT_PLACE_ONTOP room_floor_bathroom_0
 Place ontop mousetrap_101 room_floor_bathroom_0 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************

@@ -29,17 +29,22 @@ class ActionEnv:
         self.robot_inventory = {'right_hand':None,'left_hand':None}
         self.relation_tree=IgibsonRelationTree(self.addressable_objects) # to teleport relationship
         self.position_geometry=PositionGeometry(self.robot,simulator,using_kinematics)
+        self.openable_objects = {obj:obj.states[object_states.Open].get_value() 
+                                 for obj in self.addressable_objects if object_states.Open in obj.states}
 
     ##################### primitive actions #####################
 
-    def navigate_to(self,obj:URDFObject):
+    def navigate_to(self,obj):
         ## pre conditions   
         ## currently do auto navigation, no need for pre conditions
         ## post effects
         if obj.states[object_states.InReachOfRobot].get_value():
             return True
         
-        self.position_geometry.set_robot_pos_for_obj(obj)
+        if isinstance(obj,RoomFloor):
+            self.position_geometry._set_robot_floor_magic(obj.floor_obj)
+        else:
+            self.position_geometry.set_robot_pos_for_obj(obj)
         for hand,invent_obj in self.robot_inventory.items():
             if invent_obj is not None:
                 self.position_geometry.set_in_hand(invent_obj,hand)
@@ -93,7 +98,7 @@ class ActionEnv:
             print(e)
             return False
         
-        if object_states.Open in tar_obj.states and (not tar_obj.states[object_states.Open].get_value()):
+        if tar_obj in self.openable_objects and not self.openable_objects[tar_obj]:
             print(f"{tar_obj.name} is closed")
             return False
         
@@ -232,17 +237,62 @@ class ActionEnv:
         
         ## post effects
         self.navigate_to_if_needed(tar_obj)
-        self.relation_tree.remove_ancestor(obj_in_hand)
+        node=self.relation_tree.get_node(tar_obj)
+        if node.parent is not self.relation_tree.root:
+            self.relation_tree.change_ancestor(obj_in_hand,node.parent.obj,node.teleport_type)
+        else:
+            self.relation_tree.remove_ancestor(obj_in_hand)
         self.position_geometry.set_next_to(obj_in_hand,tar_obj)
         self.teleport_relation(obj_in_hand)
         self.robot_inventory[hand]=None
         if obj_in_hand.states[object_states.NextTo].get_value(tar_obj):
-            print(f"Place under {obj_in_hand.name} {tar_obj.name} successful")
+            print(f"Place next to {obj_in_hand.name} {tar_obj.name} successful")
             return True
         else:
-            print(f"Place under {obj_in_hand.name} {tar_obj.name} unsuccessful")
+            print(f"Place next to {obj_in_hand.name} {tar_obj.name} unsuccessful")
+            return False
+    
+    def place_next_to_ontop(self,tar_obj1:URDFObject,tar_obj2,hand:str):
+        ## pre conditions
+        try:
+            self.check_interactability(tar_obj1)
+            self.check_interactability(tar_obj2)
+        except ValueError as e:
+            print(e)
             return False
         
+        if self.robot_inventory[hand] is None:
+            print(f"{hand} is empty")
+            return False
+        
+        obj_in_hand=self.robot_inventory[hand]
+        if obj_in_hand==tar_obj1:
+            print(f"{tar_obj1.name} is already in {hand}")
+            return False
+        elif tar_obj1 in self.robot_inventory.values():
+            print(f"Release {tar_obj1.name} first to place {obj_in_hand.name} next to it")
+            return False
+        
+
+        if isinstance(tar_obj2,RoomFloor):
+            tar_state=object_states.OnFloor
+            self.relation_tree.remove_ancestor(obj_in_hand)
+        else:
+            tar_state=object_states.OnTop
+            self.relation_tree.change_ancestor(obj_in_hand,tar_obj2,TeleportType.ONTOP)
+
+        ## post effects
+        self.navigate_to_if_needed(tar_obj1)
+        self.position_geometry._set_next_to_and_ontop_magic(obj_in_hand,tar_obj1,tar_obj2)
+        self.teleport_relation(obj_in_hand)
+        self.robot_inventory[hand]=None
+        if obj_in_hand.states[object_states.NextTo].get_value(tar_obj1) and obj_in_hand.states[tar_state].get_value(tar_obj2):
+            print(f"Place next to {obj_in_hand.name} {tar_obj1.name} on top of {tar_obj2.name} successful")
+            return True
+        else:
+            print(f"Place next to {obj_in_hand.name} {tar_obj1.name} on top of {tar_obj2.name} unsuccessful")
+            return False
+
     def pour_inside(self,tar_obj:URDFObject,hand:str):
         ## pre conditions
         try:
@@ -329,7 +379,7 @@ class ActionEnv:
             print(f"{obj.name} cannot be {open_close}ed")
             return False
         
-        if obj.states[object_states.Open].get_value()==(open_close=='open'):
+        if self.openable_objects[obj]==(open_close=='open'):
             print(f"{obj.name} is already {open_close}ed")
             return False
         
@@ -340,7 +390,7 @@ class ActionEnv:
         ## post effects
         self.navigate_to_if_needed(obj)
         flag=obj.states[object_states.Open].set_value((open_close=='open'),fully=True)
-        self.simulator.step()
+        self.openable_objects[obj]=(open_close=='open')
         if obj.states[object_states.Open].get_value()==(open_close=='open'):
             print(f"{open_close.capitalize()} {obj.name} success")
             return True
@@ -408,12 +458,16 @@ class ActionEnv:
         return True
     
     def clean_dust(self,obj):
-        ## pre conditions
-        try:
-            self.check_interactability(obj)
-        except ValueError as e:
-            print(e)
-            return False
+
+        if isinstance(obj,RoomFloor):
+            obj=obj.floor_obj
+        else:
+            ## pre conditions
+            try:
+                self.check_interactability(obj)
+            except ValueError as e:
+                print(e)
+                return False
         
         
         if not (hasattr(obj, "states") and object_states.Dusty in obj.states):
@@ -553,21 +607,28 @@ class ActionEnv:
         obj_node=self.relation_tree.get_node(obj1)
         def recursive_teleport(node):
             for child in node.children.values():
-                teleport_func[child.teleport_type](child.obj,node.obj)
+                flag=teleport_func[child.teleport_type](child.obj,node.obj)
+                print(f"Teleport {child.obj.name} {child.teleport_type.name} {node.obj.name} successful: {flag}")
                 recursive_teleport(child)
         recursive_teleport(obj_node)
 
     def teleport_all(self):
+        for obj in self.openable_objects.keys():
+            obj.states[object_states.Open].set_value(self.openable_objects[obj],fully=True)
+        self.simulator.step()
         for obj in self.relation_tree.root.children.keys():
             self.teleport_relation(obj)
+        
 
     def check_interactability(self,obj1):
         # currently just checking if object is inside a closed object or not
+        if isinstance(obj1,RoomFloor):
+            return
         node=self.relation_tree.get_node(obj1)
         while node.parent is not self.relation_tree.root:
             parent_obj=node.parent.obj
-            if (object_states.Open in parent_obj.states and 
-            not parent_obj.states[object_states.Open].get_value() and
+            if (parent_obj in self.openable_objects and 
+            not self.openable_objects[parent_obj] and
             node.teleport_type==TeleportType.INSIDE):
                 raise ValueError(f"{obj1.name} is inside closed {parent_obj.name}")
             node=node.parent
@@ -648,7 +709,11 @@ class ActionEnv:
         return self.toggle_on_off(obj,'off')
     
     
+    def left_place_nextto_ontop(self,obj1:URDFObject,obj2):
+        return self.place_next_to_ontop(obj1,obj2,'left_hand')
     
+    def right_place_nextto_ontop(self,obj1:URDFObject,obj2):
+        return self.place_next_to_ontop(obj1,obj2,'right_hand')
 
     
         

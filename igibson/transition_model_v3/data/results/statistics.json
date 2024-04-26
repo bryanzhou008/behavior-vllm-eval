@@ -7,7 +7,7 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\bottling_fruit_0_Wainscott_0_int_0_2021-05-24_19-46-46.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": true
     },
@@ -31,9 +31,9 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\chopping_vegetables_0_Rs_int_0_2021-05-25_22-01-16.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\cleaning_a_car_0_Ihlen_0_int_0_2021-09-11_16-37-11.json",
@@ -55,9 +55,9 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\cleaning_bedroom_0_Benevolence_2_int_0_2021-06-06_18-10-59.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\cleaning_carpets_0_Wainscott_1_int_0_2021-09-11_01-12-41.json",
@@ -66,14 +66,14 @@
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\cleaning_closet_0_Beechwood_1_int_0_2021-10-25_19-50-32.json",
         "all_action_execution_true": false,
-        "unknown_execution_error": true,
-        "all_condition_satisfied": false
+        "unknown_execution_error": false,
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\cleaning_cupboards_0_Wainscott_1_int_1_2021-08-25_16-40-44.json",
         "all_action_execution_true": false,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\cleaning_floors_0_Merom_0_int_1_2021-06-23_16-12-28.json",
@@ -91,11 +91,11 @@
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\cleaning_high_chair_0_Wainscott_0_int_0_2021-06-05_18-03-15.json",
         "all_action_execution_true": false,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\cleaning_kitchen_cupboard_0_Pomaria_1_int_0_2021-10-26_13-05-36.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": true
     },
@@ -105,9 +105,9 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\cleaning_out_drawers_0_Benevolence_1_int_0_2021-10-20_05-03-27.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\cleaning_oven_0_Benevolence_1_int_0_2021-09-11_12-20-40.json",
@@ -157,7 +157,7 @@
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\cleaning_windows_0_Wainscott_0_int_0_2021-05-23_23-07-05.json",
         "all_action_execution_true": false,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\clearing_the_table_after_dinner_0_Ihlen_0_int_0_2021-10-25_23-01-51.json",
@@ -173,7 +173,7 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\collect_misplaced_items_0_Wainscott_0_int_1_2021-10-26_18-48-11.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": true
     },
@@ -191,7 +191,7 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\filling_a_Christmas_stocking_0_Rs_int_0_2021-06-04_18-47-42.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": true
     },
@@ -243,13 +243,13 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\locking_every_door_0_Merom_1_int_0_2021-10-20_05-53-14.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\locking_every_window_0_Merom_1_int_0_2021-11-01_14-51-10.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": true
     },
@@ -257,7 +257,7 @@
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\making_tea_0_Wainscott_0_int_0_2021-10-26_12-49-48.json",
         "all_action_execution_true": false,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\mopping_floors_0_Benevolence_2_int_0_2021-10-25_21-01-58.json",
@@ -271,13 +271,13 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\opening_packages_0_Benevolence_2_int_0_2021-10-25_21-06-42.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\opening_presents_0_Benevolence_2_int_0_2021-10-25_21-10-48.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": true
     },
@@ -289,7 +289,7 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\organizing_file_cabinet_0_Pomaria_0_int_0_2021-06-08_15-27-20.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": true
     },
@@ -319,7 +319,7 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\packing_car_for_trip_0_Ihlen_0_int_0_2021-10-26_10-27-23.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": true
     },
@@ -337,7 +337,7 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\packing_lunches_0_Beechwood_0_int_0_2021-10-26_11-03-14.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
@@ -371,7 +371,7 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\polishing_silver_0_Merom_1_int_0_2021-10-26_11-43-15.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": true
     },
@@ -379,7 +379,7 @@
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\preparing_a_shower_for_child_0_Ihlen_0_int_0_2021-10-25_21-36-25.json",
         "all_action_execution_true": false,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\preparing_salad_0_Pomaria_1_int_1_2021-10-26_14-17-24.json",
@@ -395,13 +395,13 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\putting_away_Christmas_decorations_0_Wainscott_0_int_0_2021-06-06_17-03-25.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\putting_away_Halloween_decorations_0_Rs_int_0_2021-10-25_22-42-17.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
@@ -413,13 +413,13 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\putting_dishes_away_after_cleaning_0_Ihlen_1_int_0_2021-10-25_22-54-09.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\putting_leftovers_away_0_Ihlen_1_int_0_2021-06-08_13-42-57.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": true
     },
@@ -473,7 +473,7 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\sorting_groceries_0_Wainscott_0_int_0_2021-10-26_13-36-01.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
@@ -485,19 +485,19 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\storing_food_0_Rs_int_0_2021-10-25_21-27-36.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\storing_the_groceries_0_Beechwood_0_int_0_2021-10-26_13-13-47.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\thawing_frozen_food_0_Pomaria_1_int_0_2021-10-26_13-10-33.json",
-        "all_action_execution_true": true,
+        "all_action_execution_true": false,
         "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
@@ -516,8 +516,8 @@
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\vacuuming_floors_0_Ihlen_1_int_0_2021-06-08_18-03-55.json",
         "all_action_execution_true": true,
-        "unknown_execution_error": true,
-        "all_condition_satisfied": false
+        "unknown_execution_error": false,
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\washing_cars_or_other_vehicles_0_Ihlen_0_int_0_2021-10-25_22-38-10.json",
@@ -549,8 +549,8 @@
     },
     {
         "total_run": 74,
-        "all_action_execution_true": 53,
-        "unknown_execution_error": 4,
-        "all_condition_satisfied": 37
+        "all_action_execution_true": 30,
+        "unknown_execution_error": 2,
+        "all_condition_satisfied": 47
     }
 ]

@@ -1,7 +1,7 @@
 Addressable Objects:
+breakfast_table_37
 modem_0
 room_floor_home_office_0
-breakfast_table_37
 -----------------------------------------------
 Initial Conditions: 
 ['not', 'toggled_on', 'modem.n.01_1']
@@ -12,19 +12,19 @@ Goal Conditions:
 ['toggled_on', 'modem.n.01_1']
 ['under', 'modem.n.01_1', 'table.n.02_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'modem_0')
+Action:  RIGHT_GRASP modem_0
 Grasp modem_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('TOGGLE_ON', 'modem_0')
+Action:  TOGGLE_ON modem_0
 Toggleon modem_0 success
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
 ************************************************
-Action:  ('TOGGLE_OFF', 'modem_0')
+Action:  TOGGLE_OFF modem_0
 Toggleoff modem_0 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_home_office_0')
+Action:  RIGHT_PLACE_ONTOP room_floor_home_office_0
 Place ontop modem_0 room_floor_home_office_0 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************

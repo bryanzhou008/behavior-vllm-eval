@@ -1,14 +1,14 @@
 Addressable Objects:
-sofa_2
-coffee_table_5
-candle_0
 pumpkin_1
-candle_1
 pumpkin_0
+coffee_table_5
 sheet_0
-bottom_cabinet_13
-cauldron_0
+candle_0
+candle_1
 candle_2
+cauldron_0
+sofa_2
+bottom_cabinet_13
 room_floor_living_room_0
 -----------------------------------------------
 Initial Conditions: 
@@ -27,51 +27,56 @@ Goal Conditions:
 ['or', 'nextto', 'sheet.n.03_1', 'table.n.02_1', 'ontop', 'sheet.n.03_1', 'table.n.02_1']
 ['nextto', 'caldron.n.01_1', 'table.n.02_1']
 ------------Action Execution Begins-------------
-Action:  ('OPEN', 'bottom_cabinet_13')
-Open bottom_cabinet_13 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Action:  OPEN bottom_cabinet_13
+Open bottom_cabinet_13 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'pumpkin_1')
+Action:  RIGHT_GRASP pumpkin_1
 Grasp pumpkin_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_13')
+Action:  RIGHT_PLACE_INSIDE bottom_cabinet_13
 Place inside pumpkin_1 bottom_cabinet_13 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'candle_2')
+Action:  LEFT_GRASP candle_2
 Grasp candle_2 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'bottom_cabinet_13')
+Action:  LEFT_PLACE_INSIDE bottom_cabinet_13
 Place inside candle_2 bottom_cabinet_13 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'pumpkin_0')
+Action:  RIGHT_GRASP pumpkin_0
 Grasp pumpkin_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_13')
+Action:  RIGHT_PLACE_INSIDE bottom_cabinet_13
 Place inside pumpkin_0 bottom_cabinet_13 successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'candle_0')
+Action:  RIGHT_GRASP candle_0
 Grasp candle_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_13')
+Action:  RIGHT_PLACE_INSIDE bottom_cabinet_13
 Place inside candle_0 bottom_cabinet_13 successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'candle_1')
+Action:  LEFT_GRASP candle_1
 Grasp candle_1 with left_hand successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'bottom_cabinet_13')
+Action:  LEFT_PLACE_INSIDE bottom_cabinet_13
 Place inside candle_1 bottom_cabinet_13 successful
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2, 3]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
+Teleport pumpkin_1 INSIDE bottom_cabinet_13 successful: True
+Teleport candle_2 INSIDE bottom_cabinet_13 successful: True
+Teleport pumpkin_0 INSIDE bottom_cabinet_13 successful: True
+Teleport candle_0 INSIDE bottom_cabinet_13 successful: True
+Teleport candle_1 INSIDE bottom_cabinet_13 successful: True
 Post Effects:  (False, {'satisfied': [0, 1], 'unsatisfied': [2, 3]})
-{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

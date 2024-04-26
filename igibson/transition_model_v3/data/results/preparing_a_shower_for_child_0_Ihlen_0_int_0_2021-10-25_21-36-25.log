@@ -1,10 +1,10 @@
 Addressable Objects:
-room_floor_bathroom_0
-dishtowel_0
-sink_38
 shampoo_0
-shower_35
+sink_38
 soap_0
+shower_35
+dishtowel_0
+room_floor_bathroom_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'shampoo.n.01_1', 'floor.n.01_1']
@@ -17,39 +17,40 @@ Goal Conditions:
 ['onfloor', 'shampoo.n.01_1', 'floor.n.01_1']
 ['nextto', 'soap.n.01_1', 'sink.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'soap_0')
+Action:  RIGHT_GRASP soap_0
 Grasp soap_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'sink_38')
+Action:  RIGHT_PLACE_INSIDE sink_38
 Place inside soap_0 sink_38 unsuccessful
 Post Effects:  False (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
-Action:  ('TOGGLE_ON', 'sink_38')
+Action:  TOGGLE_ON sink_38
 Toggleon sink_38 success
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
-Action:  ('TOGGLE_OFF', 'sink_38')
+Action:  TOGGLE_OFF sink_38
 Toggleoff sink_38 success
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'dishtowel_0')
+Action:  RIGHT_GRASP dishtowel_0
 Grasp dishtowel_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bathroom_0')
+Action:  RIGHT_PLACE_ONTOP room_floor_bathroom_0
 Place ontop dishtowel_0 room_floor_bathroom_0 successful
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'shampoo_0')
+Action:  RIGHT_GRASP shampoo_0
 Grasp shampoo_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bathroom_0')
+Action:  RIGHT_PLACE_ONTOP room_floor_bathroom_0
 Place ontop shampoo_0 room_floor_bathroom_0 successful
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
-Post Effects:  (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
-{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+Teleport soap_0 INSIDE sink_38 successful: False
+Post Effects:  (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

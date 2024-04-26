@@ -1,9 +1,9 @@
 Addressable Objects:
-car_50
-shelf_16
 cruet_51
 rag_52
+shelf_16
 room_floor_garage_0
+car_50
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'vehicle.n.01_1', 'floor.n.01_1']
@@ -15,11 +15,11 @@ Initial Conditions:
 Goal Conditions: 
 ['not', 'dusty', 'vehicle.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'rag_52')
+Action:  RIGHT_GRASP rag_52
 Grasp rag_52 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('CLEAN', 'car_50')
+Action:  CLEAN car_50
 Clean-dust car_50 success
 Post Effects:  True (True, {'satisfied': [0], 'unsatisfied': []})
 ************************************************

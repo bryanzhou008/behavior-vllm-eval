@@ -1,28 +1,28 @@
 Addressable Objects:
+lettuce_79
+sink_37
 room_floor_kitchen_0
-apple_81_part_0
-apple_80
-lettuce_78
+plate_88
 apple_80_part_1
 tomato_82
-apple_80_part_0
-plate_88
-tomato_83_part_1
-tomato_82_part_0
-apple_81
-tomato_83_part_0
-sink_37
-lettuce_79
-tomato_83
 countertop_31
-fridge_20
-tomato_82_part_1
-radish_85
-plate_87
-radish_84
+lettuce_78
 top_cabinet_27
+tomato_83_part_0
+apple_80
+tomato_82_part_1
+plate_87
 apple_81_part_1
+tomato_82_part_0
 carving_knife_86
+fridge_20
+apple_80_part_0
+apple_81_part_0
+apple_81
+radish_84
+tomato_83
+radish_85
+tomato_83_part_1
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'lettuce.n.03_1', 'countertop.n.01_1']
@@ -46,143 +46,153 @@ Goal Conditions:
 ['forpairs', 'tomato.n.01', '-', 'tomato.n.01', 'plate.n.04', '-', 'plate.n.04', 'and', 'ontop', 'tomato.n.01', 'plate.n.04', 'sliced', 'tomato.n.01']
 ['forpairs', 'radish.n.01', '-', 'radish.n.01', 'plate.n.04', '-', 'plate.n.04', 'ontop', 'radish.n.01', 'plate.n.04']
 ------------Action Execution Begins-------------
-Action:  ('LEFT_GRASP', 'plate_87')
+Action:  LEFT_GRASP plate_87
 plate_87 is inside closed top_cabinet_27
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'plate_88')
+Action:  RIGHT_GRASP plate_88
 plate_88 is inside closed top_cabinet_27
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'countertop_31')
+Action:  LEFT_PLACE_ONTOP countertop_31
 left_hand is empty
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'countertop_31')
+Action:  RIGHT_PLACE_ONTOP countertop_31
 right_hand is empty
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('OPEN', 'fridge_20')
-Open fridge_20 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Action:  OPEN fridge_20
+Open fridge_20 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'tomato_83')
+Action:  RIGHT_GRASP tomato_83
 Grasp tomato_83 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'tomato_82')
+Action:  LEFT_GRASP tomato_82
 Grasp tomato_82 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('CLOSE', 'fridge_20')
+Action:  CLOSE fridge_20
 Both hands full, release one object first to close the object
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'countertop_31')
+Action:  LEFT_PLACE_ONTOP countertop_31
 Place ontop tomato_82 countertop_31 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'countertop_31')
+Action:  RIGHT_PLACE_ONTOP countertop_31
 Place ontop tomato_83 countertop_31 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('UNFREEZE', 'tomato_83')
+Action:  UNFREEZE tomato_83
 Unfreeze failed, object is already unfreezeed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('UNFREEZE', 'tomato_82')
+Action:  UNFREEZE tomato_82
 Unfreeze failed, object is already unfreezeed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('OPEN', 'top_cabinet_27')
-Open top_cabinet_27 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Action:  OPEN top_cabinet_27
+Open top_cabinet_27 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'carving_knife_86')
+Action:  RIGHT_GRASP carving_knife_86
 Grasp carving_knife_86 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'radish_84')
+Action:  LEFT_GRASP radish_84
 Grasp radish_84 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'plate_88')
+Action:  LEFT_PLACE_ONTOP plate_88
 Place ontop radish_84 plate_88 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'radish_85')
+Action:  LEFT_GRASP radish_85
 Grasp radish_85 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'plate_87')
+Action:  LEFT_PLACE_ONTOP plate_87
 Place ontop radish_85 plate_87 successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'lettuce_78')
+Action:  LEFT_GRASP lettuce_78
 Grasp lettuce_78 with left_hand successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'plate_88')
+Action:  LEFT_PLACE_ONTOP plate_88
 Place ontop lettuce_78 plate_88 successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'lettuce_79')
+Action:  LEFT_GRASP lettuce_79
 Grasp lettuce_79 with left_hand successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'plate_87')
+Action:  LEFT_PLACE_ONTOP plate_87
 Place ontop lettuce_79 plate_87 successful
 Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'apple_80')
+Action:  LEFT_GRASP apple_80
 Grasp apple_80 with left_hand successful
 Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'plate_88')
+Action:  LEFT_PLACE_ONTOP plate_88
 Place ontop apple_80 plate_88 successful
 Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('SLICE', 'apple_80')
+Action:  SLICE apple_80
 Slice apple_80 success
 Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'apple_81')
+Action:  LEFT_GRASP apple_81
 Grasp apple_81 with left_hand successful
 Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'plate_87')
+Action:  LEFT_PLACE_ONTOP plate_87
 Place ontop apple_81 plate_87 successful
 Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('SLICE', 'apple_81')
+Action:  SLICE apple_81
 Slice apple_81 success
 Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'tomato_83')
+Action:  LEFT_GRASP tomato_83
 Grasp tomato_83 with left_hand successful
 Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'plate_88')
+Action:  LEFT_PLACE_ONTOP plate_88
 Place ontop tomato_83 plate_88 successful
 Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('SLICE', 'tomato_83')
+Action:  SLICE tomato_83
 Slice tomato_83 success
 Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'tomato_82')
+Action:  LEFT_GRASP tomato_82
 Grasp tomato_82 with left_hand successful
 Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'plate_87')
+Action:  LEFT_PLACE_ONTOP plate_87
 Place ontop tomato_82 plate_87 successful
 Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('SLICE', 'tomato_82')
+Action:  SLICE tomato_82
 Slice tomato_82 success
-Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
+Post Effects:  True (False, {'satisfied': [0, 2, 3], 'unsatisfied': [1]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
+Teleport plate_88 INSIDE top_cabinet_27 successful: True
+Teleport radish_84 ONTOP plate_88 successful: True
+Teleport lettuce_78 ONTOP plate_88 successful: True
+Teleport apple_80 ONTOP plate_88 successful: True
+Teleport tomato_83 ONTOP plate_88 successful: True
+Teleport plate_87 INSIDE top_cabinet_27 successful: True
+Teleport radish_85 ONTOP plate_87 successful: True
+Teleport lettuce_79 ONTOP plate_87 successful: True
+Teleport apple_81 ONTOP plate_87 successful: True
+Teleport tomato_82 ONTOP plate_87 successful: True
 Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 {'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

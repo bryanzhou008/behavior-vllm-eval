@@ -1,16 +1,16 @@
 Addressable Objects:
-dustpan_0
+scraper_0
 bucket_0
+dustpan_0
+pea_0
+fridge_57
+paper_towel_0
+rag_0
+pear_0
 room_floor_kitchen_0
 sink_64
-paper_towel_0
 pomelo_0
-fridge_57
-scraper_0
-rag_0
 countertop_56
-pear_0
-pea_0
 -----------------------------------------------
 Initial Conditions: 
 ['not', 'stained', 'sink.n.01_1']
@@ -35,87 +35,103 @@ Goal Conditions:
 ['soaked', 'rag.n.01_1']
 ['forall', 'food.n.02', '-', 'food.n.02', 'inside', 'food.n.02', 'bucket.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'rag_0')
+Action:  RIGHT_GRASP rag_0
 Grasp rag_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5, 6]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'sink_64')
+Action:  RIGHT_PLACE_INSIDE sink_64
 Place inside rag_0 sink_64 successful
 Post Effects:  True (False, {'satisfied': [3, 4], 'unsatisfied': [0, 1, 2, 5, 6]})
 ************************************************
-Action:  ('TOGGLE_ON', 'sink_64')
+Action:  TOGGLE_ON sink_64
 Toggleon sink_64 success
 Post Effects:  True (False, {'satisfied': [3, 4], 'unsatisfied': [0, 1, 2, 5, 6]})
 ************************************************
-Action:  ('TOGGLE_OFF', 'sink_64')
+Action:  TOGGLE_OFF sink_64
 Toggleoff sink_64 success
 Post Effects:  True (False, {'satisfied': [3, 4], 'unsatisfied': [0, 1, 2, 5, 6]})
 ************************************************
-Action:  ('SOAK', 'rag_0')
+Action:  SOAK rag_0
 Soak rag_0 success
 Post Effects:  True (False, {'satisfied': [3, 4, 5], 'unsatisfied': [0, 1, 2, 6]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'bucket_0')
+Action:  RIGHT_GRASP bucket_0
 Grasp bucket_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [3, 4, 5], 'unsatisfied': [0, 1, 2, 6]})
 ************************************************
-Action:  ('OPEN', 'fridge_57')
-Open fridge_57 success
-Post Effects:  True (False, {'satisfied': [3, 4, 5], 'unsatisfied': [0, 1, 2, 6]})
+Action:  OPEN fridge_57
+Open fridge_57 failed
+Post Effects:  False (False, {'satisfied': [3, 4, 5], 'unsatisfied': [0, 1, 2, 6]})
 ************************************************
-Action:  ('LEFT_GRASP', 'pear_0')
+Action:  LEFT_GRASP pear_0
 Grasp pear_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [3, 4, 5], 'unsatisfied': [0, 1, 2, 6]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'bucket_0')
+Action:  LEFT_PLACE_INSIDE bucket_0
 Place inside pear_0 bucket_0 successful
 Post Effects:  True (False, {'satisfied': [3, 4, 5], 'unsatisfied': [0, 1, 2, 6]})
 ************************************************
-Action:  ('UNFREEZE', 'pear_0')
+Action:  UNFREEZE pear_0
 Unfreeze failed, object is already unfreezeed
 Post Effects:  False (False, {'satisfied': [3, 4, 5], 'unsatisfied': [0, 1, 2, 6]})
 ************************************************
-Action:  ('LEFT_GRASP', 'pea_0')
+Action:  LEFT_GRASP pea_0
 Grasp pea_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [3, 4, 5], 'unsatisfied': [0, 1, 2, 6]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'bucket_0')
+Action:  LEFT_PLACE_INSIDE bucket_0
 Place inside pea_0 bucket_0 successful
 Post Effects:  True (False, {'satisfied': [3, 4, 5], 'unsatisfied': [0, 1, 2, 6]})
 ************************************************
-Action:  ('UNFREEZE', 'pea_0')
+Action:  UNFREEZE pea_0
 Unfreeze failed, object is already unfreezeed
 Post Effects:  False (False, {'satisfied': [3, 4, 5], 'unsatisfied': [0, 1, 2, 6]})
 ************************************************
-Action:  ('LEFT_GRASP', 'pomelo_0')
+Action:  LEFT_GRASP pomelo_0
 Grasp pomelo_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [3, 4, 5], 'unsatisfied': [0, 1, 2, 6]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'bucket_0')
+Action:  LEFT_PLACE_INSIDE bucket_0
 Place inside pomelo_0 bucket_0 successful
 Post Effects:  True (False, {'satisfied': [3, 4, 5, 6], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('UNFREEZE', 'pomelo_0')
+Action:  UNFREEZE pomelo_0
 Unfreeze failed, object is already unfreezeed
 Post Effects:  False (False, {'satisfied': [3, 4, 5, 6], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('CLOSE', 'fridge_57')
+Action:  CLOSE fridge_57
+Teleport pear_0 INSIDE bucket_0 successful: True
+Teleport pea_0 INSIDE bucket_0 successful: True
+Teleport pomelo_0 INSIDE bucket_0 successful: True
 Close fridge_57 success
-Post Effects:  True (False, {'satisfied': [3, 4, 5], 'unsatisfied': [0, 1, 2, 6]})
+Post Effects:  True (False, {'satisfied': [3, 4, 5, 6], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'countertop_56')
+Action:  RIGHT_PLACE_ONTOP countertop_56
+Teleport pear_0 INSIDE bucket_0 successful: True
+Teleport pea_0 INSIDE bucket_0 successful: True
+Teleport pomelo_0 INSIDE bucket_0 successful: True
+Teleport pear_0 INSIDE bucket_0 successful: True
+Teleport pea_0 INSIDE bucket_0 successful: True
+Teleport pomelo_0 INSIDE bucket_0 successful: True
 Place ontop bucket_0 countertop_56 successful
 Post Effects:  True (False, {'satisfied': [3, 4, 5, 6], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'scraper_0')
+Action:  RIGHT_GRASP scraper_0
 Grasp scraper_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [3, 4, 5, 6], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'fridge_57')
+Action:  RIGHT_PLACE_ONTOP fridge_57
 Place ontop scraper_0 fridge_57 successful
 Post Effects:  True (False, {'satisfied': [2, 3, 4, 5, 6], 'unsatisfied': [0, 1]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
+Teleport rag_0 INSIDE sink_64 successful: True
+Teleport scraper_0 ONTOP fridge_57 successful: True
+Teleport paper_towel_0 ONTOP countertop_56 successful: True
+Teleport bucket_0 ONTOP countertop_56 successful: True
+Teleport pear_0 INSIDE bucket_0 successful: True
+Teleport pea_0 INSIDE bucket_0 successful: True
+Teleport pomelo_0 INSIDE bucket_0 successful: True
 Post Effects:  (False, {'satisfied': [4, 5, 6], 'unsatisfied': [0, 1, 2, 3]})
 {'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

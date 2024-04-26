@@ -1,27 +1,27 @@
 Addressable Objects:
+candle_0
 cheese_2
-candle_3
-cookie_1
-basket_1
-bow_3
-coffee_table_12
-cookie_0
-bow_2
-bow_1
 cheese_1
-basket_0
-cheese_0
+candle_3
+cookie_0
 basket_2
-candle_2
-cookie_3
+cheese_0
+basket_0
+coffee_table_12
+bow_2
+cookie_2
+bow_1
+basket_3
 room_floor_living_room_0
 bow_0
-cheese_3
+basket_1
+bow_3
+candle_2
 candle_1
-candle_0
-cookie_2
+cookie_1
+cheese_3
+cookie_3
 breakfast_table_13
-basket_3
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'basket.n.01_1', 'floor.n.01_1']
@@ -52,131 +52,131 @@ Goal Conditions:
 ['forpairs', 'basket.n.01', '-', 'basket.n.01', 'cookie.n.01', '-', 'cookie.n.01', 'inside', 'cookie.n.01', 'basket.n.01']
 ['forpairs', 'basket.n.01', '-', 'basket.n.01', 'bow.n.08', '-', 'bow.n.08', 'inside', 'bow.n.08', 'basket.n.01']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'bow_0')
+Action:  RIGHT_GRASP bow_0
 Grasp bow_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'bow_1')
+Action:  LEFT_GRASP bow_1
 Grasp bow_1 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'basket_0')
+Action:  RIGHT_PLACE_INSIDE basket_0
 Place inside bow_0 basket_0 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'basket_1')
+Action:  LEFT_PLACE_INSIDE basket_1
 Place inside bow_1 basket_1 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'bow_2')
+Action:  RIGHT_GRASP bow_2
 Grasp bow_2 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_GRASP', 'bow_3')
+Action:  LEFT_GRASP bow_3
 Grasp bow_3 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'basket_2')
+Action:  RIGHT_PLACE_INSIDE basket_2
 Place inside bow_2 basket_2 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'basket_3')
+Action:  LEFT_PLACE_INSIDE basket_3
 Place inside bow_3 basket_3 successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'cheese_0')
+Action:  RIGHT_GRASP cheese_0
 Grasp cheese_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'cheese_1')
+Action:  LEFT_GRASP cheese_1
 Grasp cheese_1 with left_hand successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'basket_0')
+Action:  RIGHT_PLACE_INSIDE basket_0
 Place inside cheese_0 basket_0 successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'basket_1')
+Action:  LEFT_PLACE_INSIDE basket_1
 Place inside cheese_1 basket_1 successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'cheese_2')
+Action:  RIGHT_GRASP cheese_2
 Grasp cheese_2 with right_hand successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'cheese_3')
+Action:  LEFT_GRASP cheese_3
 Grasp cheese_3 with left_hand successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'basket_2')
+Action:  RIGHT_PLACE_INSIDE basket_2
 Place inside cheese_2 basket_2 successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'basket_3')
+Action:  LEFT_PLACE_INSIDE basket_3
 Place inside cheese_3 basket_3 successful
 Post Effects:  True (False, {'satisfied': [1, 3], 'unsatisfied': [0, 2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'cookie_0')
+Action:  RIGHT_GRASP cookie_0
 Grasp cookie_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [1, 3], 'unsatisfied': [0, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'cookie_1')
+Action:  LEFT_GRASP cookie_1
 Grasp cookie_1 with left_hand successful
 Post Effects:  True (False, {'satisfied': [1, 3], 'unsatisfied': [0, 2]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'basket_0')
+Action:  RIGHT_PLACE_INSIDE basket_0
 Place inside cookie_0 basket_0 successful
 Post Effects:  True (False, {'satisfied': [1, 3], 'unsatisfied': [0, 2]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'basket_1')
+Action:  LEFT_PLACE_INSIDE basket_1
 Place inside cookie_1 basket_1 successful
 Post Effects:  True (False, {'satisfied': [1, 3], 'unsatisfied': [0, 2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'cookie_2')
+Action:  RIGHT_GRASP cookie_2
 Grasp cookie_2 with right_hand successful
 Post Effects:  True (False, {'satisfied': [1, 3], 'unsatisfied': [0, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'cookie_3')
+Action:  LEFT_GRASP cookie_3
 Grasp cookie_3 with left_hand successful
 Post Effects:  True (False, {'satisfied': [1, 3], 'unsatisfied': [0, 2]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'basket_2')
+Action:  RIGHT_PLACE_INSIDE basket_2
 Place inside cookie_2 basket_2 successful
 Post Effects:  True (False, {'satisfied': [1, 3], 'unsatisfied': [0, 2]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'basket_3')
+Action:  LEFT_PLACE_INSIDE basket_3
 Place inside cookie_3 basket_3 successful
 Post Effects:  True (False, {'satisfied': [1, 2, 3], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'candle_0')
+Action:  RIGHT_GRASP candle_0
 Grasp candle_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [1, 2, 3], 'unsatisfied': [0]})
 ************************************************
-Action:  ('LEFT_GRASP', 'candle_1')
+Action:  LEFT_GRASP candle_1
 Grasp candle_1 with left_hand successful
 Post Effects:  True (False, {'satisfied': [1, 2, 3], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'basket_0')
+Action:  RIGHT_PLACE_INSIDE basket_0
 Place inside candle_0 basket_0 successful
 Post Effects:  True (False, {'satisfied': [1, 2, 3], 'unsatisfied': [0]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'basket_1')
+Action:  LEFT_PLACE_INSIDE basket_1
 Place inside candle_1 basket_1 successful
 Post Effects:  True (False, {'satisfied': [1, 2, 3], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'candle_2')
+Action:  RIGHT_GRASP candle_2
 Grasp candle_2 with right_hand successful
 Post Effects:  True (False, {'satisfied': [1, 2, 3], 'unsatisfied': [0]})
 ************************************************
-Action:  ('LEFT_GRASP', 'candle_3')
+Action:  LEFT_GRASP candle_3
 Grasp candle_3 with left_hand successful
 Post Effects:  True (False, {'satisfied': [1, 2, 3], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'basket_2')
+Action:  RIGHT_PLACE_INSIDE basket_2
 Place inside candle_2 basket_2 successful
 Post Effects:  True (False, {'satisfied': [1, 2, 3], 'unsatisfied': [0]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'basket_3')
+Action:  LEFT_PLACE_INSIDE basket_3
 Place inside candle_3 basket_3 successful
 Post Effects:  True (True, {'satisfied': [0, 1, 2, 3], 'unsatisfied': []})
 ************************************************

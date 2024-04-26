@@ -1,15 +1,15 @@
 Addressable Objects:
 cup_0
-sink_37
-countertop_31
 bowl_0
-top_cabinet_24
-top_cabinet_25
-soap_0
-bowl_1
-room_floor_kitchen_0
 paper_towel_0
 cup_1
+sink_37
+top_cabinet_25
+bowl_1
+top_cabinet_24
+soap_0
+countertop_31
+room_floor_kitchen_0
 -----------------------------------------------
 Initial Conditions: 
 ['dusty', 'cabinet.n.01_1']
@@ -27,77 +27,77 @@ Goal Conditions:
 ['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'bowl.n.01', '-', 'bowl.n.01', 'and', 'inside', 'bowl.n.01', 'cabinet.n.01', 'not', 'inside', 'cup.n.01_1', 'cabinet.n.01']
 ['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'cup.n.01', '-', 'cup.n.01', 'and', 'inside', 'cup.n.01', 'cabinet.n.01', 'not', 'inside', 'bowl.n.01_1', 'cabinet.n.01']
 ------------Action Execution Begins-------------
-Action:  ('TOGGLE_ON', 'sink_37')
+Action:  TOGGLE_ON sink_37
 Toggleon sink_37 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('TOGGLE_OFF', 'sink_37')
+Action:  TOGGLE_OFF sink_37
 Toggleoff sink_37 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'paper_towel_0')
+Action:  RIGHT_GRASP paper_towel_0
 Grasp paper_towel_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'sink_37')
+Action:  RIGHT_PLACE_INSIDE sink_37
 Place inside paper_towel_0 sink_37 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('SOAK', 'paper_towel_0')
+Action:  SOAK paper_towel_0
 Soak paper_towel_0 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'paper_towel_0')
+Action:  RIGHT_GRASP paper_towel_0
 Grasp paper_towel_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('OPEN', 'top_cabinet_24')
-Open top_cabinet_24 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+Action:  OPEN top_cabinet_24
+Open top_cabinet_24 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('CLEAN', 'top_cabinet_24')
+Action:  CLEAN top_cabinet_24
 Clean-dust top_cabinet_24 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('OPEN', 'top_cabinet_25')
-Open top_cabinet_25 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+Action:  OPEN top_cabinet_25
+Open top_cabinet_25 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('CLEAN', 'top_cabinet_25')
+Action:  CLEAN top_cabinet_25
 Clean-dust top_cabinet_25 success
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('RIGHT_RELEASE', 'paper_towel_0')
+Action:  RIGHT_RELEASE paper_towel_0
 Release paper_towel_0 from right_hand successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'bowl_1')
+Action:  RIGHT_GRASP bowl_1
 Grasp bowl_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'top_cabinet_25')
+Action:  RIGHT_PLACE_INSIDE top_cabinet_25
 Place inside bowl_1 top_cabinet_25 successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'bowl_0')
+Action:  RIGHT_GRASP bowl_0
 Grasp bowl_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'top_cabinet_25')
+Action:  RIGHT_PLACE_INSIDE top_cabinet_25
 Place inside bowl_0 top_cabinet_25 successful
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'cup_1')
+Action:  RIGHT_GRASP cup_1
 Grasp cup_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
-Action:  ('CLOSE', 'top_cabinet_25')
+Action:  CLOSE top_cabinet_25
 Close top_cabinet_25 success
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'top_cabinet_24')
+Action:  RIGHT_PLACE_INSIDE top_cabinet_24
 Place inside cup_1 top_cabinet_24 successful
 Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

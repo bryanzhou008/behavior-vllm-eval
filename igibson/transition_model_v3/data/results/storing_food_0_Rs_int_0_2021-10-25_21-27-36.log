@@ -1,15 +1,15 @@
 Addressable Objects:
-bottom_cabinet_41
 countertop_26
+olive_oil_1
+chip_1
 sugar_jar_1
+oatmeal_1
+bottom_cabinet_41
 olive_oil_0
 room_floor_kitchen_0
+sugar_jar_0
 oatmeal_0
 chip_0
-chip_1
-olive_oil_1
-oatmeal_1
-sugar_jar_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'oatmeal.n.01_1', 'countertop.n.01_1']
@@ -32,73 +32,73 @@ Goal Conditions:
 ['inside', 'sugar.n.01_1', 'cabinet.n.01_1']
 ['inside', 'sugar.n.01_2', 'cabinet.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('OPEN', 'bottom_cabinet_41')
-Open bottom_cabinet_41 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7]})
+Action:  OPEN bottom_cabinet_41
+Open bottom_cabinet_41 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'chip_0')
+Action:  RIGHT_GRASP chip_0
 Grasp chip_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7]})
 ************************************************
-Action:  ('LEFT_GRASP', 'chip_1')
+Action:  LEFT_GRASP chip_1
 Grasp chip_1 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_41')
+Action:  RIGHT_PLACE_INSIDE bottom_cabinet_41
 Place inside chip_0 bottom_cabinet_41 successful
 Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4, 5, 6, 7]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'bottom_cabinet_41')
+Action:  LEFT_PLACE_INSIDE bottom_cabinet_41
 Place inside chip_1 bottom_cabinet_41 successful
 Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4, 5, 6, 7]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'sugar_jar_0')
+Action:  RIGHT_GRASP sugar_jar_0
 Grasp sugar_jar_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4, 5, 6, 7]})
 ************************************************
-Action:  ('LEFT_GRASP', 'sugar_jar_1')
+Action:  LEFT_GRASP sugar_jar_1
 Grasp sugar_jar_1 with left_hand successful
 Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4, 5, 6, 7]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_41')
+Action:  RIGHT_PLACE_INSIDE bottom_cabinet_41
 Place inside sugar_jar_0 bottom_cabinet_41 successful
 Post Effects:  True (False, {'satisfied': [2, 3, 6], 'unsatisfied': [0, 1, 4, 5, 7]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'bottom_cabinet_41')
+Action:  LEFT_PLACE_INSIDE bottom_cabinet_41
 Place inside sugar_jar_1 bottom_cabinet_41 successful
 Post Effects:  True (False, {'satisfied': [2, 3, 6, 7], 'unsatisfied': [0, 1, 4, 5]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'oatmeal_0')
+Action:  RIGHT_GRASP oatmeal_0
 Grasp oatmeal_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [2, 3, 6, 7], 'unsatisfied': [0, 1, 4, 5]})
 ************************************************
-Action:  ('LEFT_GRASP', 'oatmeal_1')
+Action:  LEFT_GRASP oatmeal_1
 Grasp oatmeal_1 with left_hand successful
 Post Effects:  True (False, {'satisfied': [2, 3, 6, 7], 'unsatisfied': [0, 1, 4, 5]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_41')
+Action:  RIGHT_PLACE_INSIDE bottom_cabinet_41
 Place inside oatmeal_0 bottom_cabinet_41 successful
 Post Effects:  True (False, {'satisfied': [0, 2, 3, 6, 7], 'unsatisfied': [1, 4, 5]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'bottom_cabinet_41')
+Action:  LEFT_PLACE_INSIDE bottom_cabinet_41
 Place inside oatmeal_1 bottom_cabinet_41 successful
 Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 6, 7], 'unsatisfied': [4, 5]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'olive_oil_0')
+Action:  RIGHT_GRASP olive_oil_0
 Grasp olive_oil_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 6, 7], 'unsatisfied': [4, 5]})
 ************************************************
-Action:  ('LEFT_GRASP', 'olive_oil_1')
+Action:  LEFT_GRASP olive_oil_1
 Grasp olive_oil_1 with left_hand successful
 Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 6, 7], 'unsatisfied': [4, 5]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_41')
+Action:  RIGHT_PLACE_INSIDE bottom_cabinet_41
 Place inside olive_oil_0 bottom_cabinet_41 successful
 Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4, 6, 7], 'unsatisfied': [5]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'bottom_cabinet_41')
+Action:  LEFT_PLACE_INSIDE bottom_cabinet_41
 Place inside olive_oil_1 bottom_cabinet_41 successful
 Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4, 5, 6, 7], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

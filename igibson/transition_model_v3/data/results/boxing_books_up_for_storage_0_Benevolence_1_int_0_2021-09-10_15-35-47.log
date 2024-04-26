@@ -1,14 +1,14 @@
 Addressable Objects:
-notebook_59
-notebook_62
-notebook_61
-notebook_63
 notebook_60
-shelf_0
+notebook_61
+notebook_59
 hardback_64
-room_floor_living_room_0
 hardback_65
+room_floor_living_room_0
+shelf_0
 carton_66
+notebook_63
+notebook_62
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'book.n.02_1', 'floor.n.01_1']
@@ -24,67 +24,67 @@ Initial Conditions:
 Goal Conditions: 
 ['forall', 'book.n.02', '-', 'book.n.02', 'inside', 'book.n.02', 'carton.n.02_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'notebook_60')
+Action:  RIGHT_GRASP notebook_60
 Grasp notebook_60 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('LEFT_GRASP', 'hardback_65')
+Action:  LEFT_GRASP hardback_65
 Grasp hardback_65 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'carton_66')
+Action:  RIGHT_PLACE_INSIDE carton_66
 Place inside notebook_60 carton_66 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'carton_66')
+Action:  LEFT_PLACE_INSIDE carton_66
 Place inside hardback_65 carton_66 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'hardback_64')
+Action:  RIGHT_GRASP hardback_64
 Grasp hardback_64 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('LEFT_GRASP', 'notebook_59')
+Action:  LEFT_GRASP notebook_59
 Grasp notebook_59 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'carton_66')
+Action:  RIGHT_PLACE_INSIDE carton_66
 Place inside hardback_64 carton_66 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'carton_66')
+Action:  LEFT_PLACE_INSIDE carton_66
 Place inside notebook_59 carton_66 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'notebook_62')
+Action:  RIGHT_GRASP notebook_62
 Grasp notebook_62 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('LEFT_GRASP', 'hardback_65')
+Action:  LEFT_GRASP hardback_65
 Grasp hardback_65 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'carton_66')
+Action:  RIGHT_PLACE_INSIDE carton_66
 Place inside notebook_62 carton_66 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'carton_66')
+Action:  LEFT_PLACE_INSIDE carton_66
 Place inside hardback_65 carton_66 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'notebook_63')
+Action:  RIGHT_GRASP notebook_63
 Grasp notebook_63 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('LEFT_GRASP', 'notebook_61')
+Action:  LEFT_GRASP notebook_61
 Grasp notebook_61 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'carton_66')
+Action:  RIGHT_PLACE_INSIDE carton_66
 Place inside notebook_63 carton_66 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'carton_66')
+Action:  LEFT_PLACE_INSIDE carton_66
 Place inside notebook_61 carton_66 successful
 Post Effects:  True (True, {'satisfied': [0], 'unsatisfied': []})
 ************************************************

@@ -1,14 +1,14 @@
 Addressable Objects:
-backpack_100
-apple_103
 room_floor_bedroom_0
-notebook_101
-apple_103_part_0
-headset_104
 sunglass_105
-bracelet_102
-apple_103_part_1
+apple_103
 bed_43
+notebook_101
+apple_103_part_1
+bracelet_102
+apple_103_part_0
+backpack_100
+headset_104
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'backpack.n.01_1', 'floor.n.01_1']
@@ -27,56 +27,57 @@ Goal Conditions:
 ['inside', 'apple.n.01_1', 'backpack.n.01_1']
 ['inside', 'earphone.n.01_1', 'backpack.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'backpack_100')
+Action:  RIGHT_GRASP backpack_100
 Grasp backpack_100 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_GRASP', 'notebook_101')
+Action:  LEFT_GRASP notebook_101
 Grasp notebook_101 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'backpack_100')
-No openable joint metadata found for object backpack_100
+Action:  LEFT_PLACE_INSIDE backpack_100
 backpack_100 is closed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_GRASP', 'sunglass_105')
+Action:  LEFT_GRASP sunglass_105
 left_hand is already holding notebook_101
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'backpack_100')
+Action:  LEFT_PLACE_INSIDE backpack_100
 backpack_100 is closed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_GRASP', 'apple_103')
+Action:  LEFT_GRASP apple_103
 left_hand is already holding notebook_101
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'backpack_100')
+Action:  LEFT_PLACE_INSIDE backpack_100
 backpack_100 is closed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_GRASP', 'headset_104')
+Action:  LEFT_GRASP headset_104
 left_hand is already holding notebook_101
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'backpack_100')
+Action:  LEFT_PLACE_INSIDE backpack_100
 backpack_100 is closed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_GRASP', 'bracelet_102')
+Action:  LEFT_GRASP bracelet_102
 left_hand is already holding notebook_101
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'backpack_100')
+Action:  LEFT_PLACE_INSIDE backpack_100
 backpack_100 is closed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bedroom_0')
+Action:  RIGHT_PLACE_ONTOP room_floor_bedroom_0
 Place ontop backpack_100 room_floor_bedroom_0 successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
+No openable joint metadata found for object backpack_100
+Teleport bracelet_102 INSIDE bed_43 successful: True
 Post Effects:  (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
 {'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

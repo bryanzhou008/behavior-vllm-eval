@@ -1,16 +1,16 @@
 Addressable Objects:
-room_floor_bedroom_0
-room_floor_corridor_0
-backpack_112
-hanger_113
+mouse_119
+toothbrush_118
+bracelet_116
 door_99
-necklace_117
+backpack_112
 lipstick_114
+necklace_117
+hanger_113
+room_floor_bedroom_0
 lipstick_115
 bed_33
-mouse_119
-bracelet_116
-toothbrush_118
+room_floor_corridor_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'backpack.n.01_1', 'floor.n.01_1']
@@ -31,88 +31,90 @@ Goal Conditions:
 ['inside', 'mouse.n.04_1', 'backpack.n.01_1']
 ['onfloor', 'backpack.n.01_1', 'floor.n.01_2']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'necklace_117')
+Action:  RIGHT_GRASP necklace_117
 Grasp necklace_117 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'bed_33')
+Action:  RIGHT_PLACE_ONTOP bed_33
 Place ontop necklace_117 bed_33 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'bracelet_116')
+Action:  RIGHT_GRASP bracelet_116
 Grasp bracelet_116 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'bed_33')
+Action:  RIGHT_PLACE_ONTOP bed_33
 Place ontop bracelet_116 bed_33 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'backpack_112')
+Action:  RIGHT_GRASP backpack_112
 Grasp backpack_112 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bedroom_0')
+Action:  RIGHT_PLACE_ONTOP room_floor_bedroom_0
 Place ontop backpack_112 room_floor_bedroom_0 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'mouse_119')
+Action:  RIGHT_GRASP mouse_119
 Grasp mouse_119 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'backpack_112')
-No openable joint metadata found for object backpack_112
+Action:  RIGHT_PLACE_INSIDE backpack_112
 backpack_112 is closed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'bracelet_116')
+Action:  RIGHT_GRASP bracelet_116
 right_hand is already holding mouse_119
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'backpack_112')
+Action:  RIGHT_PLACE_INSIDE backpack_112
 backpack_112 is closed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'necklace_117')
+Action:  RIGHT_GRASP necklace_117
 right_hand is already holding mouse_119
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'backpack_112')
+Action:  RIGHT_PLACE_INSIDE backpack_112
 backpack_112 is closed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'toothbrush_118')
+Action:  RIGHT_GRASP toothbrush_118
 right_hand is already holding mouse_119
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'backpack_112')
+Action:  RIGHT_PLACE_INSIDE backpack_112
 backpack_112 is closed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'lipstick_115')
+Action:  RIGHT_GRASP lipstick_115
 right_hand is already holding mouse_119
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'backpack_112')
+Action:  RIGHT_PLACE_INSIDE backpack_112
 backpack_112 is closed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'lipstick_114')
+Action:  RIGHT_GRASP lipstick_114
 right_hand is already holding mouse_119
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'backpack_112')
+Action:  RIGHT_PLACE_INSIDE backpack_112
 backpack_112 is closed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'backpack_112')
+Action:  RIGHT_GRASP backpack_112
 right_hand is already holding mouse_119
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_corridor_0')
+Action:  RIGHT_PLACE_ONTOP room_floor_corridor_0
 Place ontop mouse_119 room_floor_corridor_0 unsuccessful
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
+No openable joint metadata found for object backpack_112
+Teleport necklace_117 ONTOP bed_33 successful: True
+Teleport bracelet_116 ONTOP bed_33 successful: True
 Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 {'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

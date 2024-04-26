@@ -1,4 +1,4 @@
-[
+ [
     {
         "action": "OPEN",
         "object": "bottom_cabinet_no_top_16"
@@ -12,7 +12,7 @@
         "object": "bowl_0"
     },
     {
-        "action": "RIGHT_PLACE_ONTOP",
+        "action": "RIGHT_PLACE_NEXTTO",
         "object": "sink_19"
     },
     {
@@ -20,7 +20,7 @@
         "object": "bowl_1"
     },
     {
-        "action": "RIGHT_PLACE_ONTOP",
+        "action": "RIGHT_PLACE_NEXTTO",
         "object": "sink_19"
     },
     {
@@ -28,7 +28,7 @@
         "object": "bath_towel_0"
     },
     {
-        "action": "RIGHT_PLACE_ONTOP",
+        "action": "RIGHT_PLACE_NEXTTO",
         "object": "sink_19"
     },
     {
@@ -36,7 +36,7 @@
         "object": "bowl_1"
     },
     {
-        "action": "RIGHT_PLACE_ONTOP",
+        "action": "RIGHT_PLACE_NEXTTO",
         "object": "sink_19"
     },
     {
@@ -44,7 +44,23 @@
         "object": "bowl_0"
     },
     {
-        "action": "RIGHT_PLACE_ONTOP",
+        "action": "RIGHT_PLACE_NEXTTO",
+        "object": "sink_19"
+    },
+    {
+        "action": "RIGHT_GRASP",
+        "object": "spoon_0"
+    },
+    {
+        "action": "RIGHT_PLACE_NEXTTO",
+        "object": "sink_19"
+    },
+    {
+        "action": "RIGHT_GRASP",
+        "object": "spoon_1"
+    },
+    {
+        "action": "RIGHT_PLACE_NEXTTO",
         "object": "sink_19"
     },
     {

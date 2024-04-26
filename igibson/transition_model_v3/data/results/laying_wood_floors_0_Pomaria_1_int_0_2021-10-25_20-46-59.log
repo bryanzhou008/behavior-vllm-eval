@@ -1,12 +1,12 @@
 Addressable Objects:
-room_floor_living_room_0
-plywood_79
-saw_83
-plywood_81
-plywood_80
-room_floor_kitchen_0
-plywood_78
 hammer_82
+plywood_79
+room_floor_kitchen_0
+plywood_81
+plywood_78
+plywood_80
+room_floor_living_room_0
+saw_83
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'plywood.n.01_1', 'floor.n.01_1']
@@ -21,35 +21,35 @@ Goal Conditions:
 ['forall', 'plywood.n.01', '-', 'plywood.n.01', 'onfloor', 'plywood.n.01', 'floor.n.01_2']
 ['forall', 'plywood.n.01', '-', 'plywood.n.01', 'or', 'nextto', 'plywood.n.01', 'plywood.n.01_1', 'nextto', 'plywood.n.01', 'plywood.n.01_2', 'nextto', 'plywood.n.01', 'plywood.n.01_3', 'nextto', 'plywood.n.01', 'plywood.n.01_4']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'plywood_81')
+Action:  RIGHT_GRASP plywood_81
 Grasp plywood_81 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('LEFT_GRASP', 'plywood_80')
+Action:  LEFT_GRASP plywood_80
 Grasp plywood_80 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'room_floor_living_room_0')
+Action:  LEFT_PLACE_ONTOP room_floor_living_room_0
 Place ontop plywood_80 room_floor_living_room_0 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_living_room_0')
+Action:  RIGHT_PLACE_ONTOP room_floor_living_room_0
 Place ontop plywood_81 room_floor_living_room_0 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'plywood_78')
+Action:  RIGHT_GRASP plywood_78
 Grasp plywood_78 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('LEFT_GRASP', 'plywood_79')
+Action:  LEFT_GRASP plywood_79
 Grasp plywood_79 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'room_floor_living_room_0')
+Action:  LEFT_PLACE_ONTOP room_floor_living_room_0
 Place ontop plywood_79 room_floor_living_room_0 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_living_room_0')
+Action:  RIGHT_PLACE_ONTOP room_floor_living_room_0
 Place ontop plywood_78 room_floor_living_room_0 successful
 Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
 ************************************************

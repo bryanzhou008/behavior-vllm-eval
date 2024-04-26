@@ -1,14 +1,14 @@
 Addressable Objects:
-hamburger_117
-plate_112
-plate_114
+plate_115
 plate_113
 hamburger_118
-room_floor_kitchen_0
-countertop_79
-trash_can_119
-plate_115
 hamburger_116
+hamburger_117
+countertop_79
+plate_114
+trash_can_119
+room_floor_kitchen_0
+plate_112
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'plate.n.04_1', 'countertop.n.01_1']
@@ -24,27 +24,27 @@ Initial Conditions:
 Goal Conditions: 
 ['forall', 'hamburger.n.01', '-', 'hamburger.n.01', 'inside', 'hamburger.n.01', 'ashcan.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'hamburger_116')
+Action:  RIGHT_GRASP hamburger_116
 Grasp hamburger_116 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('LEFT_GRASP', 'hamburger_117')
+Action:  LEFT_GRASP hamburger_117
 Grasp hamburger_117 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'trash_can_119')
+Action:  LEFT_PLACE_INSIDE trash_can_119
 Place inside hamburger_117 trash_can_119 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'trash_can_119')
+Action:  RIGHT_PLACE_INSIDE trash_can_119
 Place inside hamburger_116 trash_can_119 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'hamburger_118')
+Action:  RIGHT_GRASP hamburger_118
 Grasp hamburger_118 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'trash_can_119')
+Action:  RIGHT_PLACE_INSIDE trash_can_119
 Place inside hamburger_118 trash_can_119 successful
 Post Effects:  True (True, {'satisfied': [0], 'unsatisfied': []})
 ************************************************

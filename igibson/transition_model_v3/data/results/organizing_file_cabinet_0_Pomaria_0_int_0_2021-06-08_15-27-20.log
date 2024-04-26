@@ -1,15 +1,15 @@
 Addressable Objects:
-highlighter_0
-document_2
-folder_0
-document_0
-room_floor_home_office_0
-folder_1
-swivel_chair_5
-bottom_cabinet_no_top_21
-breakfast_table_3
 document_3
+document_2
+breakfast_table_3
+swivel_chair_5
+folder_1
+highlighter_0
+folder_0
+room_floor_home_office_0
 document_1
+bottom_cabinet_no_top_21
+document_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'marker.n.03_1', 'chair.n.01_1']
@@ -26,57 +26,60 @@ Goal Conditions:
 ['forall', 'document.n.01', '-', 'document.n.01', 'inside', 'document.n.01', 'cabinet.n.01_1']
 ['forall', 'folder.n.02', '-', 'folder.n.02', 'inside', 'folder.n.02', 'cabinet.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'highlighter_0')
+Action:  RIGHT_GRASP highlighter_0
 Grasp highlighter_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_3')
+Action:  RIGHT_PLACE_ONTOP breakfast_table_3
 Place ontop highlighter_0 breakfast_table_3 successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('OPEN', 'bottom_cabinet_no_top_21')
-Open bottom_cabinet_no_top_21 success
-Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
+Action:  OPEN bottom_cabinet_no_top_21
+Open bottom_cabinet_no_top_21 failed
+Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'folder_1')
+Action:  RIGHT_GRASP folder_1
 Grasp folder_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_no_top_21')
+Action:  RIGHT_PLACE_INSIDE bottom_cabinet_no_top_21
 Place inside folder_1 bottom_cabinet_no_top_21 successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'folder_0')
+Action:  RIGHT_GRASP folder_0
 Grasp folder_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_no_top_21')
+Action:  RIGHT_PLACE_INSIDE bottom_cabinet_no_top_21
 Place inside folder_0 bottom_cabinet_no_top_21 successful
 Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'document_2')
+Action:  RIGHT_GRASP document_2
 Grasp document_2 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_no_top_21')
+Action:  RIGHT_PLACE_INSIDE bottom_cabinet_no_top_21
 Place inside document_2 bottom_cabinet_no_top_21 successful
 Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'document_0')
+Action:  RIGHT_GRASP document_0
 Grasp document_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_no_top_21')
+Action:  RIGHT_PLACE_INSIDE bottom_cabinet_no_top_21
 Place inside document_0 bottom_cabinet_no_top_21 successful
 Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************
-Action:  ('RIGHT_GRASP', 'document_1')
+Action:  RIGHT_GRASP document_1
+Teleport document_3 ONTOP document_1 successful: True
 Grasp document_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_no_top_21')
+Action:  RIGHT_PLACE_INSIDE bottom_cabinet_no_top_21
+Teleport document_3 ONTOP document_1 successful: True
+Teleport document_3 ONTOP document_1 successful: True
 Place inside document_1 bottom_cabinet_no_top_21 successful
 Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

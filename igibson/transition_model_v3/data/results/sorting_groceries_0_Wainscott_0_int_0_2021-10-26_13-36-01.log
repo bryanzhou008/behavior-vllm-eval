@@ -1,36 +1,36 @@
 Addressable Objects:
-broccoli_0
-apple_1_part_1
-orange_1_part_1
-orange_1_part_0
-orange_0_part_0
-fridge_97
 apple_1_part_0
-orange_0
-countertop_84
-straight_chair_45
-breakfast_table_44
-milk_0
-yogurt_0
-carrot_2
-apple_0_part_1
-orange_2_part_0
-apple_0_part_0
-carrot_1
-pretzel_0
-bottom_cabinet_no_top_80
-flour_0
+orange_0_part_0
 orange_0_part_1
-carrot_0
+orange_1_part_0
 prosciutto_0
 soup_0
-orange_2_part_1
-cheese_0
-orange_1
-apple_1
-apple_0
-orange_2
+apple_0_part_1
 room_floor_kitchen_0
+yogurt_0
+carrot_1
+orange_2
+apple_1
+carrot_0
+carrot_2
+flour_0
+cheese_0
+orange_2_part_0
+fridge_97
+countertop_84
+apple_0
+orange_0
+apple_0_part_0
+orange_1
+orange_2_part_1
+apple_1_part_1
+milk_0
+orange_1_part_1
+broccoli_0
+breakfast_table_44
+straight_chair_45
+pretzel_0
+bottom_cabinet_no_top_80
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'bread.n.01_1', 'countertop.n.01_1']
@@ -60,143 +60,157 @@ Goal Conditions:
 ['forall', 'apple.n.01', '-', 'apple.n.01', 'and', 'inside', 'apple.n.01', 'electric_refrigerator.n.01_1', 'or', 'nextto', 'apple.n.01', 'apple.n.01_1', 'nextto', 'apple.n.01', 'apple.n.01_2']
 ['forall', 'orange.n.01', '-', 'orange.n.01', 'and', 'ontop', 'orange.n.01', 'table.n.02_1', 'or', 'nextto', 'orange.n.01', 'orange.n.01_1', 'nextto', 'orange.n.01', 'orange.n.01_2', 'nextto', 'orange.n.01', 'orange.n.01_3']
 ------------Action Execution Begins-------------
-Action:  ('LEFT_GRASP', 'orange_2')
+Action:  LEFT_GRASP orange_2
 Grasp orange_2 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'breakfast_table_44')
+Action:  LEFT_PLACE_ONTOP breakfast_table_44
 Place ontop orange_2 breakfast_table_44 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
 ************************************************
-Action:  ('OPEN', 'fridge_97')
-Open fridge_97 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
+Action:  OPEN fridge_97
+Open fridge_97 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
 ************************************************
-Action:  ('LEFT_GRASP', 'prosciutto_0')
+Action:  LEFT_GRASP prosciutto_0
 Grasp prosciutto_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'cheese_0')
+Action:  RIGHT_GRASP cheese_0
 Grasp cheese_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'fridge_97')
+Action:  LEFT_PLACE_INSIDE fridge_97
 Place inside prosciutto_0 fridge_97 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'fridge_97')
+Action:  RIGHT_PLACE_INSIDE fridge_97
 Place inside cheese_0 fridge_97 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
 ************************************************
-Action:  ('LEFT_GRASP', 'milk_0')
+Action:  LEFT_GRASP milk_0
 Grasp milk_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'yogurt_0')
+Action:  RIGHT_GRASP yogurt_0
 Grasp yogurt_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'fridge_97')
+Action:  LEFT_PLACE_INSIDE fridge_97
 Place inside milk_0 fridge_97 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'fridge_97')
+Action:  RIGHT_PLACE_INSIDE fridge_97
 Place inside yogurt_0 fridge_97 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
 ************************************************
-Action:  ('LEFT_GRASP', 'carrot_0')
+Action:  LEFT_GRASP carrot_0
 Grasp carrot_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'carrot_1')
+Action:  RIGHT_GRASP carrot_1
 Grasp carrot_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'fridge_97')
+Action:  LEFT_PLACE_INSIDE fridge_97
 Place inside carrot_0 fridge_97 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'fridge_97')
+Action:  RIGHT_PLACE_INSIDE fridge_97
 Place inside carrot_1 fridge_97 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
 ************************************************
-Action:  ('LEFT_GRASP', 'carrot_2')
+Action:  LEFT_GRASP carrot_2
 Grasp carrot_2 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'soup_0')
+Action:  RIGHT_GRASP soup_0
 Grasp soup_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'fridge_97')
+Action:  LEFT_PLACE_INSIDE fridge_97
 Place inside carrot_2 fridge_97 successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5, 6]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'fridge_97')
+Action:  RIGHT_PLACE_INSIDE fridge_97
 Place inside soup_0 fridge_97 successful
 Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4, 5, 6]})
 ************************************************
-Action:  ('LEFT_GRASP', 'apple_0')
+Action:  LEFT_GRASP apple_0
 Grasp apple_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4, 5, 6]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'apple_1')
+Action:  RIGHT_GRASP apple_1
 Grasp apple_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4, 5, 6]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'fridge_97')
+Action:  LEFT_PLACE_INSIDE fridge_97
 Place inside apple_0 fridge_97 successful
 Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4, 5, 6]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'fridge_97')
+Action:  RIGHT_PLACE_INSIDE fridge_97
 Place inside apple_1 fridge_97 successful
 Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4, 5, 6]})
 ************************************************
-Action:  ('LEFT_GRASP', 'broccoli_0')
+Action:  LEFT_GRASP broccoli_0
 Grasp broccoli_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4, 5, 6]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'fridge_97')
+Action:  LEFT_PLACE_INSIDE fridge_97
 Place inside broccoli_0 fridge_97 successful
 Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1, 5, 6]})
 ************************************************
-Action:  ('OPEN', 'bottom_cabinet_no_top_80')
-Open bottom_cabinet_no_top_80 success
-Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1, 5, 6]})
+Action:  OPEN bottom_cabinet_no_top_80
+Open bottom_cabinet_no_top_80 failed
+Post Effects:  False (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1, 5, 6]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'pretzel_0')
+Action:  RIGHT_GRASP pretzel_0
 Grasp pretzel_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1, 5, 6]})
 ************************************************
-Action:  ('LEFT_GRASP', 'flour_0')
+Action:  LEFT_GRASP flour_0
 Grasp flour_0 with left_hand successful
 Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1, 5, 6]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'bottom_cabinet_no_top_80')
+Action:  RIGHT_PLACE_INSIDE bottom_cabinet_no_top_80
 Place inside pretzel_0 bottom_cabinet_no_top_80 successful
 Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1, 5, 6]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'bottom_cabinet_no_top_80')
+Action:  LEFT_PLACE_INSIDE bottom_cabinet_no_top_80
 Place inside flour_0 bottom_cabinet_no_top_80 successful
 Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': [5, 6]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'prosciutto_0')
+Action:  RIGHT_GRASP prosciutto_0
 Grasp prosciutto_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 1, 3, 4], 'unsatisfied': [2, 5, 6]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'fridge_97')
+Action:  RIGHT_PLACE_INSIDE fridge_97
 Place inside prosciutto_0 fridge_97 successful
 Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': [5, 6]})
 ************************************************
-Action:  ('CLOSE', 'bottom_cabinet_no_top_80')
+Action:  CLOSE bottom_cabinet_no_top_80
 Close bottom_cabinet_no_top_80 success
-Post Effects:  True (False, {'satisfied': [0, 1, 2, 4], 'unsatisfied': [3, 5, 6]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': [5, 6]})
 ************************************************
-Action:  ('CLOSE', 'fridge_97')
+Action:  CLOSE fridge_97
 Close fridge_97 success
-Post Effects:  True (False, {'satisfied': [0, 1, 2, 4], 'unsatisfied': [3, 5, 6]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': [5, 6]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
+Teleport cheese_0 INSIDE fridge_97 successful: True
+Teleport milk_0 INSIDE fridge_97 successful: True
+Teleport yogurt_0 INSIDE fridge_97 successful: True
+Teleport carrot_0 INSIDE fridge_97 successful: True
+Teleport carrot_1 INSIDE fridge_97 successful: True
+Teleport carrot_2 INSIDE fridge_97 successful: True
+Teleport soup_0 INSIDE fridge_97 successful: True
+Teleport apple_0 INSIDE fridge_97 successful: True
+Teleport apple_1 INSIDE fridge_97 successful: True
+Teleport broccoli_0 INSIDE fridge_97 successful: True
+Teleport prosciutto_0 INSIDE fridge_97 successful: True
+Teleport pretzel_0 INSIDE bottom_cabinet_no_top_80 successful: True
+Teleport flour_0 INSIDE bottom_cabinet_no_top_80 successful: True
+Teleport orange_2 ONTOP breakfast_table_44 successful: True
 Post Effects:  (False, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': [5, 6]})
-{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

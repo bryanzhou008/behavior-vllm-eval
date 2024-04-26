@@ -34,9 +34,10 @@ def evaluate_action_seqeunce(demo_path,action_path,rst_path,headless=True):
         print("------------Action Execution Begins-------------")
         for action in actions:
             try:
-                action_execuble=(action['action'], action['object'])
-                print("Action: ",action_execuble)
-                _,_,_,_,flag=env.step(action_execuble)
+                action_name=action["action"]
+                obj=action["object"]
+                print("Action: ",action_name,obj)
+                _,_,_,_,flag=env.apply_action(action_name,obj)
                 if not flag:
                     rst["all_action_execution_true"]=False
                 print("Post Effects: ",flag,env.task.check_success())

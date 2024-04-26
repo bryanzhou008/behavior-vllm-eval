@@ -1,21 +1,21 @@
 Addressable Objects:
-bottom_cabinet_25
-scrub_brush_109
-trash_can_112
-hardback_104
-highlighter_106
-room_floor_bedroom_0
-hardback_103
 highlighter_107
-bottom_cabinet_28
-detergent_111
-bottom_cabinet_24
-pen_105
-notebook_102
-bed_58
-screwdriver_108
-bucket_113
+bottom_cabinet_25
 rag_110
+bed_58
+room_floor_bedroom_0
+hardback_104
+detergent_111
+bucket_113
+scrub_brush_109
+pen_105
+hardback_103
+screwdriver_108
+bottom_cabinet_24
+highlighter_106
+notebook_102
+bottom_cabinet_28
+trash_can_112
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'book.n.02_1', 'cabinet.n.01_1']
@@ -41,83 +41,101 @@ Goal Conditions:
 ['forall', 'marker.n.03', '-', 'marker.n.03', 'inside', 'marker.n.03', 'bucket.n.01_1']
 ['inside', 'pen.n.01_1', 'bucket.n.01_1']
 ------------Action Execution Begins-------------
-Action:  ('OPEN', 'bottom_cabinet_25')
-Open bottom_cabinet_25 success
+Action:  OPEN bottom_cabinet_28
+Open bottom_cabinet_28 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  OPEN bottom_cabinet_25
+Open bottom_cabinet_25 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  OPEN bottom_cabinet_24
+Open bottom_cabinet_24 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+************************************************
+Action:  LEFT_GRASP pen_105
+Grasp pen_105 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  ('LEFT_GRASP', 'pen_105')
-pen_105 is inside closed bottom_cabinet_28
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  LEFT_PLACE_INSIDE bucket_113
+Place inside pen_105 bucket_113 successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_INSIDE', 'bucket_113')
-left_hand is empty
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  LEFT_GRASP highlighter_106
+Grasp highlighter_106 with left_hand successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'rag_110')
-rag_110 is inside closed bottom_cabinet_28
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  LEFT_PLACE_INSIDE bucket_113
+Place inside highlighter_106 bucket_113 successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('CLOSE', 'bottom_cabinet_25')
-Close bottom_cabinet_25 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  LEFT_GRASP highlighter_107
+Grasp highlighter_107 with left_hand successful
+Post Effects:  True (False, {'satisfied': [4], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('OPEN', 'bottom_cabinet_25')
-Open bottom_cabinet_25 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  LEFT_PLACE_INSIDE bucket_113
+Place inside highlighter_107 bucket_113 successful
+Post Effects:  True (False, {'satisfied': [3, 4], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('CLEAN', 'bottom_cabinet_25')
-Clean failed, no cleaner in inventory
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  RIGHT_GRASP rag_110
+Grasp rag_110 with right_hand successful
+Post Effects:  True (False, {'satisfied': [3, 4], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'notebook_102')
-notebook_102 is inside closed bottom_cabinet_28
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  CLEAN bottom_cabinet_25
+Clean-dust bottom_cabinet_25 success
+Post Effects:  True (False, {'satisfied': [3, 4], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'bottom_cabinet_25')
-left_hand is empty
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  CLEAN bottom_cabinet_28
+Clean-dust bottom_cabinet_28 success
+Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('CLOSE', 'bottom_cabinet_25')
-Close bottom_cabinet_25 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  RIGHT_PLACE_ONTOP bed_58
+Place ontop rag_110 bed_58 successful
+Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('OPEN', 'bottom_cabinet_28')
-Open bottom_cabinet_28 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  RIGHT_GRASP hardback_104
+Grasp hardback_104 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('CLEAN', 'bottom_cabinet_28')
-Clean failed, no cleaner in inventory
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
-************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'bed_58')
-right_hand is empty
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
-************************************************
-Action:  ('RIGHT_GRASP', 'hardback_104')
-hardback_104 is inside closed bottom_cabinet_25
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
-************************************************
-Action:  ('LEFT_GRASP', 'notebook_102')
+Action:  LEFT_GRASP notebook_102
 Grasp notebook_102 with left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('RIGHT_PLACE_ONTOP', 'bed_58')
-right_hand is empty
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  RIGHT_PLACE_ONTOP bed_58
+Place ontop hardback_104 bed_58 successful
+Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'hardback_104')
-hardback_104 is inside closed bottom_cabinet_25
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  LEFT_PLACE_ONTOP hardback_104
+Place ontop notebook_102 hardback_104 successful
+Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'screwdriver_108')
-screwdriver_108 is inside closed bottom_cabinet_24
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  LEFT_GRASP hardback_103
+Grasp hardback_103 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 3, 4], 'unsatisfied': [2]})
 ************************************************
-Action:  ('RIGHT_PLACE_INSIDE', 'trash_can_112')
-right_hand is empty
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  LEFT_PLACE_ONTOP notebook_102
+Place ontop hardback_103 notebook_102 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 3, 4], 'unsatisfied': [2]})
+************************************************
+Action:  RIGHT_GRASP screwdriver_108
+Grasp screwdriver_108 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 3, 4], 'unsatisfied': [2]})
+************************************************
+Action:  RIGHT_PLACE_INSIDE trash_can_112
+Place inside screwdriver_108 trash_can_112 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': []})
+************************************************
+Action:  CLOSE bottom_cabinet_24
+Close bottom_cabinet_24 success
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': []})
+************************************************
+Action:  CLOSE bottom_cabinet_28
+Close bottom_cabinet_28 success
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': []})
+************************************************
+Action:  CLOSE bottom_cabinet_25
+Close bottom_cabinet_25 success
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
-{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

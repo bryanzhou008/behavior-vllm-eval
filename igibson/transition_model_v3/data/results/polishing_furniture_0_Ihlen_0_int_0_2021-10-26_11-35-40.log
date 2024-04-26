@@ -1,7 +1,7 @@
 Addressable Objects:
 shelf_11
-rag_0
 coffee_table_10
+rag_0
 room_floor_living_room_0
 -----------------------------------------------
 Initial Conditions: 
@@ -15,19 +15,19 @@ Goal Conditions:
 ['not', 'dusty', 'shelf.n.01_1']
 ['under', 'rag.n.01_1', 'table.n.02_1']
 ------------Action Execution Begins-------------
-Action:  ('RIGHT_GRASP', 'rag_0')
+Action:  RIGHT_GRASP rag_0
 Grasp rag_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  ('CLEAN', 'coffee_table_10')
+Action:  CLEAN coffee_table_10
 Clean-dust coffee_table_10 success
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('CLEAN', 'shelf_11')
+Action:  CLEAN shelf_11
 Clean-dust shelf_11 success
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
-Action:  ('RIGHT_RELEASE', 'rag_0')
+Action:  RIGHT_RELEASE rag_0
 Release rag_0 from right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
