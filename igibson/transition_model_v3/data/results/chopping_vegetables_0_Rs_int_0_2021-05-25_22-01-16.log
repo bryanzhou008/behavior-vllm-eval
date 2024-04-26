@@ -1,44 +1,36 @@
 Addressable Objects:
-vidalia_onion_67_part_1
-mushroom_64_multiplexer
-vidalia_onion_68_part_1
-chestnut_66_part_0
-sink_42
-vidalia_onion_68
-tomato_62
 tomato_62_part_1
-chestnut_65_multiplexer
 chestnut_66
-mushroom_64
+tomato_62
 chestnut_65
-vidalia_onion_68_part_0
-vidalia_onion_67_multiplexer
-mushroom_63_multiplexer
-tomato_62_multiplexer
-vidalia_onion_68_multiplexer
-mushroom_64_part_0
-tomato_62_part_0
-carving_knife_69
-mushroom_64_part_1
-mushroom_63_part_1
-chestnut_65_part_1
-tomato_61_multiplexer
-tomato_61
-tomato_61_part_1
+chestnut_66_part_0
 room_floor_kitchen_0
-mushroom_63_part_0
-chestnut_65_part_0
-chestnut_66_multiplexer
+vidalia_onion_67_part_1
+tomato_62_part_0
+sink_42
+vidalia_onion_68_part_0
+mushroom_63
+mushroom_64_part_1
+chestnut_65_part_1
+mushroom_63_part_1
+top_cabinet_50
+vidalia_onion_68_part_1
+chestnut_66_part_1
+carving_knife_69
+tomato_61_part_1
 countertop_26
 vidalia_onion_67
-mushroom_63
-top_cabinet_50
-casserole_70
-chestnut_66_part_1
-fridge_40
-tomato_61_part_0
+mushroom_64_part_0
+mushroom_64
 casserole_71
+casserole_70
+mushroom_63_part_0
+tomato_61_part_0
 vidalia_onion_67_part_0
+fridge_40
+vidalia_onion_68
+tomato_61
+chestnut_65_part_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'tomato.n.01_1', 'countertop.n.01_1']
@@ -61,7 +53,6 @@ Goal Conditions:
 ['forall', 'vidalia_onion.n.01', '-', 'vidalia_onion.n.01', 'and', 'exists', 'dish.n.01', '-', 'dish.n.01', 'inside', 'vidalia_onion.n.01', 'dish.n.01', 'sliced', 'vidalia_onion.n.01']
 ------------Action Execution Begins-------------
 Action:  ('OPEN', 'top_cabinet_50')
-True
 Open top_cabinet_50 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
@@ -122,7 +113,6 @@ Place inside tomato_61 casserole_71 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('OPEN', 'fridge_40')
-True
 Open fridge_40 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************

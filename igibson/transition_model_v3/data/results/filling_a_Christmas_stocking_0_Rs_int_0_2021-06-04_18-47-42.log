@@ -1,23 +1,23 @@
 Addressable Objects:
-ice_cube_1
-pen_1
-lollipop_2
-stocking_1
-pen_2
+candy_cane_0
 bottom_cabinet_41
+stocking_1
+stocking_3
+pen_3
+lollipop_2
+ice_cube_2
+pen_1
+ice_cube_1
+stocking_0
+pen_2
+lollipop_1
 lollipop_0
+ice_cube_0
+room_floor_living_room_0
+bottom_cabinet_46
+ice_cube_3
 pen_0
 stocking_2
-ice_cube_3
-room_floor_living_room_0
-ice_cube_0
-pen_3
-lollipop_1
-ice_cube_2
-stocking_0
-bottom_cabinet_46
-candy_cane_0
-stocking_3
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'cube.n.05_1', 'floor.n.01_1']
@@ -56,55 +56,58 @@ Place inside ice_cube_2 stocking_2 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'room_floor_living_room_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B93A424C0>
+Place ontop stocking_2 room_floor_living_room_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'ice_cube_3')
 Grasp ice_cube_3 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_GRASP', 'stocking_1')
-left_hand is already holding stocking_2
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+Grasp stocking_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('RIGHT_PLACE_INSIDE', 'stocking_1')
 Place inside ice_cube_3 stocking_1 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'room_floor_living_room_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B93A424C0>
+Place ontop stocking_1 room_floor_living_room_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'ice_cube_1')
 Grasp ice_cube_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_GRASP', 'stocking_0')
-left_hand is already holding stocking_2
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+Grasp stocking_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('RIGHT_PLACE_INSIDE', 'stocking_0')
 Place inside ice_cube_1 stocking_0 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'room_floor_living_room_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B93A424C0>
+Place ontop stocking_0 room_floor_living_room_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'ice_cube_0')
 Grasp ice_cube_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('LEFT_GRASP', 'stocking_3')
-left_hand is already holding stocking_2
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
+Grasp stocking_3 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('RIGHT_PLACE_INSIDE', 'stocking_3')
 Place inside ice_cube_0 stocking_3 successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'room_floor_living_room_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B93A424C0>
+Place ontop stocking_3 room_floor_living_room_0 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('OPEN', 'bottom_cabinet_41')
-True
 Open bottom_cabinet_41 success
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
@@ -113,15 +116,15 @@ Grasp pen_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('LEFT_GRASP', 'lollipop_0')
-left_hand is already holding stocking_2
-Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
+Grasp lollipop_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('RIGHT_PLACE_INSIDE', 'stocking_0')
 Place inside pen_0 stocking_0 successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_INSIDE', 'stocking_0')
-Place inside stocking_2 stocking_0 successful
+Place inside lollipop_0 stocking_0 successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('LEFT_GRASP', 'candy_cane_0')
@@ -170,7 +173,7 @@ Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_INSIDE', 'stocking_2')
 Place inside lollipop_2 stocking_2 successful
-Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
+Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
 Action:  ('LEFT_GRASP', 'lollipop_1')
 Grasp lollipop_1 with left_hand successful
@@ -178,11 +181,11 @@ Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_INSIDE', 'stocking_2')
 Place inside lollipop_1 stocking_2 successful
-Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
+Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'pen_3')
 Grasp pen_3 with right_hand successful
-Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
+Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
 Action:  ('LEFT_GRASP', 'candy_cane_0')
 Grasp candy_cane_0 with left_hand successful
@@ -205,4 +208,4 @@ Place inside lollipop_2 stocking_3 successful
 Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': True}
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

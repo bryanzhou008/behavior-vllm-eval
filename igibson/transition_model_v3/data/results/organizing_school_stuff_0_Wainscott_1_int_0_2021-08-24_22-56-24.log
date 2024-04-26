@@ -1,14 +1,14 @@
 Addressable Objects:
 room_floor_bedroom_0
-folder_107
-hardback_106
-breakfast_table_21
-pencil_103
-pen_104
 highlighter_102
+pen_104
+pencil_103
 calculator_105
+hardback_106
 backpack_108
 bed_58
+folder_107
+breakfast_table_21
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'highlighter.n.02_1', 'bed.n.01_1']

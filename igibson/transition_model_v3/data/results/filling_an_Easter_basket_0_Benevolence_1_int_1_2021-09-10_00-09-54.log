@@ -1,21 +1,21 @@
 Addressable Objects:
-bottom_cabinet_no_top_15
-bottom_cabinet_no_top_16
-bracelet_0
-notebook_0
-egg_1
-fridge_27
-basket_1
-bow_1
-room_floor_kitchen_0
-basket_0
 lollipop_1
-egg_0
 notebook_1
-lollipop_0
-countertop_18
+notebook_0
+bottom_cabinet_no_top_16
+room_floor_kitchen_0
 ball_0
+bottom_cabinet_no_top_15
+countertop_18
+basket_1
+basket_0
 bow_0
+egg_1
+bracelet_0
+bow_1
+fridge_27
+egg_0
+lollipop_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'basket.n.01_1', 'countertop.n.01_1']
@@ -59,7 +59,6 @@ Place inside bracelet_0 basket_0 successful
 Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4, 5]})
 ************************************************
 Action:  ('OPEN', 'bottom_cabinet_no_top_15')
-True
 Open bottom_cabinet_no_top_15 success
 Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4, 5]})
 ************************************************
@@ -80,7 +79,6 @@ right_hand is empty
 Post Effects:  False (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4, 5]})
 ************************************************
 Action:  ('OPEN', 'bottom_cabinet_no_top_16')
-True
 Open bottom_cabinet_no_top_16 success
 Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4, 5]})
 ************************************************
@@ -101,7 +99,6 @@ basket_0 is bigger than basket_1
 Post Effects:  False (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5]})
 ************************************************
 Action:  ('OPEN', 'fridge_27')
-True
 Open fridge_27 success
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5]})
 ************************************************
@@ -130,9 +127,8 @@ Unfreeze failed, object is already unfreezeed
 Post Effects:  False (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5]})
 ************************************************
 Action:  ('CLOSE', 'fridge_27')
-True
 Close fridge_27 success
-Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5]})
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport

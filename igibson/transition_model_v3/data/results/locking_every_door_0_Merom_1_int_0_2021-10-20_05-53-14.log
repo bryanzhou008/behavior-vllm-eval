@@ -1,8 +1,8 @@
 Addressable Objects:
-room_floor_bedroom_0
-bed_7
-door_89
 door_85
+room_floor_bedroom_0
+door_89
+bed_7
 -----------------------------------------------
 Initial Conditions: 
 ['open', 'door.n.01_1']
@@ -18,7 +18,6 @@ Grasp door_89 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('CLOSE', 'door_89')
-True
 Close door_89 success
 Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
 ************************************************
@@ -31,7 +30,6 @@ Grasp door_85 with right_hand successful
 Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
 ************************************************
 Action:  ('CLOSE', 'door_85')
-True
 Close door_85 success
 Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
 ************************************************

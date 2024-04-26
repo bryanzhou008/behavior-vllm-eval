@@ -1,18 +1,18 @@
 Addressable Objects:
-raspberry_1
-broccoli_0
-lettuce_0
-raspberry_0
-pork_0
-room_floor_kitchen_0
-bottom_cabinet_no_top_54
-cereal_0
-pork_1
-lettuce_1
 cereal_1
-fridge_57
+raspberry_1
+pork_0
 countertop_56
+lettuce_0
+cereal_0
+bottom_cabinet_no_top_54
+lettuce_1
+fridge_57
+room_floor_kitchen_0
 broccoli_1
+raspberry_0
+pork_1
+broccoli_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'cereal.n.03_1', 'countertop.n.01_1']
@@ -45,7 +45,6 @@ Goal Conditions:
 ['nextto', 'pork.n.01_1', 'pork.n.01_2']
 ------------Action Execution Begins-------------
 Action:  ('OPEN', 'bottom_cabinet_no_top_54')
-True
 Open bottom_cabinet_no_top_54 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]})
 ************************************************
@@ -66,7 +65,6 @@ Place inside cereal_1 bottom_cabinet_no_top_54 successful
 Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]})
 ************************************************
 Action:  ('OPEN', 'fridge_57')
-True
 Open fridge_57 success
 Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]})
 ************************************************
@@ -135,7 +133,6 @@ Place inside raspberry_1 fridge_57 successful
 Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], 'unsatisfied': []})
 ************************************************
 Action:  ('CLOSE', 'fridge_57')
-True
 Close fridge_57 success
 Post Effects:  True (False, {'satisfied': [0, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], 'unsatisfied': [2]})
 ************************************************

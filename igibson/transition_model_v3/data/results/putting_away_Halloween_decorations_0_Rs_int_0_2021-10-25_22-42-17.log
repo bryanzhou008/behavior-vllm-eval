@@ -1,14 +1,14 @@
 Addressable Objects:
 sofa_2
-bottom_cabinet_13
-candle_1
-sheet_0
-candle_0
 coffee_table_5
-candle_2
-cauldron_0
+candle_0
 pumpkin_1
+candle_1
 pumpkin_0
+sheet_0
+bottom_cabinet_13
+cauldron_0
+candle_2
 room_floor_living_room_0
 -----------------------------------------------
 Initial Conditions: 
@@ -28,7 +28,6 @@ Goal Conditions:
 ['nextto', 'caldron.n.01_1', 'table.n.02_1']
 ------------Action Execution Begins-------------
 Action:  ('OPEN', 'bottom_cabinet_13')
-True
 Open bottom_cabinet_13 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************

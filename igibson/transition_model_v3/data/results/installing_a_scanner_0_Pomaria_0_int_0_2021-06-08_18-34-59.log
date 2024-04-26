@@ -1,6 +1,6 @@
 Addressable Objects:
-breakfast_table_3
 room_floor_home_office_0
+breakfast_table_3
 scanner_0
 -----------------------------------------------
 Initial Conditions: 
@@ -25,9 +25,10 @@ Toggleoff scanner_0 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_home_office_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021BF6377970>
+Place ontop scanner_0 room_floor_home_office_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
 Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1]})
-{'all_action_execution_true': True, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}

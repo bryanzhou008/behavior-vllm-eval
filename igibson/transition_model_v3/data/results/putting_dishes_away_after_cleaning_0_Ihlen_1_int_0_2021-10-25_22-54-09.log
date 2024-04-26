@@ -1,16 +1,16 @@
 Addressable Objects:
-plate_2
-countertop_79
-plate_4
-plate_3
 plate_1
+plate_4
 countertop_81
-room_floor_kitchen_0
 plate_6
-plate_7
-plate_5
-top_cabinet_62
 plate_0
+plate_2
+plate_5
+countertop_79
+top_cabinet_62
+room_floor_kitchen_0
+plate_7
+plate_3
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'plate.n.04_1', 'countertop.n.01_1']
@@ -27,7 +27,6 @@ Goal Conditions:
 ['exists', 'cabinet.n.01', '-', 'cabinet.n.01', 'forall', 'plate.n.04', '-', 'plate.n.04', 'inside', 'plate.n.04', 'cabinet.n.01_1']
 ------------Action Execution Begins-------------
 Action:  ('OPEN', 'top_cabinet_62')
-True
 Open top_cabinet_62 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************

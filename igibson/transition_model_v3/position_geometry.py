@@ -2,8 +2,10 @@ import numpy as np
 from pyquaternion import Quaternion
 from igibson.objects.articulated_object import URDFObject
 import igibson.object_states as object_states
+from igibson.object_states.on_floor import RoomFloor
 import pybullet as p
 from igibson.utils.utils import restoreState
+from igibson.robots import BehaviorRobot
 
 def get_aabb_center(obj1:URDFObject):
     lo,hi=obj1.states[object_states.AABB].get_value()
@@ -23,7 +25,7 @@ def tar_pos_for_new_aabb_center(obj1:URDFObject,new_center:np.ndarray):
 class PositionGeometry:
 
     def __init__(self,robot,simulator,using_kinematics=False):
-        self.robot=robot
+        self.robot:BehaviorRobot=robot
         self.robot.bounding_box=[0.5, 0.5, 1]
         self.using_kinematics=using_kinematics
         self.simulator=simulator
@@ -123,9 +125,9 @@ class PositionGeometry:
         rotated_vec = Quaternion(obj_ori[[3, 0, 1, 2]]).rotate(vec_standard)
         bbox = get_aabb(obj)
         robot_pos = np.zeros(3)
+        robot_pos=self.robot.get_position()
         robot_pos[0] = obj_pos[0] + rotated_vec[0] * bbox[1] * 0.5 + rotated_vec[0]
         robot_pos[1] = obj_pos[1] + rotated_vec[1] * bbox[1] * 0.5 + rotated_vec[1]
-        robot_pos[2] = 0.25
 
         self.robot.set_position(robot_pos)
 
@@ -144,6 +146,27 @@ class PositionGeometry:
         obj.set_position(target_pos)
         
         return True
+    
+    def _set_ontop_floor_magic(self,obj1:URDFObject,obj2:RoomFloor,offset=0.00):
+        lo,hi=obj2.scene.get_aabb_by_room_instance(obj2.room_instance)
+        target_center = (lo+hi)/2.
+        obj1_aabb=get_aabb(obj1)
+        obj2_aabb=hi-lo
+        target_center[2] += 0.5 * obj1_aabb[2] + 0.5 *obj2_aabb[2] +offset
+        target_pos = tar_pos_for_new_aabb_center(obj1,target_center)
+        obj1.set_position(target_pos)
+
+        if obj1.states[object_states.OnFloor].get_value(obj2):
+            return True
+        return False
+    
+    def _set_robot_floor_magic(self,obj:RoomFloor):
+        lo,hi=obj.scene.get_aabb_by_room_instance(obj.room_instance)
+        target_center = (lo+hi)/2.
+        robot_pos=self.robot.get_position()
+        robot_pos[0]=target_center[0]
+        robot_pos[1]=target_center[1]
+        self.robot.set_position(robot_pos)
     
 
     ######################## Expose to action env###################

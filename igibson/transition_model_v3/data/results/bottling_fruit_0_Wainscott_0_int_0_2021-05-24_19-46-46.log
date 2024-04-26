@@ -1,19 +1,17 @@
 Addressable Objects:
-peach_0_multiplexer
-countertop_84
-fridge_97
-peach_0_part_1
-strawberry_0
+carving_knife_0
 strawberry_0_part_0
-strawberry_0_part_1
-peach_0
+fridge_97
+countertop_84
 jar_1
 room_floor_kitchen_0
+peach_0_part_1
+strawberry_0_part_1
 peach_0_part_0
-strawberry_0_multiplexer
-bottom_cabinet_no_top_80
 jar_0
-carving_knife_0
+peach_0
+strawberry_0
+bottom_cabinet_no_top_80
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'strawberry.n.01_1', 'electric_refrigerator.n.01_1']
@@ -33,7 +31,6 @@ Goal Conditions:
 ['sliced', 'peach.n.03_1']
 ------------Action Execution Begins-------------
 Action:  ('OPEN', 'fridge_97')
-True
 Open fridge_97 success
 Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4]})
 ************************************************
@@ -70,7 +67,6 @@ Release carving_knife_0 from left_hand successful
 Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('OPEN', 'jar_1')
-True
 Open jar_1 success
 Post Effects:  True (False, {'satisfied': [3, 4], 'unsatisfied': [0, 1, 2]})
 ************************************************
@@ -91,12 +87,10 @@ Place inside strawberry_0_part_1 jar_1 successful
 Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('CLOSE', 'jar_1')
-True
 Close jar_1 success
 Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1]})
 ************************************************
 Action:  ('OPEN', 'jar_0')
-True
 Open jar_0 success
 Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2]})
 ************************************************
@@ -117,7 +111,6 @@ Place inside peach_0_part_1 jar_0 successful
 Post Effects:  True (False, {'satisfied': [0, 1, 3, 4], 'unsatisfied': [2]})
 ************************************************
 Action:  ('CLOSE', 'jar_0')
-True
 Close jar_0 success
 Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': []})
 ************************************************

@@ -1,15 +1,15 @@
 Addressable Objects:
+highlighter_0
+document_2
+folder_0
+document_0
+room_floor_home_office_0
+folder_1
+swivel_chair_5
+bottom_cabinet_no_top_21
 breakfast_table_3
 document_3
 document_1
-swivel_chair_5
-folder_0
-document_0
-folder_1
-highlighter_0
-room_floor_home_office_0
-bottom_cabinet_no_top_21
-document_2
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'marker.n.03_1', 'chair.n.01_1']
@@ -35,7 +35,6 @@ Place ontop highlighter_0 breakfast_table_3 successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('OPEN', 'bottom_cabinet_no_top_21')
-True
 Open bottom_cabinet_no_top_21 success
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************

@@ -1,6 +1,6 @@
 Addressable Objects:
-package_1
 package_0
+package_1
 room_floor_bedroom_1
 -----------------------------------------------
 Initial Conditions: 
@@ -18,7 +18,6 @@ Grasp package_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
 Action:  ('OPEN', 'package_0')
-True
 Open package_0 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
@@ -31,7 +30,6 @@ Grasp package_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
 Action:  ('OPEN', 'package_1')
-True
 Open package_1 success
 Post Effects:  True (True, {'satisfied': [0], 'unsatisfied': []})
 ************************************************

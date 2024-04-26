@@ -1,25 +1,25 @@
 Addressable Objects:
-salad_145
-pretzel_153
-bottom_cabinet_no_top_80
-pretzel_154
+fridge_97
+tray_147
 parsley_148
-salad_143
-parsley_151
 pretzel_155
 parsley_150
-cheese_159
-salad_146
 breakfast_table_1
-cheese_158
-fridge_97
-room_floor_dining_room_0
+pretzel_154
 parsley_149
-cheese_157
-salad_144
+bottom_cabinet_no_top_80
+pretzel_153
+salad_145
+parsley_151
 cheese_156
-tray_147
 pretzel_152
+salad_144
+salad_143
+cheese_158
+cheese_157
+room_floor_dining_room_0
+salad_146
+cheese_159
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'salad.n.01_1', 'electric_refrigerator.n.01_1']
@@ -48,7 +48,6 @@ Goal Conditions:
 ['forpairs', 'cheese.n.01', '-', 'cheese.n.01', 'parsley.n.02', '-', 'parsley.n.02', 'ontop', 'parsley.n.02', 'cheese.n.01']
 ------------Action Execution Begins-------------
 Action:  ('OPEN', 'fridge_97')
-True
 Open fridge_97 success
 Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
 ************************************************
@@ -205,11 +204,10 @@ Place ontop parsley_151 cheese_159 successful
 Post Effects:  True (False, {'satisfied': [0, 1, 3], 'unsatisfied': [2]})
 ************************************************
 Action:  ('CLOSE', 'fridge_97')
-True
 Close fridge_97 success
 Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
-Post Effects:  (False, {'satisfied': [1, 2], 'unsatisfied': [0, 3]})
+Post Effects:  (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3]})
 {'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

@@ -1,14 +1,14 @@
 Addressable Objects:
-wreath_0
-bottom_cabinet_79
-wreath_1
-ribbon_0
-ribbon_1
-bow_2
-room_floor_living_room_0
 ribbon_2
-bow_1
+ribbon_1
 bow_0
+bow_1
+bottom_cabinet_79
+bow_2
+ribbon_0
+room_floor_living_room_0
+wreath_0
+wreath_1
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'wreath.n.01_1', 'floor.n.01_1']
@@ -27,7 +27,6 @@ Goal Conditions:
 ['forall', 'ribbon.n.01', '-', 'ribbon.n.01', 'inside', 'ribbon.n.01', 'cabinet.n.01_1']
 ------------Action Execution Begins-------------
 Action:  ('OPEN', 'bottom_cabinet_79')
-True
 Open bottom_cabinet_79 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
@@ -60,37 +59,42 @@ Grasp wreath_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_living_room_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B802D5730>
+Place ontop wreath_0 room_floor_living_room_0 successful
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'wreath_1')
-right_hand is already holding wreath_0
-Post Effects:  False (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
+Grasp wreath_1 with right_hand successful
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_living_room_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B802D5730>
+Place ontop wreath_1 room_floor_living_room_0 successful
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'bow_0')
-right_hand is already holding wreath_0
-Post Effects:  False (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
+Grasp bow_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_living_room_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B802D5730>
+Place ontop bow_0 room_floor_living_room_0 successful
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'bow_1')
-right_hand is already holding wreath_0
-Post Effects:  False (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
+Grasp bow_1 with right_hand successful
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_living_room_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B802D5730>
+Place ontop bow_1 room_floor_living_room_0 successful
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'bow_2')
-right_hand is already holding wreath_0
-Post Effects:  False (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
+Grasp bow_2 with right_hand successful
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_living_room_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B802D5730>
+Place ontop bow_2 room_floor_living_room_0 successful
+Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
 Post Effects:  (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}

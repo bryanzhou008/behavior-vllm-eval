@@ -1,11 +1,11 @@
 Addressable Objects:
-bottom_cabinet_49
-spoon_97
-room_floor_kitchen_0
-spoon_100
-rag_101
-spoon_98
 spoon_99
+spoon_100
+spoon_97
+spoon_98
+room_floor_kitchen_0
+rag_101
+bottom_cabinet_49
 -----------------------------------------------
 Initial Conditions: 
 ['dusty', 'spoon.n.01_1']
@@ -31,7 +31,6 @@ Goal Conditions:
 ['inside', 'spoon.n.01_4', 'cabinet.n.01_1']
 ------------Action Execution Begins-------------
 Action:  ('OPEN', 'bottom_cabinet_49')
-True
 Open bottom_cabinet_49 success
 Post Effects:  True (False, {'satisfied': [5, 6, 7, 8], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************

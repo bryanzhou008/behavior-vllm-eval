@@ -1,7 +1,7 @@
 Addressable Objects:
 modem_0
-breakfast_table_37
 room_floor_home_office_0
+breakfast_table_37
 -----------------------------------------------
 Initial Conditions: 
 ['not', 'toggled_on', 'modem.n.01_1']
@@ -25,9 +25,10 @@ Toggleoff modem_0 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_home_office_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B8E547D30>
+Place ontop modem_0 room_floor_home_office_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
 Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1]})
-{'all_action_execution_true': True, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}

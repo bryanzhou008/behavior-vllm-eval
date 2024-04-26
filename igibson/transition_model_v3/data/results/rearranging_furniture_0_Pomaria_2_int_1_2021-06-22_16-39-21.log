@@ -1,11 +1,11 @@
 Addressable Objects:
+chaise_longue_0
 bed_11
 floor_lamp_1
-door_29
 table_lamp_0
-room_floor_bedroom_0
-chaise_longue_0
 chaise_longue_1
+door_29
+room_floor_bedroom_0
 window_27
 -----------------------------------------------
 Initial Conditions: 
@@ -26,24 +26,25 @@ Grasp floor_lamp_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bedroom_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B922186D0>
+Place ontop floor_lamp_1 room_floor_bedroom_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'table_lamp_0')
-right_hand is already holding floor_lamp_1
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+Grasp table_lamp_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('RIGHT_PLACE_NEXTTO', 'window_27')
-Place under floor_lamp_1 window_27 successful
-Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+Place under table_lamp_0 window_27 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'straight_chair_39')
 Execution Error: 'straight_chair_39'
 ************************************************
 Action:  ('RIGHT_PLACE_NEXTTO', 'window_27')
 right_hand is empty
-Post Effects:  False (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
-Post Effects:  (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3]})
+Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 {'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}

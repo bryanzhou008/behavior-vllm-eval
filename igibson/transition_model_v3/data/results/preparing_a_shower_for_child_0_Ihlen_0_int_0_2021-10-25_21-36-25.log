@@ -1,10 +1,10 @@
 Addressable Objects:
-sink_38
-soap_0
+room_floor_bathroom_0
 dishtowel_0
+sink_38
 shampoo_0
 shower_35
-room_floor_bathroom_0
+soap_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'shampoo.n.01_1', 'floor.n.01_1']
@@ -38,16 +38,18 @@ Grasp dishtowel_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bathroom_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021BF5ED5BB0>
+Place ontop dishtowel_0 room_floor_bathroom_0 successful
+Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'shampoo_0')
-right_hand is already holding dishtowel_0
-Post Effects:  False (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
+Grasp shampoo_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bathroom_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021BF5ED5BB0>
+Place ontop shampoo_0 room_floor_bathroom_0 successful
+Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
-Post Effects:  (False, {'satisfied': [1, 2], 'unsatisfied': [0]})
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+Post Effects:  (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

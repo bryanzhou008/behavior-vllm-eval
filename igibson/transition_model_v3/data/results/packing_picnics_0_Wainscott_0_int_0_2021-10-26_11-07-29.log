@@ -1,56 +1,50 @@
 Addressable Objects:
-hamburger_3
-water_2
-room_floor_living_room_0
-hamburger_1
-water_0
-peach_0_part_0
-pop_0
-peach_0
-strawberry_1_part_1
-strawberry_1_part_0
-carton_2
-peach_0_part_1
-water_1
-fridge_97
-sink_82
-beer_1
-peach_1_multiplexer
-grape_1
-strawberry_3_part_0
-cantaloup_0
-peach_0_multiplexer
-room_floor_kitchen_0
-peach_1
-bottom_cabinet_no_top_80
-strawberry_3
-strawberry_3_part_1
 strawberry_2_part_1
-carton_0
-strawberry_1_multiplexer
-strawberry_0_part_0
-strawberry_2
-strawberry_0_multiplexer
-carton_1
-strawberry_1
-grape_0
-grape_3
-chip_0
-beer_0
-water_3
-strawberry_0_part_1
-countertop_84
-peach_1_part_0
-grape_2
 hamburger_0
-strawberry_2_part_0
-strawberry_3_multiplexer
-chip_1
-pop_1
-peach_1_part_1
-strawberry_2_multiplexer
+cantaloup_0
 strawberry_0
+sink_82
+countertop_84
+hamburger_1
+strawberry_0_part_0
+grape_0
+peach_0
+room_floor_kitchen_0
+grape_1
+pop_1
+water_0
+strawberry_3_part_1
+room_floor_living_room_0
 hamburger_2
+strawberry_3_part_0
+grape_3
+strawberry_3
+carton_0
+strawberry_2_part_0
+pop_0
+chip_0
+grape_2
+fridge_97
+peach_1_part_0
+carton_2
+bottom_cabinet_no_top_80
+water_1
+strawberry_2
+peach_1
+beer_0
+chip_1
+beer_1
+water_2
+carton_1
+peach_0_part_1
+strawberry_1
+strawberry_1_part_1
+peach_0_part_0
+strawberry_0_part_1
+hamburger_3
+strawberry_1_part_0
+peach_1_part_1
+water_3
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'carton.n.02_1', 'floor.n.01_1']
@@ -89,12 +83,10 @@ Goal Conditions:
 ['exists', 'carton.n.02', '-', 'carton.n.02', 'and', 'forall', 'pop.n.02', '-', 'pop.n.02', 'inside', 'pop.n.02', 'carton.n.02', 'forall', 'beer.n.01', '-', 'beer.n.01', 'inside', 'beer.n.01', 'carton.n.02', 'forall', 'water.n.06', '-', 'water.n.06', 'inside', 'water.n.06', 'carton.n.02']
 ------------Action Execution Begins-------------
 Action:  ('OPEN', 'bottom_cabinet_no_top_80')
-True
 Open bottom_cabinet_no_top_80 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('OPEN', 'fridge_97')
-True
 Open fridge_97 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
@@ -210,45 +202,53 @@ Action:  ('UNFREEZE', 'grape_3')
 Unfreeze failed, object is already unfreezeed
 Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'strawberry_0_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021BE7AA6D90>
+Action:  ('RIGHT_GRASP', 'strawberry_0')
+Grasp strawberry_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
-right_hand is empty
-Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
+Place inside strawberry_0 carton_0 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'strawberry_3_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021BF5C5F730>
+Action:  ('LEFT_GRASP', 'strawberry_3')
+Grasp strawberry_3 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_INSIDE', 'carton_0')
-left_hand is empty
+Place inside strawberry_3 carton_0 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
+************************************************
+Action:  ('UNFREEZE', 'strawberry_0')
+Unfreeze failed, object is already unfreezeed
 Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('UNFREEZE', 'strawberry_0_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021BE7AA6D90>
+Action:  ('UNFREEZE', 'strawberry_3')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('UNFREEZE', 'strawberry_3_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021BF5C5F730>
-************************************************
-Action:  ('RIGHT_GRASP', 'peach_0_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021BF5C5B3D0>
+Action:  ('RIGHT_GRASP', 'peach_0')
+Grasp peach_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
-right_hand is empty
-Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
+Place inside peach_0 carton_0 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'strawberry_2_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021B8464CF70>
+Action:  ('LEFT_GRASP', 'strawberry_2')
+Grasp strawberry_2 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_INSIDE', 'carton_0')
-left_hand is empty
+Place inside strawberry_2 carton_0 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
+************************************************
+Action:  ('UNFREEZE', 'peach_0')
+Unfreeze failed, object is already unfreezeed
 Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('UNFREEZE', 'peach_0_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021BF5C5B3D0>
-************************************************
-Action:  ('UNFREEZE', 'strawberry_2_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021B8464CF70>
+Action:  ('UNFREEZE', 'strawberry_2')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'beer_0')
 Grasp beer_0 with right_hand successful
@@ -258,19 +258,21 @@ Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
 Place inside beer_0 carton_0 successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'peach_1_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021B922472E0>
+Action:  ('LEFT_GRASP', 'peach_1')
+Grasp peach_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_INSIDE', 'carton_0')
-left_hand is empty
-Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
+Place inside peach_1 carton_0 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('UNFREEZE', 'beer_0')
 Unfreeze failed, object is already unfreezeed
 Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('UNFREEZE', 'peach_1_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021B922472E0>
+Action:  ('UNFREEZE', 'peach_1')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [0], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'beer_1')
 Grasp beer_1 with right_hand successful
@@ -328,26 +330,25 @@ Action:  ('RIGHT_PLACE_INSIDE', 'carton_0')
 Place inside grape_2 carton_0 successful
 Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  ('LEFT_GRASP', 'strawberry_1_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021B8465CD30>
+Action:  ('LEFT_GRASP', 'strawberry_1')
+Grasp strawberry_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
 Action:  ('LEFT_PLACE_INSIDE', 'carton_0')
-left_hand is empty
-Post Effects:  False (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
+Place inside strawberry_1 carton_0 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************
 Action:  ('UNFREEZE', 'grape_2')
 Unfreeze failed, object is already unfreezeed
-Post Effects:  False (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
+Post Effects:  False (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************
-Action:  ('UNFREEZE', 'strawberry_1_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021B8465CD30>
+Action:  ('UNFREEZE', 'strawberry_1')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************
 Action:  ('CLOSE', 'fridge_97')
-True
 Close fridge_97 success
-Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
+Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

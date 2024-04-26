@@ -4,6 +4,7 @@ from igibson.action_primitives.starter_semantic_action_primitives import ActionP
 from igibson.robots import BaseRobot,BehaviorRobot
 from igibson.scenes.igibson_indoor_scene import InteractiveIndoorScene
 import igibson.object_states as object_states
+from igibson.object_states.on_floor import RoomFloor
 from igibson.simulator import Simulator
 from igibson.objects.object_base import BaseObject
 from igibson.objects.articulated_object import URDFObject
@@ -123,6 +124,26 @@ class ActionEnv:
             print(f"Place inside {obj_in_hand.name} {tar_obj.name} unsuccessful")
             return False
         
+    def place_ontop_floor(self,obj:RoomFloor,hand:str):
+        if self.robot_inventory[hand] is None:
+            print(f"{hand} is empty")
+            return False
+        
+        self.position_geometry._set_robot_floor_magic(obj)
+        obj_in_hand=self.robot_inventory[hand]
+        self.relation_tree.remove_ancestor(obj_in_hand)
+        self.position_geometry._set_ontop_floor_magic(obj_in_hand,obj)
+        self.teleport_relation(obj_in_hand)
+        self.robot_inventory[hand]=None
+        if obj_in_hand.states[object_states.OnFloor].get_value(obj):
+            print(f"Place ontop {obj_in_hand.name} {obj.name} successful")
+            return True
+        else:
+            print(f"Place ontop {obj_in_hand.name} {obj.name} unsuccessful")
+            return False
+        
+
+
     def place_ontop(self,obj:URDFObject,hand:str):
         ## pre conditions
         try:
@@ -319,7 +340,6 @@ class ActionEnv:
         ## post effects
         self.navigate_to_if_needed(obj)
         flag=obj.states[object_states.Open].set_value((open_close=='open'),fully=True)
-        print(f"{flag}")
         self.simulator.step()
         if obj.states[object_states.Open].get_value()==(open_close=='open'):
             print(f"{open_close.capitalize()} {obj.name} success")
@@ -351,6 +371,7 @@ class ActionEnv:
 
         ## post effects
         self.navigate_to_if_needed(obj)
+        
         obj.states[object_states.ToggledOn].set_value((on_off=='on'))
         print(f"Toggle{on_off} {obj.name} success")
         return True
@@ -566,11 +587,17 @@ class ActionEnv:
     def right_release(self,obj:URDFObject):
         return self.release('right_hand',obj)
     
-    def left_place_ontop(self,obj:URDFObject):
-        return self.place_ontop(obj,'left_hand')
-    
-    def right_place_ontop(self,obj:URDFObject):
-        return self.place_ontop(obj,'right_hand')
+    def left_place_ontop(self,obj):
+        if isinstance(obj,RoomFloor):
+            return self.place_ontop_floor(obj,'left_hand')
+        else:
+            return self.place_ontop(obj,'left_hand')
+        
+    def right_place_ontop(self,obj):
+        if isinstance(obj,RoomFloor):
+            return self.place_ontop_floor(obj,'right_hand')
+        else:
+            return self.place_ontop(obj,'right_hand')
     
     def left_place_inside(self,obj:URDFObject):
         return self.place_inside(obj,'left_hand')

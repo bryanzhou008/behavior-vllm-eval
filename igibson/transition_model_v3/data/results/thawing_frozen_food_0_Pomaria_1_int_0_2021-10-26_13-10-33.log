@@ -1,13 +1,13 @@
 Addressable Objects:
+fish_2
+room_floor_kitchen_0
+container_date_0
+sink_37
+fish_1
 fridge_20
 olive_0
-fish_1
-fish_2
 fish_3
-sink_37
-container_date_0
 fish_0
-room_floor_kitchen_0
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'date.n.08_1', 'electric_refrigerator.n.01_1']
@@ -33,7 +33,6 @@ Goal Conditions:
 ['nextto', 'olive.n.04_1', 'sink.n.01_1']
 ------------Action Execution Begins-------------
 Action:  ('OPEN', 'fridge_20')
-True
 Open fridge_20 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
@@ -110,11 +109,10 @@ Unfreeze olive_0 success
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
 ************************************************
 Action:  ('CLOSE', 'fridge_20')
-True
 Close fridge_20 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
-Post Effects:  (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
+Post Effects:  (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
 {'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}

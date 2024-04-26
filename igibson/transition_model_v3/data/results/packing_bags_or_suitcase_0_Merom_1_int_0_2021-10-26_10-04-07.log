@@ -1,14 +1,14 @@
 Addressable Objects:
-hardback_100
-door_85
-backpack_97
-underwear_101
-toothbrush_98
-bed_7
+underwear_102
 room_floor_bedroom_0
 toothpaste_103
 window_79
-underwear_102
+hardback_100
+toothbrush_98
+bed_7
+underwear_101
+backpack_97
+door_85
 shampoo_99
 -----------------------------------------------
 Initial Conditions: 
@@ -83,9 +83,10 @@ backpack_97 is closed
 Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bedroom_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B921DC160>
+Place ontop backpack_97 room_floor_bedroom_0 successful
+Post Effects:  True (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
-Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+Post Effects:  (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

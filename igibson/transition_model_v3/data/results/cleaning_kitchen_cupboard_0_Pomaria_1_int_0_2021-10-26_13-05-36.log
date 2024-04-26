@@ -1,15 +1,15 @@
 Addressable Objects:
-paper_towel_0
-cup_1
-bowl_1
+cup_0
 sink_37
+countertop_31
 bowl_0
 top_cabinet_24
-soap_0
-cup_0
-room_floor_kitchen_0
 top_cabinet_25
-countertop_31
+soap_0
+bowl_1
+room_floor_kitchen_0
+paper_towel_0
+cup_1
 -----------------------------------------------
 Initial Conditions: 
 ['dusty', 'cabinet.n.01_1']
@@ -52,7 +52,6 @@ Grasp paper_towel_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('OPEN', 'top_cabinet_24')
-True
 Open top_cabinet_24 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
@@ -61,7 +60,6 @@ Clean-dust top_cabinet_24 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
 Action:  ('OPEN', 'top_cabinet_25')
-True
 Open top_cabinet_25 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2]})
 ************************************************
@@ -94,7 +92,6 @@ Grasp cup_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
 Action:  ('CLOSE', 'top_cabinet_25')
-True
 Close top_cabinet_25 success
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************

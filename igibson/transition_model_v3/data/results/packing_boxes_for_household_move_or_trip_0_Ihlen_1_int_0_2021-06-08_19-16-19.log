@@ -1,18 +1,18 @@
 Addressable Objects:
-t-shirt_0
-carton_1
 room_floor_living_room_0
-dishtowel_0
-plate_2
-plate_0
-carton_0
-hardback_0
-notebook_0
-sweater_0
 plate_3
+hardback_0
+plate_0
+plate_2
+sweater_0
+t-shirt_0
 plate_1
-t-shirt_1
 coffee_table_26
+carton_1
+carton_0
+dishtowel_0
+t-shirt_1
+notebook_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'carton.n.02_1', 'floor.n.01_1']

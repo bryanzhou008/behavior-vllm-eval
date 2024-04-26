@@ -1,14 +1,14 @@
 Addressable Objects:
-plate_114
-countertop_79
-room_floor_kitchen_0
+hamburger_117
 plate_112
-trash_can_119
+plate_114
+plate_113
 hamburger_118
+room_floor_kitchen_0
+countertop_79
+trash_can_119
 plate_115
 hamburger_116
-plate_113
-hamburger_117
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'plate.n.04_1', 'countertop.n.01_1']

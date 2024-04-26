@@ -136,8 +136,8 @@ class EvalEnv:
                                 obj_in_multiplexer.add(sub_sub_obj)
         self.addressable_objects.update(obj_in_multiplexer)
         self.addressable_objects = list(self.addressable_objects)
-        # Filter out the robots.
-        self.addressable_objects = [obj for obj in self.addressable_objects if not isinstance(obj, BaseRobot)]
+        # Filter out the robots and ObjectMultiplexer.
+        self.addressable_objects = [obj for obj in self.addressable_objects if not isinstance(obj, BaseRobot) and not isinstance(obj, ObjectMultiplexer)]
         self.obj_name_to_obj = {obj.name: obj for obj in self.addressable_objects}
         self.obj_name_to_idx = {obj.name: idx for idx, obj in enumerate(self.addressable_objects)}
 

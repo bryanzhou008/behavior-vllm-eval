@@ -1,15 +1,15 @@
 Addressable Objects:
 pasta_0
-spaghetti_sauce_2
-pasta_2
-room_floor_kitchen_0
-pasta_1
-spaghetti_sauce_1
 fridge_61
-countertop_79
+room_floor_kitchen_0
 spaghetti_sauce_0
-mayonnaise_0
+pasta_2
+pasta_1
+spaghetti_sauce_2
+countertop_79
 pasta_3
+mayonnaise_0
+spaghetti_sauce_1
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'pasta.n.02_1', 'countertop.n.01_1']
@@ -27,7 +27,6 @@ Goal Conditions:
 ['forall', 'sauce.n.01', '-', 'sauce.n.01', 'inside', 'sauce.n.01', 'electric_refrigerator.n.01_1']
 ------------Action Execution Begins-------------
 Action:  ('OPEN', 'fridge_61')
-True
 Open fridge_61 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
@@ -96,7 +95,6 @@ Place inside mayonnaise_0 fridge_61 successful
 Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
 ************************************************
 Action:  ('CLOSE', 'fridge_61')
-True
 Close fridge_61 success
 Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
 ************************************************

@@ -1,18 +1,18 @@
 Addressable Objects:
-room_floor_living_room_0
-sofa_25
+wrapped_gift_121
 bow_115
-christmas_tree_decorated_112
-bow_114
 candle_117
+christmas_tree_decorated_112
 candle_118
-wreath_113
+bow_114
+sofa_25
+room_floor_living_room_0
+wrapped_gift_120
 breakfast_table_19
-carton_122
 wrapped_gift_119
 bow_116
-wrapped_gift_121
-wrapped_gift_120
+carton_122
+wreath_113
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'christmas_tree.n.05_1', 'floor.n.01_1']
@@ -40,28 +40,31 @@ Grasp wrapped_gift_120 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_living_room_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B8979B070>
+Place ontop wrapped_gift_120 room_floor_living_room_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'wrapped_gift_119')
-right_hand is already holding wrapped_gift_120
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Grasp wrapped_gift_119 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_living_room_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B8979B070>
+Place ontop wrapped_gift_119 room_floor_living_room_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'wrapped_gift_121')
-right_hand is already holding wrapped_gift_120
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Grasp wrapped_gift_121 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_living_room_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B8979B070>
+Place ontop wrapped_gift_121 room_floor_living_room_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'bow_114')
-right_hand is already holding wrapped_gift_120
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Grasp bow_114 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'sofa_25')
-Place ontop wrapped_gift_120 sofa_25 successful
+Place ontop bow_114 sofa_25 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('LEFT_GRASP', 'bow_115')
@@ -70,41 +73,41 @@ Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'sofa_25')
 Place ontop bow_115 sofa_25 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'bow_116')
 Grasp bow_116 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_19')
 Place ontop bow_116 breakfast_table_19 successful
-Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4]})
+Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4]})
 ************************************************
 Action:  ('LEFT_GRASP', 'wreath_113')
 Grasp wreath_113 with left_hand successful
-Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4]})
+Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'breakfast_table_19')
 Place ontop wreath_113 breakfast_table_19 successful
-Post Effects:  True (False, {'satisfied': [2, 4], 'unsatisfied': [0, 1, 3]})
+Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'candle_118')
 Grasp candle_118 with right_hand successful
-Post Effects:  True (False, {'satisfied': [2, 4], 'unsatisfied': [0, 1, 3]})
+Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'breakfast_table_19')
 Place ontop candle_118 breakfast_table_19 successful
-Post Effects:  True (False, {'satisfied': [2, 4], 'unsatisfied': [0, 1, 3]})
+Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('LEFT_GRASP', 'candle_117')
 Grasp candle_117 with left_hand successful
-Post Effects:  True (False, {'satisfied': [2, 4], 'unsatisfied': [0, 1, 3]})
+Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'breakfast_table_19')
 Place ontop candle_117 breakfast_table_19 successful
-Post Effects:  True (False, {'satisfied': [1, 2, 4], 'unsatisfied': [0, 3]})
+Post Effects:  True (False, {'satisfied': [1, 2, 3, 4], 'unsatisfied': [0]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
-Post Effects:  (False, {'satisfied': [1, 4], 'unsatisfied': [0, 2, 3]})
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+Post Effects:  (False, {'satisfied': [1], 'unsatisfied': [0, 2, 3, 4]})
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}

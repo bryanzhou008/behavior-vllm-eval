@@ -1,15 +1,14 @@
 Addressable Objects:
-apple_103_multiplexer
+backpack_100
+apple_103
 room_floor_bedroom_0
 notebook_101
-headset_104
-bracelet_102
-bed_43
 apple_103_part_0
+headset_104
 sunglass_105
-apple_103
+bracelet_102
 apple_103_part_1
-backpack_100
+bed_43
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'backpack.n.01_1', 'floor.n.01_1']
@@ -49,8 +48,9 @@ Action:  ('LEFT_PLACE_INSIDE', 'backpack_100')
 backpack_100 is closed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
-Action:  ('LEFT_GRASP', 'apple_103_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021BF6185C40>
+Action:  ('LEFT_GRASP', 'apple_103')
+left_hand is already holding notebook_101
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
 Action:  ('LEFT_PLACE_INSIDE', 'backpack_100')
 backpack_100 is closed
@@ -73,9 +73,10 @@ backpack_100 is closed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bedroom_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B88FC4850>
+Place ontop backpack_100 room_floor_bedroom_0 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
-Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+Post Effects:  (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

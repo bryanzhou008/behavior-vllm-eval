@@ -19,9 +19,9 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\bringing_in_wood_0_Benevolence_1_int_0_2021-09-15_18-42-25.json",
-        "all_action_execution_true": false,
-        "unknown_execution_error": true,
-        "all_condition_satisfied": false
+        "all_action_execution_true": true,
+        "unknown_execution_error": false,
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\brushing_lint_off_clothing_0_Pomaria_2_int_0_2021-06-04_17-41-56.json",
@@ -55,8 +55,8 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\cleaning_bedroom_0_Benevolence_2_int_0_2021-06-06_18-10-59.json",
-        "all_action_execution_true": false,
-        "unknown_execution_error": true,
+        "all_action_execution_true": true,
+        "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
     {
@@ -191,8 +191,8 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\filling_a_Christmas_stocking_0_Rs_int_0_2021-06-04_18-47-42.json",
-        "all_action_execution_true": false,
-        "unknown_execution_error": true,
+        "all_action_execution_true": true,
+        "unknown_execution_error": false,
         "all_condition_satisfied": true
     },
     {
@@ -210,7 +210,7 @@
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\installing_a_modem_0_Beechwood_0_int_0_2021-10-25_20-28-55.json",
         "all_action_execution_true": true,
-        "unknown_execution_error": true,
+        "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
     {
@@ -222,20 +222,20 @@
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\installing_a_scanner_0_Pomaria_0_int_0_2021-06-08_18-34-59.json",
         "all_action_execution_true": true,
-        "unknown_execution_error": true,
+        "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\laying_tile_floors_0_Beechwood_0_int_0_2021-10-26_17-26-23.json",
-        "all_action_execution_true": false,
-        "unknown_execution_error": true,
-        "all_condition_satisfied": false
+        "all_action_execution_true": true,
+        "unknown_execution_error": false,
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\laying_wood_floors_0_Pomaria_1_int_0_2021-10-25_20-46-59.json",
-        "all_action_execution_true": false,
-        "unknown_execution_error": true,
-        "all_condition_satisfied": false
+        "all_action_execution_true": true,
+        "unknown_execution_error": false,
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\loading_the_dishwasher_0_Benevolence_1_int_0_2021-10-20_06-10-42.json",
@@ -249,14 +249,14 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\locking_every_window_0_Merom_1_int_0_2021-11-01_14-51-10.json",
-        "all_action_execution_true": false,
+        "all_action_execution_true": true,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\making_tea_0_Wainscott_0_int_0_2021-10-26_12-49-48.json",
         "all_action_execution_true": false,
-        "unknown_execution_error": true,
+        "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
     {
@@ -265,8 +265,8 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\moving_boxes_to_storage_0_Merom_0_int_0_2021-06-11_20-04-35.json",
-        "all_action_execution_true": false,
-        "unknown_execution_error": true,
+        "all_action_execution_true": true,
+        "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
     {
@@ -302,13 +302,13 @@
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\packing_adult_s_bags_0_Ihlen_1_int_0_2021-10-26_09-54-15.json",
         "all_action_execution_true": false,
-        "unknown_execution_error": true,
+        "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\packing_bags_or_suitcase_0_Merom_1_int_0_2021-10-26_10-04-07.json",
         "all_action_execution_true": false,
-        "unknown_execution_error": true,
+        "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
     {
@@ -326,26 +326,26 @@
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\packing_child_s_bag_0_Beechwood_1_int_0_2021-10-26_10-33-11.json",
         "all_action_execution_true": false,
-        "unknown_execution_error": true,
+        "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\packing_food_for_work_0_Ihlen_1_int_0_2021-06-08_19-36-15.json",
         "all_action_execution_true": false,
-        "unknown_execution_error": true,
-        "all_condition_satisfied": false
+        "unknown_execution_error": false,
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\packing_lunches_0_Beechwood_0_int_0_2021-10-26_11-03-14.json",
-        "all_action_execution_true": false,
-        "unknown_execution_error": true,
+        "all_action_execution_true": true,
+        "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\packing_picnics_0_Wainscott_0_int_0_2021-10-26_11-07-29.json",
         "all_action_execution_true": false,
-        "unknown_execution_error": true,
-        "all_condition_satisfied": false
+        "unknown_execution_error": false,
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\picking_up_take-out_food_0_Ihlen_1_int_0_2021-06-10_22-09-43.json",
@@ -378,13 +378,13 @@
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\preparing_a_shower_for_child_0_Ihlen_0_int_0_2021-10-25_21-36-25.json",
         "all_action_execution_true": false,
-        "unknown_execution_error": true,
+        "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\preparing_salad_0_Pomaria_1_int_1_2021-10-26_14-17-24.json",
         "all_action_execution_true": false,
-        "unknown_execution_error": true,
+        "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
     {
@@ -395,8 +395,8 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\putting_away_Christmas_decorations_0_Wainscott_0_int_0_2021-06-06_17-03-25.json",
-        "all_action_execution_true": false,
-        "unknown_execution_error": true,
+        "all_action_execution_true": true,
+        "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
     {
@@ -425,8 +425,8 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\putting_up_Christmas_decorations_inside_0_Ihlen_1_int_0_2021-06-03_14-27-09.json",
-        "all_action_execution_true": false,
-        "unknown_execution_error": true,
+        "all_action_execution_true": true,
+        "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
     {
@@ -456,7 +456,7 @@
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\setting_mousetraps_0_Beechwood_1_int_0_2021-10-26_13-53-26.json",
         "all_action_execution_true": false,
-        "unknown_execution_error": true,
+        "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
     {
@@ -473,8 +473,8 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\sorting_groceries_0_Wainscott_0_int_0_2021-10-26_13-36-01.json",
-        "all_action_execution_true": false,
-        "unknown_execution_error": true,
+        "all_action_execution_true": true,
+        "unknown_execution_error": false,
         "all_condition_satisfied": false
     },
     {
@@ -549,8 +549,8 @@
     },
     {
         "total_run": 74,
-        "all_action_execution_true": 42,
-        "unknown_execution_error": 25,
-        "all_condition_satisfied": 31
+        "all_action_execution_true": 53,
+        "unknown_execution_error": 4,
+        "all_condition_satisfied": 37
     }
 ]

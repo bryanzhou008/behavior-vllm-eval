@@ -1,12 +1,12 @@
 Addressable Objects:
-sock_0
-sofa_10
-notebook_0
-cologne_0
-sock_1
 toothbrush_0
 room_floor_living_room_0
+notebook_0
+sofa_10
+cologne_0
+sock_1
 carton_0
+sock_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'carton.n.02_1', 'floor.n.01_1']

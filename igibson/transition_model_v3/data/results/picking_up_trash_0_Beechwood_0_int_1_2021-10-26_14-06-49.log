@@ -1,12 +1,12 @@
 Addressable Objects:
-pop_120
-sticky_note_119
-room_floor_kitchen_0
 sticky_note_117
 trash_can_116
-room_floor_living_room_0
-pop_121
 sticky_note_118
+pop_121
+room_floor_kitchen_0
+sticky_note_119
+pop_120
+room_floor_living_room_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'ashcan.n.01_1', 'floor.n.01_2']

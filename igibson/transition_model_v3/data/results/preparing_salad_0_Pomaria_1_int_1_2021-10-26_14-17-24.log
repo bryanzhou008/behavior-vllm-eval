@@ -1,32 +1,28 @@
 Addressable Objects:
-radish_85
-apple_80_part_1
-tomato_82_part_1
-apple_81_multiplexer
-apple_81
-sink_37
-plate_87
-lettuce_79
-tomato_83_multiplexer
-top_cabinet_27
-apple_81_part_0
-tomato_82_part_0
-tomato_83_part_1
-apple_80_multiplexer
-radish_84
-countertop_31
-carving_knife_86
-tomato_82_multiplexer
 room_floor_kitchen_0
-apple_80_part_0
+apple_81_part_0
 apple_80
 lettuce_78
-plate_88
-fridge_20
-tomato_83_part_0
-tomato_83
-apple_81_part_1
+apple_80_part_1
 tomato_82
+apple_80_part_0
+plate_88
+tomato_83_part_1
+tomato_82_part_0
+apple_81
+tomato_83_part_0
+sink_37
+lettuce_79
+tomato_83
+countertop_31
+fridge_20
+tomato_82_part_1
+radish_85
+plate_87
+radish_84
+top_cabinet_27
+apple_81_part_1
+carving_knife_86
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'lettuce.n.03_1', 'countertop.n.01_1']
@@ -67,37 +63,38 @@ right_hand is empty
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('OPEN', 'fridge_20')
-True
 Open fridge_20 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('RIGHT_GRASP', 'tomato_83_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021B92FE0D60>
-************************************************
-Action:  ('LEFT_GRASP', 'tomato_82_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021C578C4AF0>
-************************************************
-Action:  ('CLOSE', 'fridge_20')
-True
-Close fridge_20 success
+Action:  ('RIGHT_GRASP', 'tomato_83')
+Grasp tomato_83 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('LEFT_PLACE_ONTOP', 'countertop_31')
-left_hand is empty
+Action:  ('LEFT_GRASP', 'tomato_82')
+Grasp tomato_82 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('CLOSE', 'fridge_20')
+Both hands full, release one object first to close the object
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('LEFT_PLACE_ONTOP', 'countertop_31')
+Place ontop tomato_82 countertop_31 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'countertop_31')
-right_hand is empty
+Place ontop tomato_83 countertop_31 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
+************************************************
+Action:  ('UNFREEZE', 'tomato_83')
+Unfreeze failed, object is already unfreezeed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
-Action:  ('UNFREEZE', 'tomato_83_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021B92FE0D60>
-************************************************
-Action:  ('UNFREEZE', 'tomato_82_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021C578C4AF0>
+Action:  ('UNFREEZE', 'tomato_82')
+Unfreeze failed, object is already unfreezeed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  ('OPEN', 'top_cabinet_27')
-True
 Open top_cabinet_27 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
@@ -137,47 +134,55 @@ Action:  ('LEFT_PLACE_ONTOP', 'plate_87')
 Place ontop lettuce_79 plate_87 successful
 Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'apple_80_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021B8E226610>
+Action:  ('LEFT_GRASP', 'apple_80')
+Grasp apple_80 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'plate_88')
-left_hand is empty
-Post Effects:  False (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
+Place ontop apple_80 plate_88 successful
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('SLICE', 'apple_80_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021B8E226610>
+Action:  ('SLICE', 'apple_80')
+Slice apple_80 success
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'apple_81_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021C578B44F0>
+Action:  ('LEFT_GRASP', 'apple_81')
+Grasp apple_81 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'plate_87')
-left_hand is empty
-Post Effects:  False (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
+Place ontop apple_81 plate_87 successful
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('SLICE', 'apple_81_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021C578B44F0>
+Action:  ('SLICE', 'apple_81')
+Slice apple_81 success
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'tomato_83_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021B92FE0D60>
+Action:  ('LEFT_GRASP', 'tomato_83')
+Grasp tomato_83 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'plate_88')
-left_hand is empty
-Post Effects:  False (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
+Place ontop tomato_83 plate_88 successful
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('SLICE', 'tomato_83_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021B92FE0D60>
+Action:  ('SLICE', 'tomato_83')
+Slice tomato_83 success
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('LEFT_GRASP', 'tomato_82_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021C578C4AF0>
+Action:  ('LEFT_GRASP', 'tomato_82')
+Grasp tomato_82 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'plate_87')
-left_hand is empty
-Post Effects:  False (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
+Place ontop tomato_82 plate_87 successful
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
-Action:  ('SLICE', 'tomato_82_multiplexer')
-Execution Error: <igibson.objects.multi_object_wrappers.ObjectMultiplexer object at 0x0000021C578C4AF0>
+Action:  ('SLICE', 'tomato_82')
+Slice tomato_82 success
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
 Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

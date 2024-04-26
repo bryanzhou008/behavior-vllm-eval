@@ -1,14 +1,14 @@
 Addressable Objects:
-chip_1
-room_floor_kitchen_0
-olive_oil_0
-countertop_26
-oatmeal_0
 bottom_cabinet_41
-oatmeal_1
-olive_oil_1
+countertop_26
 sugar_jar_1
+olive_oil_0
+room_floor_kitchen_0
+oatmeal_0
 chip_0
+chip_1
+olive_oil_1
+oatmeal_1
 sugar_jar_0
 -----------------------------------------------
 Initial Conditions: 
@@ -33,7 +33,6 @@ Goal Conditions:
 ['inside', 'sugar.n.01_2', 'cabinet.n.01_1']
 ------------Action Execution Begins-------------
 Action:  ('OPEN', 'bottom_cabinet_41')
-True
 Open bottom_cabinet_41 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7]})
 ************************************************

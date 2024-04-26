@@ -1,12 +1,12 @@
 Addressable Objects:
+room_floor_living_room_0
 plywood_79
-hammer_82
+saw_83
+plywood_81
 plywood_80
 room_floor_kitchen_0
 plywood_78
-room_floor_living_room_0
-saw_83
-plywood_81
+hammer_82
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'plywood.n.01_1', 'floor.n.01_1']
@@ -30,26 +30,28 @@ Grasp plywood_80 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'room_floor_living_room_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B924CFD90>
+Place ontop plywood_80 room_floor_living_room_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_living_room_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B924CFD90>
+Place ontop plywood_81 room_floor_living_room_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'plywood_78')
-right_hand is already holding plywood_81
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+Grasp plywood_78 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('LEFT_GRASP', 'plywood_79')
-left_hand is already holding plywood_80
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+Grasp plywood_79 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'room_floor_living_room_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B924CFD90>
+Place ontop plywood_79 room_floor_living_room_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_living_room_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B924CFD90>
+Place ontop plywood_78 room_floor_living_room_0 successful
+Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1]})
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

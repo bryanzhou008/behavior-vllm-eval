@@ -1,21 +1,21 @@
 Addressable Objects:
+bottom_cabinet_25
+scrub_brush_109
+trash_can_112
 hardback_104
 highlighter_106
-notebook_102
-bottom_cabinet_25
-bottom_cabinet_24
-bucket_113
-highlighter_107
-trash_can_112
 room_floor_bedroom_0
-rag_110
-bottom_cabinet_28
 hardback_103
+highlighter_107
+bottom_cabinet_28
 detergent_111
+bottom_cabinet_24
 pen_105
+notebook_102
 bed_58
 screwdriver_108
-scrub_brush_109
+bucket_113
+rag_110
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'book.n.02_1', 'cabinet.n.01_1']
@@ -42,7 +42,6 @@ Goal Conditions:
 ['inside', 'pen.n.01_1', 'bucket.n.01_1']
 ------------Action Execution Begins-------------
 Action:  ('OPEN', 'bottom_cabinet_25')
-True
 Open bottom_cabinet_25 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
@@ -59,12 +58,10 @@ rag_110 is inside closed bottom_cabinet_28
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('CLOSE', 'bottom_cabinet_25')
-True
 Close bottom_cabinet_25 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('OPEN', 'bottom_cabinet_25')
-True
 Open bottom_cabinet_25 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
@@ -81,12 +78,10 @@ left_hand is empty
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('CLOSE', 'bottom_cabinet_25')
-True
 Close bottom_cabinet_25 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  ('OPEN', 'bottom_cabinet_28')
-True
 Open bottom_cabinet_28 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************

@@ -1,9 +1,9 @@
 Addressable Objects:
 alarm_0
-alarm_1
 breakfast_table_20
-coffee_table_27
 room_floor_living_room_0
+alarm_1
+coffee_table_27
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'alarm.n.02_1', 'table.n.02_2']

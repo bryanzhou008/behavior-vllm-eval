@@ -1,10 +1,10 @@
 Addressable Objects:
 tile_0
-tile_2
+tile_3
 tile_1
+tile_2
 room_floor_bathroom_0
 room_floor_corridor_0
-tile_3
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'tile.n.01_1', 'floor.n.01_1']
@@ -25,26 +25,28 @@ Grasp tile_2 with left_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'room_floor_bathroom_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B9E54FB80>
+Place ontop tile_2 room_floor_bathroom_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bathroom_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B9E54FB80>
+Place ontop tile_3 room_floor_bathroom_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
 Action:  ('RIGHT_GRASP', 'tile_1')
-right_hand is already holding tile_3
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0]})
+Grasp tile_1 with right_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
 Action:  ('LEFT_GRASP', 'tile_0')
-left_hand is already holding tile_2
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0]})
+Grasp tile_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
 Action:  ('LEFT_PLACE_ONTOP', 'room_floor_bathroom_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B9E54FB80>
+Place ontop tile_0 room_floor_bathroom_0 successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0]})
 ************************************************
 Action:  ('RIGHT_PLACE_ONTOP', 'room_floor_bathroom_0')
-Execution Error: <igibson.object_states.on_floor.RoomFloor object at 0x0000021B9E54FB80>
+Place ontop tile_1 room_floor_bathroom_0 successful
+Post Effects:  True (True, {'satisfied': [0], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0]})
-{'all_action_execution_true': False, 'unknown_execution_error': True, 'all_condition_satisfied': False}
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}
