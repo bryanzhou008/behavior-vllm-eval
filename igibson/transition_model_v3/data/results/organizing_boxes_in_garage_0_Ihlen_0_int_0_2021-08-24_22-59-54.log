@@ -1,15 +1,15 @@
 Addressable Objects:
-shelf_16
-plate_2
-bottom_cabinet_15
-room_floor_garage_0
 carton_1
+shelf_16
+room_floor_garage_0
+bottom_cabinet_15
+carton_0
+saucepan_0
 plate_0
 ball_1
-carton_0
-plate_1
 ball_0
-saucepan_0
+plate_1
+plate_2
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'carton.n.02_1', 'floor.n.01_1']
@@ -51,6 +51,7 @@ Place inside saucepan_0 carton_1 successful
 Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
 ************************************************
 Action:  RIGHT_GRASP plate_1
+Teleport plate_2 ONTOP plate_1 successful: True
 Grasp plate_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
 ************************************************

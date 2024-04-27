@@ -1,13 +1,13 @@
 Addressable Objects:
-bath_towel_0
 bowl_1
-bottom_cabinet_no_top_16
-bowl_0
-bottom_cabinet_no_top_15
 room_floor_kitchen_0
-spoon_1
-sink_19
+bottom_cabinet_no_top_15
 spoon_0
+spoon_1
+bottom_cabinet_no_top_16
+bath_towel_0
+sink_19
+bowl_0
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'bowl.n.01_1', 'cabinet.n.01_1']

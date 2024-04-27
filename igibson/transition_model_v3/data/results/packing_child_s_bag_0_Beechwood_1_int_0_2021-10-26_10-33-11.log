@@ -1,14 +1,14 @@
 Addressable Objects:
-backpack_100
-notebook_101
-room_floor_bedroom_0
-sunglass_105
-apple_103
-apple_103_part_1
 bracelet_102
-bed_43
-apple_103_part_0
+apple_103_part_1
 headset_104
+apple_103
+backpack_100
+apple_103_part_0
+notebook_101
+sunglass_105
+bed_43
+room_floor_bedroom_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'backpack.n.01_1', 'floor.n.01_1']

@@ -1,11 +1,11 @@
 Addressable Objects:
 sweater_38
-scrub_brush_40
-bed_11
 sweater_39
+sweater_36
+scrub_brush_40
 room_floor_bedroom_0
 sweater_37
-sweater_36
+bed_11
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'sweater.n.01_1', 'floor.n.01_1']

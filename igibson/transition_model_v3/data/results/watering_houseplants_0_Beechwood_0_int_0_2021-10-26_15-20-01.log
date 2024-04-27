@@ -1,12 +1,12 @@
 Addressable Objects:
-countertop_56
-pot_plant_1
-sink_64
-room_floor_kitchen_0
 breakfast_table_16
-room_floor_dining_room_0
+pot_plant_1
 pot_plant_0
 pot_plant_2
+room_floor_dining_room_0
+countertop_56
+sink_64
+room_floor_kitchen_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'pot_plant.n.01_1', 'floor.n.01_1']

@@ -1,7 +1,7 @@
 Addressable Objects:
 room_floor_home_office_0
-printer_0
 breakfast_table_3
+printer_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'printer.n.03_1', 'floor.n.01_1']

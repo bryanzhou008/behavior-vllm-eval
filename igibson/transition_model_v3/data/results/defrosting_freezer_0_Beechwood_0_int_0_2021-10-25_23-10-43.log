@@ -1,16 +1,16 @@
 Addressable Objects:
 countertop_56
 pea_0
+paper_towel_0
+fridge_57
 rag_0
 pear_0
-bucket_0
-pomelo_0
-dustpan_0
-paper_towel_0
-sink_64
 scraper_0
-fridge_57
+dustpan_0
+sink_64
+pomelo_0
 room_floor_kitchen_0
+bucket_0
 -----------------------------------------------
 Initial Conditions: 
 ['not', 'stained', 'sink.n.01_1']

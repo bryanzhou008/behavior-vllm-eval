@@ -19,9 +19,7 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\bringing_in_wood_0_Benevolence_1_int_0_2021-09-15_18-42-25.json",
-        "all_action_execution_true": true,
-        "unknown_execution_error": false,
-        "all_condition_satisfied": true
+        "error": ""
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\brushing_lint_off_clothing_0_Pomaria_2_int_0_2021-06-04_17-41-56.json",
@@ -377,9 +375,9 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\preparing_a_shower_for_child_0_Ihlen_0_int_0_2021-10-25_21-36-25.json",
-        "all_action_execution_true": false,
+        "all_action_execution_true": true,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\preparing_salad_0_Pomaria_1_int_1_2021-10-26_14-17-24.json",
@@ -390,20 +388,20 @@
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\preserving_food_0_Rs_int_0_2021-08-25_15-53-33.json",
         "all_action_execution_true": false,
-        "unknown_execution_error": true,
-        "all_condition_satisfied": false
+        "unknown_execution_error": false,
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\putting_away_Christmas_decorations_0_Wainscott_0_int_0_2021-06-06_17-03-25.json",
         "all_action_execution_true": false,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\putting_away_Halloween_decorations_0_Rs_int_0_2021-10-25_22-42-17.json",
         "all_action_execution_true": false,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\putting_away_toys_0_Ihlen_0_int_0_2021-10-25_22-47-44.json",
@@ -427,37 +425,37 @@
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\putting_up_Christmas_decorations_inside_0_Ihlen_1_int_0_2021-06-03_14-27-09.json",
         "all_action_execution_true": true,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\re-shelving_library_books_0_Rs_int_0_2021-10-25_21-22-26.json",
         "all_action_execution_true": true,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\rearranging_furniture_0_Pomaria_2_int_1_2021-06-22_16-39-21.json",
-        "all_action_execution_true": false,
-        "unknown_execution_error": true,
-        "all_condition_satisfied": false
+        "all_action_execution_true": true,
+        "unknown_execution_error": false,
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\serving_a_meal_0_Merom_1_int_0_2021-10-26_00-34-17.json",
         "all_action_execution_true": false,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\serving_hors_d_oeuvres_0_Wainscott_0_int_0_2021-10-26_14-00-22.json",
         "all_action_execution_true": false,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\setting_mousetraps_0_Beechwood_1_int_0_2021-10-26_13-53-26.json",
         "all_action_execution_true": true,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\setting_up_candles_0_Wainscott_0_int_0_2021-10-26_13-40-51.json",
@@ -475,13 +473,13 @@
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\sorting_groceries_0_Wainscott_0_int_0_2021-10-26_13-36-01.json",
         "all_action_execution_true": false,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\sorting_mail_0_Wainscott_0_int_1_2021-10-26_14-38-16.json",
         "all_action_execution_true": true,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\storing_food_0_Rs_int_0_2021-10-25_21-27-36.json",
@@ -499,7 +497,7 @@
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\thawing_frozen_food_0_Pomaria_1_int_0_2021-10-26_13-10-33.json",
         "all_action_execution_true": false,
         "unknown_execution_error": false,
-        "all_condition_satisfied": false
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\throwing_away_leftovers_0_Ihlen_1_int_0_2021-06-04_19-52-40.json",
@@ -548,9 +546,9 @@
         "all_condition_satisfied": true
     },
     {
-        "total_run": 74,
-        "all_action_execution_true": 31,
-        "unknown_execution_error": 2,
-        "all_condition_satisfied": 61
+        "total_run": 73,
+        "all_action_execution_true": 32,
+        "unknown_execution_error": 0,
+        "all_condition_satisfied": 73
     }
 ]

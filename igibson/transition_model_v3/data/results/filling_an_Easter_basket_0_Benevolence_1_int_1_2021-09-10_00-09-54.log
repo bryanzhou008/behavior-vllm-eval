@@ -1,21 +1,21 @@
 Addressable Objects:
-lollipop_0
-basket_1
-notebook_0
 bracelet_0
-fridge_27
-bottom_cabinet_no_top_15
-bow_1
-ball_0
-bow_0
-countertop_18
-notebook_1
-egg_0
-egg_1
-bottom_cabinet_no_top_16
-lollipop_1
-room_floor_kitchen_0
+lollipop_0
 basket_0
+fridge_27
+basket_1
+ball_0
+bow_1
+countertop_18
+lollipop_1
+notebook_1
+bow_0
+egg_1
+notebook_0
+room_floor_kitchen_0
+egg_0
+bottom_cabinet_no_top_16
+bottom_cabinet_no_top_15
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'basket.n.01_1', 'countertop.n.01_1']

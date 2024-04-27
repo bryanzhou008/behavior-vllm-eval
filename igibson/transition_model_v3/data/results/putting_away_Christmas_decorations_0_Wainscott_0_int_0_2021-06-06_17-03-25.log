@@ -1,14 +1,14 @@
 Addressable Objects:
-bow_2
+ribbon_0
+bow_1
 wreath_0
+bottom_cabinet_79
+room_floor_living_room_0
+bow_0
 wreath_1
 ribbon_1
+bow_2
 ribbon_2
-bow_0
-room_floor_living_room_0
-bottom_cabinet_79
-bow_1
-ribbon_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'wreath.n.01_1', 'floor.n.01_1']
@@ -58,46 +58,41 @@ Action:  RIGHT_GRASP wreath_0
 Grasp wreath_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  RIGHT_PLACE_ONTOP room_floor_living_room_0
-Place ontop wreath_0 room_floor_living_room_0 successful
+Action:  RIGHT_PLACE_NEXTTO bottom_cabinet_79
+Place next to wreath_0 bottom_cabinet_79 successful
 Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
 ************************************************
 Action:  RIGHT_GRASP wreath_1
 Grasp wreath_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  RIGHT_PLACE_ONTOP room_floor_living_room_0
-Place ontop wreath_1 room_floor_living_room_0 successful
-Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
+Action:  RIGHT_PLACE_NEXTTO bottom_cabinet_79
+Place next to wreath_1 bottom_cabinet_79 successful
+Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
 Action:  RIGHT_GRASP bow_0
 Grasp bow_0 with right_hand successful
-Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
+Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  RIGHT_PLACE_ONTOP room_floor_living_room_0
-Place ontop bow_0 room_floor_living_room_0 successful
-Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
+Action:  RIGHT_PLACE_NEXTTO bottom_cabinet_79
+Place next to bow_0 bottom_cabinet_79 successful
+Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
 Action:  RIGHT_GRASP bow_1
 Grasp bow_1 with right_hand successful
-Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
+Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  RIGHT_PLACE_ONTOP room_floor_living_room_0
-Place ontop bow_1 room_floor_living_room_0 successful
-Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
+Action:  RIGHT_PLACE_NEXTTO bottom_cabinet_79
+Place next to bow_1 bottom_cabinet_79 successful
+Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
 Action:  RIGHT_GRASP bow_2
 Grasp bow_2 with right_hand successful
-Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
+Post Effects:  True (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
 ************************************************
-Action:  RIGHT_PLACE_ONTOP room_floor_living_room_0
-Place ontop bow_2 room_floor_living_room_0 successful
-Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
+Action:  RIGHT_PLACE_NEXTTO bottom_cabinet_79
+Place next to bow_2 bottom_cabinet_79 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Teleport ribbon_0 INSIDE bottom_cabinet_79 successful: True
-Teleport ribbon_1 INSIDE bottom_cabinet_79 successful: True
-Teleport ribbon_2 INSIDE bottom_cabinet_79 successful: True
-Post Effects:  (False, {'satisfied': [2], 'unsatisfied': [0, 1]})
-{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

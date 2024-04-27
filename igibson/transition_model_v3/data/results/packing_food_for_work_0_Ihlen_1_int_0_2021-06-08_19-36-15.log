@@ -1,16 +1,16 @@
 Addressable Objects:
-fridge_61
-countertop_81
-carton_0
-door_91
+apple_0_part_1
 hamburger_0
+apple_0
+carton_0
+fridge_61
 room_floor_kitchen_0
+door_91
+countertop_81
+hamburger_1
+juice_0
 top_cabinet_62
 apple_0_part_0
-juice_0
-apple_0
-hamburger_1
-apple_0_part_1
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'carton.n.02_1', 'floor.n.01_1']

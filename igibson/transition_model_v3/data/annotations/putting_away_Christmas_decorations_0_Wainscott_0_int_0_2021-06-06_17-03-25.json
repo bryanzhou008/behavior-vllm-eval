@@ -32,39 +32,39 @@
         "object": "wreath_0"
     },
     {
-        "action": "RIGHT_PLACE_ONTOP",
-        "object": "room_floor_living_room_0"
+        "action": "RIGHT_PLACE_NEXTTO",
+        "object": "bottom_cabinet_79"
     },
     {
         "action": "RIGHT_GRASP",
         "object": "wreath_1"
     },
     {
-        "action": "RIGHT_PLACE_ONTOP",
-        "object": "room_floor_living_room_0"
+        "action": "RIGHT_PLACE_NEXTTO",
+        "object": "bottom_cabinet_79"
     },
     {
         "action": "RIGHT_GRASP",
         "object": "bow_0"
     },
     {
-        "action": "RIGHT_PLACE_ONTOP",
-        "object": "room_floor_living_room_0"
+        "action": "RIGHT_PLACE_NEXTTO",
+        "object": "bottom_cabinet_79"
     },
     {
         "action": "RIGHT_GRASP",
         "object": "bow_1"
     },
     {
-        "action": "RIGHT_PLACE_ONTOP",
-        "object": "room_floor_living_room_0"
+        "action": "RIGHT_PLACE_NEXTTO",
+        "object": "bottom_cabinet_79"
     },
     {
         "action": "RIGHT_GRASP",
         "object": "bow_2"
     },
     {
-        "action": "RIGHT_PLACE_ONTOP",
-        "object": "room_floor_living_room_0"
+        "action": "RIGHT_PLACE_NEXTTO",
+        "object": "bottom_cabinet_79"
     }
 ]

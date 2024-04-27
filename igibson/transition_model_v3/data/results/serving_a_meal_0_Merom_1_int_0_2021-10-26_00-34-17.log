@@ -1,30 +1,30 @@
 Addressable Objects:
-soup_0
-cookie_0
-water_0
-toasting_fork_0
-chicken_1
 cupcake_0
-soup_1
-plate_0
-spoon_1
-room_floor_kitchen_0
-bottom_cabinet_50
-stove_59
-fridge_57
-tablefork_0
-chicken_0
-muffin_0
 carving_knife_0
-salad_0
-breakfast_table_20
-table_knife_0
-water_1
-bottom_cabinet_49
-bagel_0
-salad_1
+tablefork_0
 plate_1
+chicken_1
+spoon_1
+salad_0
+water_0
+salad_1
+bottom_cabinet_50
 spoon_0
+chicken_0
+soup_0
+fridge_57
+toasting_fork_0
+bottom_cabinet_49
+cookie_0
+bagel_0
+water_1
+breakfast_table_20
+muffin_0
+table_knife_0
+plate_0
+soup_1
+room_floor_kitchen_0
+stove_59
 -----------------------------------------------
 Initial Conditions: 
 ['cooked', 'chicken.n.01_1']
@@ -70,191 +70,173 @@ Action:  OPEN bottom_cabinet_49
 Open bottom_cabinet_49 failed
 Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
 ************************************************
+Action:  OPEN bottom_cabinet_50
+Open bottom_cabinet_50 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
+************************************************
 Action:  RIGHT_GRASP plate_1
 Grasp plate_1 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
 ************************************************
 Action:  LEFT_GRASP plate_0
-plate_0 is inside closed bottom_cabinet_50
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
+Grasp plate_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
 ************************************************
 Action:  RIGHT_PLACE_ONTOP breakfast_table_20
 Place ontop plate_1 breakfast_table_20 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
 ************************************************
 Action:  LEFT_PLACE_ONTOP breakfast_table_20
-left_hand is empty
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
+Place ontop plate_0 breakfast_table_20 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5, 6, 7, 8]})
 ************************************************
 Action:  RIGHT_GRASP chicken_0
 Grasp chicken_0 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5, 6, 7, 8]})
 ************************************************
 Action:  LEFT_GRASP chicken_1
 Grasp chicken_1 with left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5, 6, 7, 8]})
 ************************************************
 Action:  RIGHT_PLACE_ONTOP plate_0
-plate_0 is inside closed bottom_cabinet_50
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
+Place ontop chicken_0 plate_0 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5, 6, 7, 8]})
 ************************************************
 Action:  LEFT_PLACE_ONTOP plate_1
 Place ontop chicken_1 plate_1 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
-************************************************
-Action:  LEFT_GRASP cupcake_0
-Grasp cupcake_0 with left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
-************************************************
-Action:  RIGHT_GRASP muffin_0
-right_hand is already holding chicken_0
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
-************************************************
-Action:  LEFT_PLACE_ONTOP breakfast_table_20
-Place ontop cupcake_0 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
-************************************************
-Action:  RIGHT_PLACE_ONTOP breakfast_table_20
-Place ontop chicken_0 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 5], 'unsatisfied': [1, 2, 3, 4, 6, 7, 8]})
 ************************************************
 Action:  LEFT_GRASP spoon_0
 Grasp spoon_0 with left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 5], 'unsatisfied': [1, 2, 3, 4, 6, 7, 8]})
 ************************************************
 Action:  RIGHT_GRASP soup_1
 Grasp soup_1 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
-************************************************
-Action:  LEFT_PLACE_ONTOP breakfast_table_20
-Place ontop spoon_0 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 5], 'unsatisfied': [1, 2, 3, 4, 6, 7, 8]})
 ************************************************
 Action:  RIGHT_PLACE_ONTOP breakfast_table_20
 Place ontop soup_1 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 5], 'unsatisfied': [1, 2, 3, 4, 6, 7, 8]})
 ************************************************
-Action:  LEFT_GRASP spoon_1
-Grasp spoon_1 with left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
+Action:  LEFT_PLACE_NEXTTO soup_1
+Place next to spoon_0 soup_1 successful
+Post Effects:  True (False, {'satisfied': [0, 5], 'unsatisfied': [1, 2, 3, 4, 6, 7, 8]})
 ************************************************
 Action:  RIGHT_GRASP table_knife_0
 Grasp table_knife_0 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
-************************************************
-Action:  LEFT_PLACE_ONTOP breakfast_table_20
-Place ontop spoon_1 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 5], 'unsatisfied': [1, 2, 3, 4, 6, 7, 8]})
 ************************************************
 Action:  RIGHT_PLACE_ONTOP breakfast_table_20
 Place ontop table_knife_0 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 5], 'unsatisfied': [1, 2, 3, 4, 6, 7, 8]})
 ************************************************
 Action:  LEFT_GRASP tablefork_0
 Grasp tablefork_0 with left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 5], 'unsatisfied': [1, 2, 3, 4, 6, 7, 8]})
 ************************************************
 Action:  RIGHT_GRASP toasting_fork_0
 Grasp toasting_fork_0 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 5], 'unsatisfied': [1, 2, 3, 4, 6, 7, 8]})
 ************************************************
 Action:  LEFT_PLACE_ONTOP breakfast_table_20
 Place ontop tablefork_0 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 5], 'unsatisfied': [1, 2, 3, 4, 6, 7, 8]})
 ************************************************
 Action:  RIGHT_PLACE_ONTOP breakfast_table_20
 Place ontop toasting_fork_0 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 2, 5], 'unsatisfied': [1, 3, 4, 6, 7, 8]})
 ************************************************
 Action:  LEFT_GRASP carving_knife_0
 Grasp carving_knife_0 with left_hand successful
-Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 2, 5], 'unsatisfied': [1, 3, 4, 6, 7, 8]})
 ************************************************
 Action:  RIGHT_GRASP water_0
 Grasp water_0 with right_hand successful
-Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 2, 5], 'unsatisfied': [1, 3, 4, 6, 7, 8]})
 ************************************************
 Action:  LEFT_PLACE_ONTOP breakfast_table_20
 Place ontop carving_knife_0 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [1, 2], 'unsatisfied': [0, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 5], 'unsatisfied': [3, 4, 6, 7, 8]})
 ************************************************
 Action:  RIGHT_PLACE_ONTOP breakfast_table_20
 Place ontop water_0 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [1, 2], 'unsatisfied': [0, 3, 4, 5, 6, 7, 8]})
-************************************************
-Action:  LEFT_GRASP bagel_0
-Grasp bagel_0 with left_hand successful
-Post Effects:  True (False, {'satisfied': [1, 2], 'unsatisfied': [0, 3, 4, 5, 6, 7, 8]})
-************************************************
-Action:  RIGHT_GRASP cookie_0
-Grasp cookie_0 with right_hand successful
-Post Effects:  True (False, {'satisfied': [1, 2], 'unsatisfied': [0, 3, 4, 5, 6, 7, 8]})
-************************************************
-Action:  LEFT_PLACE_ONTOP breakfast_table_20
-Place ontop bagel_0 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [1, 2], 'unsatisfied': [0, 3, 4, 5, 6, 7, 8]})
-************************************************
-Action:  RIGHT_PLACE_ONTOP breakfast_table_20
-Place ontop cookie_0 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [1, 2], 'unsatisfied': [0, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 5], 'unsatisfied': [3, 4, 6, 7, 8]})
 ************************************************
 Action:  LEFT_GRASP water_1
 Grasp water_1 with left_hand successful
-Post Effects:  True (False, {'satisfied': [1, 2], 'unsatisfied': [0, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 5], 'unsatisfied': [3, 4, 6, 7, 8]})
 ************************************************
 Action:  RIGHT_GRASP salad_0
 Grasp salad_0 with right_hand successful
-Post Effects:  True (False, {'satisfied': [1, 2], 'unsatisfied': [0, 3, 4, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 5], 'unsatisfied': [3, 4, 6, 7, 8]})
 ************************************************
 Action:  LEFT_PLACE_ONTOP breakfast_table_20
 Place ontop water_1 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [1, 2, 4], 'unsatisfied': [0, 3, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 4, 5], 'unsatisfied': [3, 6, 7, 8]})
 ************************************************
 Action:  RIGHT_PLACE_ONTOP breakfast_table_20
 Place ontop salad_0 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [1, 2, 4], 'unsatisfied': [0, 3, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 4, 5], 'unsatisfied': [3, 6, 7, 8]})
 ************************************************
 Action:  LEFT_GRASP salad_1
 Grasp salad_1 with left_hand successful
-Post Effects:  True (False, {'satisfied': [1, 2, 4], 'unsatisfied': [0, 3, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 4, 5], 'unsatisfied': [3, 6, 7, 8]})
 ************************************************
 Action:  RIGHT_GRASP soup_0
 Grasp soup_0 with right_hand successful
-Post Effects:  True (False, {'satisfied': [1, 2, 4], 'unsatisfied': [0, 3, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 4, 5], 'unsatisfied': [3, 6, 7, 8]})
 ************************************************
 Action:  LEFT_PLACE_ONTOP breakfast_table_20
 Place ontop salad_1 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [1, 2, 4], 'unsatisfied': [0, 3, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 4, 5, 6], 'unsatisfied': [3, 7, 8]})
 ************************************************
 Action:  RIGHT_PLACE_ONTOP breakfast_table_20
 Place ontop soup_0 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [1, 2, 4], 'unsatisfied': [0, 3, 5, 6, 7, 8]})
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 4, 5, 6], 'unsatisfied': [3, 7, 8]})
+************************************************
+Action:  LEFT_GRASP spoon_1
+Grasp spoon_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 4, 5, 6], 'unsatisfied': [3, 7, 8]})
+************************************************
+Action:  LEFT_PLACE_NEXTTO soup_0
+Place next to spoon_1 soup_0 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4, 5, 6], 'unsatisfied': [7, 8]})
+************************************************
+Action:  LEFT_GRASP cupcake_0
+Grasp cupcake_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4, 5, 6], 'unsatisfied': [7, 8]})
+************************************************
+Action:  RIGHT_GRASP muffin_0
+Grasp muffin_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4, 5, 6], 'unsatisfied': [7, 8]})
+************************************************
+Action:  LEFT_PLACE_NEXTTO plate_0
+Place next to cupcake_0 plate_0 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4, 5, 6], 'unsatisfied': [7, 8]})
+************************************************
+Action:  RIGHT_PLACE_NEXTTO plate_1
+Place next to muffin_0 plate_1 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4, 5, 6], 'unsatisfied': [7, 8]})
+************************************************
+Action:  LEFT_GRASP bagel_0
+Grasp bagel_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4, 5, 6], 'unsatisfied': [7, 8]})
+************************************************
+Action:  RIGHT_GRASP cookie_0
+Grasp cookie_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4, 5, 6], 'unsatisfied': [7, 8]})
+************************************************
+Action:  LEFT_PLACE_NEXTTO plate_0
+Place next to bagel_0 plate_0 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4, 5, 6, 7], 'unsatisfied': [8]})
+************************************************
+Action:  RIGHT_PLACE_NEXTTO plate_1
+Place next to cookie_0 plate_1 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'unsatisfied': []})
 ************************************************
 Action:  CLOSE fridge_57
 Close fridge_57 success
-Post Effects:  True (False, {'satisfied': [1, 2, 4], 'unsatisfied': [0, 3, 5, 6, 7, 8]})
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Teleport plate_0 INSIDE bottom_cabinet_50 successful: True
-Teleport muffin_0 INSIDE fridge_57 successful: True
-Teleport plate_1 ONTOP breakfast_table_20 successful: True
-Teleport chicken_1 ONTOP plate_1 successful: True
-Teleport cupcake_0 ONTOP breakfast_table_20 successful: True
-Teleport chicken_0 ONTOP breakfast_table_20 successful: True
-Teleport spoon_0 ONTOP breakfast_table_20 successful: True
-Teleport soup_1 ONTOP breakfast_table_20 successful: True
-Teleport spoon_1 ONTOP breakfast_table_20 successful: True
-Teleport table_knife_0 ONTOP breakfast_table_20 successful: True
-Teleport tablefork_0 ONTOP breakfast_table_20 successful: True
-Teleport toasting_fork_0 ONTOP breakfast_table_20 successful: True
-Teleport carving_knife_0 ONTOP breakfast_table_20 successful: True
-Teleport water_0 ONTOP breakfast_table_20 successful: True
-Teleport bagel_0 ONTOP breakfast_table_20 successful: True
-Teleport cookie_0 ONTOP breakfast_table_20 successful: True
-Teleport water_1 ONTOP breakfast_table_20 successful: True
-Teleport salad_0 ONTOP breakfast_table_20 successful: True
-Teleport salad_1 ONTOP breakfast_table_20 successful: True
-Teleport soup_0 ONTOP breakfast_table_20 successful: True
-Post Effects:  (False, {'satisfied': [1, 2], 'unsatisfied': [0, 3, 4, 5, 6, 7, 8]})
-{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

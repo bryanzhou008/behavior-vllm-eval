@@ -4,24 +4,24 @@
         "object": "wrapped_gift_120"
     },
     {
-        "action": "RIGHT_PLACE_ONTOP",
-        "object": "room_floor_living_room_0"
+        "action": "RIGHT_PLACE_NEXTTO",
+        "object": "christmas_tree_decorated_112"
     },
     {
         "action": "RIGHT_GRASP",
         "object": "wrapped_gift_119"
     },
     {
-        "action": "RIGHT_PLACE_ONTOP",
-        "object": "room_floor_living_room_0"
+        "action": "RIGHT_PLACE_NEXTTO",
+        "object": "christmas_tree_decorated_112"
     },
     {
         "action": "RIGHT_GRASP",
         "object": "wrapped_gift_121"
     },
     {
-        "action": "RIGHT_PLACE_ONTOP",
-        "object": "room_floor_living_room_0"
+        "action": "RIGHT_PLACE_NEXTTO",
+        "object": "christmas_tree_decorated_112"
     },
     {
         "action": "RIGHT_GRASP",

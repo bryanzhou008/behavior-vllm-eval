@@ -1,11 +1,11 @@
 Addressable Objects:
-bottom_cabinet_49
-spoon_100
+spoon_98
 spoon_99
+rag_101
 room_floor_kitchen_0
 spoon_97
-rag_101
-spoon_98
+bottom_cabinet_49
+spoon_100
 -----------------------------------------------
 Initial Conditions: 
 ['dusty', 'spoon.n.01_1']

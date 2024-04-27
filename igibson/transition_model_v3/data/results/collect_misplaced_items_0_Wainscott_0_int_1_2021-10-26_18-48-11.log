@@ -1,15 +1,15 @@
 Addressable Objects:
-breakfast_table_1
-necklace_0
-sofa_39
+gym_shoe_0
+bottom_cabinet_79
 coffee_table_33
 notebook_0
-bottom_cabinet_79
-gym_shoe_0
+necklace_0
+breakfast_table_1
+sofa_39
 room_floor_living_room_0
-sock_1
-sock_0
 room_floor_dining_room_0
+sock_0
+sock_1
 -----------------------------------------------
 Initial Conditions: 
 ['under', 'gym_shoe.n.01_1', 'table.n.02_1']

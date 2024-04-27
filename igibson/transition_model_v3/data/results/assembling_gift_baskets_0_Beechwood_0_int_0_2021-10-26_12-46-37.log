@@ -1,27 +1,27 @@
 Addressable Objects:
-candle_2
-candle_0
-candle_1
-basket_2
-cookie_3
-candle_3
-cheese_1
-cookie_0
 coffee_table_12
-basket_0
-cheese_0
-bow_2
-bow_1
-breakfast_table_13
-cookie_2
-bow_3
+basket_3
 room_floor_living_room_0
 cookie_1
-cheese_2
-bow_0
-cheese_3
 basket_1
-basket_3
+basket_0
+basket_2
+cookie_2
+cheese_3
+candle_1
+cheese_2
+candle_0
+bow_2
+candle_3
+cookie_0
+candle_2
+cheese_1
+cheese_0
+bow_1
+breakfast_table_13
+cookie_3
+bow_0
+bow_3
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'basket.n.01_1', 'floor.n.01_1']

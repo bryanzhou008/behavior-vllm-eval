@@ -1,16 +1,16 @@
 Addressable Objects:
-bracelet_116
-mouse_119
-lipstick_114
-room_floor_bedroom_0
 room_floor_corridor_0
-lipstick_115
-bed_33
 door_99
-hanger_113
-necklace_117
+lipstick_115
+room_floor_bedroom_0
+lipstick_114
+mouse_119
+bed_33
 toothbrush_118
 backpack_112
+bracelet_116
+hanger_113
+necklace_117
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'backpack.n.01_1', 'floor.n.01_1']
@@ -53,10 +53,13 @@ Place inside bracelet_116 backpack_112 successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4]})
 ************************************************
 Action:  RIGHT_GRASP necklace_117
+Teleport bed_33 ONTOP necklace_117 successful: True
 Grasp necklace_117 with right_hand successful
 Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4]})
 ************************************************
 Action:  RIGHT_PLACE_INSIDE backpack_112
+Teleport bed_33 ONTOP necklace_117 successful: True
+Teleport bed_33 ONTOP necklace_117 successful: True
 Place inside necklace_117 backpack_112 successful
 Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4]})
 ************************************************
@@ -88,6 +91,7 @@ Action:  RIGHT_GRASP backpack_112
 Teleport mouse_119 INSIDE backpack_112 successful: True
 Teleport bracelet_116 INSIDE backpack_112 successful: True
 Teleport necklace_117 INSIDE backpack_112 successful: True
+Teleport bed_33 ONTOP necklace_117 successful: True
 Teleport toothbrush_118 INSIDE backpack_112 successful: True
 Teleport lipstick_115 INSIDE backpack_112 successful: True
 Teleport lipstick_114 INSIDE backpack_112 successful: True
@@ -98,6 +102,7 @@ Action:  RIGHT_PLACE_ONTOP room_floor_corridor_0
 Teleport mouse_119 INSIDE backpack_112 successful: True
 Teleport bracelet_116 INSIDE backpack_112 successful: True
 Teleport necklace_117 INSIDE backpack_112 successful: True
+Teleport bed_33 ONTOP necklace_117 successful: True
 Teleport toothbrush_118 INSIDE backpack_112 successful: True
 Teleport lipstick_115 INSIDE backpack_112 successful: True
 Teleport lipstick_114 INSIDE backpack_112 successful: True

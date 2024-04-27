@@ -42,5 +42,21 @@
     {
         "action": "LEFT_PLACE_INSIDE",
         "object": "bottom_cabinet_13"
+    },
+    {
+        "action": "LEFT_GRASP",
+        "object": "cauldron_0"
+    },
+    {
+        "action": "LEFT_PLACE_NEXTTO",
+        "object": "coffee_table_5"
+    },
+    {
+        "action": "LEFT_GRASP",
+        "object": "sheet_0"
+    },
+    {
+        "action": "LEFT_PLACE_ONTOP",
+        "object": "coffee_table_5"
     }
 ]

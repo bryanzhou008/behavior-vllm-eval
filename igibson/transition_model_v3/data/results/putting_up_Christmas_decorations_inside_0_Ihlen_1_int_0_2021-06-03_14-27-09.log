@@ -1,18 +1,18 @@
 Addressable Objects:
-sofa_25
-breakfast_table_19
-candle_118
-bow_115
-room_floor_living_room_0
 bow_114
-christmas_tree_decorated_112
 wrapped_gift_119
-bow_116
+room_floor_living_room_0
+candle_117
+bow_115
+candle_118
 wrapped_gift_121
+wreath_113
+christmas_tree_decorated_112
+breakfast_table_19
+sofa_25
 wrapped_gift_120
 carton_122
-candle_117
-wreath_113
+bow_116
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'christmas_tree.n.05_1', 'floor.n.01_1']
@@ -39,81 +39,73 @@ Action:  RIGHT_GRASP wrapped_gift_120
 Grasp wrapped_gift_120 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
-Action:  RIGHT_PLACE_ONTOP room_floor_living_room_0
-Place ontop wrapped_gift_120 room_floor_living_room_0 successful
+Action:  RIGHT_PLACE_NEXTTO christmas_tree_decorated_112
+Place next to wrapped_gift_120 christmas_tree_decorated_112 successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  RIGHT_GRASP wrapped_gift_119
 Grasp wrapped_gift_119 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4]})
 ************************************************
-Action:  RIGHT_PLACE_ONTOP room_floor_living_room_0
-Place ontop wrapped_gift_119 room_floor_living_room_0 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  RIGHT_PLACE_NEXTTO christmas_tree_decorated_112
+Place next to wrapped_gift_119 christmas_tree_decorated_112 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4]})
 ************************************************
 Action:  RIGHT_GRASP wrapped_gift_121
 Grasp wrapped_gift_121 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4]})
 ************************************************
-Action:  RIGHT_PLACE_ONTOP room_floor_living_room_0
-Place ontop wrapped_gift_121 room_floor_living_room_0 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  RIGHT_PLACE_NEXTTO christmas_tree_decorated_112
+Place next to wrapped_gift_121 christmas_tree_decorated_112 successful
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4]})
 ************************************************
 Action:  RIGHT_GRASP bow_114
 Grasp bow_114 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4]})
 ************************************************
 Action:  RIGHT_PLACE_ONTOP sofa_25
 Place ontop bow_114 sofa_25 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4]})
 ************************************************
 Action:  LEFT_GRASP bow_115
 Grasp bow_115 with left_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4]})
 ************************************************
 Action:  LEFT_PLACE_ONTOP sofa_25
 Place ontop bow_115 sofa_25 successful
-Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4]})
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4]})
 ************************************************
 Action:  RIGHT_GRASP bow_116
 Grasp bow_116 with right_hand successful
-Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4]})
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4]})
 ************************************************
 Action:  RIGHT_PLACE_ONTOP breakfast_table_19
 Place ontop bow_116 breakfast_table_19 successful
-Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4]})
+Post Effects:  True (False, {'satisfied': [0, 2, 3], 'unsatisfied': [1, 4]})
 ************************************************
 Action:  LEFT_GRASP wreath_113
 Grasp wreath_113 with left_hand successful
-Post Effects:  True (False, {'satisfied': [2, 3], 'unsatisfied': [0, 1, 4]})
+Post Effects:  True (False, {'satisfied': [0, 2, 3], 'unsatisfied': [1, 4]})
 ************************************************
 Action:  LEFT_PLACE_ONTOP breakfast_table_19
 Place ontop wreath_113 breakfast_table_19 successful
-Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
+Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1]})
 ************************************************
 Action:  RIGHT_GRASP candle_118
 Grasp candle_118 with right_hand successful
-Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
+Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1]})
 ************************************************
 Action:  RIGHT_PLACE_ONTOP breakfast_table_19
 Place ontop candle_118 breakfast_table_19 successful
-Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
+Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1]})
 ************************************************
 Action:  LEFT_GRASP candle_117
 Grasp candle_117 with left_hand successful
-Post Effects:  True (False, {'satisfied': [2, 3, 4], 'unsatisfied': [0, 1]})
+Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1]})
 ************************************************
 Action:  LEFT_PLACE_ONTOP breakfast_table_19
 Place ontop candle_117 breakfast_table_19 successful
-Post Effects:  True (False, {'satisfied': [1, 2, 3, 4], 'unsatisfied': [0]})
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Teleport bow_114 ONTOP sofa_25 successful: True
-Teleport bow_115 ONTOP sofa_25 successful: True
-Teleport bow_116 ONTOP breakfast_table_19 successful: True
-Teleport wreath_113 ONTOP breakfast_table_19 successful: True
-Teleport candle_118 ONTOP breakfast_table_19 successful: True
-Teleport candle_117 ONTOP breakfast_table_19 successful: True
-Post Effects:  (False, {'satisfied': [1, 2, 4], 'unsatisfied': [0, 3]})
-{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

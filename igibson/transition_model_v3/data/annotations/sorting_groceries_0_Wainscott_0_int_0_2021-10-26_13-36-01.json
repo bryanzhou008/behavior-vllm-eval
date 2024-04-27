@@ -4,8 +4,16 @@
         "object": "orange_2"
     },
     {
-        "action": "LEFT_PLACE_ONTOP",
-        "object": "breakfast_table_44"
+        "action": "LEFT_PLACE_NEXTTO",
+        "object": "orange_0"
+    },
+    {
+        "action": "LEFT_GRASP",
+        "object": "orange_1"
+    },
+    {
+        "action": "LEFT_PLACE_NEXTTO",
+        "object": "orange_2"
     },
     {
         "action": "OPEN",
@@ -88,8 +96,8 @@
         "object": "fridge_97"
     },
     {
-        "action": "RIGHT_PLACE_INSIDE",
-        "object": "fridge_97"
+        "action": "RIGHT_PLACE_NEXTTO",
+        "object": "apple_0"
     },
     {
         "action": "LEFT_GRASP",

@@ -1,7 +1,7 @@
 [
     {
         "action": "RIGHT_GRASP",
-        "object": "mousetrap_103"
+        "object": "mousetrap_101"
     },
     {
         "action": "LEFT_GRASP",
@@ -17,18 +17,18 @@
     },
     {
         "action": "RIGHT_GRASP",
-        "object": "mousetrap_101"
+        "object": "mousetrap_103"
     },
     {
         "action": "LEFT_GRASP",
         "object": "mousetrap_102"
     },
     {
-        "action": "LEFT_PLACE_ONTOP",
-        "object": "room_floor_bathroom_0"
+        "action": "LEFT_PLACE_NEXTTO",
+        "object": "toilet_64"
     },
     {
-        "action": "RIGHT_PLACE_ONTOP",
-        "object": "room_floor_bathroom_0"
+        "action": "RIGHT_PLACE_NEXTTO",
+        "object": "toilet_64"
     }
 ]

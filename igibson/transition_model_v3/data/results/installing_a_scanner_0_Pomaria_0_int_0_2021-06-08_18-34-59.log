@@ -1,7 +1,7 @@
 Addressable Objects:
-scanner_0
-breakfast_table_3
 room_floor_home_office_0
+breakfast_table_3
+scanner_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'scanner.n.02_1', 'table.n.02_1']

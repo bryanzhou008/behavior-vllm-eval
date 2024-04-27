@@ -32,6 +32,45 @@ class ActionEnv:
         self.openable_objects = {obj:obj.states[object_states.Open].get_value() 
                                  for obj in self.addressable_objects if object_states.Open in obj.states}
 
+    ##################### helper functions #####################
+    def navigate_to_if_needed(self,obj:URDFObject):
+        if not obj.states[object_states.InReachOfRobot].get_value():
+            self.navigate_to(obj)
+
+    def teleport_relation(self,obj1:URDFObject):
+        teleport_func={
+            TeleportType.INSIDE:self.position_geometry.set_inside,
+            TeleportType.ONTOP:self.position_geometry.set_ontop,
+        }
+        obj_node=self.relation_tree.get_node(obj1)
+        def recursive_teleport(node):
+            for child in node.children.values():
+                flag=teleport_func[child.teleport_type](child.obj,node.obj)
+                print(f"Teleport {child.obj.name} {child.teleport_type.name} {node.obj.name} successful: {flag}")
+                recursive_teleport(child)
+        recursive_teleport(obj_node)
+
+    def teleport_all(self):
+        for obj in self.openable_objects.keys():
+            obj.states[object_states.Open].set_value(self.openable_objects[obj],fully=True)
+        self.simulator.step()
+        for obj in self.relation_tree.root.children.keys():
+            self.teleport_relation(obj)
+        
+
+    def check_interactability(self,obj1):
+        # currently just checking if object is inside a closed object or not
+        if isinstance(obj1,RoomFloor):
+            return
+        node=self.relation_tree.get_node(obj1)
+        while node.parent is not self.relation_tree.root:
+            parent_obj=node.parent.obj
+            if (parent_obj in self.openable_objects and 
+            not self.openable_objects[parent_obj] and
+            node.teleport_type==TeleportType.INSIDE):
+                raise ValueError(f"{obj1.name} is inside closed {parent_obj.name}")
+            node=node.parent
+
     ##################### primitive actions #####################
 
     def navigate_to(self,obj):
@@ -602,46 +641,44 @@ class ActionEnv:
         obj.states[object_states.Frozen].set_value((freeze_or_unfreeze=='freeze'))
         print(f"{freeze_or_unfreeze.capitalize()} {obj.name} success")
         return True
+    
+    def cook(self,obj):
+        ## pre conditions
+        try:
+            self.check_interactability(obj)
+        except ValueError as e:
+            print(e)
+            return False
         
-
-    ##################### helper functions #####################
-    def navigate_to_if_needed(self,obj:URDFObject):
-        if not obj.states[object_states.InReachOfRobot].get_value():
-            self.navigate_to(obj)
-
-    def teleport_relation(self,obj1:URDFObject):
-        teleport_func={
-            TeleportType.INSIDE:self.position_geometry.set_inside,
-            TeleportType.ONTOP:self.position_geometry.set_ontop,
-        }
-        obj_node=self.relation_tree.get_node(obj1)
-        def recursive_teleport(node):
-            for child in node.children.values():
-                flag=teleport_func[child.teleport_type](child.obj,node.obj)
-                print(f"Teleport {child.obj.name} {child.teleport_type.name} {node.obj.name} successful: {flag}")
-                recursive_teleport(child)
-        recursive_teleport(obj_node)
-
-    def teleport_all(self):
-        for obj in self.openable_objects.keys():
-            obj.states[object_states.Open].set_value(self.openable_objects[obj],fully=True)
-        self.simulator.step()
-        for obj in self.relation_tree.root.children.keys():
-            self.teleport_relation(obj)
+        if not (hasattr(obj, "states") and object_states.Cooked in obj.states):
+            print("Cook failed, object cannot be cooked")
+            return False
         
-
-    def check_interactability(self,obj1):
-        # currently just checking if object is inside a closed object or not
-        if isinstance(obj1,RoomFloor):
-            return
-        node=self.relation_tree.get_node(obj1)
+        if obj.states[object_states.Cooked].get_value():
+            print("Cook failed, object is already cooked")
+            return False
+        
+        in_cooker=False
+        allowered_cookers=["saucepan"]
+        node=self.relation_tree.get_node(obj)
         while node.parent is not self.relation_tree.root:
             parent_obj=node.parent.obj
-            if (parent_obj in self.openable_objects and 
-            not self.openable_objects[parent_obj] and
-            node.teleport_type==TeleportType.INSIDE):
-                raise ValueError(f"{obj1.name} is inside closed {parent_obj.name}")
+            for allowered_cooker in allowered_cookers:
+                if allowered_cooker in parent_obj.name:
+                    in_cooker=True
+                    break
+            if in_cooker:
+                break
             node=node.parent
+        if not in_cooker:
+            print("Cook failed, please place object in a cooker first")
+            return False
+        
+        ## post effects
+        self.navigate_to_if_needed(obj)
+        obj.states[object_states.Cooked].set_value(True)
+        print(f"Cook {obj.name} success")
+        return True
     ##################### for behavior task eval #####################
     def navigate(self,obj:URDFObject):
         return self.navigate_to(obj)

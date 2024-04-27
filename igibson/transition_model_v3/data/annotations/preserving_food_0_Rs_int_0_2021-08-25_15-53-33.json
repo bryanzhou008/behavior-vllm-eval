@@ -44,14 +44,6 @@
         "object": "strawberry_61_part_1"
     },
     {
-        "action": "LEFT_GRASP",
-        "object": "jar_64"
-    },
-    {
-        "action": "OPEN",
-        "object": "jar_64"
-    },
-    {
         "action": "RIGHT_GRASP",
         "object": "saucepan_65"
     },

@@ -44,6 +44,8 @@ class BaseRelationTree:
                 successor_type=self.is_ancestor(obj1,obj2)
                 if successor_type is not None:
                     successor_dict[obj1].add(obj2)
+                    if obj2 in successor_dict:
+                        assert obj1 not in successor_dict[obj2]
         return successor_dict
     
     def get_relation_tree(self,obj_list):

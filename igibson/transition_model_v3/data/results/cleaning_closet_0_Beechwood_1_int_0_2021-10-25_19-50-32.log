@@ -1,17 +1,17 @@
 Addressable Objects:
-bracelet_0
 bottom_cabinet_1
-hat_0
-sandal_1
-room_floor_bedroom_0
-room_floor_closet_0
-bottom_cabinet_44
-bottom_cabinet_30
-paper_towel_0
-umbrella_0
-necklace_0
-sandal_0
 shelf_31
+paper_towel_0
+hat_0
+necklace_0
+umbrella_0
+bottom_cabinet_30
+room_floor_closet_0
+sandal_0
+bottom_cabinet_44
+bracelet_0
+room_floor_bedroom_0
+sandal_1
 -----------------------------------------------
 Initial Conditions: 
 ['dusty', 'shelf.n.01_1']

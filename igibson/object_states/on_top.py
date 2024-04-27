@@ -10,7 +10,8 @@ from igibson.object_states.utils import clear_cached_states, sample_kinematics
 from igibson.utils.utils import restoreState
 from igibson.object_states.aabb import AABB
 
-MAX_DISTANCE = 0.01
+MAX_DISTANCE_POS = 0.015
+MAX_DISTANCE_NEG = 0.02
 class OnTop(PositionalValidationMemoizedObjectStateMixin, RelativeObjectState, BooleanState):
     @staticmethod
     def get_dependencies():
@@ -47,8 +48,6 @@ class OnTop(PositionalValidationMemoizedObjectStateMixin, RelativeObjectState, B
         # redefine the get_value function
         lo,hi=self.obj.states[AABB].get_value()
         other_lo,other_hi=other.states[AABB].get_value()
-        obj1_center = (lo + hi) / 2.
-        obj2_center = (other_lo + other_hi) / 2.
 
         # given two segments, check if they overlap
         def is_overlap(a_low, a_high, b_low, b_high):
@@ -60,7 +59,7 @@ class OnTop(PositionalValidationMemoizedObjectStateMixin, RelativeObjectState, B
         if not is_overlap(lo[0], hi[0], other_lo[0], other_hi[0]) or not is_overlap(lo[1], hi[1], other_lo[1], other_hi[1]):
             return False
         
-        if abs(obj1_center[2] -obj2_center[2]-0.5*(hi[2]-lo[2])-0.5*(other_hi[2]-other_lo[2])) > MAX_DISTANCE:
+        if lo[2]-other_hi[2] > MAX_DISTANCE_POS or other_hi[2]-lo[2] > MAX_DISTANCE_NEG:
             return False
 
         return True

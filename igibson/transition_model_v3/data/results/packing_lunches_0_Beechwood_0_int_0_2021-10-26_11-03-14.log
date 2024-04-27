@@ -1,24 +1,24 @@
 Addressable Objects:
-breakfast_table_7
-room_floor_kitchen_0
-chip_1
-juice_0
-carton_0
-room_floor_living_room_0
-fridge_57
-apple_0
-apple_0_part_1
-carton_1
-cookie_1
-banana_0
-pop_0
 chip_0
-hamburger_0
 countertop_56
-apple_0_part_0
-salad_0
-cookie_0
+banana_0
+juice_0
+cookie_1
 bottom_cabinet_no_top_54
+apple_0_part_0
+carton_0
+salad_0
+room_floor_kitchen_0
+room_floor_living_room_0
+apple_0
+carton_1
+fridge_57
+pop_0
+hamburger_0
+breakfast_table_7
+apple_0_part_1
+chip_1
+cookie_0
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'salad.n.01_1', 'electric_refrigerator.n.01_1']
