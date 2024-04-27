@@ -1,25 +1,25 @@
 Addressable Objects:
-pretzel_155
 parsley_151
-room_floor_dining_room_0
-cheese_158
-parsley_150
-pretzel_152
-breakfast_table_1
-cheese_156
-bottom_cabinet_no_top_80
-cheese_159
-fridge_97
-cheese_157
-salad_143
-parsley_149
 salad_144
-pretzel_153
-tray_147
-parsley_148
+room_floor_dining_room_0
+cheese_159
+parsley_149
+fridge_97
 salad_145
-pretzel_154
+cheese_158
+parsley_148
+breakfast_table_1
+bottom_cabinet_no_top_80
+pretzel_153
+salad_143
+pretzel_155
 salad_146
+tray_147
+parsley_150
+cheese_157
+cheese_156
+pretzel_154
+pretzel_152
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'salad.n.01_1', 'electric_refrigerator.n.01_1']
@@ -209,10 +209,10 @@ Post Effects:  True (False, {'satisfied': [0, 1, 3], 'unsatisfied': [2]})
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
-Teleport pretzel_155 ONTOP breakfast_table_1 successful: True
-Teleport pretzel_152 ONTOP breakfast_table_1 successful: True
 Teleport pretzel_153 ONTOP breakfast_table_1 successful: True
+Teleport pretzel_155 ONTOP breakfast_table_1 successful: True
 Teleport pretzel_154 ONTOP breakfast_table_1 successful: True
+Teleport pretzel_152 ONTOP breakfast_table_1 successful: True
 Teleport salad_143 ONTOP breakfast_table_1 successful: True
 Teleport salad_144 ONTOP breakfast_table_1 successful: True
 Teleport salad_145 ONTOP breakfast_table_1 successful: True

@@ -10,9 +10,5 @@
     {
         "action": "TOGGLE_ON",
         "object": "printer_0"
-    },
-    {
-        "action": "TOGGLE_OFF",
-        "object": "printer_0"
     }
 ]

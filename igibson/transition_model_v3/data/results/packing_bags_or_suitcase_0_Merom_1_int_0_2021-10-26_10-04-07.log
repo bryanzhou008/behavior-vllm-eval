@@ -1,15 +1,15 @@
 Addressable Objects:
-toothpaste_103
 room_floor_bedroom_0
-hardback_100
+backpack_97
 shampoo_99
-door_85
+hardback_100
 toothbrush_98
 underwear_101
-bed_7
-backpack_97
-window_79
+door_85
 underwear_102
+toothpaste_103
+window_79
+bed_7
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'backpack.n.01_1', 'floor.n.01_1']
@@ -29,64 +29,78 @@ Goal Conditions:
 ['inside', 'toothpaste.n.01_1', 'backpack.n.01_1']
 ['or', 'ontop', 'backpack.n.01_1', 'bed.n.01_1', 'onfloor', 'backpack.n.01_1', 'floor.n.01_1']
 ------------Action Execution Begins-------------
-Action:  RIGHT_GRASP backpack_97
-Grasp backpack_97 with right_hand successful
-Post Effects:  True (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  OPEN backpack_97
+No openable joint metadata found for object backpack_97
+Open backpack_97 failed
+Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  LEFT_GRASP hardback_100
 Grasp hardback_100 with left_hand successful
 Post Effects:  True (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  LEFT_PLACE_INSIDE backpack_97
-backpack_97 is closed
-Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+Place inside hardback_100 backpack_97 successful
+Post Effects:  True (False, {'satisfied': [3, 5], 'unsatisfied': [0, 1, 2, 4]})
 ************************************************
 Action:  LEFT_GRASP shampoo_99
-left_hand is already holding hardback_100
-Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+Grasp shampoo_99 with left_hand successful
+Post Effects:  True (False, {'satisfied': [3, 5], 'unsatisfied': [0, 1, 2, 4]})
 ************************************************
 Action:  LEFT_PLACE_INSIDE backpack_97
-backpack_97 is closed
-Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+Place inside shampoo_99 backpack_97 successful
+Post Effects:  True (False, {'satisfied': [2, 3, 5], 'unsatisfied': [0, 1, 4]})
 ************************************************
 Action:  LEFT_GRASP underwear_101
-left_hand is already holding hardback_100
-Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+Grasp underwear_101 with left_hand successful
+Post Effects:  True (False, {'satisfied': [2, 3, 5], 'unsatisfied': [0, 1, 4]})
 ************************************************
 Action:  LEFT_PLACE_INSIDE backpack_97
-backpack_97 is closed
-Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+Place inside underwear_101 backpack_97 successful
+Post Effects:  True (False, {'satisfied': [2, 3, 5], 'unsatisfied': [0, 1, 4]})
 ************************************************
 Action:  LEFT_GRASP toothbrush_98
-left_hand is already holding hardback_100
-Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+Grasp toothbrush_98 with left_hand successful
+Post Effects:  True (False, {'satisfied': [2, 3, 5], 'unsatisfied': [0, 1, 4]})
 ************************************************
 Action:  LEFT_PLACE_INSIDE backpack_97
-backpack_97 is closed
-Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+Place inside toothbrush_98 backpack_97 successful
+Post Effects:  True (False, {'satisfied': [1, 2, 3, 5], 'unsatisfied': [0, 4]})
 ************************************************
 Action:  LEFT_GRASP underwear_102
-left_hand is already holding hardback_100
-Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+Grasp underwear_102 with left_hand successful
+Post Effects:  True (False, {'satisfied': [1, 2, 3, 5], 'unsatisfied': [0, 4]})
 ************************************************
 Action:  LEFT_PLACE_INSIDE backpack_97
-backpack_97 is closed
-Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+Place inside underwear_102 backpack_97 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 5], 'unsatisfied': [4]})
 ************************************************
 Action:  LEFT_GRASP toothpaste_103
-left_hand is already holding hardback_100
-Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+Grasp toothpaste_103 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 5], 'unsatisfied': [4]})
 ************************************************
 Action:  LEFT_PLACE_INSIDE backpack_97
-backpack_97 is closed
-Post Effects:  False (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+Place inside toothpaste_103 backpack_97 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4, 5], 'unsatisfied': []})
+************************************************
+Action:  RIGHT_GRASP backpack_97
+Teleport hardback_100 INSIDE backpack_97 successful: True
+Teleport shampoo_99 INSIDE backpack_97 successful: True
+Teleport underwear_101 INSIDE backpack_97 successful: True
+Teleport toothbrush_98 INSIDE backpack_97 successful: True
+Teleport underwear_102 INSIDE backpack_97 successful: True
+Teleport toothpaste_103 INSIDE backpack_97 successful: True
+Grasp backpack_97 with right_hand successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4, 5], 'unsatisfied': []})
 ************************************************
 Action:  RIGHT_PLACE_ONTOP room_floor_bedroom_0
+Teleport hardback_100 INSIDE backpack_97 successful: True
+Teleport shampoo_99 INSIDE backpack_97 successful: True
+Teleport underwear_101 INSIDE backpack_97 successful: True
+Teleport toothbrush_98 INSIDE backpack_97 successful: True
+Teleport underwear_102 INSIDE backpack_97 successful: True
+Teleport toothpaste_103 INSIDE backpack_97 successful: True
 Place ontop backpack_97 room_floor_bedroom_0 successful
-Post Effects:  True (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4, 5], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-No openable joint metadata found for object backpack_97
-Post Effects:  (False, {'satisfied': [5], 'unsatisfied': [0, 1, 2, 3, 4]})
-{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

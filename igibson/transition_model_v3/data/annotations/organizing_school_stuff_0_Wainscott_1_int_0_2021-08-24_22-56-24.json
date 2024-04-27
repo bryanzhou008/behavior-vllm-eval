@@ -1,5 +1,9 @@
 [
     {
+        "action": "OPEN",
+        "object": "backpack_108"
+    },
+    {
         "action": "RIGHT_GRASP",
         "object": "backpack_108"
     },
@@ -36,8 +40,16 @@
         "object": "folder_107"
     },
     {
-        "action": "RIGHT_PLACE_ONTOP",
-        "object": "bed_58"
+        "action": "RIGHT_PLACE_NEXTTO",
+        "object": "backpack_108"
+    },
+    {
+        "action": "RIGHT_GRASP",
+        "object": "hardback_106"
+    },
+    {
+        "action": "RIGHT_PLACE_NEXTTO",
+        "object": "backpack_108"
     },
     {
         "action": "RIGHT_GRASP",

@@ -1,16 +1,16 @@
 Addressable Objects:
-room_floor_bedroom_1
-necklace_48
-painting_50
 sheet_53
 hand_towel_52
-vacuum_51
-bottom_cabinet_0
-jeans_47
 bed_10
+bottom_cabinet_0
+painting_50
 jeans_46
+room_floor_bedroom_1
 bottom_cabinet_2
+necklace_48
+vacuum_51
 cologne_49
+jeans_47
 -----------------------------------------------
 Initial Conditions: 
 ['dusty', 'cabinet.n.01_1']

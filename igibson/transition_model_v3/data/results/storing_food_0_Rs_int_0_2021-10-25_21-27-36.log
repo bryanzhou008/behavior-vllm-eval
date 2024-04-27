@@ -1,15 +1,15 @@
 Addressable Objects:
+olive_oil_0
+oatmeal_1
+chip_0
 countertop_26
+sugar_jar_1
+room_floor_kitchen_0
+bottom_cabinet_41
+sugar_jar_0
 olive_oil_1
 chip_1
-sugar_jar_1
-oatmeal_1
-bottom_cabinet_41
-olive_oil_0
-room_floor_kitchen_0
-sugar_jar_0
 oatmeal_0
-chip_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'oatmeal.n.01_1', 'countertop.n.01_1']

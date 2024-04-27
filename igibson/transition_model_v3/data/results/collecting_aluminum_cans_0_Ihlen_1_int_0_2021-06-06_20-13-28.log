@@ -1,13 +1,13 @@
 Addressable Objects:
-bucket_118
-pop_113
-pop_115
-pop_116
 pop_117
+bucket_118
+pop_115
+pop_114
+pop_116
 bed_33
 room_floor_bedroom_0
 pop_112
-pop_114
+pop_113
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'pop.n.02_1', 'bed.n.01_1']

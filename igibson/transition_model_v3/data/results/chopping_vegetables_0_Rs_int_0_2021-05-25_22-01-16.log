@@ -1,36 +1,36 @@
 Addressable Objects:
-chestnut_66_part_0
-mushroom_64
+vidalia_onion_67_part_0
+tomato_61_part_1
+sink_42
+carving_knife_69
 tomato_62
-tomato_61
+casserole_71
 chestnut_66
+tomato_62_part_1
 casserole_70
 room_floor_kitchen_0
 chestnut_65
-vidalia_onion_68_part_1
+top_cabinet_50
+mushroom_63
 tomato_62_part_0
-vidalia_onion_68
-vidalia_onion_68_part_0
-chestnut_65_part_0
 mushroom_64_part_1
+vidalia_onion_68_part_0
 chestnut_65_part_1
 mushroom_63_part_1
-vidalia_onion_67_part_1
-mushroom_64_part_0
-tomato_61_part_1
-mushroom_63_part_0
 countertop_26
+mushroom_64_part_0
+mushroom_63_part_0
+chestnut_66_part_0
+chestnut_65_part_0
+mushroom_64
+vidalia_onion_68_part_1
 vidalia_onion_67
-tomato_62_part_1
-chestnut_66_part_1
 fridge_40
-mushroom_63
 tomato_61_part_0
-sink_42
-top_cabinet_50
-vidalia_onion_67_part_0
-carving_knife_69
-casserole_71
+tomato_61
+chestnut_66_part_1
+vidalia_onion_67_part_1
+vidalia_onion_68
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'tomato.n.01_1', 'countertop.n.01_1']
@@ -138,34 +138,124 @@ Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  SLICE chestnut_66
 Slice chestnut_66 success
+Teleport chestnut_65 INSIDE casserole_71 successful: True
+Teleport mushroom_63 INSIDE casserole_71 successful: True
+Teleport mushroom_64 INSIDE casserole_71 successful: True
+Teleport tomato_62 INSIDE casserole_71 successful: True
+Teleport tomato_61 INSIDE casserole_71 successful: True
+Teleport chestnut_66_part_0 INSIDE casserole_71 successful: True
+Teleport chestnut_66_part_1 INSIDE casserole_71 successful: True
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3]})
 ************************************************
 Action:  SLICE chestnut_65
 Slice chestnut_65 success
+Teleport mushroom_63 INSIDE casserole_71 successful: True
+Teleport mushroom_64 INSIDE casserole_71 successful: True
+Teleport tomato_62 INSIDE casserole_71 successful: True
+Teleport tomato_61 INSIDE casserole_71 successful: True
+Teleport chestnut_66_part_0 INSIDE casserole_71 successful: True
+Teleport chestnut_66_part_1 INSIDE casserole_71 successful: True
+Teleport chestnut_65_part_1 INSIDE casserole_71 successful: True
+Teleport chestnut_65_part_0 INSIDE casserole_71 successful: True
 Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3]})
 ************************************************
 Action:  SLICE mushroom_63
 Slice mushroom_63 success
+Teleport mushroom_64 INSIDE casserole_71 successful: True
+Teleport tomato_62 INSIDE casserole_71 successful: True
+Teleport tomato_61 INSIDE casserole_71 successful: True
+Teleport chestnut_66_part_0 INSIDE casserole_71 successful: True
+Teleport chestnut_66_part_1 INSIDE casserole_71 successful: True
+Teleport chestnut_65_part_1 INSIDE casserole_71 successful: True
+Teleport chestnut_65_part_0 INSIDE casserole_71 successful: True
+Teleport mushroom_63_part_1 INSIDE casserole_71 successful: True
+Teleport mushroom_63_part_0 INSIDE casserole_71 successful: True
 Post Effects:  True (False, {'satisfied': [2], 'unsatisfied': [0, 1, 3]})
 ************************************************
 Action:  SLICE mushroom_64
 Slice mushroom_64 success
+Teleport tomato_62 INSIDE casserole_71 successful: True
+Teleport tomato_61 INSIDE casserole_71 successful: True
+Teleport chestnut_66_part_0 INSIDE casserole_71 successful: True
+Teleport chestnut_66_part_1 INSIDE casserole_71 successful: True
+Teleport chestnut_65_part_1 INSIDE casserole_71 successful: True
+Teleport chestnut_65_part_0 INSIDE casserole_71 successful: True
+Teleport mushroom_63_part_1 INSIDE casserole_71 successful: True
+Teleport mushroom_63_part_0 INSIDE casserole_71 successful: True
+Teleport mushroom_64_part_1 INSIDE casserole_71 successful: True
+Teleport mushroom_64_part_0 INSIDE casserole_71 successful: True
 Post Effects:  True (False, {'satisfied': [1, 2], 'unsatisfied': [0, 3]})
 ************************************************
 Action:  SLICE tomato_62
 Slice tomato_62 success
+Teleport tomato_61 INSIDE casserole_71 successful: True
+Teleport chestnut_66_part_0 INSIDE casserole_71 successful: True
+Teleport chestnut_66_part_1 INSIDE casserole_71 successful: True
+Teleport chestnut_65_part_1 INSIDE casserole_71 successful: True
+Teleport chestnut_65_part_0 INSIDE casserole_71 successful: True
+Teleport mushroom_63_part_1 INSIDE casserole_71 successful: True
+Teleport mushroom_63_part_0 INSIDE casserole_71 successful: True
+Teleport mushroom_64_part_1 INSIDE casserole_71 successful: True
+Teleport mushroom_64_part_0 INSIDE casserole_71 successful: True
+Teleport tomato_62_part_1 INSIDE casserole_71 successful: True
+Teleport tomato_62_part_0 INSIDE casserole_71 successful: True
 Post Effects:  True (False, {'satisfied': [1, 2], 'unsatisfied': [0, 3]})
 ************************************************
 Action:  SLICE tomato_61
 Slice tomato_61 success
+Teleport chestnut_66_part_0 INSIDE casserole_71 successful: True
+Teleport chestnut_66_part_1 INSIDE casserole_71 successful: True
+Teleport chestnut_65_part_1 INSIDE casserole_71 successful: True
+Teleport chestnut_65_part_0 INSIDE casserole_71 successful: True
+Teleport mushroom_63_part_1 INSIDE casserole_71 successful: True
+Teleport mushroom_63_part_0 INSIDE casserole_71 successful: True
+Teleport mushroom_64_part_1 INSIDE casserole_71 successful: True
+Teleport mushroom_64_part_0 INSIDE casserole_71 successful: True
+Teleport tomato_62_part_1 INSIDE casserole_71 successful: True
+Teleport tomato_62_part_0 INSIDE casserole_71 successful: True
+Teleport tomato_61_part_1 INSIDE casserole_71 successful: True
+Teleport tomato_61_part_0 INSIDE casserole_71 successful: True
 Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
 Action:  SLICE vidalia_onion_67
 Slice vidalia_onion_67 success
+Teleport casserole_71 ONTOP countertop_26 successful: True
+Teleport chestnut_66_part_0 INSIDE casserole_71 successful: True
+Teleport chestnut_66_part_1 INSIDE casserole_71 successful: True
+Teleport chestnut_65_part_1 INSIDE casserole_71 successful: True
+Teleport chestnut_65_part_0 INSIDE casserole_71 successful: True
+Teleport mushroom_63_part_1 INSIDE casserole_71 successful: True
+Teleport mushroom_63_part_0 INSIDE casserole_71 successful: True
+Teleport mushroom_64_part_1 INSIDE casserole_71 successful: True
+Teleport mushroom_64_part_0 INSIDE casserole_71 successful: True
+Teleport tomato_62_part_1 INSIDE casserole_71 successful: True
+Teleport tomato_62_part_0 INSIDE casserole_71 successful: True
+Teleport tomato_61_part_1 INSIDE casserole_71 successful: True
+Teleport tomato_61_part_0 INSIDE casserole_71 successful: True
+Teleport vidalia_onion_68 ONTOP countertop_26 successful: True
+Teleport vidalia_onion_67_part_0 ONTOP countertop_26 successful: True
+Teleport vidalia_onion_67_part_1 ONTOP countertop_26 successful: True
 Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
 Action:  SLICE vidalia_onion_68
 Slice vidalia_onion_68 success
+Teleport casserole_71 ONTOP countertop_26 successful: True
+Teleport chestnut_66_part_0 INSIDE casserole_71 successful: True
+Teleport chestnut_66_part_1 INSIDE casserole_71 successful: True
+Teleport chestnut_65_part_1 INSIDE casserole_71 successful: True
+Teleport chestnut_65_part_0 INSIDE casserole_71 successful: True
+Teleport mushroom_63_part_1 INSIDE casserole_71 successful: True
+Teleport mushroom_63_part_0 INSIDE casserole_71 successful: True
+Teleport mushroom_64_part_1 INSIDE casserole_71 successful: True
+Teleport mushroom_64_part_0 INSIDE casserole_71 successful: True
+Teleport tomato_62_part_1 INSIDE casserole_71 successful: True
+Teleport tomato_62_part_0 INSIDE casserole_71 successful: True
+Teleport tomato_61_part_1 INSIDE casserole_71 successful: True
+Teleport tomato_61_part_0 INSIDE casserole_71 successful: True
+Teleport vidalia_onion_67_part_0 ONTOP countertop_26 successful: True
+Teleport vidalia_onion_67_part_1 ONTOP countertop_26 successful: True
+Teleport vidalia_onion_68_part_0 ONTOP countertop_26 successful: True
+Teleport vidalia_onion_68_part_1 ONTOP countertop_26 successful: True
 Post Effects:  True (True, {'satisfied': [0, 1, 2, 3], 'unsatisfied': []})
 ************************************************
 Action:  RIGHT_PLACE_ONTOP countertop_26

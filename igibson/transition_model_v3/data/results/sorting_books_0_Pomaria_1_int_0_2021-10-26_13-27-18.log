@@ -1,11 +1,11 @@
 Addressable Objects:
-coffee_table_3
 shelf_15
-notebook_80
 hardback_79
-room_floor_living_room_0
-hardback_78
 hardback_81
+hardback_78
+coffee_table_3
+notebook_80
+room_floor_living_room_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'hardback.n.01_1', 'table.n.02_1']

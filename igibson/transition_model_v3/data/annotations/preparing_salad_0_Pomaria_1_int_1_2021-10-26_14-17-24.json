@@ -1,5 +1,9 @@
 [
     {
+        "action": "OPEN",
+        "object": "top_cabinet_27"
+    },
+    {
         "action": "LEFT_GRASP",
         "object": "plate_87"
     },
@@ -28,10 +32,6 @@
         "object": "tomato_82"
     },
     {
-        "action": "CLOSE",
-        "object": "fridge_20"
-    },
-    {
         "action": "LEFT_PLACE_ONTOP",
         "object": "countertop_31"
     },
@@ -40,16 +40,16 @@
         "object": "countertop_31"
     },
     {
+        "action": "CLOSE",
+        "object": "fridge_20"
+    },
+    {
         "action": "UNFREEZE",
         "object": "tomato_83"
     },
     {
         "action": "UNFREEZE",
         "object": "tomato_82"
-    },
-    {
-        "action": "OPEN",
-        "object": "top_cabinet_27"
     },
     {
         "action": "RIGHT_GRASP",

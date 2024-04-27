@@ -1,27 +1,7 @@
 [
     {
-        "action": "RIGHT_GRASP",
-        "object": "necklace_117"
-    },
-    {
-        "action": "RIGHT_PLACE_ONTOP",
-        "object": "bed_33"
-    },
-    {
-        "action": "RIGHT_GRASP",
-        "object": "bracelet_116"
-    },
-    {
-        "action": "RIGHT_PLACE_ONTOP",
-        "object": "bed_33"
-    },
-    {
-        "action": "RIGHT_GRASP",
+        "action": "OPEN",
         "object": "backpack_112"
-    },
-    {
-        "action": "RIGHT_PLACE_ONTOP",
-        "object": "room_floor_bedroom_0"
     },
     {
         "action": "RIGHT_GRASP",

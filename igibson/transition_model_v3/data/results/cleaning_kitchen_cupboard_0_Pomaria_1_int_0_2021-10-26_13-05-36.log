@@ -1,15 +1,15 @@
 Addressable Objects:
-cup_0
+countertop_31
+top_cabinet_24
 bowl_0
-paper_towel_0
+soap_0
+top_cabinet_25
 cup_1
 sink_37
-top_cabinet_25
+paper_towel_0
 bowl_1
-top_cabinet_24
-soap_0
-countertop_31
 room_floor_kitchen_0
+cup_0
 -----------------------------------------------
 Initial Conditions: 
 ['dusty', 'cabinet.n.01_1']

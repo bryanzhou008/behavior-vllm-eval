@@ -72,6 +72,22 @@
         "object": "carton_1"
     },
     {
+        "action": "RIGHT_GRASP",
+        "object": "juice_0"
+    },
+    {
+        "action": "LEFT_GRASP",
+        "object": "pop_0"
+    },
+    {
+        "action": "RIGHT_PLACE_INSIDE",
+        "object": "carton_0"
+    },
+    {
+        "action": "LEFT_PLACE_INSIDE",
+        "object": "carton_1"
+    },
+    {
         "action": "CLOSE",
         "object": "fridge_57"
     }

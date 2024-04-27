@@ -1,15 +1,15 @@
 Addressable Objects:
-pumpkin_1
-pumpkin_0
 coffee_table_5
-sheet_0
-candle_0
-candle_1
-candle_2
-cauldron_0
-sofa_2
-bottom_cabinet_13
 room_floor_living_room_0
+candle_1
+pumpkin_0
+candle_2
+pumpkin_1
+bottom_cabinet_13
+sofa_2
+candle_0
+cauldron_0
+sheet_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'pumpkin.n.02_1', 'floor.n.01_1']

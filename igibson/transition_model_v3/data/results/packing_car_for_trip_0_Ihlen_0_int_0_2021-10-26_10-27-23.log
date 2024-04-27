@@ -1,12 +1,12 @@
 Addressable Objects:
-briefcase_51
-duffel_bag_54
-room_floor_storage_room_0
-pencil_box_52
 headset_53
-room_floor_garage_0
-car_50
+duffel_bag_54
 breakfast_table_14
+pencil_box_52
+room_floor_garage_0
+room_floor_storage_room_0
+car_50
+briefcase_51
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'car.n.01_1', 'floor.n.01_1']

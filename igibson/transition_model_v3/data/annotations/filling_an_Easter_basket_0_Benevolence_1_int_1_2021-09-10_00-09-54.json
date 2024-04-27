@@ -20,6 +20,10 @@
         "object": "bottom_cabinet_no_top_15"
     },
     {
+        "action": "OPEN",
+        "object": "bottom_cabinet_no_top_16"
+    },
+    {
         "action": "RIGHT_GRASP",
         "object": "bow_0"
     },
@@ -36,12 +40,8 @@
         "object": "basket_1"
     },
     {
-        "action": "OPEN",
-        "object": "bottom_cabinet_no_top_16"
-    },
-    {
         "action": "RIGHT_GRASP",
-        "object": "basket_0"
+        "object": "lollipop_0"
     },
     {
         "action": "LEFT_GRASP",
@@ -76,15 +76,31 @@
         "object": "basket_1"
     },
     {
-        "action": "UNFREEZE",
-        "object": "egg_1"
+        "action": "RIGHT_GRASP",
+        "object": "notebook_1"
     },
     {
-        "action": "UNFREEZE",
-        "object": "egg_0"
+        "action": "LEFT_GRASP",
+        "object": "notebook_0"
+    },
+    {
+        "action": "LEFT_PLACE_NEXTTO",
+        "object": "basket_0"
+    },
+    {
+        "action": "RIGHT_PLACE_NEXTTO",
+        "object": "basket_1"
     },
     {
         "action": "CLOSE",
         "object": "fridge_27"
+    },
+    {
+        "action": "CLOSE",
+        "object": "bottom_cabinet_no_top_15"
+    },
+    {
+        "action": "CLOSE",
+        "object": "bottom_cabinet_no_top_16"
     }
 ]

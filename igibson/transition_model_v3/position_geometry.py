@@ -174,17 +174,20 @@ class PositionGeometry:
         
         return True
     
-    def _set_ontop_floor_magic(self,obj1:URDFObject,obj2:RoomFloor,offset=0.00):
+    #second most tricky one
+    def _set_ontop_floor_magic(self,obj1:URDFObject,obj2:RoomFloor,offset=0.00,sample_range=1,sample_step=0.1):
         lo,hi=obj2.scene.get_aabb_by_room_instance(obj2.room_instance)
         target_center = (lo+hi)/2.
         obj1_aabb=get_aabb(obj1)
         obj2_aabb=hi-lo
         target_center[2] += 0.5 * obj1_aabb[2] + 0.5 *obj2_aabb[2] +offset
-        target_pos = tar_pos_for_new_aabb_center(obj1,target_center)
-        obj1.set_position(target_pos)
-
-        if obj1.states[object_states.OnFloor].get_value(obj2):
-            return True
+        for x in np.linspace(-sample_range,sample_range,int(2*sample_range/sample_step)):
+            for y in np.linspace(-sample_range,sample_range,int(2*sample_range/sample_step)):
+                sampled_center=target_center+np.array([x,y,0])
+                target_pos = tar_pos_for_new_aabb_center(obj1,sampled_center)
+                obj1.set_position(target_pos)
+                if obj1.states[object_states.OnFloor].get_value(obj2):
+                    return True
         return False
     
     def _set_robot_floor_magic(self,obj:RoomFloor):

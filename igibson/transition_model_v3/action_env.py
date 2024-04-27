@@ -426,7 +426,7 @@ class ActionEnv:
         print(f"Toggle{on_off} {obj.name} success")
         return True
 
-    def slice(self,obj):
+    def slice(self,obj:URDFObject):
         ## pre conditions
         try:
             self.check_interactability(obj)
@@ -455,6 +455,16 @@ class ActionEnv:
         self.navigate_to_if_needed(obj)
         obj.states[object_states.Sliced].set_value(True)
         print(f"Slice {obj.name} success")
+
+        obj_parts=[add_obj for add_obj in self.addressable_objects if 'part' in add_obj.name and obj.name in add_obj.name]
+        obj_node=self.relation_tree.get_node(obj)
+        if obj_node.parent is not self.relation_tree.root:
+            parent_obj=obj_node.parent.obj
+            for part_obj in obj_parts:
+                self.relation_tree.change_ancestor(part_obj,parent_obj,obj_node.teleport_type)
+            self.relation_tree.remove_ancestor(obj)
+            self.teleport_relation(parent_obj)
+
         return True
     
     def clean_dust(self,obj):
@@ -714,6 +724,12 @@ class ActionEnv:
     
     def right_place_nextto_ontop(self,obj1:URDFObject,obj2):
         return self.place_next_to_ontop(obj1,obj2,'right_hand')
+    
+    def left_place_under(self,obj:URDFObject):
+        return self.place_under(obj,'left_hand')
+    
+    def right_place_under(self,obj:URDFObject):
+        return self.place_under(obj,'right_hand')
 
     
         

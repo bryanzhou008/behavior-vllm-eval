@@ -1,17 +1,17 @@
 Addressable Objects:
-fridge_97
-jar_1
-strawberry_0
-carving_knife_0
-bottom_cabinet_no_top_80
-countertop_84
-peach_0_part_1
-room_floor_kitchen_0
-strawberry_0_part_0
-strawberry_0_part_1
-peach_0
 peach_0_part_0
+peach_0
+strawberry_0_part_1
+jar_1
+bottom_cabinet_no_top_80
+peach_0_part_1
+fridge_97
+strawberry_0
+room_floor_kitchen_0
+countertop_84
+strawberry_0_part_0
 jar_0
+carving_knife_0
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'strawberry.n.01_1', 'electric_refrigerator.n.01_1']

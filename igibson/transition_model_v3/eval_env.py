@@ -49,6 +49,8 @@ class EvalActions(IntEnum):
 
     LEFT_PLACE_NEXTTO_ONTOP=auto()
     RIGHT_PLACE_NEXTTO_ONTOP=auto()
+    LEFT_PLACE_UNDER=auto()
+    RIGHT_PLACE_UNDER=auto()
 
 class EvalEnv:
 
@@ -113,6 +115,8 @@ class EvalEnv:
             EvalActions.TOGGLE_OFF.value: self.action_env.toggle_off,
             EvalActions.LEFT_PLACE_NEXTTO_ONTOP.value: self.action_env.left_place_nextto_ontop,
             EvalActions.RIGHT_PLACE_NEXTTO_ONTOP.value: self.action_env.right_place_nextto_ontop,
+            EvalActions.LEFT_PLACE_UNDER.value: self.action_env.left_place_under,
+            EvalActions.RIGHT_PLACE_UNDER.value: self.action_env.right_place_under,
         }
 
     def get_relevant_objects(self):

@@ -1,7 +1,7 @@
 Addressable Objects:
 room_floor_home_office_0
-breakfast_table_3
 printer_0
+breakfast_table_3
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'printer.n.03_1', 'floor.n.01_1']
@@ -24,12 +24,5 @@ Action:  TOGGLE_ON printer_0
 Toggleon printer_0 success
 Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
 ************************************************
-Action:  TOGGLE_OFF printer_0
-Toggleoff printer_0 success
-Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
-************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Teleport printer_0 ONTOP breakfast_table_3 successful: True
-Post Effects:  (False, {'satisfied': [0], 'unsatisfied': [1]})
-{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

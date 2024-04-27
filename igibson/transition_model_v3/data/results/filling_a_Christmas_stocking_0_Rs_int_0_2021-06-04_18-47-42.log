@@ -1,23 +1,23 @@
 Addressable Objects:
-ice_cube_3
-stocking_2
-stocking_3
-bottom_cabinet_41
-ice_cube_0
-ice_cube_2
-pen_2
-pen_0
-room_floor_living_room_0
-candy_cane_0
-stocking_1
-lollipop_2
-ice_cube_1
-pen_3
-bottom_cabinet_46
 stocking_0
+pen_2
+ice_cube_2
+stocking_3
+pen_3
+pen_0
+lollipop_2
 lollipop_0
-pen_1
+stocking_2
+ice_cube_3
+room_floor_living_room_0
+bottom_cabinet_46
+ice_cube_0
 lollipop_1
+stocking_1
+ice_cube_1
+bottom_cabinet_41
+candy_cane_0
+pen_1
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'cube.n.05_1', 'floor.n.01_1']

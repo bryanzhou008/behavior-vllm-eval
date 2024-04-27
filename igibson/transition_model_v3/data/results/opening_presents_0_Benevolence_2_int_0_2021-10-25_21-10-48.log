@@ -1,8 +1,8 @@
 Addressable Objects:
-package_0
-bed_10
-package_1
 room_floor_bedroom_1
+package_0
+package_1
+bed_10
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'package.n.02_1', 'floor.n.01_1']

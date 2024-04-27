@@ -1,16 +1,16 @@
 Addressable Objects:
-scraper_0
-bucket_0
-dustpan_0
+countertop_56
 pea_0
-fridge_57
-paper_towel_0
 rag_0
 pear_0
-room_floor_kitchen_0
-sink_64
+bucket_0
 pomelo_0
-countertop_56
+dustpan_0
+paper_towel_0
+sink_64
+scraper_0
+fridge_57
+room_floor_kitchen_0
 -----------------------------------------------
 Initial Conditions: 
 ['not', 'stained', 'sink.n.01_1']
@@ -106,32 +106,31 @@ Teleport pomelo_0 INSIDE bucket_0 successful: True
 Close fridge_57 success
 Post Effects:  True (False, {'satisfied': [3, 4, 5, 6], 'unsatisfied': [0, 1, 2]})
 ************************************************
-Action:  RIGHT_PLACE_ONTOP countertop_56
+Action:  RIGHT_PLACE_NEXTTO countertop_56
 Teleport pear_0 INSIDE bucket_0 successful: True
 Teleport pea_0 INSIDE bucket_0 successful: True
 Teleport pomelo_0 INSIDE bucket_0 successful: True
 Teleport pear_0 INSIDE bucket_0 successful: True
 Teleport pea_0 INSIDE bucket_0 successful: True
 Teleport pomelo_0 INSIDE bucket_0 successful: True
-Place ontop bucket_0 countertop_56 successful
-Post Effects:  True (False, {'satisfied': [3, 4, 5, 6], 'unsatisfied': [0, 1, 2]})
+Place next to bucket_0 countertop_56 successful
+Post Effects:  True (False, {'satisfied': [1, 3, 4, 5, 6], 'unsatisfied': [0, 2]})
 ************************************************
 Action:  RIGHT_GRASP scraper_0
 Grasp scraper_0 with right_hand successful
-Post Effects:  True (False, {'satisfied': [3, 4, 5, 6], 'unsatisfied': [0, 1, 2]})
+Post Effects:  True (False, {'satisfied': [1, 3, 4, 5, 6], 'unsatisfied': [0, 2]})
 ************************************************
 Action:  RIGHT_PLACE_ONTOP fridge_57
 Place ontop scraper_0 fridge_57 successful
-Post Effects:  True (False, {'satisfied': [2, 3, 4, 5, 6], 'unsatisfied': [0, 1]})
+Post Effects:  True (False, {'satisfied': [1, 2, 3, 4, 5, 6], 'unsatisfied': [0]})
+************************************************
+Action:  RIGHT_GRASP dustpan_0
+Grasp dustpan_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [1, 2, 3, 4, 5, 6], 'unsatisfied': [0]})
+************************************************
+Action:  RIGHT_PLACE_NEXTTO fridge_57
+Place next to dustpan_0 fridge_57 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4, 5, 6], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Teleport rag_0 INSIDE sink_64 successful: True
-Teleport scraper_0 ONTOP fridge_57 successful: True
-Teleport paper_towel_0 ONTOP countertop_56 successful: True
-Teleport bucket_0 ONTOP countertop_56 successful: True
-Teleport pear_0 INSIDE bucket_0 successful: True
-Teleport pea_0 INSIDE bucket_0 successful: True
-Teleport pomelo_0 INSIDE bucket_0 successful: True
-Post Effects:  (False, {'satisfied': [4, 5, 6], 'unsatisfied': [0, 1, 2, 3]})
-{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

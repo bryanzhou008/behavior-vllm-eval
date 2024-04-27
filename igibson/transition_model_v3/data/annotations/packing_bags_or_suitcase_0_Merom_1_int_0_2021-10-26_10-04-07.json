@@ -1,6 +1,6 @@
 [
     {
-        "action": "RIGHT_GRASP",
+        "action": "OPEN",
         "object": "backpack_97"
     },
     {
@@ -49,6 +49,10 @@
     },
     {
         "action": "LEFT_PLACE_INSIDE",
+        "object": "backpack_97"
+    },
+    {
+        "action": "RIGHT_GRASP",
         "object": "backpack_97"
     },
     {

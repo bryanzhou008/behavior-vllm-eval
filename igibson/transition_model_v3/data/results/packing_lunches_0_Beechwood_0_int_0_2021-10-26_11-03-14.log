@@ -1,24 +1,24 @@
 Addressable Objects:
-room_floor_living_room_0
-bottom_cabinet_no_top_54
 breakfast_table_7
-juice_0
-apple_0_part_0
-carton_1
-apple_0_part_1
-apple_0
-salad_0
-cookie_0
-carton_0
+room_floor_kitchen_0
 chip_1
+juice_0
+carton_0
+room_floor_living_room_0
+fridge_57
+apple_0
+apple_0_part_1
+carton_1
+cookie_1
+banana_0
+pop_0
 chip_0
 hamburger_0
-pop_0
 countertop_56
-cookie_1
-fridge_57
-room_floor_kitchen_0
-banana_0
+apple_0_part_0
+salad_0
+cookie_0
+bottom_cabinet_no_top_54
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'salad.n.01_1', 'electric_refrigerator.n.01_1']
@@ -115,21 +115,25 @@ Action:  LEFT_PLACE_INSIDE carton_1
 Place inside hamburger_0 carton_1 successful
 Post Effects:  True (False, {'satisfied': [0, 1, 4, 5], 'unsatisfied': [2, 3]})
 ************************************************
-Action:  CLOSE fridge_57
-Close fridge_57 success
+Action:  RIGHT_GRASP juice_0
+Grasp juice_0 with right_hand successful
 Post Effects:  True (False, {'satisfied': [0, 1, 4, 5], 'unsatisfied': [2, 3]})
 ************************************************
+Action:  LEFT_GRASP pop_0
+Grasp pop_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 4, 5], 'unsatisfied': [2, 3]})
+************************************************
+Action:  RIGHT_PLACE_INSIDE carton_0
+Place inside juice_0 carton_0 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 4, 5], 'unsatisfied': [3]})
+************************************************
+Action:  LEFT_PLACE_INSIDE carton_1
+Place inside pop_0 carton_1 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4, 5], 'unsatisfied': []})
+************************************************
+Action:  CLOSE fridge_57
+Close fridge_57 success
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4, 5], 'unsatisfied': []})
+************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Teleport banana_0 INSIDE carton_1 successful: True
-Teleport cookie_1 INSIDE carton_1 successful: True
-Teleport chip_1 INSIDE carton_1 successful: True
-Teleport hamburger_0 INSIDE carton_1 successful: True
-Teleport apple_0 INSIDE carton_0 successful: True
-Teleport cookie_0 INSIDE carton_0 successful: True
-Teleport chip_0 INSIDE carton_0 successful: True
-Teleport salad_0 INSIDE carton_0 successful: True
-Teleport pop_0 ONTOP breakfast_table_7 successful: True
-Teleport countertop_56 ONTOP bottom_cabinet_no_top_54 successful: True
-Post Effects:  (False, {'satisfied': [0, 1, 4, 5], 'unsatisfied': [2, 3]})
-{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

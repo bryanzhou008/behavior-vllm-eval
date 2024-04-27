@@ -1,15 +1,15 @@
 Addressable Objects:
-document_3
-document_2
-breakfast_table_3
-swivel_chair_5
-folder_1
-highlighter_0
-folder_0
 room_floor_home_office_0
-document_1
-bottom_cabinet_no_top_21
 document_0
+highlighter_0
+folder_1
+swivel_chair_5
+document_2
+bottom_cabinet_no_top_21
+folder_0
+document_1
+document_3
+breakfast_table_3
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'marker.n.03_1', 'chair.n.01_1']

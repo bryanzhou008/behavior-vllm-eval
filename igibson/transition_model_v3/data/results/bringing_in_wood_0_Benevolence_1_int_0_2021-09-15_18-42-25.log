@@ -1,9 +1,9 @@
 Addressable Objects:
-plywood_0
-room_floor_kitchen_0
-plywood_1
-room_floor_living_room_0
 plywood_2
+plywood_0
+plywood_1
+room_floor_kitchen_0
+room_floor_living_room_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'plywood.n.01_1', 'floor.n.01_1']

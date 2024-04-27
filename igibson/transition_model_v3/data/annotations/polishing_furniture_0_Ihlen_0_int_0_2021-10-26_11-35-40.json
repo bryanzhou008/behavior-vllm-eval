@@ -12,7 +12,7 @@
         "object": "shelf_11"
     },
     {
-        "action": "RIGHT_RELEASE",
-        "object": "rag_0"
+        "action": "RIGHT_PLACE_UNDER",
+        "object": "coffee_table_10"
     }
 ]

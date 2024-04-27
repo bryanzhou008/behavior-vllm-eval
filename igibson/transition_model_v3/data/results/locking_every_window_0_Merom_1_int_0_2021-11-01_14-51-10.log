@@ -1,11 +1,11 @@
 Addressable Objects:
-window_82
 window_76
-sofa_25
 window_79
-room_floor_living_room_0
 window_81
+sofa_25
 bed_7
+window_82
+room_floor_living_room_0
 -----------------------------------------------
 Initial Conditions: 
 ['open', 'window.n.01_1']

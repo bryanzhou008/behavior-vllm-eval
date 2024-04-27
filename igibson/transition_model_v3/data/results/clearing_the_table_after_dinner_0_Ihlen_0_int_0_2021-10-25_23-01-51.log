@@ -1,19 +1,19 @@
 Addressable Objects:
-catsup_0
-straight_chair_4
-bowl_1
-bucket_1
-cup_1
-bowl_2
-pop_0
-straight_chair_3
-bowl_3
-bucket_0
-cup_0
-pop_1
-breakfast_table_2
 bowl_0
+cup_0
+bucket_0
+bowl_2
+straight_chair_4
+cup_1
+bucket_1
+breakfast_table_2
+bowl_3
+catsup_0
+straight_chair_3
+pop_1
+pop_0
 room_floor_dining_room_0
+bowl_1
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'cup.n.01_1', 'table.n.02_1']

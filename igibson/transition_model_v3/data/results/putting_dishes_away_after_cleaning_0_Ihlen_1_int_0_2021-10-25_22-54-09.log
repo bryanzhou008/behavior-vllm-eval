@@ -1,16 +1,16 @@
 Addressable Objects:
-plate_5
-plate_4
-countertop_81
-plate_3
-top_cabinet_62
-plate_2
 plate_6
 plate_7
+plate_4
+plate_2
+countertop_81
+top_cabinet_62
+countertop_79
 room_floor_kitchen_0
+plate_5
+plate_3
 plate_1
 plate_0
-countertop_79
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'plate.n.04_1', 'countertop.n.01_1']

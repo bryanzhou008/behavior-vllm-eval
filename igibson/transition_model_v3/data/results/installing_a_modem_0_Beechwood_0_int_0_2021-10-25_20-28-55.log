@@ -20,15 +20,9 @@ Action:  TOGGLE_ON modem_0
 Toggleon modem_0 success
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
 ************************************************
-Action:  TOGGLE_OFF modem_0
-Toggleoff modem_0 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
-************************************************
-Action:  RIGHT_PLACE_ONTOP room_floor_home_office_0
-Place ontop modem_0 room_floor_home_office_0 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+Action:  RIGHT_PLACE_UNDER breakfast_table_37
+Place under modem_0 breakfast_table_37 successful
+Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1]})
-{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

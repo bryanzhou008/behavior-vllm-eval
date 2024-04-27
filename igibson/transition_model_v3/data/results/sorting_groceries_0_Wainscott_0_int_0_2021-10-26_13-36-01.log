@@ -1,36 +1,36 @@
 Addressable Objects:
-apple_1_part_0
-orange_0_part_0
-orange_0_part_1
-orange_1_part_0
-prosciutto_0
-soup_0
-apple_0_part_1
-room_floor_kitchen_0
-yogurt_0
+bottom_cabinet_no_top_80
 carrot_1
-orange_2
-apple_1
-carrot_0
-carrot_2
-flour_0
-cheese_0
-orange_2_part_0
-fridge_97
-countertop_84
-apple_0
-orange_0
-apple_0_part_0
-orange_1
 orange_2_part_1
+orange_0_part_0
 apple_1_part_1
 milk_0
-orange_1_part_1
-broccoli_0
-breakfast_table_44
+flour_0
 straight_chair_45
+breakfast_table_44
+orange_0_part_1
+carrot_2
+cheese_0
+orange_2
+yogurt_0
 pretzel_0
-bottom_cabinet_no_top_80
+apple_0_part_0
+room_floor_kitchen_0
+fridge_97
+orange_1_part_0
+orange_1_part_1
+countertop_84
+orange_2_part_0
+broccoli_0
+carrot_0
+apple_1_part_0
+apple_0
+soup_0
+apple_0_part_1
+apple_1
+orange_0
+orange_1
+prosciutto_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'bread.n.01_1', 'countertop.n.01_1']
@@ -198,6 +198,8 @@ Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': [5, 6]
 ************************************************
 ------------Action Execution Ends-------------
 Final teleport
+Teleport pretzel_0 INSIDE bottom_cabinet_no_top_80 successful: True
+Teleport flour_0 INSIDE bottom_cabinet_no_top_80 successful: True
 Teleport cheese_0 INSIDE fridge_97 successful: True
 Teleport milk_0 INSIDE fridge_97 successful: True
 Teleport yogurt_0 INSIDE fridge_97 successful: True
@@ -209,8 +211,6 @@ Teleport apple_0 INSIDE fridge_97 successful: True
 Teleport apple_1 INSIDE fridge_97 successful: True
 Teleport broccoli_0 INSIDE fridge_97 successful: True
 Teleport prosciutto_0 INSIDE fridge_97 successful: True
-Teleport pretzel_0 INSIDE bottom_cabinet_no_top_80 successful: True
-Teleport flour_0 INSIDE bottom_cabinet_no_top_80 successful: True
 Teleport orange_2 ONTOP breakfast_table_44 successful: True
 Post Effects:  (False, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': [5, 6]})
 {'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

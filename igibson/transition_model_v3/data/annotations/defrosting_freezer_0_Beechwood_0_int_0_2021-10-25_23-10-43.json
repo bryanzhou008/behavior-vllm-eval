@@ -68,7 +68,7 @@
         "object": "fridge_57"
     },
     {
-        "action": "RIGHT_PLACE_ONTOP",
+        "action": "RIGHT_PLACE_NEXTTO",
         "object": "countertop_56"
     },
     {
@@ -77,6 +77,14 @@
     },
     {
         "action": "RIGHT_PLACE_ONTOP",
+        "object": "fridge_57"
+    },
+    {
+        "action": "RIGHT_GRASP",
+        "object": "dustpan_0"
+    },
+    {
+        "action": "RIGHT_PLACE_NEXTTO",
         "object": "fridge_57"
     }
 ]

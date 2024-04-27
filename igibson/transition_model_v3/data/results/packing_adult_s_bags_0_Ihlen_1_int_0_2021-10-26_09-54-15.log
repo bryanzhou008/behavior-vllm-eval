@@ -1,16 +1,16 @@
 Addressable Objects:
-mouse_119
-toothbrush_118
 bracelet_116
-door_99
-backpack_112
+mouse_119
 lipstick_114
-necklace_117
-hanger_113
 room_floor_bedroom_0
+room_floor_corridor_0
 lipstick_115
 bed_33
-room_floor_corridor_0
+door_99
+hanger_113
+necklace_117
+toothbrush_118
+backpack_112
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'backpack.n.01_1', 'floor.n.01_1']
@@ -31,90 +31,78 @@ Goal Conditions:
 ['inside', 'mouse.n.04_1', 'backpack.n.01_1']
 ['onfloor', 'backpack.n.01_1', 'floor.n.01_2']
 ------------Action Execution Begins-------------
-Action:  RIGHT_GRASP necklace_117
-Grasp necklace_117 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
-************************************************
-Action:  RIGHT_PLACE_ONTOP bed_33
-Place ontop necklace_117 bed_33 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
-************************************************
-Action:  RIGHT_GRASP bracelet_116
-Grasp bracelet_116 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
-************************************************
-Action:  RIGHT_PLACE_ONTOP bed_33
-Place ontop bracelet_116 bed_33 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
-************************************************
-Action:  RIGHT_GRASP backpack_112
-Grasp backpack_112 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
-************************************************
-Action:  RIGHT_PLACE_ONTOP room_floor_bedroom_0
-Place ontop backpack_112 room_floor_bedroom_0 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Action:  OPEN backpack_112
+No openable joint metadata found for object backpack_112
+Open backpack_112 failed
+Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  RIGHT_GRASP mouse_119
 Grasp mouse_119 with right_hand successful
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
 ************************************************
 Action:  RIGHT_PLACE_INSIDE backpack_112
-backpack_112 is closed
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Place inside mouse_119 backpack_112 successful
+Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4]})
 ************************************************
 Action:  RIGHT_GRASP bracelet_116
-right_hand is already holding mouse_119
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Grasp bracelet_116 with right_hand successful
+Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4]})
 ************************************************
 Action:  RIGHT_PLACE_INSIDE backpack_112
-backpack_112 is closed
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Place inside bracelet_116 backpack_112 successful
+Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4]})
 ************************************************
 Action:  RIGHT_GRASP necklace_117
-right_hand is already holding mouse_119
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Grasp necklace_117 with right_hand successful
+Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4]})
 ************************************************
 Action:  RIGHT_PLACE_INSIDE backpack_112
-backpack_112 is closed
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Place inside necklace_117 backpack_112 successful
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4]})
 ************************************************
 Action:  RIGHT_GRASP toothbrush_118
-right_hand is already holding mouse_119
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Grasp toothbrush_118 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4]})
 ************************************************
 Action:  RIGHT_PLACE_INSIDE backpack_112
-backpack_112 is closed
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Place inside toothbrush_118 backpack_112 successful
+Post Effects:  True (False, {'satisfied': [0, 2, 3], 'unsatisfied': [1, 4]})
 ************************************************
 Action:  RIGHT_GRASP lipstick_115
-right_hand is already holding mouse_119
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Grasp lipstick_115 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 2, 3], 'unsatisfied': [1, 4]})
 ************************************************
 Action:  RIGHT_PLACE_INSIDE backpack_112
-backpack_112 is closed
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Place inside lipstick_115 backpack_112 successful
+Post Effects:  True (False, {'satisfied': [0, 2, 3], 'unsatisfied': [1, 4]})
 ************************************************
 Action:  RIGHT_GRASP lipstick_114
-right_hand is already holding mouse_119
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Grasp lipstick_114 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 2, 3], 'unsatisfied': [1, 4]})
 ************************************************
 Action:  RIGHT_PLACE_INSIDE backpack_112
-backpack_112 is closed
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Place inside lipstick_114 backpack_112 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3], 'unsatisfied': [4]})
 ************************************************
 Action:  RIGHT_GRASP backpack_112
-right_hand is already holding mouse_119
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Teleport mouse_119 INSIDE backpack_112 successful: True
+Teleport bracelet_116 INSIDE backpack_112 successful: True
+Teleport necklace_117 INSIDE backpack_112 successful: True
+Teleport toothbrush_118 INSIDE backpack_112 successful: True
+Teleport lipstick_115 INSIDE backpack_112 successful: True
+Teleport lipstick_114 INSIDE backpack_112 successful: True
+Grasp backpack_112 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3], 'unsatisfied': [4]})
 ************************************************
 Action:  RIGHT_PLACE_ONTOP room_floor_corridor_0
-Place ontop mouse_119 room_floor_corridor_0 unsuccessful
-Post Effects:  False (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
+Teleport mouse_119 INSIDE backpack_112 successful: True
+Teleport bracelet_116 INSIDE backpack_112 successful: True
+Teleport necklace_117 INSIDE backpack_112 successful: True
+Teleport toothbrush_118 INSIDE backpack_112 successful: True
+Teleport lipstick_115 INSIDE backpack_112 successful: True
+Teleport lipstick_114 INSIDE backpack_112 successful: True
+Place ontop backpack_112 room_floor_corridor_0 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-No openable joint metadata found for object backpack_112
-Teleport necklace_117 ONTOP bed_33 successful: True
-Teleport bracelet_116 ONTOP bed_33 successful: True
-Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4]})
-{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

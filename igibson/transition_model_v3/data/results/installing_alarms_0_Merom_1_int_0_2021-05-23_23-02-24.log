@@ -1,9 +1,9 @@
 Addressable Objects:
-alarm_0
 coffee_table_27
-room_floor_living_room_0
 alarm_1
 breakfast_table_20
+alarm_0
+room_floor_living_room_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'alarm.n.02_1', 'table.n.02_2']
@@ -20,37 +20,25 @@ Action:  TOGGLE_ON alarm_0
 Toggleon alarm_0 success
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
 ************************************************
-Action:  TOGGLE_OFF alarm_0
-Toggleoff alarm_0 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
-************************************************
 Action:  TOGGLE_ON alarm_1
 Toggleon alarm_1 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
-************************************************
-Action:  TOGGLE_OFF alarm_1
-Toggleoff alarm_1 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
 ************************************************
 Action:  RIGHT_GRASP alarm_0
 Grasp alarm_0 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
 ************************************************
-Action:  RIGHT_PLACE_ONTOP breakfast_table_20
-Place ontop alarm_0 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+Action:  RIGHT_PLACE_ONTOP coffee_table_27
+Place ontop alarm_0 coffee_table_27 successful
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
 ************************************************
 Action:  RIGHT_GRASP alarm_1
 Grasp alarm_1 with right_hand successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
 ************************************************
 Action:  RIGHT_PLACE_ONTOP breakfast_table_20
 Place ontop alarm_1 breakfast_table_20 successful
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
+Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Teleport alarm_0 ONTOP breakfast_table_20 successful: True
-Teleport alarm_1 ONTOP breakfast_table_20 successful: True
-Post Effects:  (False, {'satisfied': [], 'unsatisfied': [0, 1]})
-{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

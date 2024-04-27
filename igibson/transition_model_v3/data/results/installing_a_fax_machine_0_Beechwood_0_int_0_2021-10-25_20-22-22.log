@@ -1,7 +1,7 @@
 Addressable Objects:
-facsimile_0
 breakfast_table_37
 room_floor_home_office_0
+facsimile_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'facsimile.n.02_1', 'floor.n.01_1']
@@ -20,16 +20,9 @@ Action:  TOGGLE_ON facsimile_0
 Toggleon facsimile_0 success
 Post Effects:  True (False, {'satisfied': [1], 'unsatisfied': [0]})
 ************************************************
-Action:  TOGGLE_OFF facsimile_0
-Toggleoff facsimile_0 success
-Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1]})
-************************************************
 Action:  RIGHT_PLACE_ONTOP breakfast_table_37
 Place ontop facsimile_0 breakfast_table_37 successful
-Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
+Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Teleport facsimile_0 ONTOP breakfast_table_37 successful: True
-Post Effects:  (False, {'satisfied': [0], 'unsatisfied': [1]})
-{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

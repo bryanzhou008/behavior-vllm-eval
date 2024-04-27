@@ -1,21 +1,21 @@
 Addressable Objects:
+lollipop_0
+basket_1
+notebook_0
+bracelet_0
+fridge_27
+bottom_cabinet_no_top_15
+bow_1
+ball_0
+bow_0
+countertop_18
+notebook_1
+egg_0
 egg_1
 bottom_cabinet_no_top_16
-bow_1
-notebook_1
 lollipop_1
-basket_0
-notebook_0
-ball_0
-countertop_18
-bracelet_0
-basket_1
-bow_0
-egg_0
-lollipop_0
 room_floor_kitchen_0
-bottom_cabinet_no_top_15
-fridge_27
+basket_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'basket.n.01_1', 'countertop.n.01_1']
@@ -62,90 +62,89 @@ Action:  OPEN bottom_cabinet_no_top_15
 Open bottom_cabinet_no_top_15 failed
 Post Effects:  False (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4, 5]})
 ************************************************
-Action:  RIGHT_GRASP bow_0
-bow_0 is inside closed bottom_cabinet_no_top_16
-Post Effects:  False (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4, 5]})
-************************************************
-Action:  LEFT_GRASP bow_1
-bow_1 is inside closed bottom_cabinet_no_top_16
-Post Effects:  False (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4, 5]})
-************************************************
-Action:  LEFT_PLACE_INSIDE basket_0
-left_hand is empty
-Post Effects:  False (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4, 5]})
-************************************************
-Action:  RIGHT_PLACE_INSIDE basket_1
-right_hand is empty
-Post Effects:  False (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4, 5]})
-************************************************
 Action:  OPEN bottom_cabinet_no_top_16
 Open bottom_cabinet_no_top_16 failed
 Post Effects:  False (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4, 5]})
 ************************************************
-Action:  RIGHT_GRASP basket_0
-Teleport ball_0 INSIDE basket_0 successful: True
-Teleport bracelet_0 INSIDE basket_0 successful: True
-Grasp basket_0 with right_hand successful
-Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5]})
+Action:  RIGHT_GRASP bow_0
+Grasp bow_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4, 5]})
+************************************************
+Action:  LEFT_GRASP bow_1
+Grasp bow_1 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4, 5]})
+************************************************
+Action:  LEFT_PLACE_INSIDE basket_0
+Place inside bow_1 basket_0 successful
+Post Effects:  True (False, {'satisfied': [0, 3], 'unsatisfied': [1, 2, 4, 5]})
+************************************************
+Action:  RIGHT_PLACE_INSIDE basket_1
+Place inside bow_0 basket_1 successful
+Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2, 5]})
+************************************************
+Action:  RIGHT_GRASP lollipop_0
+Grasp lollipop_0 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2, 5]})
 ************************************************
 Action:  LEFT_GRASP lollipop_1
-Teleport ball_0 INSIDE basket_0 successful: True
-Teleport bracelet_0 INSIDE basket_0 successful: True
 Grasp lollipop_1 with left_hand successful
-Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5]})
+Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2, 5]})
 ************************************************
 Action:  LEFT_PLACE_INSIDE basket_0
 Place inside lollipop_1 basket_0 successful
-Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5]})
+Post Effects:  True (False, {'satisfied': [0, 3, 4], 'unsatisfied': [1, 2, 5]})
 ************************************************
 Action:  RIGHT_PLACE_INSIDE basket_1
-basket_0 is bigger than basket_1
-Post Effects:  False (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5]})
+Place inside lollipop_0 basket_1 successful
+Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1, 5]})
 ************************************************
 Action:  OPEN fridge_27
 Open fridge_27 failed
-Post Effects:  False (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5]})
+Post Effects:  False (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1, 5]})
 ************************************************
 Action:  RIGHT_GRASP egg_1
-right_hand is already holding basket_0
-Post Effects:  False (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5]})
+Grasp egg_1 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1, 5]})
 ************************************************
 Action:  LEFT_GRASP egg_0
 Grasp egg_0 with left_hand successful
-Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5]})
+Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1, 5]})
 ************************************************
 Action:  LEFT_PLACE_INSIDE basket_0
 Place inside egg_0 basket_0 successful
-Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5]})
+Post Effects:  True (False, {'satisfied': [0, 2, 3, 4], 'unsatisfied': [1, 5]})
 ************************************************
 Action:  RIGHT_PLACE_INSIDE basket_1
-basket_0 is bigger than basket_1
-Post Effects:  False (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5]})
+Place inside egg_1 basket_1 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': [5]})
 ************************************************
-Action:  UNFREEZE egg_1
-Unfreeze failed, object is already unfreezeed
-Post Effects:  False (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5]})
+Action:  RIGHT_GRASP notebook_1
+Grasp notebook_1 with right_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': [5]})
 ************************************************
-Action:  UNFREEZE egg_0
-Unfreeze failed, object is already unfreezeed
-Post Effects:  False (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5]})
+Action:  LEFT_GRASP notebook_0
+Grasp notebook_0 with left_hand successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': [5]})
+************************************************
+Action:  LEFT_PLACE_NEXTTO basket_0
+Place next to notebook_0 basket_0 successful
+Post Effects:  True (False, {'satisfied': [0, 1, 2, 3, 4], 'unsatisfied': [5]})
+************************************************
+Action:  RIGHT_PLACE_NEXTTO basket_1
+Place next to notebook_1 basket_1 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4, 5], 'unsatisfied': []})
 ************************************************
 Action:  CLOSE fridge_27
 Close fridge_27 success
-Post Effects:  True (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5]})
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4, 5], 'unsatisfied': []})
+************************************************
+Action:  CLOSE bottom_cabinet_no_top_15
+Close bottom_cabinet_no_top_15 success
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4, 5], 'unsatisfied': []})
+************************************************
+Action:  CLOSE bottom_cabinet_no_top_16
+Close bottom_cabinet_no_top_16 success
+Post Effects:  True (True, {'satisfied': [0, 1, 2, 3, 4, 5], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Teleport bow_1 INSIDE bottom_cabinet_no_top_16 successful: True
-Teleport bow_0 INSIDE bottom_cabinet_no_top_16 successful: True
-Teleport basket_1 ONTOP countertop_18 successful: True
-Teleport notebook_1 INSIDE bottom_cabinet_no_top_15 successful: True
-Teleport notebook_0 INSIDE bottom_cabinet_no_top_15 successful: True
-Teleport egg_1 INSIDE fridge_27 successful: True
-Teleport lollipop_0 ONTOP fridge_27 successful: True
-Teleport ball_0 INSIDE basket_0 successful: True
-Teleport bracelet_0 INSIDE basket_0 successful: True
-Teleport lollipop_1 INSIDE basket_0 successful: True
-Teleport egg_0 INSIDE basket_0 successful: True
-Post Effects:  (False, {'satisfied': [3], 'unsatisfied': [0, 1, 2, 4, 5]})
-{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

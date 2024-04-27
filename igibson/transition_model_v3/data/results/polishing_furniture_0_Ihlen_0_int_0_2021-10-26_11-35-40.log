@@ -1,8 +1,8 @@
 Addressable Objects:
 shelf_11
-coffee_table_10
-rag_0
 room_floor_living_room_0
+rag_0
+coffee_table_10
 -----------------------------------------------
 Initial Conditions: 
 ['dusty', 'shelf.n.01_1']
@@ -27,11 +27,9 @@ Action:  CLEAN shelf_11
 Clean-dust shelf_11 success
 Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ************************************************
-Action:  RIGHT_RELEASE rag_0
-Release rag_0 from right_hand successful
-Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
+Action:  RIGHT_PLACE_UNDER coffee_table_10
+Place under rag_0 coffee_table_10 successful
+Post Effects:  True (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
 ************************************************
 ------------Action Execution Ends-------------
-Final teleport
-Post Effects:  (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
-{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}
+{'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': True}

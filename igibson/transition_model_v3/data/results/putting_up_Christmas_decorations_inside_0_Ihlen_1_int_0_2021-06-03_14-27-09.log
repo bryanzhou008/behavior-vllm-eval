@@ -1,18 +1,18 @@
 Addressable Objects:
+sofa_25
+breakfast_table_19
+candle_118
+bow_115
+room_floor_living_room_0
+bow_114
+christmas_tree_decorated_112
+wrapped_gift_119
+bow_116
+wrapped_gift_121
+wrapped_gift_120
+carton_122
 candle_117
 wreath_113
-room_floor_living_room_0
-wrapped_gift_119
-bow_114
-bow_115
-christmas_tree_decorated_112
-sofa_25
-bow_116
-wrapped_gift_120
-wrapped_gift_121
-candle_118
-carton_122
-breakfast_table_19
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'christmas_tree.n.05_1', 'floor.n.01_1']
@@ -115,5 +115,5 @@ Teleport bow_116 ONTOP breakfast_table_19 successful: True
 Teleport wreath_113 ONTOP breakfast_table_19 successful: True
 Teleport candle_118 ONTOP breakfast_table_19 successful: True
 Teleport candle_117 ONTOP breakfast_table_19 successful: True
-Post Effects:  (False, {'satisfied': [1, 4], 'unsatisfied': [0, 2, 3]})
+Post Effects:  (False, {'satisfied': [1, 2, 4], 'unsatisfied': [0, 3]})
 {'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}

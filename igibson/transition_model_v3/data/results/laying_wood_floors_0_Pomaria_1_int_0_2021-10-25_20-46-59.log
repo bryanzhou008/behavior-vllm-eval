@@ -1,12 +1,12 @@
 Addressable Objects:
-hammer_82
+plywood_80
 plywood_79
+room_floor_living_room_0
 room_floor_kitchen_0
 plywood_81
-plywood_78
-plywood_80
-room_floor_living_room_0
 saw_83
+hammer_82
+plywood_78
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'plywood.n.01_1', 'floor.n.01_1']

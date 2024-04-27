@@ -1,10 +1,10 @@
 Addressable Objects:
-shampoo_0
-sink_38
-soap_0
-shower_35
-dishtowel_0
 room_floor_bathroom_0
+soap_0
+sink_38
+dishtowel_0
+shampoo_0
+shower_35
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'shampoo.n.01_1', 'floor.n.01_1']
@@ -52,5 +52,5 @@ Post Effects:  True (False, {'satisfied': [0, 1], 'unsatisfied': [2]})
 ------------Action Execution Ends-------------
 Final teleport
 Teleport soap_0 INSIDE sink_38 successful: False
-Post Effects:  (True, {'satisfied': [0, 1, 2], 'unsatisfied': []})
-{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}
+Post Effects:  (False, {'satisfied': [0, 2], 'unsatisfied': [1]})
+{'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': False}

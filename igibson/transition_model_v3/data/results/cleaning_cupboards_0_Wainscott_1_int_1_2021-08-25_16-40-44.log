@@ -1,21 +1,21 @@
 Addressable Objects:
-highlighter_107
-bottom_cabinet_25
-rag_110
-bed_58
-room_floor_bedroom_0
-hardback_104
-detergent_111
-bucket_113
+bottom_cabinet_28
 scrub_brush_109
-pen_105
-hardback_103
-screwdriver_108
-bottom_cabinet_24
+rag_110
 highlighter_106
 notebook_102
-bottom_cabinet_28
+bottom_cabinet_24
+bed_58
+hardback_103
+pen_105
+room_floor_bedroom_0
+bucket_113
 trash_can_112
+screwdriver_108
+detergent_111
+highlighter_107
+bottom_cabinet_25
+hardback_104
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'book.n.02_1', 'cabinet.n.01_1']

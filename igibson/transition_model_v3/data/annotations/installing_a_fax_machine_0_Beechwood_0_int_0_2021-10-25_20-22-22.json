@@ -8,10 +8,6 @@
         "object": "facsimile_0"
     },
     {
-        "action": "TOGGLE_OFF",
-        "object": "facsimile_0"
-    },
-    {
         "action": "RIGHT_PLACE_ONTOP",
         "object": "breakfast_table_37"
     }

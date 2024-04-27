@@ -1,14 +1,14 @@
 Addressable Objects:
+envelope_145
+newspaper_147
+newspaper_148
+newspaper_150
+envelope_146
+envelope_143
 envelope_144
 sofa_39
 newspaper_149
-envelope_146
 room_floor_living_room_0
-newspaper_150
-newspaper_147
-envelope_143
-envelope_145
-newspaper_148
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'envelope.n.01_1', 'floor.n.01_1']

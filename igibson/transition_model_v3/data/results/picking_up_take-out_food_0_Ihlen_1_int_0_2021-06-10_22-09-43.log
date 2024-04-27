@@ -1,9 +1,9 @@
 Addressable Objects:
-carton_0
-room_floor_living_room_0
-sushi_0
-hamburger_0
 breakfast_table_19
+sushi_0
+carton_0
+hamburger_0
+room_floor_living_room_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'carton.n.02_1', 'floor.n.01_1']

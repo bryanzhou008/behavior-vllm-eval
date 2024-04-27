@@ -1,15 +1,15 @@
 Addressable Objects:
-hardback_2
 notebook_0
-hardback_1
-room_floor_living_room_0
-notebook_2
-shelf_19
-hardback_3
-notebook_3
 notebook_1
 breakfast_table_9
+notebook_3
+hardback_1
 hardback_0
+hardback_3
+shelf_19
+room_floor_living_room_0
+notebook_2
+hardback_2
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'book.n.02_1', 'table.n.02_1']
@@ -70,7 +70,7 @@ Teleport hardback_0 ONTOP shelf_19 successful: True
 Teleport hardback_2 ONTOP shelf_19 successful: True
 Teleport notebook_0 ONTOP shelf_19 successful: True
 Teleport hardback_1 ONTOP shelf_19 successful: True
-Teleport notebook_2 ONTOP breakfast_table_9 successful: True
 Teleport hardback_3 ONTOP breakfast_table_9 successful: True
+Teleport notebook_2 ONTOP breakfast_table_9 successful: True
 Post Effects:  (False, {'satisfied': [0, 1, 2, 3, 4, 6, 7], 'unsatisfied': [5]})
 {'all_action_execution_true': True, 'unknown_execution_error': False, 'all_condition_satisfied': False}
