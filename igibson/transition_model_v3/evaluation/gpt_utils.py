@@ -31,5 +31,5 @@ def call_gpt_with_retry(prompt, sys_content="You are an AI assistant that speaks
             })
     
     return client.chat.completions.create(model=model,
-        messages=messages,temperature=0,
+        messages=messages,temperature=temperature,
         **kwargs).choices[0].message.content.strip()
