@@ -1,8 +1,8 @@
 Addressable Objects:
-door_85
 room_floor_bedroom_0
-bed_7
 door_89
+bed_7
+door_85
 -----------------------------------------------
 Initial Conditions: 
 ['open', 'door.n.01_1']

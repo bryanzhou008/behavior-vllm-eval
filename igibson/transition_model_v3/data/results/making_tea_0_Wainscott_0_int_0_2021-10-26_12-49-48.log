@@ -1,14 +1,14 @@
 Addressable Objects:
 lemon_0_part_1
 room_floor_kitchen_0
+fridge_97
 lemon_0
 bottom_cabinet_no_top_80
 stove_88
 carving_knife_0
-fridge_97
 lemon_0_part_0
-tea_bag_0
 teapot_0
+tea_bag_0
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'teapot.n.01_1', 'cabinet.n.01_1']

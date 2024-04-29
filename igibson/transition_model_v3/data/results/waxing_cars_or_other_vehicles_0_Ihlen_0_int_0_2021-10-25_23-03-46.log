@@ -1,9 +1,9 @@
 Addressable Objects:
-car_50
 shelf_16
+car_50
+cruet_51
 room_floor_garage_0
 rag_52
-cruet_51
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'vehicle.n.01_1', 'floor.n.01_1']

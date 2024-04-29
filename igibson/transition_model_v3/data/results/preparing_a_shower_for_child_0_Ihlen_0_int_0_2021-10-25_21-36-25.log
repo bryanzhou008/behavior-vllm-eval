@@ -1,10 +1,10 @@
 Addressable Objects:
 room_floor_bathroom_0
-sink_38
 shampoo_0
-shower_35
-soap_0
 dishtowel_0
+shower_35
+sink_38
+soap_0
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'shampoo.n.01_1', 'floor.n.01_1']

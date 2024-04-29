@@ -1,25 +1,25 @@
 Addressable Objects:
+parsley_150
+cheese_157
+salad_146
+room_floor_dining_room_0
+fridge_97
+cheese_158
+cheese_156
+salad_145
+tray_147
+breakfast_table_1
 parsley_151
-pretzel_155
+salad_143
+bottom_cabinet_no_top_80
+cheese_159
+pretzel_153
+parsley_148
+pretzel_152
+parsley_149
 salad_144
 pretzel_154
-room_floor_dining_room_0
-salad_146
-salad_145
-parsley_149
-fridge_97
-parsley_148
-salad_143
-cheese_157
-tray_147
-bottom_cabinet_no_top_80
-pretzel_153
-cheese_156
-parsley_150
-pretzel_152
-cheese_158
-cheese_159
-breakfast_table_1
+pretzel_155
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'salad.n.01_1', 'electric_refrigerator.n.01_1']

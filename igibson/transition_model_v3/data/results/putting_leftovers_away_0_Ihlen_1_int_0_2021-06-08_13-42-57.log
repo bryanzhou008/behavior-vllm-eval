@@ -1,15 +1,15 @@
 Addressable Objects:
-room_floor_kitchen_0
-pasta_0
-fridge_61
-mayonnaise_0
-countertop_79
-spaghetti_sauce_2
-pasta_1
-spaghetti_sauce_1
-pasta_2
 spaghetti_sauce_0
+countertop_79
 pasta_3
+spaghetti_sauce_1
+room_floor_kitchen_0
+pasta_2
+mayonnaise_0
+fridge_61
+pasta_1
+spaghetti_sauce_2
+pasta_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'pasta.n.02_1', 'countertop.n.01_1']

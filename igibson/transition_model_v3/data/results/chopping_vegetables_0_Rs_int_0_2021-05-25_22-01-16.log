@@ -1,36 +1,36 @@
 Addressable Objects:
-tomato_61_part_1
+vidalia_onion_67
 carving_knife_69
-mushroom_64
-vidalia_onion_67_part_1
-countertop_26
-tomato_61_part_0
-vidalia_onion_68_part_1
-casserole_71
-vidalia_onion_67_part_0
 chestnut_66_part_0
-tomato_62_part_1
+countertop_26
+vidalia_onion_68_part_1
+vidalia_onion_67_part_0
+sink_42
+top_cabinet_50
+casserole_71
+casserole_70
 tomato_61
 chestnut_66
-fridge_40
+tomato_62_part_1
 room_floor_kitchen_0
-sink_42
-mushroom_63
-vidalia_onion_67
-tomato_62
-tomato_62_part_0
 chestnut_65
-casserole_70
+tomato_62_part_0
+tomato_62
 mushroom_64_part_1
-vidalia_onion_68_part_0
+tomato_61_part_1
 mushroom_63_part_1
+vidalia_onion_68_part_0
 chestnut_65_part_1
-mushroom_64_part_0
+mushroom_64
 mushroom_63_part_0
+mushroom_64_part_0
+fridge_40
 chestnut_65_part_0
+vidalia_onion_67_part_1
 chestnut_66_part_1
-top_cabinet_50
 vidalia_onion_68
+mushroom_63
+tomato_61_part_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'tomato.n.01_1', 'countertop.n.01_1']
@@ -233,8 +233,8 @@ Teleport tomato_62_part_0 INSIDE casserole_71 successful: True
 Teleport tomato_61_part_1 INSIDE casserole_71 successful: True
 Teleport tomato_61_part_0 INSIDE casserole_71 successful: True
 Teleport vidalia_onion_68 ONTOP countertop_26 successful: True
-Teleport vidalia_onion_67_part_1 ONTOP countertop_26 successful: True
 Teleport vidalia_onion_67_part_0 ONTOP countertop_26 successful: True
+Teleport vidalia_onion_67_part_1 ONTOP countertop_26 successful: True
 Post Effects:  True (False, {'satisfied': [0, 1, 2], 'unsatisfied': [3]})
 ************************************************
 Action:  SLICE vidalia_onion_68
@@ -252,8 +252,8 @@ Teleport tomato_62_part_1 INSIDE casserole_71 successful: True
 Teleport tomato_62_part_0 INSIDE casserole_71 successful: True
 Teleport tomato_61_part_1 INSIDE casserole_71 successful: True
 Teleport tomato_61_part_0 INSIDE casserole_71 successful: True
-Teleport vidalia_onion_67_part_1 ONTOP countertop_26 successful: True
 Teleport vidalia_onion_67_part_0 ONTOP countertop_26 successful: True
+Teleport vidalia_onion_67_part_1 ONTOP countertop_26 successful: True
 Teleport vidalia_onion_68_part_1 ONTOP countertop_26 successful: True
 Teleport vidalia_onion_68_part_0 ONTOP countertop_26 successful: True
 Post Effects:  True (True, {'satisfied': [0, 1, 2, 3], 'unsatisfied': []})

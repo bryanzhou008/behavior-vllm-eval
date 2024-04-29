@@ -1,18 +1,18 @@
 Addressable Objects:
-pork_1
-bottom_cabinet_no_top_54
-cereal_1
-countertop_56
+broccoli_1
+raspberry_1
+cereal_0
 broccoli_0
 pork_0
 raspberry_0
-room_floor_kitchen_0
-lettuce_0
-broccoli_1
-raspberry_1
 fridge_57
+bottom_cabinet_no_top_54
+room_floor_kitchen_0
+pork_1
 lettuce_1
-cereal_0
+cereal_1
+countertop_56
+lettuce_0
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'cereal.n.03_1', 'countertop.n.01_1']

@@ -1,16 +1,16 @@
 Addressable Objects:
 room_floor_living_room_0
-rag_1
-window_133
-toothpaste_0
-dishtowel_1
-rag_0
-sink_82
-room_floor_kitchen_0
 coffee_table_33
-window_119
-dishtowel_0
 bottom_cabinet_no_top_80
+sink_82
+rag_0
+toothpaste_0
+room_floor_kitchen_0
+window_133
+window_119
+rag_1
+dishtowel_0
+dishtowel_1
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'towel.n.01_1', 'cabinet.n.01_1']

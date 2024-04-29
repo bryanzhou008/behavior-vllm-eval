@@ -1,15 +1,15 @@
 Addressable Objects:
-shampoo_99
-underwear_101
-room_floor_bedroom_0
-toothpaste_103
-bed_7
-window_79
 backpack_97
-underwear_102
-door_85
+room_floor_bedroom_0
+underwear_101
+window_79
 hardback_100
+shampoo_99
+toothpaste_103
+door_85
+bed_7
 toothbrush_98
+underwear_102
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'backpack.n.01_1', 'floor.n.01_1']

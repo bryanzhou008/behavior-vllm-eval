@@ -1,14 +1,14 @@
 Addressable Objects:
-notebook_63
-notebook_60
-carton_66
-room_floor_living_room_0
-hardback_65
-hardback_64
 notebook_62
-notebook_59
-notebook_61
+hardback_65
 shelf_0
+notebook_63
+room_floor_living_room_0
+hardback_64
+carton_66
+notebook_61
+notebook_59
+notebook_60
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'book.n.02_1', 'floor.n.01_1']

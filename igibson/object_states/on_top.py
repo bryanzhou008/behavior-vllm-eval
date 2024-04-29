@@ -59,6 +59,9 @@ class OnTop(PositionalValidationMemoizedObjectStateMixin, RelativeObjectState, B
         if not is_overlap(lo[0], hi[0], other_lo[0], other_hi[0]) or not is_overlap(lo[1], hi[1], other_lo[1], other_hi[1]):
             return False
         
+        if (lo+hi)[2]<(other_lo+other_hi)[2]:
+            
+            return False
         if lo[2]-other_hi[2] > MAX_DISTANCE_POS or other_hi[2]-lo[2] > MAX_DISTANCE_NEG:
             return False
 

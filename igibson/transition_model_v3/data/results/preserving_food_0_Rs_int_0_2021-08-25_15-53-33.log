@@ -1,18 +1,18 @@
 Addressable Objects:
-strawberry_61
-strawberry_62
-saucepan_65
+beef_63
 bottom_cabinet_41
 carving_knife_66
-strawberry_61_part_1
-jar_64
-strawberry_61_part_0
-strawberry_62_part_1
-fridge_40
-beef_63
-strawberry_62_part_0
-countertop_26
 room_floor_kitchen_0
+strawberry_61
+strawberry_62_part_0
+jar_64
+strawberry_62
+strawberry_62_part_1
+strawberry_61_part_0
+fridge_40
+strawberry_61_part_1
+countertop_26
+saucepan_65
 -----------------------------------------------
 Initial Conditions: 
 ['ontop', 'strawberry.n.01_1', 'countertop.n.01_1']
@@ -55,16 +55,16 @@ Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]}
 Action:  SLICE strawberry_62
 Slice strawberry_62 success
 Teleport strawberry_61 INSIDE saucepan_65 successful: True
-Teleport strawberry_62_part_1 INSIDE saucepan_65 successful: True
 Teleport strawberry_62_part_0 INSIDE saucepan_65 successful: True
+Teleport strawberry_62_part_1 INSIDE saucepan_65 successful: True
 Post Effects:  True (False, {'satisfied': [], 'unsatisfied': [0, 1, 2, 3, 4, 5]})
 ************************************************
 Action:  SLICE strawberry_61
 Slice strawberry_61 success
-Teleport strawberry_62_part_1 INSIDE saucepan_65 successful: True
 Teleport strawberry_62_part_0 INSIDE saucepan_65 successful: True
-Teleport strawberry_61_part_1 INSIDE saucepan_65 successful: True
+Teleport strawberry_62_part_1 INSIDE saucepan_65 successful: True
 Teleport strawberry_61_part_0 INSIDE saucepan_65 successful: True
+Teleport strawberry_61_part_1 INSIDE saucepan_65 successful: True
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1, 2, 3, 4, 5]})
 ************************************************
 Action:  COOK strawberry_62_part_0
@@ -118,11 +118,11 @@ Post Effects:  True (False, {'satisfied': [0, 1, 4, 5], 'unsatisfied': [2, 3]})
 ------------Action Execution Ends-------------
 Final teleport
 Teleport beef_63 INSIDE fridge_40 successful: True
-Teleport saucepan_65 ONTOP countertop_26 successful: True
-Teleport strawberry_62_part_1 INSIDE saucepan_65 successful: True
-Teleport strawberry_62_part_0 INSIDE saucepan_65 successful: True
-Teleport strawberry_61_part_1 INSIDE saucepan_65 successful: True
-Teleport strawberry_61_part_0 INSIDE saucepan_65 successful: True
 Teleport jar_64 ONTOP countertop_26 successful: True
+Teleport saucepan_65 ONTOP countertop_26 successful: True
+Teleport strawberry_62_part_0 INSIDE saucepan_65 successful: True
+Teleport strawberry_62_part_1 INSIDE saucepan_65 successful: True
+Teleport strawberry_61_part_0 INSIDE saucepan_65 successful: True
+Teleport strawberry_61_part_1 INSIDE saucepan_65 successful: True
 Post Effects:  (True, {'satisfied': [0, 1, 2, 3, 4, 5], 'unsatisfied': []})
 {'all_action_execution_true': False, 'unknown_execution_error': False, 'all_condition_satisfied': True}

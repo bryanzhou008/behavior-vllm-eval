@@ -19,7 +19,9 @@
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\bringing_in_wood_0_Benevolence_1_int_0_2021-09-15_18-42-25.json",
-        "error": ""
+        "all_action_execution_true": true,
+        "unknown_execution_error": false,
+        "all_condition_satisfied": true
     },
     {
         "name": "D:\\GitHub\\behavior-vllm-eval\\igibson\\transition_model_v3\\data\\annotations\\brushing_lint_off_clothing_0_Pomaria_2_int_0_2021-06-04_17-41-56.json",
@@ -546,9 +548,9 @@
         "all_condition_satisfied": true
     },
     {
-        "total_run": 73,
-        "all_action_execution_true": 32,
+        "total_run": 74,
+        "all_action_execution_true": 33,
         "unknown_execution_error": 0,
-        "all_condition_satisfied": 73
+        "all_condition_satisfied": 74
     }
 ]

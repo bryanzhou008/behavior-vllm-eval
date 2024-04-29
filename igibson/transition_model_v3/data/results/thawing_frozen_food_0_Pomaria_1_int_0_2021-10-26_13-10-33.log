@@ -1,13 +1,13 @@
 Addressable Objects:
-room_floor_kitchen_0
-fish_3
-fish_1
-container_date_0
-fish_2
-sink_37
-olive_0
-fridge_20
 fish_0
+container_date_0
+fridge_20
+fish_2
+fish_1
+sink_37
+room_floor_kitchen_0
+olive_0
+fish_3
 -----------------------------------------------
 Initial Conditions: 
 ['inside', 'date.n.08_1', 'electric_refrigerator.n.01_1']

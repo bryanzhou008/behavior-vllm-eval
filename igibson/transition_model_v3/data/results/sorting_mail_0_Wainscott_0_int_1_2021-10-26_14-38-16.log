@@ -1,14 +1,14 @@
 Addressable Objects:
+envelope_144
+newspaper_148
+room_floor_living_room_0
 newspaper_147
 envelope_145
 envelope_143
-newspaper_149
-envelope_146
 sofa_39
+envelope_146
+newspaper_149
 newspaper_150
-envelope_144
-room_floor_living_room_0
-newspaper_148
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'envelope.n.01_1', 'floor.n.01_1']
@@ -34,24 +34,24 @@ Place ontop envelope_143 envelope_146 successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
 ************************************************
 Action:  LEFT_GRASP envelope_144
+Teleport newspaper_150 ONTOP envelope_144 successful: True
 Grasp envelope_144 with left_hand successful
 Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
 ************************************************
 Action:  LEFT_PLACE_ONTOP envelope_146
+Teleport newspaper_150 ONTOP envelope_144 successful: True
+Teleport newspaper_150 ONTOP envelope_144 successful: True
 Place ontop envelope_144 envelope_146 successful
-Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
+Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
 ************************************************
 Action:  RIGHT_GRASP envelope_145
 Teleport sofa_39 ONTOP envelope_145 successful: True
-Teleport newspaper_150 ONTOP envelope_145 successful: True
 Grasp envelope_145 with right_hand successful
-Post Effects:  True (False, {'satisfied': [0], 'unsatisfied': [1]})
+Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
 ************************************************
 Action:  RIGHT_PLACE_ONTOP envelope_146
 Teleport sofa_39 ONTOP envelope_145 successful: True
-Teleport newspaper_150 ONTOP envelope_145 successful: True
 Teleport sofa_39 ONTOP envelope_145 successful: True
-Teleport newspaper_150 ONTOP envelope_145 successful: True
 Place ontop envelope_145 envelope_146 successful
 Post Effects:  True (True, {'satisfied': [0, 1], 'unsatisfied': []})
 ************************************************

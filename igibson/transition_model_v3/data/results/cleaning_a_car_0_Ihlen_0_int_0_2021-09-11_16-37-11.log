@@ -1,11 +1,11 @@
 Addressable Objects:
-soap_0
-car_0
-sink_38
-shelf_16
-bucket_0
-rag_0
 room_floor_garage_0
+sink_38
+rag_0
+bucket_0
+car_0
+soap_0
+shelf_16
 -----------------------------------------------
 Initial Conditions: 
 ['onfloor', 'car.n.01_1', 'floor.n.01_1']
