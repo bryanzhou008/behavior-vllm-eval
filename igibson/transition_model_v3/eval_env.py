@@ -1,4 +1,5 @@
 from enum import IntEnum
+from .base_env import BaseEnv
 from .action_env import ActionEnv
 from igibson.envs.igibson_env import iGibsonEnv
 from igibson.utils.ig_logging import IGLogReader
@@ -52,36 +53,9 @@ class EvalActions(IntEnum):
     LEFT_PLACE_UNDER=auto()
     RIGHT_PLACE_UNDER=auto()
 
-class EvalEnv:
-
-    def defalt_init(self,demo_path):
-        task = IGLogReader.read_metadata_attr(demo_path, "/metadata/atus_activity")
-        if task is None:
-            task = IGLogReader.read_metadata_attr(demo_path, "/metadata/task_name")
-
-        task_id = IGLogReader.read_metadata_attr(demo_path, "/metadata/activity_definition")
-        if task_id is None:
-            task_id = IGLogReader.read_metadata_attr(demo_path, "/metadata/task_instance")
-
-        scene_id = IGLogReader.read_metadata_attr(demo_path, "/metadata/scene_id")
-
-        config_filename = os.path.join(igibson.configs_path, "behavior_robot_mp_behavior_task.yaml")
-        config = parse_config(config_filename)
-        
-
-        config["task"] = task
-        config["task_id"] = task_id
-        config["scene_id"] = scene_id
-        config["robot"]["show_visual_head"] = True
-        config["image_width"]=512
-        config["image_height"]=512
-        self.config = config
-    
+class EvalEnv(BaseEnv):
     def __init__(self,config=None,demo_path=None,**kwargs) -> None:
-        assert config is not None or demo_path is not None
-        self.config=config
-        if demo_path is not None:
-            self.defalt_init(demo_path)
+        super().__init__(config,demo_path,**kwargs)
         self.env = iGibsonEnv(config_file=self.config,**kwargs)
         self.robot=self.robots[0]
         self.simulator=self.env.simulator
