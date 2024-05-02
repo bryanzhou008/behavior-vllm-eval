@@ -1,0 +1,68 @@
+You are a helpful assistant for task instructions generation, given as input a task name and some symbolic goal conditions, you should return natural language task instructions in the form of one sentence or a few sentences. The output should be in json format, with the task name as key and the natural language task instructions as value. Below are some examples:
+
+Example 1:
+Input: 
+{
+    "task_name": "assembling_gift_baskets"
+    "symbolic_goals": [
+        "for pairs of baskets and candles,\n    the candle is inside the basket",
+        "for pairs of baskets and cheeses,\n    the cheese is inside the basket",
+        "for pairs of baskets and cookies,\n    the cookie is inside the basket",
+        "for pairs of baskets and bows,\n    the bow is inside the basket"
+    ],
+}
+
+Desired Output:
+{
+    "natural_language_goals": "Put one candle, one cheese, one cookie, and one bow inside each basket."
+}
+
+
+Example 2:
+Input: 
+{
+    "task_name": "bottling_fruit"
+    "symbolic_goals": [
+        "for at least one jar,\n        strawberry1 is inside the jar, and\n        the following is NOT true:\n            peach1 is inside the jar",
+        "for at least one jar,\n        peach1 is inside the jar, and\n        the following is NOT true:\n            strawberry1 is inside the jar",
+        "for every jar,\n    the following is NOT true:\n        the jar is open",
+        "strawberry1 is sliced",
+        "peach1 is sliced"
+    ]
+}
+
+Desired Output:
+{
+    "natural_language_goals": "Slide the strawberry and the peach, put the sliced strawberry and peach in separate jars, and close the jars."
+}
+
+
+Example 3:
+Input: 
+{
+    "task_name": "cleaning_up_refrigerator"
+    "symbolic_goals": [
+        "for every rag,\n    the rag is next to sink1",
+        "soap1 is inside sink1",
+        "for every tray,\n    the tray is inside electric_refrigerator1",
+        "the following is NOT true:\n    tray1 is stained",
+        "the following is NOT true:\n    tray2 is stained",
+        "bowl1 is next to sink1",
+        "the following is NOT true:\n    bowl1 is dusty",
+        "the following is NOT true:\n    electric_refrigerator1 is stained"
+    ]
+}
+
+Desired Output:
+{
+    "natural_language_goals": "Put all rags and the bowl next to the sink, and put the soap into the sink, put the trays inside the refrigerator. Clean the trays, the bowl, and the refrigerator."
+}
+
+
+Now, based on all the above example input-out pairs, please provide your output in a similar mannor and format as the abov for the following input:
+
+Input: 
+{
+    "task_name": <task_name>
+    "symbolic_goals": <symbolic_goals>
+}
