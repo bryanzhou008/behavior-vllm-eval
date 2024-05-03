@@ -9,8 +9,24 @@ from tqdm import tqdm
 import json
 
 
-class Env:
 
+# Define the input and output paths
+input_path = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/100_selected_demos.txt"
+output_path = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/all_objects.json"
+object_states_file = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/object_states.json"
+
+
+# retrieve relevant node and edge states from the object_states.json file
+with open(object_states_file, 'r') as json_file:
+    object_states = json.load(json_file)
+
+relevant_node_states = object_states["node_states"]
+relevant_edge_states = object_states["edge_states"]
+
+
+
+
+class Env:
     def defalt_init(self,demo_path):
         task = IGLogReader.read_metadata_attr(demo_path, "/metadata/atus_activity")
         if task is None:
@@ -25,7 +41,6 @@ class Env:
         config_filename = os.path.join(igibson.configs_path, "behavior_robot_mp_behavior_task.yaml")
         config = parse_config(config_filename)
         
-
         config["task"] = task
         config["task_id"] = task_id
         config["scene_id"] = scene_id
@@ -33,14 +48,12 @@ class Env:
         config["image_width"]=512
         config["image_height"]=512
         self.config = config
-    
             
     def __init__(self,demo_path=None) -> None:
         self.config=None
         if demo_path is not None:
             self.defalt_init(demo_path)
             
-
 
 
 def extract_substring(input_string):
@@ -61,16 +74,6 @@ def extract_substring(input_string):
     else:
         print("Period occurs after the apostrophe, invalid for extraction.")
         raise
-
-
-
-object_states_file = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/object_states.json"
-
-with open(object_states_file, 'r') as json_file:
-    object_states = json.load(json_file)
-
-relevant_node_states = object_states["node_states"]
-relevant_edge_states = object_states["edge_states"]
 
 
 def get_objects(demo_path):
@@ -95,18 +98,28 @@ def get_objects(demo_path):
     return objects  
 
 
-
-
-def process_demos(file_path, save_path):
+def main():
+    '''
+    This script is used to generate relevant objects along with potential node states for the demos in the dataset.
+    
+    ----------------------------Required Inputs----------------------------
+    input file containing demo names (input_path)
+    input file containing allowed object states (object_states_file)
+    
+    ----------------------------Produced Outputs----------------------------
+    output file containing relevant objects and node states for each demo (output_path)
+    
+    '''
+    
     # Check if the output JSON file already exists and load existing data
-    if os.path.exists(save_path):
-        with open(save_path, 'r') as json_file:
+    if os.path.exists(output_path):
+        with open(output_path, 'r') as json_file:
             demo_to_objects = json.load(json_file)
     else:
         demo_to_objects = {}
 
     # Read demo names from the .txt file
-    with open(file_path, 'r') as file:
+    with open(input_path, 'r') as file:
         demo_names = file.read().splitlines()
 
     # Process each demo name with progress display using tqdm
@@ -131,15 +144,8 @@ def process_demos(file_path, save_path):
         print("\n\n")
 
         # Save the updated dictionary to the JSON file immediately
-        with open(save_path, 'w') as json_file:
+        with open(output_path, 'w') as json_file:
             json.dump(demo_to_objects, json_file, indent=4)
 
-
-
-
-
-# Example usage
-input_file = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/100_selected_demos.txt"
-output_file = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/all_objects.json"
-
-process_demos(input_file, output_file)
+if __name__ == "__main__":
+    main()

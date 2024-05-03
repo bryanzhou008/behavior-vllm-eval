@@ -4,6 +4,14 @@ import json
 import os
 from tqdm import tqdm
 
+
+
+# define the input and output paths
+input_path = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/100_selected_demos.txt"
+output_path = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/all_conditions.json"
+
+
+
 def get_conditions(demo_path):
     initial_conds = {}
     goal_conds = {}
@@ -15,16 +23,28 @@ def get_conditions(demo_path):
 
     return initial_conds, goal_conds
 
-def process_demos(file_path, save_path):
+
+def main():
+    '''
+    This script is used to generate input initial and goal conditions for the demos in the dataset.
+    
+    ----------------------------Required Inputs----------------------------
+    input file containing demo names (input_path)
+    
+    ----------------------------Produced Outputs----------------------------
+    output file containing initial and goal conditions for each demo in json format (output_path)
+    
+    '''
+    
     # Check if the output JSON file already exists and load existing data
-    if os.path.exists(save_path):
-        with open(save_path, 'r') as json_file:
+    if os.path.exists(output_path):
+        with open(output_path, 'r') as json_file:
             demo_to_conds = json.load(json_file)
     else:
         demo_to_conds = {}
 
     # Read demo names from the .txt file
-    with open(file_path, 'r') as file:
+    with open(input_path, 'r') as file:
         demo_names = file.read().splitlines()
 
     # Process each demo name with progress display using tqdm
@@ -53,11 +73,9 @@ def process_demos(file_path, save_path):
         print("\n\n")
 
         # Save the updated dictionary to the JSON file immediately
-        with open(save_path, 'w') as json_file:
+        with open(output_path, 'w') as json_file:
             json.dump(demo_to_conds, json_file, indent=4)
 
-# Example usage
-input_file = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/100_selected_demos.txt"
-output_file = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/all_conditions.json"
 
-process_demos(input_file, output_file)
+if __name__ == "__main__":
+    main()

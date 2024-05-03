@@ -6,6 +6,12 @@ from tqdm import tqdm
 import json
 
 
+# define the input and output paths
+input_path = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/100_selected_demos.txt"
+output_path = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/gt_goal_conditions.json"
+
+
+
 def get_flattened_ground_truth_goal_conditions(demo_path):
     res = {}
     env=EvalEnv(demo_path=demo_path,mode="headless", use_pb_gui=False)
@@ -16,9 +22,20 @@ def get_flattened_ground_truth_goal_conditions(demo_path):
 
 
 
-def process_demos(file_path, save_path):
+def main():
+    '''
+    This script is used to generate ground truth goal conditions for the demos in the dataset.
+    
+    ----------------------------Required Inputs----------------------------
+    input file containing demo names (input_path)
+    
+    ----------------------------Produced Outputs----------------------------
+    output file containing (multi-option) goal conditions for each demo (output_path)
+    
+    '''
+    
     # Read demo names from the .txt file
-    with open(file_path, 'r') as file:
+    with open(input_path, 'r') as file:
         demo_names = file.read().splitlines()
 
     # Initialize the dictionary to collect goal conditions
@@ -41,11 +58,9 @@ def process_demos(file_path, save_path):
         print("\n\n")
 
     # Save the results to a JSON file with proper indentation
-    with open(save_path, 'w') as json_file:
+    with open(output_path, 'w') as json_file:
         json.dump(demo_to_gt_goal_cond, json_file, indent=4)
 
-# Example usage
-input_file = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/100_selected_demos.txt"
-output_file = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/gt_goal_conditions.json"
 
-process_demos(input_file, output_file)
+if __name__ == "__main__":
+    main()

@@ -89,3 +89,4 @@ coverage.xml
 
 # API Keys
 *openai_api_key.txt
+*generate_instructions.py
