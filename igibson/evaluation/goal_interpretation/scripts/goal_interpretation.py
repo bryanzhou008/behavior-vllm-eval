@@ -13,9 +13,15 @@ import json
 import openai
 import time
 
-from igibson.evaluation.goal_interpretation.utils import get_gpt_output
 
 
+# You should only need to change the following paths and arguments to run for different models:
+save_path = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/results/trial3/gpt35_goal_interpretation.json"
+MODEL_NAME = "gpt-3.5-turbo"
+
+
+
+# Fixed paths (you should not have to change these paths)
 demo_to_conds_path = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/all_conditions.json"
 demo_to_objs_path = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/all_objects.json"
 demo_names_path = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/100_selected_demos.txt"
@@ -23,10 +29,38 @@ task_to_instructions_path = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibs
 prompt_path = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/prompts/behavior_goal_interpretation.txt"
 task_to_demo_path = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/task_to_demo.json"
 prompt_save_path = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/llm_prompts.json"
-save_path = "/Users/bryan/Desktop/wkdir/behavior-vllm-eval/igibson/evaluation/goal_interpretation/assets/gpt35_goal_interpretation.json"
-MODEL_NAME = "gpt-3.5-turbo"
 
-    
+
+# Function to get the GPT output
+def get_gpt_output(message, model="gpt-3.5-turbo", max_tokens=512, temperature=0):
+    messages = [
+        {"role": "system", "content": "You are a friendly assistant. Your answers are JSON only."},
+        {"role": "assistant", "content": "{\"message\": \"Understood. I will output my answers in JSON format.\" }" },
+        {"role": "user", "content": message}
+        ] 
+    kwargs = {"response_format": { "type": "json_object" }}
+    try:
+        chat = openai.OpenAI().chat.completions.create(
+            messages=messages,
+            model=model,
+            temperature=temperature,
+            **kwargs
+            )
+    except Exception as e:
+        print(f'{e}\nTry after 1 min')
+        time.sleep(61)
+        chat = openai.OpenAI().chat.completions.create(
+            messages=messages,
+            model=model,
+            temperature=temperature,
+            **kwargs
+            )
+    reply = chat.choices[0].message.content 
+    return reply
+
+
+
+
 def main():
     '''
     This script is used to generate GPT predictions for goal conditions for the demos in the dataset.
@@ -95,7 +129,12 @@ def main():
         # save the prompts as well
         demo_to_llm_prompts[demo_name] = prompt
         
-        gpt_preds = json.loads(get_gpt_output(prompt, model=MODEL_NAME))
+        
+        # Fetch the GPT output as a JSON string and convert it to lowercase
+        json_string = get_gpt_output(prompt, model=MODEL_NAME).lower()
+
+        # Parse the lowercase JSON string into a dictionary
+        gpt_preds = json.loads(json_string)
         
         gpt_goal_interpretation_results[demo_name] = gpt_preds
         
